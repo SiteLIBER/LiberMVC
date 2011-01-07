@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="liber" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=sql2k5.plesklogin.net;Initial Catalog=liber;Persist Security Info=True;User ID=liber" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="liberConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="liber.EstadoCivil" Member="EstadoCivils">
+    <Type Name="EstadoCivil">
+      <Column Name="EstadoCivilID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="EstadoCivil_Usuario" Member="Usuarios" ThisKey="EstadoCivilID" OtherKey="EstadoCivilID" Type="Usuario" />
+    </Type>
+  </Table>
+  <Table Name="liber.TipoUsuario" Member="TipoUsuarios">
+    <Type Name="TipoUsuario">
+      <Column Name="TipoUsuarioID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="TipoUsuario_Usuario" Member="Usuarios" ThisKey="TipoUsuarioID" OtherKey="TipoUsuarioID" Type="Usuario" />
+    </Type>
+  </Table>
+  <Table Name="liber.Usuario" Member="Usuarios">
+    <Type Name="Usuario">
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TipoUsuarioID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CPF" Type="System.String" DbType="NVarChar(18)" CanBeNull="true" />
+      <Column Name="ReceberNewsletter" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Senha" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataNasc" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Sexo" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="Banido" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Naturalidade" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NomePai" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NomeMae" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="EstadoCivilID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Profissao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GrauInstrucaoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Endereco" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Cidade" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="CEP" Type="System.String" DbType="NVarChar(9)" CanBeNull="true" />
+      <Column Name="Telefone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TituloEleitor" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+      <Column Name="Zona" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="Secao" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="MunicipioUF" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="OutroPartido" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="OutroPartidoQual" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Usuario_Artigo" Member="Artigos" ThisKey="UsuarioID" OtherKey="EditorID" Type="Artigo" />
+      <Association Name="EstadoCivil_Usuario" Member="EstadoCivil" ThisKey="EstadoCivilID" OtherKey="EstadoCivilID" Type="EstadoCivil" IsForeignKey="true" />
+      <Association Name="TipoUsuario_Usuario" Member="TipoUsuario" ThisKey="TipoUsuarioID" OtherKey="TipoUsuarioID" Type="TipoUsuario" IsForeignKey="true" />
+      <Association Name="GrauInstrucao_Usuario" Member="GrauInstrucao" ThisKey="GrauInstrucaoID" OtherKey="GrauInstrucaoID" Type="GrauInstrucao" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="liber.GrauInstrucao" Member="GrauInstrucaos">
+    <Type Name="GrauInstrucao">
+      <Column Name="GrauInstrucaoID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="GrauInstrucao_Usuario" Member="Usuarios" ThisKey="GrauInstrucaoID" OtherKey="GrauInstrucaoID" Type="Usuario" />
+    </Type>
+  </Table>
+  <Table Name="liber.Artigo" Member="Artigos">
+    <Type Name="Artigo">
+      <Column Name="ArtigoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EditorID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Titulo" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Chamada" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Conteudo" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Publicado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PublicadoEm" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CriadoEm" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Autor" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Fonte" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Association Name="Usuario_Artigo" Member="Editor" ThisKey="EditorID" OtherKey="UsuarioID" Type="Usuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

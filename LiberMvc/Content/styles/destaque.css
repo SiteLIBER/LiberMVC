@@ -1,0 +1,25 @@
+#destaque {
+    border-radius: 5px;
+    background-image: url("../images/destaque/forum_liberdade_mg.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: #243144;
+}
+
+#destaque .panel {
+    border-width: 0px;
+    background-color: transparent;
+}
+
+#destaque .panel #main_box {
+    float: left;
+}
+
+#destaque .panel #information_box {
+    margin-left: 10px;
+    float: left;
+}
+
+#destaque .panel h1, #destaque .panel p {
+    color: #fff;
+}

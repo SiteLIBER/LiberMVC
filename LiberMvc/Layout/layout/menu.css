@@ -1,0 +1,261 @@
+body {
+background-image:url(images/background.jpg);
+background-position:center top;
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-color:#CCCCCC;
+margin:0;
+font:12px Verdana,Geneva,Arial,Helvetica,sans-serif;
+
+}
+
+p {
+font:12px Verdana,Geneva,Arial,Helvetica,sans-serif;
+line-height:18px;
+}
+
+img {
+border:none;
+}
+
+a {
+color:#000;
+text-decoration:none;
+}
+
+a:hover {
+text-decoration:underline;
+}
+
+a.login {
+color:#000;
+font:10px Verdana, Arial, Helvetica, sans-serif;
+}
+
+a.rodape {
+color:#fff;
+text-decoration:none;
+}
+a:hover.rodape {
+text-decoration:underline;
+}
+
+form,fieldset {
+margin:0;
+padding:0;
+border:none;
+}
+
+input,select,textarea {
+vertical-align:middle;
+font:10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+input.search-form {
+clear:both;
+float:left;
+background:#fff;
+width:100px;
+height:22px;
+overflow:hidden;
+margin:5px 50px 0;
+padding:0 0 0;
+}
+
+input.search-form .text {
+float:left;
+padding:2px 7px;
+width:100px;
+border:0;
+background:none;
+color:#000;
+font:12px Arial, Helvetica, "Trebuchet MS", sans-serif;
+margin:1px 0 0;
+}
+
+input.search-form input.btn-search {
+margin:3px 0 0 3px;
+padding:0;
+float:left;
+width:16px;
+height:16px;
+text-indent:-9999px;
+border:none;
+cursor:pointer;
+background:#fff;
+}
+
+.navigation {
+width:100%;
+padding:0 0 0 0;
+position:relative;
+z-index:0;
+bottom:0px;
+left:0px;
+top:0px;
+}
+
+.navigation:after,#nav:after {
+content:"";
+display:block;
+clear:both;
+}
+
+#nav {
+margin:0;
+padding:0 0 0 0px;
+list-style:none;
+float:left;
+max-width:800px;
+background:url(images/bg-menu.gif);
+}
+
+#nav li {
+float:left;
+padding:0px 0px;
+position:relative;
+z-index:0;
+}
+
+#nav li a {
+float:left;
+cursor:pointer;
+}
+
+/* Título-Menu */
+#nav li a span {
+float:left;
+font:bold 12px/29px Verdana, "Trebuchet MS", sans-serif;
+color:#000;
+padding:0 12px;
+height:41px;
+line-height:32px;
+}
+
+#nav li a.active,#nav li a:hover {
+text-decoration:none;
+background:none;
+margin-right:0px;
+/*border-left:1px solid #f8f4cb;
+border-right:1px solid #f8f4cb;*/
+}
+
+#nav li a.active span,#nav li a.hover span,#nav li a:hover span {
+overflow:hidden;
+color:#fff;
+position:relative;
+background:url(images/bg-menu-over.gif);
+}
+
+#nav li a:hover span {
+position:relative;
+}
+
+#nav li:hover .drop-holder,#nav li.hover .drop-holder {
+display:block;
+}
+
+#nav li:hover .drop-content ul ul ul,#nav li.hover .drop-content ul ul ul {
+display:none;
+}
+
+.drop-holder {
+display:none;
+position:absolute;
+top:32px;
+left:-100px;
+z-index:0;
+}
+
+.drop-content {
+height:370px;
+width:0;
+background:#fff;
+}
+
+.drop-content ul {
+margin:0 0 0 104px;
+padding:0;
+list-style:none;
+background:#fff ;
+position:absolute;
+border:solid 0px 1px 1px 1px #f5efb8;
+}
+
+#nav .drop-content ul li {
+float:none;
+width:210px;
+vertical-align:middle;
+background-color:#9e8706;
+padding:0;
+}
+
+
+#nav .drop-content ul li a {
+float:none;
+display:block;
+background:none;
+font-size:12px;
+line-height:normal;
+height:23px;
+line-height:23px;
+padding:0 0 0 10px;
+cursor:pointer;
+color:#000;
+position:relative;
+margin:0;
+width:200px;
+overflow:hidden;
+}
+
+#nav .drop-content ul li:hover a,#nav .drop-content ul li.hover a,#nav .drop-content ul li a:hover {
+background:#e2d236;
+color:#000;
+}
+
+#nav .drop-content ul li:hover ul,#nav .drop-content ul li.hover ul {
+display:block;
+}
+
+#nav .drop-content ul ul {
+margin:0;
+background-position:0 100%;
+display:none;
+position:absolute;
+left:100%;
+top:-1px;
+}
+
+#nav .drop-content ul ul li {
+padding:0;
+}
+
+#nav .drop-content ul li:hover ul li a,#nav .drop-content ul li.hover ul li a {
+background:none;
+color:#000;
+padding:0 0 0 10px;
+margin:0;
+width:200px;
+}
+
+#nav .drop-content ul li:hover ul li:hover a,#nav .drop-content ul li.hover ul li.hover a,#nav .drop-content ul ul li a:hover {
+background:#57b105;
+color:#fff;
+}
+
+#nav .drop-content ul ul li:hover ul,#nav .drop-content ul ul li.hover ul {
+display:block;
+}
+
+#nav .drop-content ul li:hover ul li:hover ul li a,#nav .drop-content ul li.hover ul li.hover ul li a,#nav .drop-content ul ul ul li a {
+background:none;
+color:#000;
+padding:0 0 0 10px;
+margin:0;
+width:200px;
+}
+
+#nav .drop-content ul li:hover ul li:hover ul li:hover a,#nav .drop-content ul li.hover ul li.hover ul li.hover a,#nav .drop-content ul ul ul li a:hover {
+background:#57b105;
+color:#fff;
+}

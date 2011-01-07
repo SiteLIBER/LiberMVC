@@ -1,0 +1,118 @@
+﻿fieldset {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+.obr {
+	color: /*#990000;*/ red;
+}
+
+.display-item {
+	padding: 3px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+.display-label {
+	text-align: right;
+	display:inline-block;
+	width: 160px;
+}
+
+.display-field {
+	text-align: left;
+	display: inline-block;
+	width: 50%;
+}
+
+.editor-item {
+	padding: 3px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+.editor-label {
+	text-align: right;
+	display:inline-block;
+	width: 160px;
+}
+
+.editor-field {
+	text-align: left;
+	display:inline-block;
+}
+
+.display-error {
+	color: #CC0000;
+}
+
+.editor-error {
+	display: none;	
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/*
+input[type="text"] 
+{
+    border: 1px solid #CCC;
+}
+
+input[type="password"] 
+{
+    border: 1px solid #CCC;
+}
+*/
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color:Red;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, .editor-label, .display-field, .editor-field {
+    margin: 0.1em 0;
+}
+
+.text-box {
+    width: 16em;
+}
+
+.text-box.multi-line {
+    height: 6.5em;
+}
+
+.tri-state {
+    width: 1em;
+}

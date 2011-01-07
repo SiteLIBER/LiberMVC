@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A887CDFC-E1BB-48EF-9D54-627F5F0D572C}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiberMvc</RootNamespace>
+    <AssemblyName>LiberMvc</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MvcBuildViews>true</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>lib\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah">
+      <HintPath>lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ArtigosController.cs" />
+    <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LiberController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Helpers\CustomAttributes.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\CustomExtensions.cs" />
+    <Compile Include="Models\Artigo.cs" />
+    <Compile Include="Models\ArtigoRepository.cs" />
+    <Compile Include="Models\IArtigoRepository.cs" />
+    <Compile Include="Models\Listas.cs" />
+    <Compile Include="Models\FiliacaoModel.cs" />
+    <Compile Include="Models\IUsuarioRepository.cs" />
+    <Compile Include="Models\LoginModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\CadastroModel.cs" />
+    <Compile Include="Models\DB.designer.cs">
+      <DependentUpon>DB.dbml</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Models\PerfilModel.cs" />
+    <Compile Include="Models\Usuario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\UsuarioRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\images\book_ico.png" />
+    <Content Include="Content\images\button_back.png" />
+    <Content Include="Content\images\button_back_hover.png" />
+    <Content Include="Content\images\creative_commons.png" />
+    <Content Include="Content\images\date_back.png" />
+    <Content Include="Content\images\destaque\forum_liberdade_mg.png" />
+    <Content Include="Content\images\donate_ico.png" />
+    <Content Include="Content\images\facebook.png" />
+    <Content Include="Content\images\flickr.png" />
+    <Content Include="Content\images\footer_back.png" />
+    <Content Include="Content\images\formspring.png" />
+    <Content Include="Content\images\forum_ico.png" />
+    <Content Include="Content\images\header_back.png" />
+    <Content Include="Content\images\header_back_intern.png" />
+    <Content Include="Content\images\invite_ico.png" />
+    <Content Include="Content\images\join.png" />
+    <Content Include="Content\images\libertarios.png" />
+    <Content Include="Content\images\liber_footer.png" />
+    <Content Include="Content\images\liber_logo.png" />
+    <Content Include="Content\images\megaphone_ico.png" />
+    <Content Include="Content\images\menu_back.png" />
+    <Content Include="Content\images\menu_back_hover.png" />
+    <Content Include="Content\images\menu_separator.png" />
+    <Content Include="Content\images\orkut.png" />
+    <Content Include="Content\images\panel_back.png" />
+    <Content Include="Content\images\pdf_file.png" />
+    <Content Include="Content\images\top_ico.png" />
+    <Content Include="Content\images\twitter.png" />
+    <Content Include="Content\images\youtube.png" />
+    <Content Include="Content\styles\default.css" />
+    <Content Include="Content\styles\destaque.css" />
+    <Content Include="Content\styles\menu.css" />
+    <Content Include="Content\styles\Site.css" />
+    <Content Include="Content\sunny\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <Content Include="Content\sunny\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Content\sunny\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Content\sunny\images\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <Content Include="Content\sunny\images\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <Content Include="Content\sunny\images\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <Content Include="Content\sunny\images\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <Content Include="Content\sunny\images\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <Content Include="Content\sunny\images\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="Content\sunny\images\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="Content\sunny\images\ui-icons_bd7b00_256x240.png" />
+    <Content Include="Content\sunny\images\ui-icons_d19405_256x240.png" />
+    <Content Include="Content\sunny\images\ui-icons_eb990f_256x240.png" />
+    <Content Include="Content\sunny\images\ui-icons_ed9f26_256x240.png" />
+    <Content Include="Content\sunny\images\ui-icons_fadc7a_256x240.png" />
+    <Content Include="Content\sunny\images\ui-icons_ffe180_256x240.png" />
+    <Content Include="Content\sunny\jquery-ui-1.8.5.custom.css" />
+    <Content Include="Content\ui-darkness\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Content\ui-darkness\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Content\ui-darkness\images\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="Content\ui-darkness\images\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="Content\ui-darkness\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="Content\ui-darkness\images\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="Content\ui-darkness\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="Content\ui-darkness\images\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="Content\ui-darkness\images\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="Content\ui-darkness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\ui-darkness\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="Content\ui-darkness\images\ui-icons_a83300_256x240.png" />
+    <Content Include="Content\ui-darkness\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="Content\ui-darkness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\ui-darkness\jquery-ui-1.8.5.custom.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-ui-1.8.5.custom.min.js" />
+    <Content Include="Scripts\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="Views\Artigos\Details.aspx" />
+    <Content Include="Views\Artigos\Edit.aspx" />
+    <Content Include="Views\Artigos\Create.aspx" />
+    <Content Include="Views\Artigos\Editor.aspx" />
+    <Content Include="Views\Artigos\Index.aspx" />
+    <Content Include="Views\Auth\BanidoBox.ascx" />
+    <Content Include="Views\Liber\Contato.aspx" />
+    <Content Include="Views\Liber\Direitos.aspx" />
+    <Content Include="Views\Liber\Diretorios.aspx" />
+    <Content Include="Views\Liber\Divulgacao.aspx" />
+    <Content Include="Views\Liber\Doacao.aspx" />
+    <Content Include="Views\Liber\Domestico.aspx" />
+    <Content Include="Views\Liber\Economia.aspx" />
+    <Content Include="Views\Liber\Exterior.aspx" />
+    <Content Include="Views\Liber\FAQ.aspx" />
+    <Content Include="Views\Liber\Imprensa.aspx" />
+    <Content Include="Views\Shared\AcessoNegado.aspx" />
+    <Content Include="Views\Auth\AreaRestrita.aspx" />
+    <Content Include="Views\Auth\Banido.aspx" />
+    <Content Include="Views\Auth\Login.aspx" />
+    <Content Include="Views\Auth\LoginFalhou.aspx" />
+    <Content Include="Views\Artigos\Home.ascx" />
+    <Content Include="Views\Blog\Home.ascx" />
+    <Content Include="Views\Home\Destaque.ascx" />
+    <Content Include="Views\Home\Enquete.ascx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Home\RightHome.ascx" />
+    <Content Include="Views\Liber\Contas.aspx" />
+    <Content Include="Views\Liber\Estatuto.aspx" />
+    <Content Include="Views\Liber\Filosofia.aspx" />
+    <Content Include="Views\Liber\Historia.aspx" />
+    <Content Include="Views\Liber\Lideranca.aspx" />
+    <Content Include="Views\Liber\Programa.aspx" />
+    <Content Include="Views\Shared\BottomMenu.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\DateTime.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\Object.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\SimNao.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\String.ascx" />
+    <Content Include="Views\Shared\DonateBox.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\DateTime.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\Password.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\MultilineText.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Object.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\SimNao.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Html.ascx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\EventsBox.ascx" />
+    <Content Include="Views\Shared\Liber500Box.ascx" />
+    <Content Include="Views\Shared\LoginBox.ascx" />
+    <Content Include="Views\Auth\LoginFalhouBox.ascx" />
+    <Content Include="Views\Shared\PanelBox.ascx" />
+    <Content Include="Views\Shared\RightMenu.ascx" />
+    <Content Include="Views\Shared\SocialBox.ascx" />
+    <Content Include="Views\Shared\TopMenu.ascx" />
+    <Content Include="Views\Shared\UserBox.ascx" />
+    <Content Include="Views\Shared\VideoBox.ascx" />
+    <Content Include="Views\Usuario\Cadastro.aspx" />
+    <Content Include="Views\Usuario\EmailExiste.aspx" />
+    <Content Include="Views\Usuario\Filiacao.aspx" />
+    <Content Include="Views\Usuario\Filiacao2.aspx" />
+    <Content Include="Views\Usuario\NaoEncontrado.aspx" />
+    <Content Include="Views\Usuario\Perfil.aspx" />
+    <Content Include="Views\Usuario\RightCadastro.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeTemplates\AddController\Controller.tt" />
+    <None Include="CodeTemplates\AddView\Create.tt" />
+    <None Include="CodeTemplates\AddView\Delete.tt" />
+    <None Include="CodeTemplates\AddView\Details.tt" />
+    <None Include="CodeTemplates\AddView\Edit.tt" />
+    <None Include="CodeTemplates\AddView\Empty.tt" />
+    <None Include="CodeTemplates\AddView\List.tt" />
+    <Content Include="connectionStrings.config" />
+    <None Include="Content\download\apoio.pdf" />
+    <None Include="Content\download\Ata_CGNacional_2010.04.10.pdf" />
+    <None Include="Content\download\estatuto.pdf" />
+    <None Include="Content\download\fundacao.pdf" />
+    <None Include="Models\DB.dbml">
+      <SubType>Designer</SubType>
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DB.designer.cs</LastGenOutput>
+    </None>
+    <None Include="Models\DB.dbml.layout">
+      <DependentUpon>DB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2782</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
