@@ -28,6 +28,8 @@ a:hover {
 /* ========================================================================== */
 
 br.clear {
+    display: block;
+    height: 0px;
     clear: both;
 }
 
@@ -39,16 +41,9 @@ a.button, input.button {
     color: #000;
     text-shadow: 1px 1px 1px #fff;
     text-align: center;
-
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -opera-border-radius: 5px;
-
     background-image: url("../images/button_back.png");
     background-repeat: repeat-x;
     background-color: #ffd100;
-
     border: 1px solid #c4a100;
 }
 
@@ -66,12 +61,6 @@ a.button:hover, input.button:hover {
     padding: 5px;
 
     border: 1px solid #ccc;
-
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -opera-border-radius: 5px;
-
     background-image: url("../images/panel_back.png");
     background-repeat: repeat-x;
     background-color: #fff;
@@ -85,6 +74,92 @@ a.button:hover, input.button:hover {
     text-transform: uppercase;
     font-size: 20px;
     color: #5f5f5f;
+}
+
+.panel .actions {
+    margin: 10px 0px 7px 0px;
+    padding: 10px 0px 0px 0px;
+    
+    border-top: 2px dotted #5f5f5f;
+}
+
+/* ========================================================================== */
+
+.article h1 {
+    margin: 0px;
+    padding: 0px;
+
+    color: #000;
+    font-family: Georgia;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.article .general_informations {
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
+    
+    color: #5f5f5f;
+    border-bottom: 2px dotted #5f5f5f;
+}
+
+.article .general_informations .date {
+    padding-right: 5px;
+    
+    font-family: Georgia;
+    border-right: 1px solid #000;
+}
+
+.article .article_body {
+    margin-left: 15px;
+    
+    font-size: 13px;
+}
+
+.article .article_body p img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #5f5f5f;
+}
+
+/* ========================================================================== */
+
+.article_resume {
+    border-bottom: 1px dotted #000;
+}
+
+.article_resume h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.article_resume h2 a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #004d76;
+}
+
+.article_resume h2 a:hover {
+    text-decoration: underline;
+}
+
+.article_resume .general_informations {
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+
+    color: #5f5f5f;
+}
+
+.article_resume .general_informations .date {
+    padding-right: 5px;
+    
+    font-family: Georgia;
+    border-right: 1px solid #000;
+}
+
+.article_resume .abstract {
+    font-size: 13px;
 }
 
 /* ========================================================================== */
@@ -115,7 +190,6 @@ a.button:hover, input.button:hover {
     height: 100px;
 
     font: 55px Georgia;
-    color: transparent;
 
     background-image: url("../images/libertarios.png");
     background-repeat: no-repeat;
@@ -187,7 +261,6 @@ a.button:hover, input.button:hover {
     /*width: 430px;*/
 }
 
-
 #main_content #blog 
 {
 	display: none;
@@ -198,82 +271,22 @@ a.button:hover, input.button:hover {
 
 #main_content #index {
     float: left;
-    width: 150px;
+    width: 160px;
 }
 
 #main_content #post {
     float: right;
-    width: /*683px;*/ 515px;
+    width: 683px;
 }
 
 /* ========================================================================== */
 
-#artigos #artigo_destaque {
-    border-bottom: 1px dotted #000;
-}
-
-#artigos #artigo_destaque h2 {
-    margin: 0px;
-    padding: 0px;
-}
-
 #artigos #artigo_destaque h2 a {
-    text-decoration: none;
     font-size: 20px;
-    color: #004d76;
 }
 
-#artigos #artigo_destaque h2 a:hover {
-    text-decoration: underline;
-}
-
-#artigos #artigo_destaque .general_informations {
-    margin: 0px;
-    padding: 0px;
-
-    font-size: 13px;
-}
-
-#artigos #artigo_destaque .author {
-    margin: 0px;
-    padding: 0px;
-}
-
-#artigos .artigo {
-    border-bottom: 1px dotted #000;
-}
-
-#artigos .artigo h2 {
-    margin: 0px;
-    padding: 0px;
-}
-
-#artigos .artigo h2 a {
-    text-decoration: none;
-    font-size: 15px;
-    color: #004d76;
-}
-
-#artigos .artigo h2 a:hover {
-    text-decoration: underline;
-}
-
-#artigos .artigo .general_informations {
-    margin: 0px;
-    padding: 0px;
-
-    font-size: 12px;
-}
-
-#artigos .artigo .author {
-    margin: 0px;
-    padding: 0px;
-
-    font-size: 13px;
-}
-
-#artigos .artigo .abstract {
-    font-size: 13px;
+#artigos #artigo_destaque .abstract {
+    font-size: 14px;
 }
 
 /* ========================================================================== */
@@ -370,14 +383,13 @@ a.button:hover, input.button:hover {
     float: right;
     width: 40px;
     min-height: 40px;
-
+    
+    color: #fff;
     text-transform: uppercase;
     text-align: center;
     text-shadow: 1px 1px 0px #000;
     font-family: Georgia;
     font-weight: bold;
-    color: #fff;
-
     background-image: url("../images/date_back.png");
     background-repeat: no-repeat;
     background-color: #7c7a7b;
@@ -397,8 +409,19 @@ a.button:hover, input.button:hover {
 
 /* ========================================================================== */
 
+#index {
+    margin: 5px 10px 10px 0px;
+    padding: 0px 10px 10px 10px;
+  
+    background-color: #fbf9e6;
+    border-bottom: 1px solid #ccc;
+}
+
 #index h1 {
-    font-size: 15px;
+    margin-top: 10px;
+    color: #000;
+    font-size: 13px;
+    text-transform: none;
 
     border-bottom: 1px dotted #000;
 }
@@ -408,7 +431,6 @@ a.button:hover, input.button:hover {
     padding: 0px;
 
     font-size: 12px;
-
     list-style: none;
 }
 
@@ -417,8 +439,7 @@ a.button:hover, input.button:hover {
     padding: 0px;
 
     font-size: 12px;
-
-    list-style-position: inside;
+    /*list-style-position: inside;*/
 }
 
 #index ul li, #index ol li {
@@ -434,21 +455,19 @@ a.button:hover, input.button:hover {
 /* ========================================================================== */
 
 #post p {
-    text-indent: 40px;
     text-align: justify;
     font-size: 13px;
     color: #333333;
 }
 
 #post p.top {
-    padding-left: 20px;
+    padding-right: 20px;
     
-    text-indent: 0px;
+    text-align: right;
     font-size: 13px;
-    
     background-image: url("../images/top_ico.png");
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: right center;
 }
 
 #post ul {

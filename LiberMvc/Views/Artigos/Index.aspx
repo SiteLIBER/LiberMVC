@@ -5,32 +5,37 @@
 
 	<div class="panel">
 		<h1>Artigos</h1>
+
 		<% foreach (var art in Model) { %>
-		<div class="artigo">
+		<div class="article_resume">
 			<h2>
 				<%= Html.ActionLink(art.Titulo, "Details", "Artigos", new { id=art.ArtigoID }, null)%>
 			</h2>
+
 			<p class="general_informations">
-				<%= art.PublicadoEm.ToShortDateString() %> - 
+				<span class="date"><%= art.PublicadoEm.ToShortDateString() %><span class="date">
 				<span class="author">
 					Por <%= Html.Label(art.Autor ?? art.Editor.Nome) %>	
 					<%--<%= Html.ActionLink(art.Editor.Nome, "Editor", "Artigos", new { id=art.EditorID }, null) %>--%>
 				</span>
 			</p>
+
 			<p class="abstract">
 				<%= art.Chamada %>
 			</p>
 		</div>
 	<% } %>
 	</div>
-<% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>
-  <p>
-    <%= Html.ActionLink("Criar Novo", "Create", null, new { @class = "button" })%>
-  </p>
-<% } %>
+
+    <% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>
+    <p>
+        <%= Html.ActionLink("Criar Novo", "Create", null, new { @class = "button" })%>
+    </p>
+    <% } %>
+
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="RightContent" runat="server">
-<% Html.RenderPartial("RightMenu"); %>
+    <% Html.RenderPartial("RightMenu"); %>
 </asp:Content>
 

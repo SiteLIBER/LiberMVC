@@ -2,33 +2,33 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-	<div id="index">
-    	<h1>Índice</h1>
-
-        <ol>
-			<li><a href="#">Energia</a></li>
-            <li><a href="#">Poluição</a></li>
-            <li><a href="#">Proteção ao Consumidor</a></li>
-            <li><a href="#">Educação</a></li>
-            <li><a href="#">População</a></li>
-            <li><a href="#">Transporte</a></li>
-            <li><a href="#">Pobreza e desemprego</a></li>
-            <li><a href="#">Leis Trabalhistas (CLTs)</a></li>
-        </ol>
-    
-		<h1>Ideias</h1>
-		<ul>
-			<li><a href="<%= Url.Action("Direitos", "Liber") %>">Direitos Individuais</a></li>
-			<li><a href="<%= Url.Action("Economia", "Liber") %>">Comércio e Economia</a></li>
-			<li><a href="<%= Url.Action("Domestico", "Liber") %>">Assuntos Domésticos</a></li>
-			<li><a href="<%= Url.Action("Exterior", "Liber") %>">Relações Exteriores</a></li>
-			<%--<li><a href="<%= Url.Action("FAQ", "Liber") %>">Perguntas Frequentes</a></li>--%>
-		</ul>
-	</div>
-
 	<div class="panel" id="post">
 		<h1>Assuntos domésticos</h1>
-        
+
+ 	    <div id="index">
+    	    <h1>Índice</h1>
+
+            <ol>
+			    <li><a href="#">Energia</a></li>
+                <li><a href="#">Poluição</a></li>
+                <li><a href="#">Proteção ao Consumidor</a></li>
+                <li><a href="#">Educação</a></li>
+                <li><a href="#">População</a></li>
+                <li><a href="#">Transporte</a></li>
+                <li><a href="#">Pobreza e desemprego</a></li>
+                <li><a href="#">Leis Trabalhistas (CLTs)</a></li>
+            </ol>
+    
+		    <h1>Ideias</h1>
+		    <ul>
+			    <li><a href="<%= Url.Action("Direitos", "Liber") %>">Direitos Individuais</a></li>
+			    <li><a href="<%= Url.Action("Economia", "Liber") %>">Comércio e Economia</a></li>
+			    <li><a href="<%= Url.Action("Domestico", "Liber") %>">Assuntos Domésticos</a></li>
+			    <li><a href="<%= Url.Action("Exterior", "Liber") %>">Relações Exteriores</a></li>
+			    <%--<li><a href="<%= Url.Action("FAQ", "Liber") %>">Perguntas Frequentes</a></li>--%>
+		    </ul>
+	    </div>
+       
         <p>
         	Os problemas atuais em áreas como energia, poluição, saúde, cidades em
             decadência e pobreza não são solucionados, mas causados, pelo governo. O assistencialismo,

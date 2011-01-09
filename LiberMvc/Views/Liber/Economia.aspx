@@ -2,35 +2,35 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-	<div id="index">
-    	<h1>Índice</h1>
-
-        <ol>
-			<li><a href="#AEconomia">A Ecnomia</a></li>
-			<li><a href="#Taxacao">Taxação</a></li>
-			<li><a href="#InflacaoEDepressao">Inflação e depressão</a></li>
-            <li><a href="#FinancasEInvestimentoDeCapital">Finanças e investimentos de capital</a></li>
-            <li><a href="#DividaDoGoverno">Dívidas do governo</a></li>
-            <li><a href="#Monopolios">Monopólios</a></li>
-            <li><a href="#Subsidios">Subsídios</a></li>
-            <li><a href="#BarreirasDeComercio">Barreiras de comércio</a></li>
-            <li><a href="#ServicosDeUtilidadePublica">Serviços de utilidade pública</a></li>
-            <li><a href="#SindicatosENegociacoesColetivas">Sindicatos e negociações coletivas</a></li>
-        </ol>
-    
-		<h1>Ideias</h1>
-
-		<ul>
-			<li><a href="<%= Url.Action("Direitos", "Liber") %>">Direitos Individuais</a></li>
-			<li><a href="<%= Url.Action("Economia", "Liber") %>">Comércio e Economia</a></li>
-			<li><a href="<%= Url.Action("Domestico", "Liber") %>">Assuntos Domésticos</a></li>
-			<li><a href="<%= Url.Action("Exterior", "Liber") %>">Relações Exteriores</a></li>
-			<%--<li><a href="<%= Url.Action("FAQ", "Liber") %>">Perguntas Frequentes</a></li>--%>
-		</ul>
-	</div>
-
 	<div class="panel" id="post">
 		<h1>Comércio e Economia</h1>
+
+	    <div id="index">
+    	    <h1>Índice</h1>
+
+            <ol>
+			    <li><a href="#AEconomia">A Ecnomia</a></li>
+			    <li><a href="#Taxacao">Taxação</a></li>
+			    <li><a href="#InflacaoEDepressao">Inflação e depressão</a></li>
+                <li><a href="#FinancasEInvestimentoDeCapital">Finanças e investimentos de capital</a></li>
+                <li><a href="#DividaDoGoverno">Dívidas do governo</a></li>
+                <li><a href="#Monopolios">Monopólios</a></li>
+                <li><a href="#Subsidios">Subsídios</a></li>
+                <li><a href="#BarreirasDeComercio">Barreiras de comércio</a></li>
+                <li><a href="#ServicosDeUtilidadePublica">Serviços de utilidade pública</a></li>
+                <li><a href="#SindicatosENegociacoesColetivas">Sindicatos e negociações coletivas</a></li>
+            </ol>
+    
+		    <h1>Ideias</h1>
+
+		    <ul>
+			    <li><a href="<%= Url.Action("Direitos", "Liber") %>">Direitos Individuais</a></li>
+			    <li><a href="<%= Url.Action("Economia", "Liber") %>">Comércio e Economia</a></li>
+			    <li><a href="<%= Url.Action("Domestico", "Liber") %>">Assuntos Domésticos</a></li>
+			    <li><a href="<%= Url.Action("Exterior", "Liber") %>">Relações Exteriores</a></li>
+			    <%--<li><a href="<%= Url.Action("FAQ", "Liber") %>">Perguntas Frequentes</a></li>--%>
+		    </ul>
+	    </div>
 
         <p>
             Nós acreditamos que cada pessoa tem o direito de oferecer bens

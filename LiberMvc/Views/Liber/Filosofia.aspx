@@ -2,21 +2,21 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div id="index">
-        <h1>Nosso Partido</h1>
-
-        <ul>
-            <li><a href="<%= Url.Action("Historia", "Liber") %>">História</a></li>
-		    <li><a href="<%= Url.Action("Filosofia", "Liber") %>">Filosofia</a></li>
-		    <li><a href="<%= Url.Action("Programa", "Liber") %>">Programa</a></li>
-			<li><a href="<%= Url.Action("Estatuto", "Liber") %>">Estatuto</a></li>
-			<li><a href="<%= Url.Action("Lideranca", "Liber") %>">Lideranças Nacionais</a></li>
-            <%-- <li><a href='<%= Url.Action("Contas", "Partido") %>'>Prestação de Contas</a></li> --%>
-        </ul>
-    </div>
-
     <div class="panel" id="post">
         <h1>Filosofia</h1>
+
+        <div id="index">
+            <h1>Nosso Partido</h1>
+
+            <ul>
+                <li><a href="<%= Url.Action("Historia", "Liber") %>">História</a></li>
+		        <li><a href="<%= Url.Action("Filosofia", "Liber") %>">Filosofia</a></li>
+		        <li><a href="<%= Url.Action("Programa", "Liber") %>">Programa</a></li>
+			    <li><a href="<%= Url.Action("Estatuto", "Liber") %>">Estatuto</a></li>
+			    <li><a href="<%= Url.Action("Lideranca", "Liber") %>">Lideranças Nacionais</a></li>
+                <%-- <li><a href='<%= Url.Action("Contas", "Partido") %>'>Prestação de Contas</a></li> --%>
+            </ul>
+        </div>
 
         <p>
             A premissa básica dessa filosofia diz que é ilegítimo praticar agressão

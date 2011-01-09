@@ -1,45 +1,45 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-	
-	<div id="index">
-        <h1>Índice</h1>
-
-		<ul>
-        	<li><a href="#PoliticaDiplomatica">A. Politica diplomática</a>
-            	<ol>
-            		<li><a href="#Negociacoes">Negociações</a></li>
-                    <li><a href="#BrasileirosNoExteriorEDireitosHumanos">Brasileiros no exterior e Direitos Humanos</a></li>
-                </ol>
-            </li>
-            
-            <li><a href="#ForcasArmadas">B. Forças Armadas</a>
-            	<ol>
-            		<li><a href="#PoliticaMilitar">Política Militar</a></li>
-                </ol>
-            </li>
-            
-            <li><a href="#PolticaEconomica">C. Política econômica</a>
-            	<ol>
-            		<li><a href="#AjudaInternacional">Ajuda internacional</a></li>
-                    <li><a href="#MoedasEstrangeiras">Moedas estrangeiras</a></li>
-                    <li><a href="#RecursosSemDono">Recursos sem Dono</a></li>
-                </ol>
-            </li>
-        </ul>
-    
-		<h1>Ideias</h1>
-		<ul>
-			<li><a href="<%= Url.Action("Direitos", "Liber") %>">Direitos Individuais</a></li>
-			<li><a href="<%= Url.Action("Economia", "Liber") %>">Comércio e Economia</a></li>
-			<li><a href="<%= Url.Action("Domestico", "Liber") %>">Assuntos Domésticos</a></li>
-			<li><a href="<%= Url.Action("Exterior", "Liber") %>">Relações Exteriores</a></li>
-			<%--<li><a href="<%= Url.Action("FAQ", "Liber") %>">Perguntas Frequentes</a></li>--%>
-		</ul>
-	</div>
 
 	<div class="panel" id="post">
         <h1>Relações Exteriores</h1>
+
+	    <div id="index">
+            <h1>Índice</h1>
+
+		    <ul>
+        	    <li style="border:none"><a href="#PoliticaDiplomatica"><strong>A. Politica diplomática</strong></a>
+            	    <ul>
+            		    <li><a href="#Negociacoes">1. Negociações</a></li>
+                        <li><a href="#BrasileirosNoExteriorEDireitosHumanos">2. Brasileiros no exterior e Direitos Humanos</a></li>
+                    </ul>
+                </li>
+            
+                <li style="border:none"><a href="#ForcasArmadas"><strong>B. Forças Armadas</strong></a>
+            	    <ul>
+            		    <li><a href="#PoliticaMilitar">1. Política Militar</a></li>
+                    </ul>
+                </li>
+            
+                <li style="border:none"><a href="#PolticaEconomica"><strong>C. Política econômica</strong></a>
+            	    <ul>
+            		    <li><a href="#AjudaInternacional">1. Ajuda internacional</a></li>
+                        <li><a href="#MoedasEstrangeiras">2. Moedas estrangeiras</a></li>
+                        <li><a href="#RecursosSemDono">3. Recursos sem Dono</a></li>
+                    </ul>
+                </li>
+            </ul>
+    
+		    <h1>Ideias</h1>
+		    <ul>
+			    <li><a href="<%= Url.Action("Direitos", "Liber") %>">Direitos Individuais</a></li>
+			    <li><a href="<%= Url.Action("Economia", "Liber") %>">Comércio e Economia</a></li>
+			    <li><a href="<%= Url.Action("Domestico", "Liber") %>">Assuntos Domésticos</a></li>
+			    <li><a href="<%= Url.Action("Exterior", "Liber") %>">Relações Exteriores</a></li>
+			    <%--<li><a href="<%= Url.Action("FAQ", "Liber") %>">Perguntas Frequentes</a></li>--%>
+		    </ul>
+	    </div>
 
         <p>
             A política externa do Brasil deve ser pautada pela manutenção da paz e pela

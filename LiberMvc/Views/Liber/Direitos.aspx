@@ -2,45 +2,45 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div id="index">
-        <h1>Índice</h1>
-
-        <ol>
-			<li><a href="#LiberdadeEResponsabilidade">Liberdade e responsabilidade</a></li>
-			<li><a href="#Crime">Crime</a></li>
-			<li><a href="#CrimesSemVitima">Crimes sem vítima</a></li>
-			<li><a href="#GuerraContraAsDrogas">Guerra contra as drogas</a></li>
-            <li><a href="#ProtecaoAosAcusadosCriminalmente">Proteção aos acusados criminalmente</a></li>
-            <li><a href="#JusticaParaOIndividuo">Justiça para o indivíduo</a></li>
-            <li><a href="#Juris">Júris</a></li>
-            <li><a href="#SoberaniaIndividual">Soberania Individual</a></li>
-            <li><a href="#GovernoESaudeMental">Governo e Saúde Mental</a></li>
-            <li><a href="#LiberdadeDeComunicacao">Liberdade de comunicação</a></li>
-            <li><a href="#LiberdadeDeReligiao">Liberdade de Religião</a></li>
-            <li><a href="#ODireitoDePropriedade">O Direito de Propriedade</a></li>
-            <li><a href="#ODireitoDePrivacidade">O Direito de Privacidade</a></li>
-            <li><a href="#ODireitoDePossuirEPortarArmas">O Direito de possuir e portar armas</a></li>
-            <li><a href="#AlistamentoEAsForcasArmadas">Alistamento e as Forças Armadas</a></li>
-            <li><a href="#Imigracao">Imigração</a></li>
-            <li><a href="#DireitosDasMulheresEAborto">Direitos das Mulheres e Aborto</a></li>
-            <li><a href="#FamiliasECriancas">Famílias e Crianças</a></li>
-            <li><a href="#DireitosSexuais">Direitos sexuais</a></li>
-            <li><a href="#DireitosDosIndios">Direitos dos Índios</a></li>
-        </ol>
-
-        <h1>Ideias</h1>
-
-        <ul>
-			<li><a href="<%= Url.Action("Direitos", "Liber") %>">Direitos Individuais</a></li>
-			<li><a href="<%= Url.Action("Economia", "Liber") %>">Comércio e Economia</a></li>
-			<li><a href="<%= Url.Action("Domestico", "Liber") %>">Assuntos Domésticos</a></li>
-			<li><a href="<%= Url.Action("Exterior", "Liber") %>">Relações Exteriores</a></li>
-			<%--<li><a href="<%= Url.Action("FAQ", "Liber") %>">Perguntas Frequentes</a></li>--%>
-        </ul>
-    </div>
-
     <div class="panel" id="post">
         <h1>Direitos Individuais</h1>
+
+        <div id="index">
+            <h1>Índice</h1>
+
+            <ol>
+			    <li><a href="#LiberdadeEResponsabilidade">Liberdade e responsabilidade</a></li>
+			    <li><a href="#Crime">Crime</a></li>
+			    <li><a href="#CrimesSemVitima">Crimes sem vítima</a></li>
+			    <li><a href="#GuerraContraAsDrogas">Guerra contra as drogas</a></li>
+                <li><a href="#ProtecaoAosAcusadosCriminalmente">Proteção aos acusados criminalmente</a></li>
+                <li><a href="#JusticaParaOIndividuo">Justiça para o indivíduo</a></li>
+                <li><a href="#Juris">Júris</a></li>
+                <li><a href="#SoberaniaIndividual">Soberania Individual</a></li>
+                <li><a href="#GovernoESaudeMental">Governo e Saúde Mental</a></li>
+                <li><a href="#LiberdadeDeComunicacao">Liberdade de comunicação</a></li>
+                <li><a href="#LiberdadeDeReligiao">Liberdade de Religião</a></li>
+                <li><a href="#ODireitoDePropriedade">O Direito de Propriedade</a></li>
+                <li><a href="#ODireitoDePrivacidade">O Direito de Privacidade</a></li>
+                <li><a href="#ODireitoDePossuirEPortarArmas">O Direito de possuir e portar armas</a></li>
+                <li><a href="#AlistamentoEAsForcasArmadas">Alistamento e as Forças Armadas</a></li>
+                <li><a href="#Imigracao">Imigração</a></li>
+                <li><a href="#DireitosDasMulheresEAborto">Direitos das Mulheres e Aborto</a></li>
+                <li><a href="#FamiliasECriancas">Famílias e Crianças</a></li>
+                <li><a href="#DireitosSexuais">Direitos sexuais</a></li>
+                <li><a href="#DireitosDosIndios">Direitos dos Índios</a></li>
+            </ol>
+
+            <h1>Ideias</h1>
+
+            <ul>
+			    <li><a href="<%= Url.Action("Direitos", "Liber") %>">Direitos Individuais</a></li>
+			    <li><a href="<%= Url.Action("Economia", "Liber") %>">Comércio e Economia</a></li>
+			    <li><a href="<%= Url.Action("Domestico", "Liber") %>">Assuntos Domésticos</a></li>
+			    <li><a href="<%= Url.Action("Exterior", "Liber") %>">Relações Exteriores</a></li>
+			    <%--<li><a href="<%= Url.Action("FAQ", "Liber") %>">Perguntas Frequentes</a></li>--%>
+            </ul>
+        </div>
 
         <p>
             Não existe conflito entre a ordem pública e os direitos individuais.
