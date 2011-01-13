@@ -1,24 +1,24 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<LiberMvc.Models.Artigo>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<div class="panel">
-    <h2>Editar</h2>
+    <div class="panel">
+        <h1>Editar</h1>
 
-	<% using (Html.BeginForm()) {%>
-        <%= Html.ValidationSummary(true) %>
-				<%= Html.EditorForModel() %>
-		<input type="submit" value="Enviar" class="button" />
-     <% } %>
+	    <% using (Html.BeginForm()) { %>
+            <%= Html.ValidationSummary(true) %>
+		    <%= Html.EditorForModel() %>
 
-    <div>
-        <%= Html.ActionLink("Voltar a Lista", "Index") %>
+            <p class="actions">
+		        <input type="submit" value="Enviar" class="button" />
+                <%= Html.ActionLink("Voltar a Lista", "Index", null, new { @class = "button" }) %>
+            </p>
+        <% } %>
     </div>
-	</div>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="HeadContent" runat="server">
 	<script src="<%= Url.Content("~/Scripts/jquery-ui-1.8.5.custom.min.js") %>" type="text/javascript"></script>
-  <script type="text/javascript" src="<%= Url.Content("~/Scripts/jquery.ui.datepicker-pt-BR.js") %>"></script>
+    <script type="text/javascript" src="<%= Url.Content("~/Scripts/jquery.ui.datepicker-pt-BR.js") %>"></script>
 
 	<link href="<%= Url.Content("~/Content/ui-darkness/jquery-ui-1.8.5.custom.css") %>" rel="stylesheet" type="text/css" />
 	
