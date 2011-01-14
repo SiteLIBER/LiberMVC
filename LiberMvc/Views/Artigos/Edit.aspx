@@ -4,21 +4,21 @@
 <div class="panel">
     <h2>Editar</h2>
 
-	<% using (Html.BeginForm()) {%>
+	<% using (Html.BeginForm()) { %>
         <%= Html.ValidationSummary(true) %>
-				<%= Html.EditorForModel("Artigo", Model) %>
-		<input type="submit" value="Enviar" class="button" />
-     <% } %>
+		<%= Html.EditorForModel("Artigo", Model) %>
 
-    <div>
-        <%= Html.ActionLink("Voltar a Lista", "Index") %>
-    </div>
-	</div>
+		<p class="actions">
+			<input type="submit" value="Enviar" class="button" />
+        	<%= Html.ActionLink("Voltar a Lista", "Index", null, new { @class = "button" }) %>
+        </p>
+     <% } %>
+</div>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="HeadContent" runat="server">
 	<script src="<%= Url.Content("~/Scripts/jquery-ui-1.8.5.custom.min.js") %>" type="text/javascript"></script>
-  <script type="text/javascript" src="<%= Url.Content("~/Scripts/jquery.ui.datepicker-pt-BR.js") %>"></script>
+    <script type="text/javascript" src="<%= Url.Content("~/Scripts/jquery.ui.datepicker-pt-BR.js") %>"></script>
 
 	<link href="<%= Url.Content("~/Content/ui-darkness/jquery-ui-1.8.5.custom.css") %>" rel="stylesheet" type="text/css" />
 	

@@ -4,6 +4,17 @@
 
 	<div class="panel" id="doacao">
 		<h1>Contato</h1>
+<p> Secretaria<br>
+                contato@libertarios.com.br<br>
+                <br>
+                Acessoria de Imprensa<br>
+                imprensa@libertarios.com.br<br>
+                <br>
+                Diret&oacute;rio Nacional<br>
+                diretoria@libertarios.com.br<br>
+                <br>
+                Site<br>
+                webmaster@libertarios.com.br</p>
 	</div>
 
 </asp:Content>
