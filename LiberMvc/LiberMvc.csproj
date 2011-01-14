@@ -221,11 +221,13 @@
     <Content Include="Views\Liber\Lideranca.aspx" />
     <Content Include="Views\Liber\Programa.aspx" />
     <Content Include="Views\Shared\BottomMenu.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\Artigo.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\DateTime.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Object.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\SimNao.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\String.ascx" />
     <Content Include="Views\Shared\DonateBox.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Artigo.ascx" />
     <Content Include="Views\Shared\EditorTemplates\DateTime.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Password.ascx" />
     <Content Include="Views\Shared\EditorTemplates\MultilineText.ascx" />

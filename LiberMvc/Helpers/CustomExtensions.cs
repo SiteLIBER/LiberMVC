@@ -8,7 +8,7 @@ public static class StringExtensions
 {
 	static public int ToInt32(this object data)
 	{
-		int result = (!String.IsNullOrEmpty((string) data)) ? Convert.ToInt32(data) : 0;
+		int result = (data != null && data != "") ? Convert.ToInt32(data) : 0;
 		return result;
 	}
 

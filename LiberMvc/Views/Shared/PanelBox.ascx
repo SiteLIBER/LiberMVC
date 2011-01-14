@@ -9,7 +9,7 @@
     </ul>
 
     <ul style="float:right"> 
-        <li class="know"><a href='<%= Url.Action("Programa", "Liber") %>'>Conheça mais</a></li>
+        <li class="know"><a href='<%= Url.Action("Filosofia", "Liber") %>'>Conheça mais</a></li>
         <li class="promotion"><a href='<%= Url.Action("Divulgacao", "Liber") %>'>Divulgue</a></li>
 				<%-- <li class="invite"><a href='<%= Url.Action("Convide", "Usuario") %>'>Convide amigos</a></li>--%>
         <%-- <li class="forum"><a href='<%= Url.Action("Index", "Forum") %>'>Debata</a></li> --%>

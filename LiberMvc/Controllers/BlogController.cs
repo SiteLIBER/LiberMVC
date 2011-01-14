@@ -7,7 +7,6 @@ using Elmah;
 
 namespace LiberMvc.Controllers
 {
-	[Scc("Artigos")]
     public class BlogController : Controller
     {
         //

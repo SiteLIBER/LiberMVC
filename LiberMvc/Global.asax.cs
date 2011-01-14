@@ -8,6 +8,7 @@ using AutoMapper;
 namespace LiberMvc
 {
 	using Models;
+	using System.Web.Caching;
 	// Note: For instructions on enabling IIS6 or IIS7 classic mode, 
 	// visit http://go.microsoft.com/?LinkId=9394801
 
@@ -35,8 +36,7 @@ namespace LiberMvc
 			
 			Mapper.CreateMap<PerfilModel, Usuario>();
 			Mapper.CreateMap<Usuario, PerfilModel>();
-
-			
+		
 			RegisterRoutes(RouteTable.Routes);
 		}
 	}

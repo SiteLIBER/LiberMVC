@@ -6,7 +6,7 @@
 
 	<% using (Html.BeginForm()) {%>
         <%= Html.ValidationSummary(true) %>
-				<%= Html.EditorForModel() %>
+				<%= Html.EditorForModel("Artigo", Model) %>
 		<input type="submit" value="Enviar" class="button" />
      <% } %>
 
