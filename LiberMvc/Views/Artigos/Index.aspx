@@ -6,25 +6,7 @@
 	<div class="panel">
 		<h1>Artigos</h1>
 
-		<% foreach (var art in Model) { %>
-		<div class="article_resume">
-			<h2>
-				<%= Html.ActionLink(art.Titulo, "Details", "Artigos", new { id=art.ArtigoID }, null)%>
-			</h2>
-
-			<p class="general_informations">
-				<span class="date"><%= art.PublicadoEm.ToShortDateString() %><span class="date">
-				<span class="author">
-					Por <%= Html.Label(art.Autor ?? art.Editor.Nome) %>	
-					<%--<%= Html.ActionLink(art.Editor.Nome, "Editor", "Artigos", new { id=art.EditorID }, null) %>--%>
-				</span>
-			</p>
-
-			<p class="abstract">
-				<%= art.Chamada %>
-			</p>
-		</div>
-	<% } %>
+		<%= Html.DisplayForModel("Lista") %>
 	</div>
 
     <% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>

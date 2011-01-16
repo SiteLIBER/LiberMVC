@@ -4,11 +4,11 @@ using System.Globalization;
 /// <summary>
 /// extending String & Object via extension methods
 /// </summary>
-public static class StringExtensions
+public static class CustomExtensions
 {
 	static public int ToInt32(this object data)
 	{
-		int result = (data != null && data != "") ? Convert.ToInt32(data) : 0;
+		int result = (data != null) ? Convert.ToInt32(data) : 0;
 		return result;
 	}
 
@@ -22,5 +22,16 @@ public static class StringExtensions
 	{
 		double result = (data != null) ? Convert.ToDouble(data, CultureInfo.InvariantCulture) : 0;
 		return result;
+	}
+
+	
+	static public DateTime SetYear(this DateTime data)
+	{
+		return data.SetYear(DateTime.Now.Year);
+	}
+
+	static public DateTime SetYear(this DateTime data, int year)
+	{
+		return data.AddYears(year - data.Year);
 	}
 }

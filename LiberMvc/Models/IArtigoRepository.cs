@@ -5,16 +5,16 @@ namespace LiberMvc.Models
 {
 	public interface IArtigoRepository
 	{
-		List<Artigo> Artigos { get; }
-		List<Artigo> ArtigosHome { get; }
-		List<Artigo> ArtigosPublicados { get; }
-		List<Artigo> ArtigosDoUsuario(int id);
+		IQueryable<Artigo> Artigos { get; }
+		IQueryable<Artigo> ArtigosHome { get; }
+		IQueryable<Artigo> ArtigosPublicados { get; }
+		IQueryable<Artigo> ArtigosDoUsuario(int id);
 		Artigo GetArtigo(int id);
 
 		void Add(Artigo artigo);
 		void Delete(Artigo artigo);
 
 		void Save();
-
+		void Dispose();
 	}
 }

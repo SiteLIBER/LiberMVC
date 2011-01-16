@@ -92,6 +92,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\CustomExtensions.cs" />
+    <Compile Include="Helpers\PaginatedList.cs" />
     <Compile Include="Models\Artigo.cs" />
     <Compile Include="Models\ArtigoRepository.cs" />
     <Compile Include="Models\IArtigoRepository.cs" />
@@ -223,6 +224,7 @@
     <Content Include="Views\Shared\BottomMenu.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Artigo.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\DateTime.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\Lista.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Object.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\SimNao.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\String.ascx" />

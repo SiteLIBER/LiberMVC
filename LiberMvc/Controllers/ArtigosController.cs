@@ -25,9 +25,12 @@ namespace LiberMvc.Controllers
 		#endregion
 
 		#region GET: /Artigos/
-		public ActionResult Index()
+		public ActionResult Index(int? page) 
 		{
-			return View(rep.ArtigosPublicados);
+
+			var artigos = new PaginatedList<Artigo>(rep.ArtigosPublicados, page ?? 0, 5);
+			rep.Dispose();
+			return View(artigos);
 		}
 		#endregion 
 
@@ -139,10 +142,31 @@ namespace LiberMvc.Controllers
 		#endregion 
 
 		#region GET: /Artigos/Editor/5
-		public ActionResult Editor(int id)
+		[Auth(Roles="Editor")]
+		public ActionResult Editor(int id, int? page)
 		{
-			return View(rep.ArtigosDoUsuario(id));
+			var artigos = new PaginatedList<Artigo>(rep.ArtigosDoUsuario(id), page ?? 0, 5);
+			if (artigos.Count() > 0)
+			{
+				ViewData["Editor"] = artigos.FirstOrDefault().Editor.Nome;
+				rep.Dispose();
+				return View(artigos);
+			}
+			else
+			{
+				return View();
+			}
 		}
 		#endregion 
+	
+		#region Dispose
+		
+		protected override void Dispose(bool disposing)
+		{
+			rep.Dispose();
+			base.Dispose(disposing);
+		}
+
+		#endregion
 	}
 }

@@ -21,27 +21,26 @@ namespace LiberMvc.Models
 
 		#region Query Methods
 
-		public List<Artigo> Artigos
+		public IQueryable<Artigo> Artigos
 		{
-			get {
-				return db.Artigos
-					.OrderByDescending(a => a.PublicadoEm)
-					.ThenByDescending(a => a.ArtigoID).ToList();
-			}
+			get	{	return db.Artigos
+							.OrderByDescending(a => a.PublicadoEm)
+							.ThenByDescending(a => a.ArtigoID);
+			} 
 		}
-		public List<Artigo> ArtigosPublicados
+		public IQueryable<Artigo> ArtigosPublicados
 		{
-			get { return Artigos.Where(a => a.Publicado).ToList(); }
+			get { return Artigos.Where(a => a.Publicado); }
 		}
-		public List<Artigo> ArtigosHome
+		public IQueryable<Artigo> ArtigosHome
 		{
-			get { return ArtigosPublicados.Take(10).ToList(); }
+			get { return ArtigosPublicados.Take(10); }
 		}
-		public List<Artigo> ArtigosDoUsuario(int id)
+		public IQueryable<Artigo> ArtigosDoUsuario(int id)
 		{
 			return (Usuario.Logado.ID == id)
-				? Artigos.Where(a => a.EditorID == id).ToList()
-				: ArtigosPublicados.Where(a => a.EditorID == id).ToList();
+				? Artigos.Where(a => a.EditorID == id)
+				: ArtigosPublicados.Where(a => a.EditorID == id);
 		}
 		public Artigo GetArtigo(int id)
 		{
@@ -74,6 +73,14 @@ namespace LiberMvc.Models
 
 		#endregion
 
-		
+		#region Free Memory
+
+		public void Dispose()
+		{ 
+			db.Dispose();
+		}
+
+		#endregion
+
 	}
 }
