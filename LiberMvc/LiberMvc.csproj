@@ -149,6 +149,7 @@
     <Content Include="Content\images\youtube.png" />
     <Content Include="Content\styles\default.css" />
     <Content Include="Content\styles\destaque.css" />
+    <Content Include="Content\styles\forms.css" />
     <Content Include="Content\styles\menu.css" />
     <Content Include="Content\styles\Site.css" />
     <Content Include="Content\sunny\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />

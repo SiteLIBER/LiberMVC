@@ -46,6 +46,8 @@
 					</span>
 				</div>
 
+                <br class="clear" />
+
 				<div class="display-item">
 					<span class="display-label"></span>
 					<span class="display-field">
@@ -62,14 +64,17 @@
 					</span>
 				</div>
 
+                <br class="clear" />
+
 			    <div class="display-item">
-						<span class="display-label"></span>
-						<span class="display-field">
+					<span class="display-field">
 					    <input type="submit" value="Cadastrar" class="button" />
-						</span>
+					</span>
 			    </div>
 
 			<% } %>
+
+                <br class="clear" />
 			</div>
 
 		</div>

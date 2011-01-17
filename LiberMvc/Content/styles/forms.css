@@ -1,0 +1,101 @@
+﻿
+form {
+    margin: 0px;
+    padding: 0px;
+}
+
+form .editor-label, form .editor-field {
+    display: block;
+}
+
+form .editor-label {
+    padding-top: 10px;
+    
+    text-align: left;
+    font-weight: bold;
+    font-size: 13px;
+    border-top: 1px solid #ddd;
+}
+
+form .editor-field {
+    padding-bottom: 10px;
+}
+
+form .editor-field input[type="text"] {
+    width: 98%;
+}
+
+form .editor-field textarea {
+    width: 98%;
+    height: 200px;
+}
+
+form .editor-field textarea#Chamada {
+    height: 150px;
+}
+
+form .editor-field input.datePicker {
+    width: 100px;
+}
+
+/* ========================================================================== */
+
+#loginbox form .editor-label, #loginbox form .editor-field {
+    margin: 0px;
+    padding: 0px;
+    
+    border: none;
+}
+
+#loginbox form .editor-label {
+    float: left;
+    padding-top: 5px;
+
+    text-align: right;
+}
+
+#loginbox form .editor-field input {
+    margin-left: 5px;
+    float: left;
+    width: 150px;
+}
+
+#loginbox form .editor-field input#Lembrar {
+    width: auto;
+}
+
+/* ========================================================================== */
+
+#display-form form .display-label {
+    float: left;
+    clear: both;
+    display: block;
+    width: 150px;
+    height: 15px;
+    
+    text-align: right;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#display-form form .obr {
+    color: red;
+}
+
+#display-form form .display-field {
+    float: left;
+}
+
+#display-form form .display-field input {
+    margin: 0px 5px 5px 5px;
+    padding: 0px;
+    width: 300px;
+}
+
+#display-form form .display-field input.check-box {
+    width: 20px;
+}
+
+#display-form form input.button {
+    width: auto;
+}

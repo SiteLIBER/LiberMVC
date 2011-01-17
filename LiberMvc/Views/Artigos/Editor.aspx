@@ -6,14 +6,15 @@
 		<h1>Artigos - <%= ViewData["Editor"] %></h1>
 		<%= Html.DisplayForModel("Lista") %>
 	</div>
-	
+
     <% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>
     <p>
         <%= Html.ActionLink("Criar Novo", "Create", null, new { @class = "button" })%>
     </p>
     <% } %>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="RightContent" runat="server">
-<% Html.RenderPartial("RightMenu"); %>
+    <% Html.RenderPartial("RightMenu"); %>
 </asp:Content>
 

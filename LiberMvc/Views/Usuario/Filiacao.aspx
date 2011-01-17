@@ -27,7 +27,8 @@
         <h1>Filiação</h1>
 
         <p>Os Ítens em <strong style="color: red">vermelho</strong> são obrigatórios.</p>
-
+        
+        <div id="display-form">
 		<% using (Html.BeginForm())
 	        {%>
 			<%= Html.ValidationSummary(true) %>
@@ -243,11 +244,13 @@
 				</div>
 
             </fieldset>
-
-            <br />
+            
+            <br class="clear" />
 
             <div class="editor-item">
 				<input type="submit" value="Me Filiar" class="button" />
+            </div>
+            
             </div>
 		<% } %>
     </div>

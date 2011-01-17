@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <div class="panel">
-    <h2>Editar</h2>
+    <h1>Editar</h1>
 
 	<% using (Html.BeginForm()) { %>
         <%= Html.ValidationSummary(true) %>

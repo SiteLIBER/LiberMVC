@@ -7,11 +7,6 @@ html, body {
     background-color: #e5e5e5;
 }
 
-form {
-    margin: 0px;
-    padding: 0px;
-}
-
 img {
     border-width: 0px;
 }
@@ -36,8 +31,10 @@ br.clear {
 /* ========================================================================== */
 
 a.button, input.button {
-    padding: 5px 8px;
+    margin-left: 5px;
+    padding: 5px 8px !important;
 
+    cursor: pointer;
     color: #000;
     text-shadow: 1px 1px 1px #fff;
     text-align: center;
@@ -402,10 +399,10 @@ a.button:hover, input.button:hover {
     padding: 0px;
 }
 
-#loginbox input.button {
+/*#loginbox input.button {
     margin: 0px 5px 0px 0px;
     display: inline;
-}
+}*/
 
 /* ========================================================================== */
 

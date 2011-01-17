@@ -34,7 +34,7 @@
 .editor-label {
 	text-align: right;
 	display:inline-block;
-	width: 160px;
+	/*width: 160px;*/
 }
 
 .editor-field {
@@ -101,7 +101,7 @@ input[type="password"]
 
 /* Styles for editor and display helpers
 ----------------------------------------------------------*/
-.display-label, .editor-label, .display-field, .editor-field {
+/*.display-label, .editor-label, .display-field, .editor-field {
     margin: 0.1em 0;
 }
 
@@ -115,4 +115,4 @@ input[type="password"]
 
 .tri-state {
     width: 1em;
-}
+}*/
