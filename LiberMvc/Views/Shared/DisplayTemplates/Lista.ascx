@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<LiberMvc.PaginatedList<LiberMvc.Models.Artigo>>" %>
-<% foreach (var art in Model)
-	 { %>
+<% var route = Url.RequestContext.RouteData.Values; %>
+<% foreach (var art in Model)	{ %>
 <div class="article_resume">
 	<h2>
 		<%= Html.ActionLink(art.Titulo, "Details", "Artigos", new { id=art.ArtigoID }, null)%>
@@ -20,10 +20,10 @@
 <div class="actions">
 	<% if (Model.HasPreviousPage)
 		{ %>
-	<%= Html.ActionLink("<<< Anterior", "Editor", new {id = Url.RequestContext.RouteData.Values["id"], page = (Model.PageIndex - 1) }, new { @class="button" })%>
+	<%= Html.ActionLink("<<< Anterior", route["action"].ToString(), new { id = route["id"], page = (Model.PageIndex - 1) }, new { @class = "button" })%>
 	<% } %>
 	<% if (Model.HasNextPage)
 		{ %>
-	<%= Html.ActionLink("Próxima >>>", "Editor", new { id = Url.RequestContext.RouteData.Values["id"], page = (Model.PageIndex + 1) }, new { @class = "button" })%>
+	<%= Html.ActionLink("Próxima >>>", route["action"].ToString(), new { id = route["id"], page = (Model.PageIndex + 1) }, new { @class = "button" })%>
 	<% } %>
 </div>

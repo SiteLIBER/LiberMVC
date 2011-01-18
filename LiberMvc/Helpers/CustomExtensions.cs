@@ -8,7 +8,7 @@ public static class CustomExtensions
 {
 	static public int ToInt32(this object data)
 	{
-		int result = (data != null) ? Convert.ToInt32(data) : 0;
+		int result = (data != null && data.ToString() != "") ? Convert.ToInt32(data) : 0;
 		return result;
 	}
 

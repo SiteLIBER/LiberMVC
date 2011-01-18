@@ -147,15 +147,9 @@ namespace LiberMvc.Controllers
 		{
 			var artigos = new PaginatedList<Artigo>(rep.ArtigosDoUsuario(id), page ?? 0, 5);
 			if (artigos.Count() > 0)
-			{
 				ViewData["Editor"] = artigos.FirstOrDefault().Editor.Nome;
-				rep.Dispose();
-				return View(artigos);
-			}
-			else
-			{
-				return View();
-			}
+			rep.Dispose();
+			return View(artigos);
 		}
 		#endregion 
 	
