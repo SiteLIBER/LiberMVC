@@ -37,61 +37,61 @@
             <fieldset>
 			    <legend>Dados Pessoais</legend>
 
-				<div class="editor-item">
-					<span class="editor-label obr">
+				<div class="display-item">
+					<span class="display-label obr">
 						<%= Html.LabelFor(model => model.Nome) %>
 					</span>
-					<span class="editor-field">
+					<span class="display-field">
 						<%= Html.EditorFor(model => model.Nome) %>
 						<%= Html.ValidationMessageFor(model => model.Nome) %>
 					</span>
 				</div>
 
-				<div class="editor-item">
-					<span class="editor-label obr">
+				<div class="display-item">
+					<span class="display-label obr">
 						<%= Html.LabelFor(model => model.DataNasc) %>
 					</span>
-					<span class="editor-field">
+					<span class="display-field">
 						<%= Html.EditorFor(model => model.DataNasc) %>
 						<%= Html.ValidationMessageFor(model => model.DataNasc) %>
 					</span>
 				</div>
 
-				<div class="editor-item">
-					<span class="editor-label obr">
+				<div class="display-item">
+					<span class="display-label obr">
 						<%= Html.LabelFor(model => model.Naturalidade) %>
 					</span>
-					<span class="editor-field">
+					<span class="display-field">
 						<%= Html.EditorFor(model => model.Naturalidade) %>
 						<%= Html.ValidationMessageFor(model => model.Naturalidade) %>
 					</span>
 				</div>
 
-				<div class="editor-item">
-					<span class="editor-label obr">
+				<div class="display-item">
+					<span class="display-label obr">
 						<%= Html.LabelFor(model => model.NomePai) %>
 					</span>
-					<span class="editor-field">
+					<span class="display-field">
 						<%= Html.EditorFor(model => model.NomePai) %>
 						<%= Html.ValidationMessageFor(model => model.NomePai) %>
 					</span>
 				</div>
 
-				<div class="editor-item">
-					<span class="editor-label obr">
+				<div class="display-item">
+					<span class="display-label obr">
 						<%= Html.LabelFor(model => model.NomeMae) %>
 					</span>
-					<span class="editor-field">
+					<span class="display-field">
 						<%= Html.EditorFor(model => model.NomeMae) %>
 						<%= Html.ValidationMessageFor(model => model.NomeMae) %>
 					</span>
 				</div>
 
-				<div class="editor-item">
-					<span class="editor-label obr">
+				<div class="display-item">
+					<span class="display-label obr">
 						<%= Html.LabelFor(model => model.EstadoCivilID) %>
 					</span>
-					<span class="editor-field">
+					<span class="display-field">
 						<%= Html.DropDownListFor(model => model.EstadoCivilID, 
 							new SelectList(Model.ListaEstadoCivil, "EstadoCivilID", "Descricao"),
 							"Selecione o Estado Civil") %>
@@ -99,21 +99,21 @@
 					</span>
 				</div>
 
-				<div class="editor-item">
-					<span class="editor-label obr">
+				<div class="display-item">
+					<span class="display-label obr">
 						<%= Html.LabelFor(model => model.Profissao) %>
 					</span>
-					<span class="editor-field">
+					<span class="display-field">
 						<%= Html.EditorFor(model => model.Profissao) %>
 						<%= Html.ValidationMessageFor(model => model.Profissao) %>
 					</span>
 				</div>
 
-				<div class="editor-item">
-					<span class="editor-label obr">
+				<div class="display-item">
+					<span class="display-label obr">
 						<%= Html.LabelFor(model => model.GrauInstrucaoID) %>
 					</span>
-					<span class="editor-field">
+					<span class="display-field">
 						<%= Html.DropDownListFor(model => model.GrauInstrucaoID, 
 							new SelectList(Model.ListaGrauInstrucao, "GrauInstrucaoID", "Descricao"),
 							"Selecione o Grau de Instrução") %>
@@ -126,31 +126,31 @@
             <fieldset>
 				<legend>Contato</legend>
 
-				<div class="editor-item">
-					<span class="editor-label obr">
+				<div class="display-item">
+					<span class="display-label obr">
 						<%= Html.LabelFor(model => model.Endereco) %>
 					</span>
-					<span class="editor-field">
+					<span class="display-field">
 						<%= Html.EditorFor(model => model.Endereco) %>
 						<%= Html.ValidationMessageFor(model => model.Endereco) %>
 					</span>
 				</div>
 
-				<div class="editor-item">
-					<span class="editor-label obr">
+				<div class="display-item">
+					<span class="display-label obr">
 						<%= Html.LabelFor(model => model.Cidade) %>
 					</span>
-					<span class="editor-field">
+					<span class="display-field">
 						<%= Html.EditorFor(model => model.Cidade) %>
 						<%= Html.ValidationMessageFor(model => model.Cidade) %>
 					</span>
 				</div>
 
-				<div class="editor-item">
-					<span class="editor-label obr">
+				<div class="display-item">
+					<span class="display-label obr">
 						<%= Html.LabelFor(model => model.Estado) %>
 					</span>
-					<span class="editor-field">
+					<span class="display-field">
 						<%= Html.DropDownListFor(model => model.Estado,
 							new SelectList(Model.ListaEstados, "Key", "Value"),
 							" -- ") %>
@@ -158,21 +158,21 @@
 					</span>
 				</div>
 
-				<div class="editor-item">
-					<span class="editor-label obr">
+				<div class="display-item">
+					<span class="display-label obr">
 						<%= Html.LabelFor(model => model.CEP) %>
 					</span>
-					<span class="editor-field">
+					<span class="display-field">
 						<%= Html.EditorFor(model => model.CEP) %>
 						<%= Html.ValidationMessageFor(model => model.CEP) %>
 					</span>
 				</div>
 
-				<div class="editor-item">
-					<span class="editor-label obr">
+				<div class="display-item">
+					<span class="display-label obr">
 						<%= Html.LabelFor(model => model.Telefone) %>
 					</span>
-					<span class="editor-field">
+					<span class="display-field">
 						<%= Html.EditorFor(model => model.Telefone) %>
 						<%= Html.ValidationMessageFor(model => model.Telefone) %>
 					</span>
@@ -183,61 +183,61 @@
             <fieldset>
 				<legend>Dados Eleitorais</legend>
 
-				<div class="editor-item">
-					<div class="editor-label obr">
+				<div class="display-item">
+					<div class="display-label obr">
 						<%= Html.LabelFor(model => model.TituloEleitor) %>
 					</div>
-					<div class="editor-field">
+					<div class="display-field">
 						<%= Html.EditorFor(model => model.TituloEleitor) %>
 						<%= Html.ValidationMessageFor(model => model.TituloEleitor) %>
 					</div>
 				</div>
 
-				<div class="editor-item">
-					<div class="editor-label obr">
+				<div class="display-item">
+					<div class="display-label obr">
 						<%= Html.LabelFor(model => model.Zona) %>
 					</div>
-					<div class="editor-field">
+					<div class="display-field">
 						<%= Html.EditorFor(model => model.Zona) %>
 						<%= Html.ValidationMessageFor(model => model.Zona) %>
 					</div>
 				</div>
 
-				<div class="editor-item">
-					<div class="editor-label obr">
+				<div class="display-item">
+					<div class="display-label obr">
 						<%= Html.LabelFor(model => model.Secao) %>
 					</div>
-					<div class="editor-field">
+					<div class="display-field">
 						<%= Html.EditorFor(model => model.Secao) %>
 						<%= Html.ValidationMessageFor(model => model.Secao) %>
 					</div>
 				</div>
 
-				<div class="editor-item">
-					<div class="editor-label obr">
+				<div class="display-item">
+					<div class="display-label obr">
 						<%= Html.LabelFor(model => model.MunicipioUF) %>
 					</div>
-					<div class="editor-field">
+					<div class="display-field">
 						<%= Html.EditorFor(model => model.MunicipioUF) %>
 						<%= Html.ValidationMessageFor(model => model.MunicipioUF) %>
 					</div>
 				</div>
 
-				<div class="editor-item">
-					<div class="editor-label">
+				<div class="display-item">
+					<div class="display-label">
 						<%= Html.LabelFor(model => model.OutroPartido) %>
 					</div>
-					<div class="editor-field">
+					<div class="display-field">
 						<%= Html.EditorFor(model => model.OutroPartido) %>
 						<%= Html.ValidationMessageFor(model => model.OutroPartido) %>
 					</div>
 				</div>
-							
-                <div class="editor-item">
-					<div class="editor-label">
+                	
+                <div class="display-item">
+					<div class="display-label">
 						<%= Html.LabelFor(model => model.OutroPartidoQual) %>
 					</div>
-					<div class="editor-field">
+					<div class="display-field">
 						<%= Html.EditorFor(model => model.OutroPartidoQual) %>
 						<%= Html.ValidationMessageFor(model => model.OutroPartidoQual) %>
 					</div>
@@ -247,7 +247,7 @@
             
             <br class="clear" />
 
-            <div class="editor-item">
+            <div class="display-item">
 				<input type="submit" value="Me Filiar" class="button" />
             </div>
             

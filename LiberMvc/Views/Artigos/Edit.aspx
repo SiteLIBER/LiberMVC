@@ -1,9 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<LiberMvc.Models.Artigo>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+<script type="text/javascript" src="/Scripts/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="/Scripts/textedit.js"></script>
+
 <div class="panel">
     <h1>Editar</h1>
-
+  
+    <div id="editor-form">
 	<% using (Html.BeginForm()) { %>
         <%= Html.ValidationSummary(true) %>
 		<%= Html.EditorForModel("Artigo", Model) %>
@@ -12,7 +17,8 @@
 			<input type="submit" value="Enviar" class="button" />
         	<%= Html.ActionLink("Voltar a Lista", "Index", null, new { @class = "button" }) %>
         </p>
-     <% } %>
+    <% } %>
+    </div>
 </div>
 </asp:Content>
 
