@@ -57,8 +57,10 @@
 	</div>
 	<% } %>
 
-	<p>
+	<p class="actions">
 		<%= Html.ActionLink("Mais artigos", "Index", "Artigos", null, new { @class="button" }) %>
+
+        <br class="clear" />
 	</p>
 </div>
 <!-- ARTICLES END -->

@@ -18,6 +18,7 @@
 </div>
 <% } %>
 <div class="actions">
+
 	<% if (Model.HasPreviousPage)
 		{ %>
 	<%= Html.ActionLink("<<< Anterior", route["action"].ToString(), new { id = route["id"], page = (Model.PageIndex - 1) }, new { @class = "button" })%>
@@ -26,4 +27,5 @@
 		{ %>
 	<%= Html.ActionLink("Próxima >>>", route["action"].ToString(), new { id = route["id"], page = (Model.PageIndex + 1) }, new { @class = "button" })%>
 	<% } %>
+    
 </div>

@@ -36,13 +36,13 @@
 		<%= Html.EditorFor(model => model.PublicadoEm)%>
 		<%= Html.ValidationMessageFor(model => model.PublicadoEm) %>
 	</div>
-	<div class="editor-label">
+	<!-- <div class="editor-label">
 		<%= Html.LabelFor(model => model.CriadoEm) %>
 	</div>
 	<div class="editor-field">
 		<%= Html.EditorFor(model => model.CriadoEm)%>
 		<%= Html.ValidationMessageFor(model => model.CriadoEm) %>
-	</div>
+	</div> -->
 	<div class="editor-label">
 		<%= Html.LabelFor(model => model.Autor) %>
 	</div>
