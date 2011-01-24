@@ -34,7 +34,7 @@ namespace LiberMvc.Models
 		}
 		public IQueryable<Artigo> ArtigosHome
 		{
-			get { return ArtigosPublicados.Take(10); }
+			get { return ArtigosPublicados.Take(5); }
 		}
 		public IQueryable<Artigo> ArtigosDoUsuario(int id)
 		{

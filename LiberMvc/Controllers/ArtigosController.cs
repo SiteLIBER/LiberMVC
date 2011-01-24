@@ -16,29 +16,30 @@ namespace LiberMvc.Controllers
 		#region Repository
 		IArtigoRepository rep;
 
-		public ArtigosController() : this(new ArtigoRepository()) {	}
+		public ArtigosController() : this(new ArtigoRepository()) { }
 
 		public ArtigosController(IArtigoRepository repository)
-		{ 
-		  rep = repository;
+		{
+			rep = repository;
 		}
 		#endregion
 
 		#region GET: /Artigos/
-		public ActionResult Index(int? page) 
+		public ActionResult Index(int? page)
 		{
 
 			var artigos = new PaginatedList<Artigo>(rep.ArtigosPublicados, page ?? 0, 5);
 			rep.Dispose();
 			return View(artigos);
 		}
-		#endregion 
+		#endregion
 
 		#region GET: /Artigos/Details/5
 
 		public ActionResult Details(int id)
 		{
 			var art = rep.GetArtigo(id);
+			rep.Dispose();
 			return (art.Publicado || art.isOwnerOrAdmin) ? View(art) : View();
 		}
 
@@ -46,23 +47,25 @@ namespace LiberMvc.Controllers
 
 		#region GET: /Artigos/Create
 
-		[Auth(Roles="Editor")]
+		[Auth(Roles = "Editor")]
 		public ActionResult Create()
 		{
+			rep.Dispose();
 			return View();
 		}
 
-		#endregion 
-		
+		#endregion
+
 		#region POST: /Artigos/Create
 
-		[HttpPost, Auth(Roles="Editor")]
+		[HttpPost, Auth(Roles = "Editor")]
 		public ActionResult Create(Artigo form)
 		{
 			try
 			{
 				rep.Add(form);
 				rep.Save();
+				rep.Dispose();
 				return RedirectToAction("Details", new { id = form.ArtigoID });
 			}
 			catch
@@ -71,19 +74,20 @@ namespace LiberMvc.Controllers
 			}
 		}
 
-		#endregion 
+		#endregion
 
 		#region GET: /Artigos/Edit/5
 		[Auth(Roles = "Editor")]
 		public ActionResult Edit(int id)
 		{
 			var art = rep.GetArtigo(id);
+			//rep.Dispose();
 			if (art.isOwnerOrAdmin)
 				return View(art);
 			else
 				return View("AcessoNegado");
 		}
-		#endregion 
+		#endregion
 
 		#region POST: /Artigos/Edit/5
 
@@ -95,26 +99,28 @@ namespace LiberMvc.Controllers
 			{
 				UpdateModel(art);
 				rep.Save();
+				rep.Dispose();
 				return RedirectToAction("Details", new { id = id });
 			}
 			else
 				return View("AcessoNegado");
 		}
 
-		#endregion 
+		#endregion
 
 		#region GET: /Artigos/Delete/5
 		[Auth(Roles = "Editor")]
 		public ActionResult Delete(int id)
 		{
 			var art = rep.GetArtigo(id);
+			rep.Dispose();
 			if (art.isOwnerOrAdmin)
 				return View(art);
 			else
 				return View("AcessoNegado");
 		}
 
-		#endregion 
+		#endregion
 
 		#region POST: /Artigos/Delete/5
 
@@ -126,6 +132,7 @@ namespace LiberMvc.Controllers
 			{
 				rep.Delete(form);
 				rep.Save();
+				rep.Dispose();
 				return RedirectToAction("Index");
 			}
 			else
@@ -137,12 +144,14 @@ namespace LiberMvc.Controllers
 		#region GET: /Artigos/Home
 		public ActionResult Home()
 		{
-			return View(rep.ArtigosHome);
+			var artigos = rep.ArtigosHome;
+			//rep.Dispose();
+			return View(artigos);
 		}
-		#endregion 
+		#endregion
 
 		#region GET: /Artigos/Editor/5
-		[Auth(Roles="Editor")]
+		[Auth(Roles = "Editor")]
 		public ActionResult Editor(int id, int? page)
 		{
 			var artigos = new PaginatedList<Artigo>(rep.ArtigosDoUsuario(id), page ?? 0, 5);
@@ -151,16 +160,6 @@ namespace LiberMvc.Controllers
 			rep.Dispose();
 			return View(artigos);
 		}
-		#endregion 
-	
-		#region Dispose
-		
-		protected override void Dispose(bool disposing)
-		{
-			rep.Dispose();
-			base.Dispose(disposing);
-		}
-
 		#endregion
 	}
 }
