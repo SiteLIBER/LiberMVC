@@ -7,13 +7,12 @@
 		<h1>Artigos</h1>
 
 		<%= Html.DisplayForModel("Lista") %>
-	</div>
 
-    <% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>
-    <p>
-        <%= Html.ActionLink("Criar Novo", "Create", null, new { @class = "button" })%>
-    </p>
-    <% } %>
+        <% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>
+            <%= Html.ActionLink("Criar Novo", "Create", null, new { @class = "button" })%>
+        <% } %>
+    
+    </div>
 
 </asp:Content>
 

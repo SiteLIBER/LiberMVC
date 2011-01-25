@@ -6,7 +6,7 @@
 <script type="text/javascript" src="/Scripts/textedit.js"></script>
 
 <div class="panel">
-    <h1>Editar</h1>
+    <h1>Editar artigo</h1>
   
     <div id="editor-form">
 	<% using (Html.BeginForm()) { %>

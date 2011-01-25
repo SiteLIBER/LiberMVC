@@ -4,7 +4,7 @@ html, body {
 
     font: 14px Arial, Helvetica;
 
-    background-color: #e5e5e5;
+    background-color: /*#e5e5e5*/ #eee;
 }
 
 img {
@@ -31,8 +31,9 @@ br.clear {
 /* ========================================================================== */
 
 a.button, input.button {
-    margin-left: 5px;
+    margin: 0px 5px 0px 0px;
     padding: 5px 8px !important;
+    display: block;
 
     cursor: pointer;
     color: #000;
@@ -40,8 +41,8 @@ a.button, input.button {
     text-align: center;
     background-image: url("../images/button_back.png");
     background-repeat: repeat-x;
-    background-color: #ffd100;
-    border: 1px solid #c4a100;
+    background-color: /*#ffd100*/ #ccc;
+    border: 1px solid /*#c4a100*/ #666;
 }
 
 a.button:hover, input.button:hover {
@@ -65,19 +66,29 @@ a.button:hover, input.button:hover {
 
 .panel h1, .panel h1 a {
     margin: 0px 0px 5px 0px;
-    padding: 0px;
-
+    padding: 0px 0px 3px 0px;
+    
+    color: /*#5f5f5f*/ #444;
+    font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
-    color: #5f5f5f;
+    text-shadow: 0px 1px 0px #fff;
+    background-image: url("../images/panel_title_back.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
 }
 
 .panel .actions {
-    margin: 10px 0px 7px 0px;
-    padding: 10px 0px 0px 0px;
+    margin: 10px 0px 0px 0px !important;
+    padding: 5px !important;
     
-    border-top: 2px dotted #5f5f5f;
+    border: 1px solid #ccc;
+    background-image: url("../images/actions_back.png");
+    background-color: #ddd;
+}
+
+.panel .actions .button {
+    float: left;
 }
 
 /* ========================================================================== */
@@ -91,6 +102,7 @@ a.button:hover, input.button:hover {
     font-size: 30px;
     font-weight: normal;
     text-transform: none;
+    background: none;
 }
 
 .article .general_informations {
@@ -167,7 +179,7 @@ a.button:hover, input.button:hover {
 
     background-image: url("../images/header_back.png");
     background-repeat: repeat-x;
-    background-color: #e5e5e5;
+    background-color: /*#e5e5e5*/ #eee;
 }
 
 #header {
@@ -247,7 +259,7 @@ a.button:hover, input.button:hover {
 
 #main_content {
     margin: 0px;
-    padding: 5px 0px 5px 5px;
+    padding: 5px 0px 0px 5px;
 
     float: left;
     width: 695px;
@@ -399,10 +411,25 @@ a.button:hover, input.button:hover {
     padding: 0px;
 }
 
-/*#loginbox input.button {
-    margin: 0px 5px 0px 0px;
-    display: inline;
-}*/
+#loginbox #loginerror h3, #loginbox #loginerror h4 {
+    margin: 0px;
+    padding: 5px 15px;
+    border: 1px solid #d8000c;
+}
+
+#loginbox #loginerror h3 {
+    color: #d8000c;
+    border-bottom: none;
+    background-color: #ffbaba;
+}
+
+#loginbox #loginerror h4 {
+    color: #d8000c;
+    font-size: 13px;
+    font-weight: normal;
+    border-top: none;
+    background-color: #ffbaba;
+}
 
 /* ========================================================================== */
 
@@ -436,7 +463,7 @@ a.button:hover, input.button:hover {
     padding: 0px;
 
     font-size: 12px;
-    /*list-style-position: inside;*/
+    list-style-position: inside;
 }
 
 #index ul li, #index ol li {
