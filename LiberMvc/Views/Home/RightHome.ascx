@@ -29,3 +29,7 @@
 <%-- REDES SOCIAIS BEGIN --%>
 <% Html.RenderPartial("SocialBox"); %>
 <%-- REDES SOCIAIS END --%>
+
+<%-- FACEBOOK BEGIN --%>
+<% Html.RenderPartial("FacebookBox"); %>
+<%-- FACEBOOK END --%>

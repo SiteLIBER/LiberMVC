@@ -3,8 +3,7 @@
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-	<%=Application["Teste"] %>
-	<%-- <% Html.RenderPartial("Destaque"); %> --%>
+	<% Html.RenderPartial("Destaque"); %> 
 	<% Html.RenderAction( "Home", "Artigos"); %>
 	<% Html.RenderAction("Home", "Blog"); %>
 </asp:Content>

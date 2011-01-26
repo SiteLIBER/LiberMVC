@@ -6,6 +6,13 @@ namespace LiberMvc.Models
 {
 	public partial class Usuario
 	{
+
+		//public void TipoUsuario()
+		//{
+ 
+		//}
+
+		#region Logado
 		public static class Logado
 		{
 			public static int ID { get { return HttpContext.Current.User.Identity.Name.ToInt32(); } }
@@ -24,5 +31,6 @@ namespace LiberMvc.Models
 			public static bool isAdmin { get { return Roles == "Admin"; } }
 			public static bool isEditor { get { return Roles == "Editor"; } }
 		}
+		#endregion
 	}
 }

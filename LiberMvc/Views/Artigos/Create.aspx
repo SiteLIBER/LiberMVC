@@ -1,7 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<LiberMvc.Models.Artigo>" %>
 
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 <script type="text/javascript" src="/Scripts/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
@@ -22,7 +20,6 @@
     <% } %>
     </div>
 </div>
-
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="HeadContent" runat="server">

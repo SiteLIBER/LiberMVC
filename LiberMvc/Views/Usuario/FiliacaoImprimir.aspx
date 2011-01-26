@@ -2,6 +2,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+<script type="text/javascript">
+	$(function () {
+		window.print();
+		window.close();
+	});
+</script>
 	<div class="panel">
 
     <h1>Filiação - Confirme e Imprima</h1>

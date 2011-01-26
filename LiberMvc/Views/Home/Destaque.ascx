@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
-
+<%--
 <div id="destaque">
     <div class="panel"> 
         <h1>LIBER no Fórum da Liberdade</h1>
@@ -28,4 +28,4 @@
 
         <br class="clear" />
     </div>
-</div>
+</div>--%>
