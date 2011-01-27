@@ -479,9 +479,21 @@ a.button:hover, input.button:hover {
 /* ========================================================================== */
 
 #post p {
+    margin-left: 10px;
+
     text-align: justify;
     font-size: 13px;
     color: #333333;
+}
+
+#post pre {
+    margin-left: 10px;
+    padding: 5px;
+    
+    white-space: normal;
+    color: #333333;
+    background-color: #ddd;
+    border: 1px solid #bbb;
 }
 
 #post p.top {

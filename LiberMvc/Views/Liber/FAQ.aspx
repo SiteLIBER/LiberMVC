@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-	<div class="panel" id="doacao">
+	<div class="panel" id="post">
 		<h1>Perguntas Frequentes</h1>
 
         <p>
