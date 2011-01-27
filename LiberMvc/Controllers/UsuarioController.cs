@@ -88,12 +88,6 @@ namespace LiberMvc.Controllers
 			return View(rep.PegarFiliado());
 		}
 		
-		[Auth]
-		public ActionResult Filiacao2()
-		{
-			return View(rep.PegarFiliado());
-		}
-
 		[Auth, HttpPost]
 		public ActionResult Filiacao(FiliacaoModel form)
 		{
@@ -107,8 +101,26 @@ namespace LiberMvc.Controllers
 			UpdateModel(usuario);
 			rep.Salvar();
 
-			return RedirectToAction("Filiacao2");
+			return RedirectToAction("FiliacaoConfirma");
+		}
+		#endregion
+
+		#region FiliacaoConfirma
+		[Auth]
+		public ActionResult FiliacaoConfirma()
+		{
+			return View(rep.PegarFiliado());
+		}
+		#endregion
+
+		#region FiliacaoImprimir
+		[Auth]
+		public ActionResult FiliacaoImprimir()
+		{
+			return View(rep.PegarFiliado());
 		}
 		#endregion
 	}
+
+
 }

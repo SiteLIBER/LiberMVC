@@ -9,6 +9,9 @@ namespace LiberMvc.Models
 	public class FiliacaoModel
 	{
 		// Dados Pessoais
+		[ScaffoldColumn(false)]
+		public string UsuarioID { get; set; }
+
 		[DisplayName("Nome Completo:"), StringLength(250), Required(ErrorMessage = "*")]
 		public string Nome { get; set; }
 

@@ -79,6 +79,7 @@
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LiberController.cs" />
+    <Compile Include="Controllers\PagSeguroController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Helpers\CustomAttributes.cs" />
     <Compile Include="Default.aspx.cs">
@@ -250,9 +251,10 @@
     <Content Include="Views\Shared\UserBox.ascx" />
     <Content Include="Views\Shared\VideoBox.ascx" />
     <Content Include="Views\Usuario\Cadastro.aspx" />
+    <Content Include="Views\Usuario\FiliacaoImprimir.aspx" />
     <Content Include="Views\Usuario\EmailExiste.aspx" />
     <Content Include="Views\Usuario\Filiacao.aspx" />
-    <Content Include="Views\Usuario\Filiacao2.aspx" />
+    <Content Include="Views\Usuario\FiliacaoConfirma.aspx" />
     <Content Include="Views\Usuario\NaoEncontrado.aspx" />
     <Content Include="Views\Usuario\Perfil.aspx" />
     <Content Include="Views\Usuario\RightCadastro.ascx" />

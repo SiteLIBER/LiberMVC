@@ -93,12 +93,11 @@ namespace LiberMvc.Controllers
 		{
 			return View();
 		}
-		
-		//[Auth(Roles = "Filiado, Admin")]
-		//public ActionResult Contas()
-		//{
-		//  return View();
-		//}
+
+		public ActionResult Contas()
+		{
+			return View();
+		}
 
 	}
 }
