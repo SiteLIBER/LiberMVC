@@ -82,11 +82,12 @@ namespace LiberMvc.Controllers
 		public ActionResult LogOff()
 		{
 			FormsAuthentication.SignOut();
+			Session.Clear();
 
 			if (Request.IsAjaxRequest())
-				return JavaScript("window.location='" + Request.UrlReferrer.OriginalString + "';"); //View("LoginBox");
+				return JavaScript("window.location='/';");
 			else
-				return Redirect(Request.UrlReferrer.OriginalString);
+				return RedirectToRoute(new { controller = "Home", action = "Index" });
 		}
 		#endregion
 

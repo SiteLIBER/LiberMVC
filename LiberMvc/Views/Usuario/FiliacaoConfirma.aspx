@@ -4,16 +4,20 @@
 
 <script type="text/javascript">
 	$(function () {
-		$("#imprimir").click(function () {		
-			var url = '<%= Url.Action("FiliacaoImprimir") %>';
-			window.open(url, "filiacao_imprimir", "");
+		$("#imprimir").click(function () {
+			setTimeout(imprimir, 500);
 		});
 
-		$("#anualidade").click(function () {		
+		$("#anualidade").click(function () {
 			var url = '<%= Url.Action("Anualidade") %>';
 			window.location = url;
 		});
 	});
+
+	function imprimir() {
+		var url = '<%= Url.Action("FiliacaoImprimir") %>';
+		window.open(url, "filiacao_imprimir", "");
+	}
 
 </script>
 	<div class="panel">

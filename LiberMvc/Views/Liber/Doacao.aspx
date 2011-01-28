@@ -8,6 +8,7 @@
 		<form target="pagseguro" action="https://pagseguro.uol.com.br/checkout/doacao.jhtml" method="post">
 			<input type="hidden" name="email_cobranca" value="brunopaludo@hotmail.com" />
 			<input type="hidden" name="moeda" value="BRL" />
+			<input type="hidden" name="ref_transacao" value="<%= Model %>" />
 			<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/205x30-doar-azul.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
 		</form>
 		<p></p>
