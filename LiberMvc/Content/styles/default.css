@@ -67,8 +67,8 @@ a.button:hover, input.button:hover {
 .panel h1, .panel h1 a {
     margin: 0px 0px 5px 0px;
     padding: 0px 0px 3px 0px;
-    
-    color: /*#5f5f5f*/ #444;
+
+    color: #444;
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -481,7 +481,6 @@ a.button:hover, input.button:hover {
 #post p {
     margin-left: 10px;
 
-    text-align: justify;
     font-size: 13px;
     color: #333333;
 }
