@@ -14,6 +14,7 @@
 			window.location = url;
 		});
 	});
+
 </script>
 	<div class="panel">
 	
