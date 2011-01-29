@@ -5,7 +5,8 @@
 <script type="text/javascript">
 	$(function () {
 		$("#imprimir").click(function () {
-			setTimeout(imprimir, 500);
+			var url = '<%= Url.Action("FiliacaoImprimir") %>';
+			window.open(url, "filiacao_imprimir", "");
 		});
 
 		$("#anualidade").click(function () {
@@ -13,12 +14,6 @@
 			window.location = url;
 		});
 	});
-
-	function imprimir() {
-		var url = '<%= Url.Action("FiliacaoImprimir") %>';
-		window.open(url, "filiacao_imprimir", "");
-	}
-
 </script>
 	<div class="panel">
 	

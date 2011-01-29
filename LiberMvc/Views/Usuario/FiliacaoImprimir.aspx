@@ -2,9 +2,14 @@
 
 <script type="text/javascript">
 	$(function () {
+		setTimeout(imprimir, 500);
+	});
+
+	function imprimir() {
 		window.print();
 		window.close();
-	});
+	}
+
 </script>
 <div class="panel">
 	<h1>Filiação - Confirme e Imprima</h1>
