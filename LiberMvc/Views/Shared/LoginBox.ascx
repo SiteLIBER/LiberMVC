@@ -2,7 +2,7 @@
 
   <h1>Login</h1>
 
-	<div class="editor-item" id="loginerror"></div>	
+	<div class="editor-item" id="loginerror"></div>
 	
 	<% Html.EnableClientValidation(); %>
 
