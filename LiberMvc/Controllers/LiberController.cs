@@ -66,7 +66,7 @@ namespace LiberMvc.Controllers
 
 		public ActionResult Doacao()
 		{
-			return View();
+			return View(LiberMvc.Models.Usuario.Logado.ID);
 		}
 
 		public ActionResult Divulgacao()

@@ -4,12 +4,12 @@
 
 <script type="text/javascript">
 	$(function () {
-		$("#imprimir").click(function () {		
+		$("#imprimir").click(function () {
 			var url = '<%= Url.Action("FiliacaoImprimir") %>';
 			window.open(url, "filiacao_imprimir", "");
 		});
 
-		$("#anualidade").click(function () {		
+		$("#anualidade").click(function () {
 			var url = '<%= Url.Action("Anualidade") %>';
 			window.location = url;
 		});
