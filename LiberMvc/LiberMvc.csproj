@@ -157,6 +157,7 @@
     <Content Include="Content\styles\forms.css" />
     <Content Include="Content\styles\menu.css" />
     <Content Include="Content\styles\Site.css" />
+    <Content Include="Content\styles\filiacao_print.css" />
     <Content Include="Content\sunny\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
     <Content Include="Content\sunny\images\ui-bg_flat_30_cccccc_40x100.png" />
     <Content Include="Content\sunny\images\ui-bg_flat_50_5c5c5c_40x100.png" />

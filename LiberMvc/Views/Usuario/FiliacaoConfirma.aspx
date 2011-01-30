@@ -20,8 +20,8 @@
 		<h1>Filiação - Confirme e Imprima</h1>
 			
 			<p>
-                Confira seus dados e imprima a ficha. Assine
-                e entregue para o representante do partido em alguma reinião, ou envie para:
+                Confira seus dados e imprima a ficha de filiação. Assine
+                e entregue para o representante do partido em alguma reunião, ou envie para:
             </p>
 
             <p>

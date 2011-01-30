@@ -1,0 +1,86 @@
+﻿body {
+    margin: 10px;
+
+    font-size: 14px;
+    font-family: Verdana, Helvetica, Verdana;
+}
+
+fieldset {
+    margin-bottom: 5px;
+    padding: 5px;
+    
+    border: 1px solid #000;
+}
+
+fieldset legend {
+    margin: 0px;
+    padding: 5px 10px;
+    display: block;
+    
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+fieldset .editor-item {
+    clear: both;
+}
+
+fieldset .editor-item .editor-label {
+    margin: 0px 5px 1px 0px;
+    padding: 3px;
+    float: left;
+    display: block;
+    width: 200px;
+    
+    font-weight: bold;
+    text-align: right;
+    background-color: #ddd;
+}
+
+.clear {
+    margin: 0px;
+    padding: 0px;
+    clear: both;
+    display: block;
+    height: 0px;
+}
+
+.termo {
+    margin: 0px;
+    padding: 20px;
+    
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+.termo .data {
+    padding-right: 20%;
+}
+
+#post fieldset .editor-item .editor-field {
+    margin-bottom: 1px;
+    padding: 3px;
+    float: left;
+    display: block;
+}
+
+#head {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+
+    border-bottom: 3px solid #000;
+}
+
+#head h1#logo {
+    float: left;
+}
+
+#head h2 {
+    margin-top: 85px;
+    float: right;
+    
+    font-size: 15px;
+    text-align: right;
+    text-transform: uppercase;
+}
+    
