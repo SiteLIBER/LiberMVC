@@ -492,9 +492,21 @@ a.button:hover, input.button:hover {
     padding: 5px;
     
     white-space: normal;
-    color: #333333;
+    color: #333;
     background-color: #ddd;
     border: 1px solid #bbb;
+}
+
+#post address {
+    margin-left: 10px;
+    padding: 5px;
+    
+    color: #000;
+    background-color: #fbf9e6;
+    border: 1px solid #e5d324;
+    background-image: url("../images/mail.png");
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 #post p.top {

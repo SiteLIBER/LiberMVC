@@ -24,10 +24,12 @@
                 e entregue para o representante do partido em alguma reunião, ou envie para:
             </p>
 
-            <p>
-                NOME<br />
-				ENDERECO
-            </p>
+            <address>
+                Juliano Torres<br />
+                Av. Bias Fortes, n984/102, Lourdes<br />
+                Belo Horizonte - MG<br />
+                CEP 30170011<br />
+            </address>
 
 			<p>
 				A anualidade deve ser paga, para que o filiado tenha direito a voto:
