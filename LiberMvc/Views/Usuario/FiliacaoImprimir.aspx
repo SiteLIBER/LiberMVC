@@ -3,7 +3,7 @@
 <script type="text/javascript">
 	function imprimir() {
 		window.print();
-		window.close();
+		setTimeout(window.close(), 800);
 	}
 	setTimeout(imprimir, 800);
 </script>

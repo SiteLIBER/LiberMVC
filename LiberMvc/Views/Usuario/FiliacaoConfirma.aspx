@@ -1,41 +1,35 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<LiberMvc.Models.FiliacaoModel>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+	<script type="text/javascript">
+		$(function () {
+			$("#imprimir").click(function () {
+				var url = '<%= Url.Action("FiliacaoImprimir") %>';
+				window.open(url, "filiacao_imprimir", "");
+			});
 
-    <script type="text/javascript">
-	    $(function () {
-		    $("#imprimir").click(function () {
-			    var url = '<%= Url.Action("FiliacaoImprimir") %>';
-			    window.open(url, "filiacao_imprimir", "");
-		    });
-
-		    $("#anualidade").click(function () {
-			    var url = '<%= Url.Action("Anualidade") %>';
-			    window.location = url;
-		    });
-	    });
-    </script>
-
+			$("#anualidade").click(function () {
+				var url = '<%= Url.Action("Anualidade") %>';
+				window.location = url;
+			});
+		});
+	</script>
 	<div class="panel" id="post">
 		<h1>Filiação - Confirme e Imprima</h1>
-			
-			<p>
-                Confira seus dados e imprima a ficha de filiação. Assine
-                e entregue para o representante do partido em alguma reunião, ou envie para:
-            </p>
-
-            <address>
-                Juliano Torres<br />
-                Av. Bias Fortes, n984/102, Lourdes<br />
-                Belo Horizonte - MG<br />
-                CEP 30170011<br />
-            </address>
-
-			<p>
-				A anualidade deve ser paga, para que o filiado tenha direito a voto:
-			</p>
-			
-<%--
+		<p>
+			Confira seus dados e imprima a ficha de filiação. 
+			Assine e entregue para o representante do partido em alguma reunião, ou envie para:
+		</p>
+		<address>
+			<b>Juliano Torres</b><br />
+			Av. Bias Fortes, n984/102, Lourdes<br />
+			Belo Horizonte - MG<br />
+			30170-011
+		</address>
+		<p>
+			A anualidade deve ser paga, para que o filiado tenha direito a voto:
+		</p>
+		<%--
 		<input id="anualidade" type="button" class="button" value="Pagar Anualidade" />
 		<form target="pagseguro" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add" method="post">
 		<input type="hidden" name="receiverEmail" value="brunopaludo@hotmail.com" />
@@ -46,26 +40,23 @@
 		<input type="hidden" name="itemAmount" value="100.00" />
 		<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/205x30-pagar-azul.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
 		</form>
---%>
+		--%>
 		<form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/checkout/checkout.jhtml">
-		    <input type="hidden" name="email_cobranca" value="brunopaludo@hotmail.com" />
-		    <input type="hidden" name="tipo" value="CP" />
-    <%--	<input type="hidden" name="moeda" value="BRL">--%>
-		    <input type="hidden" name="item_id_1" value="1" />
-		    <input type="hidden" name="item_descr_1" value="Anualidade Liber" />
-		    <input type="hidden" name="item_quant_1" value="1" />
-		    <input type="hidden" name="item_valor_1" value="10000" />
-    <%--	<input type="hidden" name="item_frete_1" value="0">
+		<input type="hidden" name="email_cobranca" value="brunopaludo@hotmail.com" />
+		<input type="hidden" name="tipo" value="CP" />
+		<%--	<input type="hidden" name="moeda" value="BRL">--%>
+		<input type="hidden" name="item_id_1" value="1" />
+		<input type="hidden" name="item_descr_1" value="Anualidade Liber" />
+		<input type="hidden" name="item_quant_1" value="1" />
+		<input type="hidden" name="item_valor_1" value="10000" />
+		<%--	<input type="hidden" name="item_frete_1" value="0">
 		    <input type="hidden" name="item_peso_1" value="0">
 		    <input type="hidden" name="tipo_frete" value="EN">--%>
-		    <input type="hidden" name="ref_transacao" value="<%= Model.UsuarioID %>" />
-	
-		    <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/205x30-pagar-azul.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+		<input type="hidden" name="ref_transacao" value="<%= Model.UsuarioID %>" />
+		<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/205x30-pagar-azul.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
 		</form>
-
 		<fieldset>
 			<legend>Dados Pessoais</legend>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Nome) %>
@@ -74,7 +65,6 @@
 					<%= Html.DisplayFor(model => model.Nome) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.DataNasc) %>
@@ -83,7 +73,6 @@
 					<%= Html.DisplayFor(model => model.DataNasc) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Naturalidade) %>
@@ -92,7 +81,6 @@
 					<%= Html.DisplayFor(model => model.Naturalidade) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.NomePai) %>
@@ -101,7 +89,6 @@
 					<%= Html.DisplayFor(model => model.NomePai) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.NomeMae) %>
@@ -110,7 +97,6 @@
 					<%= Html.DisplayFor(model => model.NomeMae) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.EstadoCivilID) %>
@@ -119,7 +105,6 @@
 					<%= Html.Label(Model.ListaEstadoCivil.FirstOrDefault(l => l.EstadoCivilID == Model.EstadoCivilID).Descricao) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Profissao) %>
@@ -128,7 +113,6 @@
 					<%= Html.DisplayFor(model => model.Profissao) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.GrauInstrucaoID) %>
@@ -137,12 +121,9 @@
 					<%= Html.Label(Model.ListaGrauInstrucao.FirstOrDefault(l=> l.GrauInstrucaoID == Model.GrauInstrucaoID).Descricao) %>
 				</span>
 			</div>
-
-        </fieldset>
-
-        <fieldset>
+		</fieldset>
+		<fieldset>
 			<legend>Contato</legend>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Endereco) %>
@@ -151,7 +132,6 @@
 					<%= Html.DisplayFor(model => model.Endereco) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Cidade) %>
@@ -160,7 +140,6 @@
 					<%= Html.DisplayFor(model => model.Cidade) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Estado) %>
@@ -169,7 +148,6 @@
 					<%= Html.Label(Model.ListaEstados[Model.Estado]) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.CEP) %>
@@ -178,7 +156,6 @@
 					<%= Html.DisplayFor(model => model.CEP) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Telefone) %>
@@ -187,12 +164,9 @@
 					<%= Html.DisplayFor(model => model.Telefone) %>
 				</span>
 			</div>
-            
-        </fieldset>
-
-        <fieldset>
+		</fieldset>
+		<fieldset>
 			<legend>Dados Eleitorais</legend>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.TituloEleitor) %>
@@ -201,7 +175,6 @@
 					<%= Html.DisplayFor(model => model.TituloEleitor) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Zona) %>
@@ -210,7 +183,6 @@
 					<%= Html.DisplayFor(model => model.Zona) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Secao) %>
@@ -219,7 +191,6 @@
 					<%= Html.DisplayFor(model => model.Secao) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.MunicipioUF) %>
@@ -228,7 +199,6 @@
 					<%= Html.DisplayFor(model => model.MunicipioUF) %>
 				</span>
 			</div>
-
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.OutroPartido) %>
@@ -237,9 +207,8 @@
 					<%= Html.DisplayFor(model => model.OutroPartido) %>
 				</span>
 			</div>
-			
-            <% if (Model.OutroPartido) { %>		
-            <div class="editor-item">
+			<% if (Model.OutroPartido) { %>
+			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.OutroPartidoQual) %>
 				</span>
@@ -247,19 +216,14 @@
 					<%= Html.DisplayFor(model => model.OutroPartidoQual) %>
 				</span>
 			</div>
-            <% } %>
-
-        </fieldset>
-
-        <p class="actions">
+			<% } %>
+		</fieldset>
+		<p class="actions">
 			<input id="imprimir" type="button" class="button" value="Imprimir" />
-            <br class="clear" />
-        </p>
-
+			<br class="clear" />
+		</p>
 	</div>
-
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="RightContent" runat="server">
 	<% Html.RenderPartial("RightMenu", null); %>
 </asp:Content>
