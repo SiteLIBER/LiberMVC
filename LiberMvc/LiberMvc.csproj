@@ -142,6 +142,7 @@
     <Content Include="Content\images\liber_footer.png" />
     <Content Include="Content\images\liber_logo.png" />
     <Content Include="Content\images\logo_print.png" />
+    <Content Include="Content\images\mail.png" />
     <Content Include="Content\images\megaphone_ico.png" />
     <Content Include="Content\images\menu_back.png" />
     <Content Include="Content\images\menu_back_hover.png" />
