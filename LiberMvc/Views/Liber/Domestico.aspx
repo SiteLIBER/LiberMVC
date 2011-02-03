@@ -9,14 +9,14 @@
     	    <h1>Índice</h1>
 
             <ol>
-			    <li><a href="#">Energia</a></li>
-                <li><a href="#">Poluição</a></li>
-                <li><a href="#">Proteção ao Consumidor</a></li>
-                <li><a href="#">Educação</a></li>
-                <li><a href="#">População</a></li>
-                <li><a href="#">Transporte</a></li>
-                <li><a href="#">Pobreza e desemprego</a></li>
-                <li><a href="#">Leis Trabalhistas (CLTs)</a></li>
+			    <li><a href="#Energia">Energia</a></li>
+                <li><a href="#Poluicao">Poluição</a></li>
+                <li><a href="#ProtecaoAoConsumidor">Proteção ao Consumidor</a></li>
+                <li><a href="#Educacao">Educação</a></li>
+                <li><a href="#Populacao">População</a></li>
+                <li><a href="#Transporte">Transporte</a></li>
+                <li><a href="#PobrezaEDesemprego">Pobreza e desemprego</a></li>
+                <li><a href="#LeisTrabalhistasCLTs">Leis Trabalhistas (CLTs)</a></li>
             <li><a href="#PrevidenciaSocial">Previd&ecirc;ncia Social</a></li>
             <li><a href="#Saude">Sa&uacute;de</a></li>
             <li><a href="#UsoDosRecursos">Uso dos recursos naturais</a></li>
