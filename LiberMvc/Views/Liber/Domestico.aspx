@@ -17,6 +17,12 @@
                 <li><a href="#">Transporte</a></li>
                 <li><a href="#">Pobreza e desemprego</a></li>
                 <li><a href="#">Leis Trabalhistas (CLTs)</a></li>
+            <li><a href="#PrevidenciaSocial">Previd&ecirc;ncia Social</a></li>
+            <li><a href="#Saude">Sa&uacute;de</a></li>
+            <li><a href="#UsoDosRecursos">Uso dos recursos naturais</a></li>
+            <li><a href="#Agricultura">Agricultura</a></li>
+            <li><a href="#LeisEleitorais">Leis eleitorais</a></li>
+            <li><a href="#Secessao">Secess&atilde;o</a>   </li>
             </ol>
     
 		    <h1>Ideias</h1>
@@ -30,10 +36,7 @@
 	    </div>
        
         <p>
-        	Os problemas atuais em áreas como energia, poluição, saúde, cidades em
-            decadência e pobreza não são solucionados, mas causados, pelo governo. O assistencialismo,
-            supostamente desenvolvido para ajudar os pobres, é na verdade uma carga crescente e parasita
-            carregada por todas as pessoas produtivas, e prejudica, ao invés de beneficiar, os pobres.
+ Os problemas atuais em áreas como energia, poluição, saúde, cidades em decadência e pobreza não são solucionados, mas causados pelo governo. O assistencialismo, supostamente desenvolvido para ajudar os pobres, é na verdade uma carga crescente e parasita carregada por todas as pessoas produtivas, e prejudica, ao invés de beneficiar, os pobres.
         </p>
         
         <h2><a name="Energia">1. Energia</a></h2>
@@ -41,38 +44,15 @@
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         
         <p>
-        	<strong>A questão:</strong> O controle do governo sobre a indústria de entergia resultou
-            em altos preços, apagões, falta de competição, falta de exploração e falta de
-            desenvolvimento de fontes alternativas de energia, e responsabilidade deslocada por
-            dano no mercado energético, além de dar vantagem no mercado existente àqueles com acesso político.
+        	<strong>A questão:</strong> O controle do governo sobre a indústria de entergia resultou em altos preços, apagões, falta de competição, falta de exploração e falta de desenvolvimento de fontes alternativas de energia, além de dar vantagem no mercado existente àqueles com acesso político.
         </p>
         
         <p>
-        	<strong>O princípio:</strong> Defendemos a criação de um livre mercado de
-            petróleo instituindo direito de propriedade sobre petróleo subterrâneo e condenamos
-            todos os controles pelo governo sobre a saída na indústria de petróleo. Qualquer indústria
-            de energia nuclear deve ser merecedora do teste do livre mercado. Completa responsabilidade – não
-            agências do governo – devem regular a força nuclear. Nos opomos ao controle governamental
-            sobre o preço da energia, alocação e produção. Nos opomos à criação de uma agência de mobilização
-            na area de energia, que iria ser detentora de poderes ditatoriais para substituir os processos legais.
+        	<strong>O princípio:</strong> Defendemos a criação de um livre mercado de petróleo instituindo direito de propriedade sobre petróleo subterrâneo e condenamos todos os controles pelo governo sobre a saída na indústria de petróleo. A indústria de energia nuclear deve ser testada em livre mercado. Nos opomos ao controle governamental sobre o preço da energia, alocação e produção. Nos opomos à criação de uma agência de mobilização na área de energia.
 		</p>
         
         <p>
-        	<strong>Soluções:</strong> Todos os recursos enérgicos possuídos pelo governo devem ser
-            privatizados. Energia nuclear deve ser desnacionalizada e as posses na indústria transferidas
-            para o setor privado. Nos opomos a todos os subsídios do governo para pesquisa, desenvolvimento
-            e operação na área de energia. Nos opomos a todas as participações diretas e indiretas na indústria
-            de energia nuclear, incluindo subsídios, pesquisa e fundos para desenvolvimento, empréstimos garantidos,
-            subsídios para jogar o lixo, e agências federais de enriquecimento de urânio.
-        </p>
-        
-        <p>
-        	<strong>Ações transitórias:</strong> Defendemos o fim das agências regulatórias de energia,
-            sem sua transferência para qualquer outro ponto no governo. Nos opomos a todos os esquemas
-            de conservação do governo através do uso de impostos, subsídios ou regulação. Nos opomos ao
-            sistema estratégico de armazenamento de petróleo, ou qualquer tentativa de forçar auto-suficiência
-            em petróleo, qualquer extensão de leis de preferência de carga para importação e qualquer tentativa de
-            aumentar impostos sobre petróleo ou a imposição de quotas de petróleo.
+        	<strong>Soluções:</strong> Todos os recursos enérgicos possuídos pelo governo devem ser privatizados. Energia nuclear deve ser desnacionalizada e as posses na indústria transferidas para o setor privado. Fim de todas as participações diretas e indiretas na indústria de energia nuclear, incluindo subsídios, pesquisa e fundos para desenvolvimento, empréstimos garantidos, subsídios para jogar o lixo, e agências federais, civis e militares, de enriquecimento de urânio. Privatização de todas as empresas públicas de prospecção e distribuição de petróleo e derivados e qualquer tentativa de aumentar impostos sobre petróleo ou a imposição de quotas de petróleo. A abertura do mercado deverá, por si só, gerar competição para busca de novas fontes de energia, inclusive a renovável.
         </p>
         
         <h2><a name="Poluicao">2. Poluição</a></h2>
@@ -80,34 +60,15 @@
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         
         <p>
-        	<strong>A questão:</strong> Os problemas com o depósito de lixo tóxico foram criados pelas
-            políticas do governo que separam responsabilidade de propriedade. Os princípios legais atuais,
-            particulamente o conceito falso e injusto de ‘propriedade pública’, bloqueiam a privatização do
-            uso do meio ambiente e por consequência bloqueiam soluções de controvérsias sobre o uso de recursos.
-            Condenamos políticas de taxar todas as indústrias químicas da mesma forma independentemente de sua
-            conduta. Tais impostos são subsídios para empresas irresponsáveis e despesas para as responsáveis.
+        	<strong>A questão:</strong> A poluição do meio-ambiente é vista hoje sob uma perspectiva socialista e estatista, onde o meio-ambiente é um bem “público” não passível de apropriação e os danos causados devem ser reparados mediante indenização ao Estado, que nunca repassa os valores para o meio-ambiente degradado.
         </p>
         
         <p>
-        	<strong>O princípio:</strong> Poluição da propriedade alheia é uma violação dos direitos individuais.
-            Responsabilidades rígidas, não agências do governo e padrões abritários do governo, devem
-            regular a poluição. Acusar que uma propriedade está abandonada não absolve da
-            responsabilidade pelas ações desencadeadas.
+        	<strong>O princípio:</strong> A defesa da vida, liberdade e propriedade privada é o único papel legítimo do Estado. A publicização do meio-ambiente acarreta em ineficiência na sua proteção e impede que os verdadeiros atingidos pela poluição receba a justa indenização pela violação da sua propriedade privada, tanto de seu corpo quanto de seus bens.
         </p>
         
         <p>
-        	<strong>Soluções:</strong> Defendemos o desenvolvimento de um sistema legal objetivo definindo
-            os direitos de propriedade para o ar e a água. Ao invés de obrigar os contribuíntes a
-            pagar por limpezas de lixo tóxico, os donos de propriedade privada, ou, no caso, as empresas,
-            os gerentes e empregados devem ser responsáveis pelo dano material feito por sua propriedade.
-        </p>
-        
-        <p>
-        	<strong>Ações transitórias:</strong> Demandamos modificações nas leis que governam os
-            limites e moléstias feitos por ar, água, radiação, e poluição sonora. Nos opomos a propostas
-            legislativas que isentam pessoas que acusam danos causados por radiação de provar que o dano
-            foi causado por radiação. Demandamos o fim de agências regulatórias do meio ambiente. Também nos
-            opomos ao controle do governo sobre areas fumante/não fumante em negócios privados.
+        	<strong>Soluções:</strong> Desenvolver um sistema legal objetivo definindo os direitos de propriedade para o ar e a água. A defesa do meio-ambiente deve ser feita através dos proprietários que forem lesados ou possuam potencial para serem lesados por poluidores. O Governo não deve intervir na questão como parte, pois as indenizações são desviadas por burocratas e nunca chegam a seu destino. Extinção de agências e órgãos reguladores do meio-ambiente, que impedem o exercício do direito de propriedade dos cidadãos.
         </p>
         
         <h2><a name="ProtecaoAoConsumidor">3. Proteção ao Consumidor</a></h2>
@@ -115,29 +76,15 @@
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         
         <p>
-        	<strong>A questão:</strong> Regulações de proteção ao consumidor pelo governo restringem a
-            competição do livre mercado e substituem o direito de um indivíduo fazer escolhas
-            independentes por padrões determinados pelo governo.
+        	<strong>A questão:</strong> Regulações de proteção ao consumidor pelo governo restringem a competição do livre mercado e substituem o direito de um indivíduo fazer escolhas independentes por padrões determinados pelo governo.
         </p>
         
         <p>
-        	<strong>O princípio:</strong> A demanda dos consumidores, ao invés de leis, deve reger a
-            proteção ao consumidor. Defendemos fortes e efetivas leis contra fraude e má representação.
-            Contudo, nos opomos a regulações paternalistas, que se forçam aos consumidores, impõem preços,
-            definem padrões para produtos, ou restringem a possibilidade de correr riscos e livre escolha.
+        	<strong>O princípio:</strong> A demanda dos consumidores deve reger a proteção ao consumidor. Defendemos fortes e efetivas leis para que o conteúdo dos produtos esteja nos lacres e defesa contra fraudes.
         </p>
         
         <p>
-        	<strong>Soluções:</strong> Encorajamos ativismo por parte dos consumidores que boicotaria e
-            sancionaria economicamente negócios que contrariamente afetam a saúde humana ou danificam
-            o meio ambiente, passando custos ao público geral. Defendemos entidades independentes para
-            certificação de produtos para o consumidor.
-        </p>
-        
-        <p>
-        	<strong>Ações transitórias:</strong> Fim da interferência governamental em assuntos do
-            consumidor. Condenamos leis obrigando uso de equipamento de segurança como cinto de segurança
-            ou capacete, que podem ser mais efetivamente induzidos através de ação dos consumidores no mercado.
+        	<strong>Soluções:</strong> Extinção de órgãos que certificam produtos para o consumidor, passando esse encargo para entidades privadas, com elaboração de leis que defendam os consumidores de fraudes. Extinção de regulações paternalistas que impõem preços, definem padrões para produtos, ou restringem a possibilidade de correr riscos e livre escolha. Extinção de leis que obrigam o consumidor a consumir o produto ou serviço de maneira determinada, tal como o uso de cinto de segurança em veículos automotores.
         </p>
         
         <h2><a name="Educacao">4. Educação</a></h2>
@@ -145,33 +92,15 @@
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         
         <p>
-        	<strong>A questão:</strong> Escolas públicas levam à doutrinação das crianças ou interferem na
-            livre escolha dos indivíduos. Leis de educação compulsória geram escolas com muitos
-            problemas semelhantes a prisões.
+        	<strong>A questão:</strong> Escolas públicas levam à doutrinação das crianças ou interferem na livre escolha dos indivíduos. Leis de educação compulsória geram escolas com muitos problemas semelhantes a prisões.
         </p>
         
         <p>
-        	<strong>O princípio:</strong> Educação, como qualquer outro serviço, pode ser melhor executado
-            pelo livre mercado, alcançando maior qualidade e eficiência com maior diversidade de escolha.
+        	<strong>O princípio:</strong> Educação, como qualquer outro serviço, pode ser melhor executado pelo livre mercado, alcançando maior qualidade e eficiência com maior diversidade de escolha.
         </p>
         
         <p>
-        	<strong>Soluções:</strong> Defendemos a completa separação entre educação e estado.
-            Posse, operação, regulação e subsídios pelo governo de escolas, colégios e universidade
-            devem cessar. Condenamos as garantias da educação pública, que são encontradas na maioria das constituições.
-            Condenamos as leis de educação compulsória. Até que o envolvimento do governo na educação acabe,
-            apoiamos a eliminação, dentro do sistema de educação público, de transporte forçado e punição corpórea.
-            Também apoiamos a redução imediata de ajuda fiscal para escolas, e a remoção de taxas para educação
-            sobre aqueles que não são responsáveis pela educação de crianças.
-        </p>
-        
-        <p>
-        	<strong>Ações transitórias:</strong> Como medida interina para incentivar o aumento de escolas privadas
-            e variedade na educação, incluindo educação em casa, defendemos crédito em impostos para tutela e outras
-            despesas relacionadas à educação de um indivíduo. Também apoiamos crédito em impostos para creches e nos
-            opomos à nacionalização da indústria de creches. Nos opomos à negação ao status de isento de impostos a escolas
-            devido às políticas privadas da escola para contratações, admissões e ao comportamento dos estudantes.
-            Defendemos o fim de todos os impostos no rendimento de escolas privadas, tanto com ou sem fim lucrativos.
+        	<strong>Soluções:</strong> Defesa da completa separação entre educação e estado. Posse, operação, regulação e subsídios pelo governo de escolas, colégios e universidades devem cessar. Fim das garantias da educação pública. Extinção das leis de educação compulsória. Apoio à redução imediata de ajuda fiscal para escolas e remoção de tributos que tenham finalidade de custear educação, pois cidadãos não são responsáveis pela educação de crianças que não são seus filhos. Extinção de todos os tributos que incidam no sistema educacional. Como medida transitória, defesa da privatização das escolas públicas e entrega de vales-escola para as crianças que delas necessitarem.
         </p>
         
         <h2><a name="Populacao">5. População</a></h2>
@@ -179,31 +108,16 @@
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         
         <p>
-        	<strong>A questão:</strong> Observamos que as tragédias causadas por gestações não desejadas
-            são agravadas, se não criadas, por políticas governamentais de censura, restrição e proibição.
+        	<strong>A questão:</strong> Observamos que as tragédias causadas por gestações não desejadas são agravadas, se não criadas, por políticas governamentais de censura, restrição e proibição.
         </p>
         
         <p>
-        	<strong>O princípio:</strong> O povo brasileiro não é um recurso nacional colecionável.
-            Nos opomos a quaisquer medidas coercivas para controle populacional.
+        	<strong>O princípio:</strong> O povo brasileiro não é um recurso nacional colecionável. Nos opomos a quaisquer medidas coercivas para controle populacional.
         </p>
         
         
         <p>
-        	<strong>Soluções:</strong> Nos opomos a ações governamentais que compelem ou proíbem aborto,
-            esterilização, ou quaisquer outras formas de controle de natalidade. Especificamente, condenamos
-            a prática de esterilização forçada de miseráveis, deficientes mentais ou
-            indivíduos “geneticamente defeituosos”. Condenamos todas as leis que restringem qualquer um, incluindo
-            crianças, de participar em trocas voluntárias de mercadorias, serviços ou informação relacionada
-            à sexualidade humana, reprodução, controle de natalidade ou tecnologias médicas ou biológicas
-            relacionadas ao assunto. Também nos opomos a leis governamentais e políticas que restrinjam a
-            oportunidade de escolher alternativas para o aborto.
-        </p>
-        
-        <p>
-        	<strong>Ações transitórias:</strong> Defendemos o fim de todos os subsídios para etapas
-            da gestação presentes atualmente, incluindo planos de pensão e provisão de serviços
-            para crianças através de dinheiro público.
+        	<strong>Soluções:</strong> Combater ações governamentais que compelem ou proíbem aborto, promovem esterilização ou quaisquer outras formas de controle de natalidade. Especificamente, condenar qualquer tentativa de elaborar leis que visem a esterilização forçada de miseráveis, deficientes mentais ou indivíduos com problemas de saúde. Revogar todas as leis que restringem a participação em trocas voluntárias de mercadorias, serviços ou informação relacionada à sexualidade humana, reprodução, controle de natalidade ou tecnologias médicas ou biológicas relacionadas ao assunto. Oposição a leis governamentais e políticas que restrinjam a oportunidade de escolher alternativas para o aborto.
         </p>
         
         <h2><a name="Transporte">6. Transporte</a></h2>
@@ -211,28 +125,15 @@
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         
         <p>
-        	<strong>A questão:</strong> A interferência do governo no transporte é caracterizada
-            por restrição monopolística, corrupção e ineficiência.
+        	<strong>A questão:</strong> A interferência do governo no transporte é caracterizada por restrição monopolística, corrupção e ineficiência.
         </p>
         
         <p>
-        	<strong>O princípio:</strong> A indústria de transportes não deve ser tratada
-            diferentemente de qualquer indústria, e deve ser governada por mercados livres e
-            mantida por responsabilidade judicial rigorosa.
+        	<strong>O princípio:</strong> A prestação de serviços de transportes deve ser tratada como qualquer serviço, sendo prestada através de mercados livres e mantida por responsabilidade judicial rigorosa.
         </p>
         
         <p>
-        	<strong>Soluções:</strong> Defendemos a dissolução de todas as agências governamentais
-            relativas ao transporte, e transferir suas funções a entidades privadas competitivas.
-            Defendemos a privatização de aeroportos, ferrovias, sistemas de controle de tráfego e estradas públicas.
-        </p>
-        
-        <p>
-        	<strong>Ações transitórias:</strong> Como medidas interinas, defendemos um fim imediato
-            à regulação governamental de organizações relativas ao trânsito e fim de favores governamentais
-            à indústria de automobilística. Em particular, defendemos o fim de todas as leis restringindo
-            a competição da área automobilística tais como monopólios de taxi e ônibus e a proibição de
-            serviços de micro-ônibus. Defendemos a desregulação imediata da indústria de caminhões.
+        	<strong>Soluções:</strong> Fim de todos os órgãos governamentais que promovem e regulam o transporte, e transferência de suas funções a entidades privadas competitivas. Privatização de aeroportos, ferrovias, sistemas de controle de tráfego e estradas públicas. Extinção de leis que regulam o consumo de bebidas alcoolicas no trânsito e fim de favores governamentais à indústria de automobilística. Extinção de leis restringindo a competição da área automobilística tais como monopólios de taxi e ônibus e a proibição de serviços de micro-ônibus e vans. Defesa do transporte alternativo.
         </p>
         
         <h2><a name="PobrezaEDesemprego">7. Pobreza e desemprego</a></h2>
@@ -240,251 +141,85 @@
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         
         <p>
-        	<strong>A questão:</strong> Ações fiscais e monetárias do governo que estimulam artificialmente a
-            expansão dos negócios garantem um eventual aumento no desemprego ao invés de reduzi-lo.
-            Programas do governo são ineficientes, paternais, humilhantes e invasivos na privacidade.
+        	<strong>A questão:</strong> Ações fiscais e monetárias do governo que estimulam artificialmente a expansão dos negócios garantem um eventual aumento no desemprego ao invés de reduzi-lo. Programas do governo são ineficientes, paternais, humilhantes e invasivos na privacidade.
         </p>
         
         <p>
-        	<strong>O princípio:</strong> A forma adequada de ajuda para os pobres é através de
-            esforços voluntários de grupos privados e indivíduos. Nenhum trabalhador deve ser
-            legalmente penalizado pela falta de certificação, e nenhum consumidor deve ser legalmente
-            restrito de contratar indivíduos não-licensiados.
+        	<strong>O princípio:</strong> A forma adequada de ajuda para os pobres é através de esforços voluntários de grupos privados e indivíduos. Nenhum trabalhador deve ser legalmente penalizado pela falta de certificação e nenhum consumidor deve ser legalmente restrito de contratar indivíduos não-licenciados.
         </p>
         
         <p>
-            <strong>Soluções:</strong> Buscamos a eliminação da autorização ocupacional, que impede
-            seres humanos de trabalharem no que quiserem. Buscamos a abolição de todas as agências governamentais
-            federais, estaduais e locais que restringem a entrada em qualquer profissão, como educação ou
-            advocacia, ou regulam sua prática. Nos opomos a todo auxílio-desemprego, projetos
-            de esmola e programas de ‘ajuda aos pobres’.
-        </p>
-        
-        <p>
-        	<strong>Ações transitórias:</strong> Buscamos a trégua imediata de tais políticas
-            fiscais e monetárias, assim como qualquer tentativa do governo que afete os níveis de
-            desemprego. Condenamos todas as leis que impedem um indivíduo a encontrar um emprego,
-            como salário mínimo, a chamada legislação “protetiva” para mulheres e crianças, restrições
-            governamentais no estabelecimento de creches, e a CLT. Condenamos o incentivo governamental
-            para aposentadoria forçada. Para acelerar o momento em que os programas governamentais são
-            substituídos por instituições privadas defendemos créditos em impostos por todas
-            suas contribuições para a caridade.
-        </p>
-        
-        <h2><a name="Saude">8. Saúde</a></h2>
+            <strong>Soluções:</strong> Eliminação da obrigatoriedade de certificação oficial para trabalhar em qualquer área. Abolição de todas as agências governamentais e não-governamentais federais, estaduais e locais que restrinjam a entrada em qualquer profissão ou regulam sua prática. Extinção de todo auxílio-desemprego, projetos de esmola e programas de ajuda aos pobres. Extinção de todas as leis que impedem um indivíduo de encontrar um emprego, tais como salário mínimo, a chamada “legislação protetiva” para mulheres e crianças, restrições governamentais no estabelecimento de creches, e a CLT. Fim do incentivo governamental para aposentadoria forçada. Estimular a subtituição do Estado pela iniciativa privada do campo da solidariedade através de maciços abatimentos em impostos em virtude de doações para entidades de caridade privadas.</p>
+        <h2><a name="LeisTrabalhistasCLTs">8. Leis Trabalhistas (CLTs)</a></h2>
+        <p class="top"><a href="#Topo">Ir para o topo</a></p>
+        <p> <strong>O Assunto:</strong> As ações arbitrárias da Justiça do Trabalho invadem os direitos à propriedade, elevam preços, geram desemprego e se impõem injustamente sobre os geradores de emprego. Acabam por transformar empregadores em criminosos e empregados em vítimas, prejudicando a economia. </p>
+        <p> <strong>O princípio:</strong> Essas leis negam o direito à liberdade e propriedade tanto ao empregado quanto ao empregador, e interfere em sua relação contratual privada. Uma sociedade de livre-comercio é baseada em trocas voluntárias e uma troca voluntária só acontece quando ambas as partes enxergam vantagens. Qualquer ação coercitiva por parte do governo que tire o livre arbítrio dos indivíduos e decida por eles o que é ou não vantajoso é errada. </p>
+        <p> <strong>Soluções:</strong> Relações trabalhistas são trocas voluntárias entre empregado e empregador e cabe apenas às partes envolvidas a resolução dos termos contratuais. Grupos ativistas de consumidores do setor privado devem ser criados para substituir agências governamentais ineficientes. Abolição de todas as leis trabalhistas.</p>
+        <h2><a name="PrevidenciaSocial">9. Previdência Social</a></h2>
+        <p class="top"><a href="#Topo">Ir para o topo</a></p>
+        <p> <strong>A questão:</strong> O sistema previdenciário é um falido e imoral esquema piramidal com valores absurdos de endividamento e possui uma taxa de retorno abaixo na média para seus participantes. </p>
+        <p> <strong>O princípio:</strong> Numa sociedade livre, o plano de aposentadoria é responsabilidade do indivíduo e não do governo. </p>
+        <p> <strong>Soluções:</strong> Defendemos a substituição da atual previdência pública, fraudulenta, falida e patrocinada pelo governo, por sistemas privados voluntários. Transitoriamente, liquidação da previdência social em fatias para instituições financeiras privadas e venda de bens pertencentes ao poder público para custear as atuais aposentadorias.</p>
+        <h2><a name="Saude">10. Saúde</a></h2>
         
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         
         <p>
-        	<strong>A questão:</strong> Nas recentes décadas testemunhamos o crescimento do envolvimento
-            do governo com o sistema de saúde. Tal envolvimento conduziu a uma administração burocrática vertical,
-            rapidamente escalando preços, regulações custosas,  a criminalização da prática de medicina
-            por aqueles que não possuem diploma e uma série de outros problemas. Nenhum desses problemas
-            prevalecia antes de o governo aumentar seu envolvimento. Acreditamos que o envolvimento do governo
-            é a principal causa de muitos dos problemas que enfrentamos no sistema de saúde hoje em dia.
-            O alto custo da seguridade de saúde é em parte culpa do excesso de
-            regulação governamental na atividade.
+        	<strong>A questão:</strong> O Brasil é um dos poucos países do mundo que possuem uma rede universal pública de segurança de saúde. Em virtude dos incentivos perversos típicos do poder público, uma quantia obscena de dinheiro vilipendiado da sociedade pelo governo é destinado a um falido, imoral e ineficiente Sistema Único de Saúde, onde pessoas demoram horas na fila para serem atendidas. Os poucos privilegiados que conseguem pagar um plano privado de saúde após serem acharcados pelo Estado, sofrem nas mãos de um mercado altamente regulamentado por agências governamentais corruptas.
         </p>
         
         <p>
-        	<strong>O princípio:</strong> Reconhecemos o direito dos indivíduos, livres da intervenção do
-            governo e seus danosos efeitos colaterais, de determinar o nível de seguridade que querem, o nível
-            de saúde que querem, os provedores de saúde que querem, os remédios e tratamentos que querem usar
-            e todos os outros aspectos da saúde. O papel do governo em qualquer tipo de seguridade deve ser
-            apenas o de fazer valer contratos quando necessário, não o de ditar às seguradoras e consumidores
-            quais tipos de contrato eles devem acordar voluntariamente
-        </p>
+        	<strong>O princípio:</strong> Reconhecemos o direito dos indivíduos, livres da intervenção do governo e seus danosos efeitos colaterais, de determinar o nível de seguridade que querem, o nível de saúde que querem, os provedores de saúde que querem, os remédios e tratamentos que querem usar e todos os outros aspectos da saúde. O papel do governo em qualquer tipo de seguridade deve ser apenas o de fazer valer contratos quando necessário, não o de ditar às seguradoras e consumidores quais tipos de contrato eles devem acordar voluntariamente.        </p>
         
         <p>
-        	<strong>Soluções:</strong> Restaurar e reviver um mercado livre na área de saúde.
-            Defendemos uma completa separação de medicina do estado. Defendemos o fim da saúde provida
-            pelo governo. Defendemos que todas as funções relativas à saúde podem ser mais
-            efetivamente providas pelo setor privado.
+        	<strong>Soluções:</strong> Restaurar e reviver um mercado livre na área de saúde. Promover uma completa separação entre medicina e Estado. Acabar com o Sistema Único de Saúde e agências, como ANS e ANVISA, que controlam o mercado de saúde e promovem monopólio de empresas corrputoras. Todos os serviços de saúde são mais eficientemente providas pelo setor privado. Transitoriamente, privatização de todos os centros médicos públicos e fornecimento de vale-saúde para a população.
         </p>
         
-        <p>
-        	<strong>Ações transitórias:</strong> Nos opomos a qualquer restrição ou financiamento
-            pelo governo de qualquer pesquisa médica ou científica.
-        </p>
-        
-        <h2><a name="UsoDosRecursos">9. Uso dos recursos</a></h2>
+        <h2><a name="UsoDosRecursos">11. Uso dos recursos</a> naturais </h2>
         
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         
         <p>
-        	<strong>A questão:</strong> Nos opomos ao controle pelo governo do uso dos recursos através
-            de despropriação, leis de zona, códigos de construção, controle de aluguel, planos regionais,
-            renovação urbana, ou compra de direitos de desenvolvimento com dinheiro público. Tais regulações
-            e programas violam o direito de propriedade, discriminam minorias, criam falta de moradia,
-            e tendem a inflacionar os aluguéis. Todas as restrições governamentais sobre o uso privado
-            ou transferência voluntária de direitos de água ou controles despóticos similares podem
-            apenas agravar a má distribuição de água. 
+        	<strong>A questão:</strong> O governo controla o uso dos recursos através de despropriação, leis de zona, códigos de construção, códigos de postura, controle de aluguel, estatutos urbanos e rurais, leis florestais e ambientais, entre outras medidas legais. Tais regulações e programas violam o direito de propriedade, discriminam minorias, criam falta de moradia e tendem a inflacionar os aluguéis. Todas as restrições governamentais sobre o uso privado ou transferência voluntária de direitos de água ou controles despóticos similares podem apenas agravar a má distribuição de água. 
         </p>
         
         <p>
-        	<strong>O princípio:</strong> O uso dos recursos é responsabilidade e direito dos donos
-            legítimos da terra, água e outros recursos naturais. Reconhecemos a legitmidade de planejamento
-            de recursos para fins de contratos privados voluntários.
+        	<strong>O princípio:</strong> O uso dos recursos é responsabilidade e direito dos donos legítimos da terra, água e outros recursos naturais.
         </p>
         
         <p>
-        	<strong>Soluções:</strong> Defendemos o estabelecimento de um sistema privado eficiente e
-            justo de direitos sobre água aplicado tanto para água na superfície quanto para água no subsolo.
-            Tal sistema deve ser construído através da doutrina do primeiro que declarar/usar. A alocação de
-            água deve ser  governada pela competição irrestrita e preços não regulados. Também defendemos a
-            privatização dos sistemas de água. Apenas a completa separação da água do Estado pode previnir crises
-            de falta de água no futuro. Defendemos seção ao vizinho ou outro para transferir para propriedade privada as terras federais.
+        	<strong>Soluções:</strong> Estabelecer um sistema privado eficiente e justo de direitos sobre água aplicado tanto para água na superfície quanto para água no subsolo, baseado no princípio do <em>homesteading</em> (primeiro que usar). Promover a completa separação entre o fornecimento de água e o Estado, de modo a previnir crises de falta de água no futuro. Privatização de todos os projetos e empresas de águas governamentais. Fim de todos os órgãos e agências destinadas ao controle de recursos naturais. Revogar todas as leis que controlam e regulam o uso dos recursos naturais.
         </p>
         
-        <p>
-        	<strong>Ações transitórias:</strong>  A construção pelo governo de cisternas e outros projetos de água
-            deve cessar e projetos de água do governo existentes devem ser transferidos para a propriedade privada.
-            Nós apoiamos a abolição das funções civis da Companhia de Desenvolvimento dos Vales do São Francisco e
-            do Parnaíba  (CODEVASF) e das companhias elétricas  Nós também apoiamos a abolição de todos os distritos
-            locais de água e seu poder para taxar . Nos opomos a qualquer uso de ordens executivas invocando
-            Patrimônio Histórico  para reservar terras públicas. Nós pedimos pela abolição doInstituto Brasileiro
-            do Meio Ambiente e dos Recursos Naturais Renováveis. Nos opomos à criação de novos parques, selvas e áreas
-            de recreação covernamentais. Tais parques e áreas já existentes devem ser transferidos à propriedade
-            não governamental. Pendentes tais transferências, sua operação deve ser custeada pelos seus usuários
-            em vez dos pagadores de impostos.
-        </p>
-        
-        <h2><a name="Agricultura">10. Agricultura</a></h2>
+        <h2><a name="Agricultura">12. Agricultura</a></h2>
         
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         
         <p>
-        	<strong>A questão:</strong> O mercado livre da agricultura, sistema que alimenta grande parte
-            do mundo, foi arado por intervenções do governo. Subsídios, regulações e taxas encorajaram a
-            centralização do agro negócio. As políticas de exportação do governo fazem com que os fazendeiros
-            sejam reféns dos caprichos das administrações públicas.
+        	<strong>A questão:</strong> O mercado livre da agricultura, sistema que alimenta grande parte do mundo, foi arado por intervenções do governo. Subsídios, regulações e taxas encorajaram a centralização do agronegócio. As políticas de exportação do governo fazem com que os fazendeiros sejam reféns dos caprichos das administrações públicas.
         </p>
         
         <p>
-        	<strong>O princípio:</strong> Tanto fazendeiros quanto consumidores devem ser livres das
-            intromissões e medidas contra-produtivas do governo federal – livres para plantar, vender ou comprar o
-            que quiserem, na quantidade que quiserem, quando quiserem.
+        	<strong>O princípio:</strong> Tanto fazendeiros quanto consumidores devem ser livres das intromissões e medidas contra-produtivas dos governos em todos os níveis. Os cidadãos devem ser livres para plantar, vender ou comprar o que quiserem, na quantidade que quiserem, quando quiserem.
         </p>
         
         <p>
-        	<strong>Soluções:</strong> Fazendeiros e outros fornecedores de produtos e serviços no mercado livre
-            da agricultura devem operar desimpedidos por qualquer regulação governamental, enquanto são policiadas
-            pelas agências de proteção ao consumidor do setor privado com relação à qualidade, e creditadas pelo
-            governo apenas contra fraude e enganação.
-        </p>
-        
-        <p>
-        	<strong>Ações transitórias:</strong> Os problemas da agricultura atuais não são insolúveis.
-            As políticas do governo podem ser reversas. Alguns passos podem ser tomados imediatamente:
-        </p>
-        
-        <p>
-        	a) abolição do departamento de agricultura; 
-        </p>
-        
-        <p>
-        	b) eliminação de todos os programas de governo para fazendas, incluindo suporte de preços,
-            subsídios diretos e toda e qualquer regulação na produção agrícola;
-        </p>
-        
-        <p>
-        	c) desregulação da indústria de transporte 
-        </p>
-        
-        <p>
-        	d) fim do envolvimento do governo no controle de pestes na agricultura. Uma política de
-            controle de pestes onde os próprios indivíduos ou corporações tomem completa responsabilidade
-            por danos inflingidos em seus vizinhos deve ser implementado.
-        </p>
-        
-        <h2><a name="LeisTrabalhistasCLTs">11. Leis Trabalhistas (CLTs)</a></h2>
-        
-        <p class="top"><a href="#Topo">Ir para o topo</a></p>
-        
-        <p>
-        	<strong>O Assunto:</strong> As ações arbitrárias da Justiça do Trabalho invadem os direitos à propriedade,
-            elevam preços, geram desemprego e se impõem injustamente sobre a comunidade de negócios. Acabam por
-            transformar empregadores em criminosos e empregados em vítimas, prejudicando a economia.
-        </p>
-        
-        <p>
-        	<strong>O princípio:</strong> Essas leis negam o direito à liberdade e propriedade tanto ao
-            empregado quanto ao empregador, e interfere em sua relação contratual privada. Uma sociedade
-            de livre-comercio é baseada em trocas voluntárias e uma troca voluntária só acontece quando ambas
-            as partes enxergam vantagens. Somos contra qualquer ação coercitiva por parte do governo que tire
-            o livre arbítrio dos indivíduos e decida por eles oque é ou não vantajoso.
-        </p>
-        
-        <p>
-        	<strong>Soluções:</strong> Relações trabalhistas são trocas voluntárias entre empregado e
-            empregador e cabe apenas às partes envolvidas a resolução dos termos contratuais. Grupos ativistas
-            de consumidores do setor privado devem ser criados para substituir agências governamentais ineficientes.
-        </p>
-        
-        <p>
-        	<strong>Ação transitória:</strong> Nós demandamos a abolição de todas as leis trabalhistas.
-        </p>
-        
-        <h2><a name="PrevidenciaSocial">12. Previdência Social</a></h2>
-        
-        <p class="top"><a href="#Topo">Ir para o topo</a></p>
-        
-        <p>
-        	<strong>A questão:</strong> O sistema previdenciário é um falido e imoral esquema piramidal
-            com valores absurdos de endividamento e possui uma taxa de retorno abaixo na
-            média para seus participantes.
-        </p>
-        
-        <p>
-        	<strong>O princípio:</strong> Numa sociedade livre, o plano de aposentadoria é
-            responsabilidade do indivíduo e não do governo.
-        </p>
-        
-        <p>
-        	<strong>Soluções:</strong> Defendoemos a substituição da atual previdência pública, fraudulenta,
-            falida e patrocinada pelo governo, por sistemas privados voluntários.
-        </p>
-        
-        <p>
-        	<strong>Ações transitórias:</strong> Pendendo essa substituição, a participação
-            na previdência social deve ser voluntária. 
-        </p>
+        	<strong>Soluções:</strong> Agricultores e outros fornecedores de produtos e serviços no mercado livre da agricultura devem operar sem qualquer regulação governamental, enquanto são policiadas pelas agências de proteção ao consumidor do setor privado com relação à qualidade, e devem ser punidas pelo judiciário em casos de fraude e enganação. Eliminar todos os programas de governo para fazendas, incluindo suporte de preços, subsídios diretos e toda e qualquer regulação na produção agrícola. Desregulamentar a indústria de transportes, barateando o escoamento de produtos agrícolas. Fim do envolvimento do governo no controle de pestes na agricultura, que passa a ser responsabilidade dos agricultores.</p>
         
         <h2><a name="LeisEleitorais">13. Leis Eleitorais</a></h2>
         
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         
         <p>
-        	<strong>A questão:</strong> O sistema eleitoral é muito importante. Muitas constituições estabeleceram
-            distritos distorcidos e leis proibitivas de restrição que efetivamente excluem candidatos alternativos
-            e grupos de candidaturas que são seu direito. Tais leis erroneamente negam candidatura a candidatos e
-            grupos politicos, assim negando a seus eleitores o direito a considerar todas as alternativas legítimas.
-            Muitas leis permitem governos federais e estaduais controlar a eleição de seus próprios administradores
-            e beneficiários, assim reduzindo a responsabilidade dos cidadãos.
+        	<strong>A questão:</strong> O sistema eleitoral brasileiro é completamente distorcido. A obrigatoriedade de voto faz do mesmo um dever e não um direito. Há superrepresentação de estados pouco populosos e subrepresentação de estados muito populosos. A legislação eleitoral veda a liberdade política com restrição ao lançamento de candidaturas e criação de partidos.
         </p>
         
         <p>
-        	<strong>O princípio:</strong> Eleições em todos os níveis devem estar sob o controle daqueles que
-            querem participar ou ajudar voluntariamente. Como grupos voluntários privados, grupos politicos devem ser
-            permitidos a estabelecer suas próprias regras para procedimentos de nomeclatura, eleições preliminares
-            e convenções. Nenhum estado tem interesse em proteger essa área exceto para garantir uma condução
-            justa e eficiente das eleições.
+        	<strong>O princípio:</strong> O sufrágio é um direito e não um dever. Esse direito é amplo e irrestrito, devendo o eleitor possuir a maior quantiadade possível de opções.
         </p>
         
         <p>
-        	<strong>Soluções:</strong> Propomos sistemas eleitorais que são mais representativos do eleitorado
-            no âmbito federal, estadual e local. Não deve haver restrição federal ou estadual para candidatura.
-        </p>
-        
-        <p>
-        	<strong>Ações transitórias:</strong> Fim do controle governamental dos partidos politicos,
-            permitindo liberdade de criação, associação e expressão. Reprimimos ações que suprimam apoio voluntário
-            a candidatos e grupos. Eleições preliminaries devem ser feitas em uma convenção do partido político e não
-            ser um evento público subsidiado. Permitir sempre a anulação do voto. Em uma eventual maioria de votos nulos
-            em qualquer eleição, ou o cargo deve permanecer não preenchido e não utilizar de verbas, ou deve haver
-            uma nova eleição na qual nenhum dos candidatos derrotados deve ser elegível. Visando garantir aos eleitores
-            alternativas diversas nas eleições federais, estaduais e locais, propomos um sistema eleitoral distrital para
-            eleições legislativas. Defendemos o fim do fundo partidário.
+        	<strong>Soluções:</strong> Proposição de um sistema eleitoral justo, que reflita a representatividade das correntes políticas no âmbito federal, estadual e local. Fim do controle governamental dos partidos politicos, permitindo liberdade de criação, associação e expressão, com possibilidade de existência de partidos regionais e locais. Fim do subsídio público aos partidos políticos, em especial o fundo partidário. Correção da representação dos Estados na Câmara dos Deputados.
         </p>
         
         <h2><a name="Secessao">14. Secessão</a></h2>
@@ -492,30 +227,18 @@
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         
         <p>
-        	<strong>A questão:</strong> As pessoas são forçadas a se subordinar aos governos e participar de seus
-            programas, geralmente como provedores de financiamento, independentemente de sua vontade ser contrária ou não.
+        	<strong>A questão:</strong> As pessoas são forçadas a se subordinar aos governos e participar de seus programas, geralmente como provedores de financiamento, independentemente de sua vontade.
         </p>
         
         <p>
-        	<strong>O princípio:</strong> Como toda associação política deve ser voluntária, reconhecemos o direito
-            de secessão política. Isso inclui o direito de secessão por entidades políticas, grupos privados ou indivíduos.
-            O exercício desse direito, assim como o exercício de todos os outros direitos, não anula obrigações legais e morais,
-            para não violar o direito de outros.
+        	<strong>O princípio:</strong> Como toda associação política deve ser voluntária, reconhecemos o direito de secessão política. Isso inclui o direito de secessão por entidades políticas, grupos privados ou indivíduos. O exercício desse direito, assim como o exercício de todos os outros direitos, não anula obrigações legais e morais de não violar o direito de outros.
         </p>
         
         <p>
-        	<strong>Soluções:</strong> Defendemos o direito de entidades políticas, grupos privados e indivíduos
-            a renunciar sua filiação com qualquer governo, e ser dispensado das obrigações impostas por esses governos,
-            enquanto em contrapartida aceitando nenhum suporte do governo com o qual foi feita a secessão.
+        	<strong>Soluções:</strong> Defendemos o direito de entidades políticas, grupos privados e indivíduos a renunciar sua filiação com qualquer governo, e ser dispensado das obrigações impostas por esses governos, aceitando, em contrapartida, não receber nenhum suporte do governo com o qual foi feita a secessão.
         </p>
         
-        <p>
-        	<strong>Ações transitórias:</strong> Como passo na transação, defendemos o direito de entidades
-            políticas, grupos privados e indivíduos a renunciar sua participação em qualquer programa governamental,
-            e a ser dispensado das obrigações impostas por esse programa, enquanto em contrapartida aceitando
-            nenhum benefício do programa com o qual foi feita a secessão.
-        </p>
-	</div>
+</div>
 
 </asp:Content>
 
