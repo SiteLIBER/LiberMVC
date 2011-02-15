@@ -22,7 +22,7 @@ namespace LiberMvc.Models
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="liber")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="BancoTeste")]
 	public partial class DBDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -118,7 +118,7 @@ namespace LiberMvc.Models
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="liber.EstadoCivil")]
+	[global::System.Data.Linq.Mapping.TableAttribute()]
 	public partial class EstadoCivil : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
@@ -232,7 +232,7 @@ namespace LiberMvc.Models
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="liber.TipoUsuario")]
+	[global::System.Data.Linq.Mapping.TableAttribute()]
 	public partial class TipoUsuario : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
@@ -346,7 +346,7 @@ namespace LiberMvc.Models
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="liber.Usuario")]
+	[global::System.Data.Linq.Mapping.TableAttribute()]
 	public partial class Usuario : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
@@ -1183,7 +1183,7 @@ namespace LiberMvc.Models
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="liber.GrauInstrucao")]
+	[global::System.Data.Linq.Mapping.TableAttribute()]
 	public partial class GrauInstrucao : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
@@ -1297,7 +1297,7 @@ namespace LiberMvc.Models
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="liber.Artigo")]
+	[global::System.Data.Linq.Mapping.TableAttribute()]
 	public partial class Artigo : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		

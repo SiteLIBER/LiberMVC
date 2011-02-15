@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
 <ul id="nav">
-	<li class="rows_5"><a href="/"><span>Principal</span></a></li>
+	<li class="rows_5"><a href="<%= Url.Action("Index", "Home") %>"><span>Principal</span></a></li>
 	<li class="rows_5"><a href="#"><span>Nosso Partido</span></a>
 		<div class="drop-holder">
 			<div class="drop-content">

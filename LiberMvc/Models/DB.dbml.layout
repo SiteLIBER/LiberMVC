@@ -20,7 +20,7 @@
         <elementListCompartment Id="92a0a11b-3100-43f4-855c-178c48a77e85" absoluteBounds="3.5150000005960464, 1.5850000008940697, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.75 : 2.09699625651042); (3.5 : 2.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 2.09699625651042); (3.5 : 2.09699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DBDataContext/EstadoCivil/EstadoCivil_Usuario" />
       <nodes>
         <classShapeMoniker Id="53961bf1-0858-4436-b240-02c5ce139cc4" />
@@ -53,7 +53,7 @@
         <elementListCompartment Id="f1d6bc03-53ca-4e3e-8a8a-d4eed5ffded2" absoluteBounds="7.015, 4.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.5 : 4.99120198567708); (7 : 4.99120198567708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 5.57615397135417); (7 : 5.57615397135417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DBDataContext/Usuario/Usuario_Artigo" />
       <nodes>
         <classShapeMoniker Id="735c9f17-d880-4524-aa38-bc57dcf30201" />

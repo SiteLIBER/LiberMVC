@@ -1,20 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="liber" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=sql2k5.plesklogin.net;Initial Catalog=liber;Persist Security Info=True;User ID=liber" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="liberConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="liber.EstadoCivil" Member="EstadoCivils">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BancoTeste" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\BancoTeste.mdf;Integrated Security=True;User Instance=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="liberConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="EstadoCivil" Member="EstadoCivils">
     <Type Name="EstadoCivil">
       <Column Name="EstadoCivilID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Descricao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="EstadoCivil_Usuario" Member="Usuarios" ThisKey="EstadoCivilID" OtherKey="EstadoCivilID" Type="Usuario" />
     </Type>
   </Table>
-  <Table Name="liber.TipoUsuario" Member="TipoUsuarios">
+  <Table Name="TipoUsuario" Member="TipoUsuarios">
     <Type Name="TipoUsuario">
       <Column Name="TipoUsuarioID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Descricao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="TipoUsuario_Usuario" Member="Usuarios" ThisKey="TipoUsuarioID" OtherKey="TipoUsuarioID" Type="Usuario" />
     </Type>
   </Table>
-  <Table Name="liber.Usuario" Member="Usuarios">
+  <Table Name="Usuario" Member="Usuarios">
     <Type Name="Usuario">
       <Column Name="UsuarioID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="TipoUsuarioID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -49,14 +49,14 @@
       <Association Name="GrauInstrucao_Usuario" Member="GrauInstrucao" ThisKey="GrauInstrucaoID" OtherKey="GrauInstrucaoID" Type="GrauInstrucao" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="liber.GrauInstrucao" Member="GrauInstrucaos">
+  <Table Name="GrauInstrucao" Member="GrauInstrucaos">
     <Type Name="GrauInstrucao">
       <Column Name="GrauInstrucaoID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Descricao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="GrauInstrucao_Usuario" Member="Usuarios" ThisKey="GrauInstrucaoID" OtherKey="GrauInstrucaoID" Type="Usuario" />
     </Type>
   </Table>
-  <Table Name="liber.Artigo" Member="Artigos">
+  <Table Name="Artigo" Member="Artigos">
     <Type Name="Artigo">
       <Column Name="ArtigoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="EditorID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
