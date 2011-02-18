@@ -58,7 +58,7 @@ namespace LiberMvc.Controllers
 
 		#region POST: /Artigos/Create
 
-		[HttpPost, Auth(Roles = "Editor")]
+		[ValidateInput(false), HttpPost, Auth(Roles = "Editor")]
 		public ActionResult Create(Artigo form)
 		{
 			try
