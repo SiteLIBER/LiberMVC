@@ -18,6 +18,7 @@
 	</p>
 </div>
 <% } %>
+
 <div class="actions">
 <% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin)	{ %>
 	<%= Html.ActionLink("Criar Novo", "Create", null, new { @class = "button" })%>

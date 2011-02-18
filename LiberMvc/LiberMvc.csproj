@@ -518,6 +518,7 @@
     <Content Include="Views\Liber\Lideranca.aspx" />
     <Content Include="Views\Liber\Programa.aspx" />
     <Content Include="Views\Shared\BottomMenu.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\Tabela.ascx" />
     <Content Include="Views\Shared\FacebookBox.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Artigo.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\DateTime.ascx" />
