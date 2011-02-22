@@ -101,7 +101,7 @@ namespace LiberMvc.Controllers
 
 		#region POST: /Artigos/Edit/5
 
-		[HttpPost, Auth(Roles = "Editor"), ValidateInput(false)]
+		[ValidateInput(false), HttpPost, Auth(Roles = "Editor")]
 		public ActionResult Edit(int id, Artigo form)
 		{
 			var art = rep.GetArtigo(id);

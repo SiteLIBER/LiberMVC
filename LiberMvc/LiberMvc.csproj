@@ -132,7 +132,9 @@
     <Content Include="Content\images\creative_commons.png" />
     <Content Include="Content\images\date_back.png" />
     <Content Include="Content\images\destaque\forum_liberdade_mg.png" />
+    <Content Include="Content\images\destroy.png" />
     <Content Include="Content\images\donate_ico.png" />
+    <Content Include="Content\images\edit.png" />
     <Content Include="Content\images\facebook.png" />
     <Content Include="Content\images\flickr.png" />
     <Content Include="Content\images\footer_back.png" />
@@ -157,6 +159,7 @@
     <Content Include="Content\images\pdf_file.png" />
     <Content Include="Content\images\top_ico.png" />
     <Content Include="Content\images\twitter.png" />
+    <Content Include="Content\images\user_box_list_title_back.png" />
     <Content Include="Content\images\youtube.png" />
     <Content Include="Content\styles\default.css" />
     <Content Include="Content\styles\destaque.css" />
