@@ -8,7 +8,7 @@
 		<div id="editor-form">
 			<% using (Html.BeginForm()) {%>
 			<%= Html.ValidationSummary(true) %>
-			<%= Html.EditorForModel("Artigo", Model) %>
+			<%= Html.EditorForModel("Artigo") %>
 			<p class="actions">
 				<input type="submit" value="Enviar" class="button" />
 				<%= Html.ActionLink("Voltar a Lista", "Index", null, new { @class = "button" }) %>
