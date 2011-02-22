@@ -2,7 +2,6 @@
 
 <%@ Import Namespace="LiberMvc.Models" %>
 <% var route = Url.RequestContext.RouteData.Values; %>
-
 <table class="show_table">
     <thead>
         <tr>
@@ -33,7 +32,7 @@
             <td><%= art.Editor.Nome %></td>
             <td>
                 <a href="<%= Url.Action("Edit", "Artigos", new { id = art.ArtigoID }) %>"><img src="<%= Url.Content("~/Content/images/edit.png") %>" alt="Editar" /></a>
-                <a href="#" class="destroy"><img src="<%= Url.Content("~/Content/images/destroy.png") %>" /></a>
+                <a href="<%= Url.Action("Delete", "Artigos", new { id = art.ArtigoID }) %>" class="destroy"><img src="<%= Url.Content("~/Content/images/destroy.png") %>" /></a>
             </td>
         </tr>
     <% } %>
@@ -56,6 +55,17 @@
 <% if (Model.HasNextPage)	{ %>
 	<%= Html.ActionLink("Próxima >>", route["action"].ToString(), new { id = route["id"], page = (Model.PageIndex + 1) }, new { @class = "button" })%>
 <% } %>
-
 	<br class="clear" />
 </div>
+
+<script type="text/javascript">
+	$(function () {
+		$(".destroy").click(function (ev) {
+			ev.preventDefault();
+			var id = this.href;
+			id = id.substring(id.lastIndexOf("/"));
+			if (confirm("Deseja realmente apagar este artigo?"))
+				window.location = '<%= Url.Action("ConfirmDelete") %>' + id;
+		});
+	});
+</script>
