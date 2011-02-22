@@ -3,8 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<script type="text/javascript" src="/Scripts/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
 	<script type="text/javascript" src="/Scripts/textedit.js"></script>
-	
-    <div class="panel">
+
+	<div class="panel">
 		<h1>Novo artigo</h1>
 		<div id="editor-form">
 			<% using (Html.BeginForm())	{%>
