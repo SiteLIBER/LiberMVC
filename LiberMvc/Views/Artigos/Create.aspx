@@ -1,4 +1,4 @@
-﻿<%@ Page validateRequest="false" Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<LiberMvc.Models.Artigo>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<LiberMvc.Models.Artigo>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<script type="text/javascript" src="/Scripts/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
@@ -23,9 +23,9 @@
 	<script type="text/javascript" src="<%= Url.Content("~/Scripts/jquery.ui.datepicker-pt-BR.js") %>"></script>
 	<link href="<%= Url.Content("~/Content/ui-darkness/jquery-ui-1.8.5.custom.css") %>" rel="stylesheet" type="text/css" />
 	<script type="text/javascript">
-		$(function () {
-			$(".datePicker").datepicker();
-		});
+	    $(function () {
+	        $(".datePicker").datepicker();
+	    });
 	</script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="RightContent" runat="server">

@@ -56,6 +56,56 @@ a.button:hover, input.button:hover {
 
 /* ========================================================================== */
 
+table.show_table {
+    width: 100%;
+    
+    font-size: 13px;
+    border-collapse: collapse;
+    border-bottom: 1px solid #aaa;
+    background-color: #fff;
+}
+
+table.show_table thead tr {
+    text-align: left;
+    text-shadow: 1px 1px 0px #fff;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #fff;
+    background-color: #eee;
+}
+
+table.show_table tbody tr:nth-child(odd) {
+    background-color: #f0ffff;
+}
+
+table.show_table tbody tr.unpublished {
+    background-color: #ffdab9;
+}
+
+table.show_table thead tr th {
+    padding: 5px;
+   
+    border-right: 1px solid #fff;
+}
+
+table.show_table thead tr th.actions {
+    width: 40px;
+    
+    border: none;
+    border-right: 1px solid #ccc;
+    border-right: 1px solid #fff;
+    background: none;
+    background-color: #eee;
+}
+
+table.show_table tbody tr td {
+    padding: 5px;
+    
+    color: #444;
+}
+
+/* ========================================================================== */
+
 .panel {
     margin: 0px 0px 5px 0px;
     padding: 5px;
@@ -411,6 +461,57 @@ a.button:hover, input.button:hover {
 #loginbox p {
     margin: 0px;
     padding: 0px;
+}
+
+#loginbox #user_informations {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    
+    border-bottom: 1px dotted #ccc;
+}
+
+#loginbox ul {
+    margin: 0px;
+    padding: 0px;
+    
+    list-style: none;
+}
+
+#loginbox ul li {
+    padding: 5px;
+    margin-bottom: 1px;
+    
+    border: 1px solid #ccc;
+    border-bottom-color: #aaa;
+    background-color: #eee;
+    background-image: url("../images/user_box_list_title_back.png");
+    background-repeat: repeat-x;
+}
+
+#loginbox ul li strong {
+    padding-left: 20px;
+   
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#loginbox ul li strong.article {
+    background-image: url("../images/article.png");
+}
+
+#loginbox ul ul {
+    margin-top: 10px;
+}
+
+#loginbox ul ul li {
+    padding: 2px;
+    display: inline;
+    
+    font-size: 12px;
+    text-shadow: 1px 1px 0px #fff;
+    border: none;
+    border-right: 1px solid #ccc;
+    background: none;
 }
 
 #loginbox #loginerror h3, #loginbox #loginerror h4 {

@@ -1,6 +1,8 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<LiberMvc.PaginatedList<LiberMvc.Models.Artigo>>" %>
+
 <%@ Import Namespace="LiberMvc.Models" %>
 <% var route = Url.RequestContext.RouteData.Values; %>
+
 <% foreach (var art in Model) { %>
 <div class="article_resume">
 	<h2>
@@ -20,14 +22,21 @@
 <% } %>
 
 <div class="actions">
-<% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin)	{ %>
-	<%= Html.ActionLink("Criar Novo", "Create", null, new { @class = "button" })%>
+<% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>
+	<%= Html.ActionLink("Criar novo", "Create", null, new { @class = "button" })%>
 <% } %>
+
+<% if (Usuario.Logado.isAdmin) { %>
+	<%= Html.ActionLink("Listar para edição", "Table", null, new { @class = "button" })%>
+<% } %>
+
 <% if (Model.HasPreviousPage) { %>
-	<%= Html.ActionLink("<<< Anterior", route["action"].ToString(), new { id = route["id"], page = (Model.PageIndex - 1) }, new { @class = "button" })%>
+	<%= Html.ActionLink("<< Anterior", route["action"].ToString(), new { id = route["id"], page = (Model.PageIndex - 1) }, new { @class = "button" })%>
 <% } %>
+
 <% if (Model.HasNextPage)	{ %>
-	<%= Html.ActionLink("Próxima >>>", route["action"].ToString(), new { id = route["id"], page = (Model.PageIndex + 1) }, new { @class = "button" })%>
+	<%= Html.ActionLink("Próxima >>", route["action"].ToString(), new { id = route["id"], page = (Model.PageIndex + 1) }, new { @class = "button" })%>
 <% } %>
+
 	<br class="clear" />
 </div>

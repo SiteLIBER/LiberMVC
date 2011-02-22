@@ -13,7 +13,7 @@
 	    <% if (Model.isOwnerOrAdmin) { %>
 		    <%= Html.ActionLink("Editar", "Edit", new { id = Model.ArtigoID }, new { @class = "button" }) %>
 	    <% } %>
-		    <%= Html.ActionLink("Voltar a Lista", "Index", null, new { @class = "button" }) %>
+		    <%= Html.ActionLink("Voltar a lista", "Index", null, new { @class = "button" }) %>
 
             <br class="clear" />
 	    </p>

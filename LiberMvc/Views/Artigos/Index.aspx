@@ -3,7 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<div class="panel">
 		<h1>Artigos</h1>
-		<%= Html.DisplayForModel("Lista") %>
+
+        <%= Html.DisplayForModel("Lista")%>
+
 	</div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="RightContent" runat="server">

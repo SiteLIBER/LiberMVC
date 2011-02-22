@@ -34,9 +34,19 @@ namespace LiberMvc.Controllers
 		}
 		#endregion
 
-		#region GET: /Artigos/Details/5
+        #region GET: /Artigos/
+        public ActionResult Table(int? page)
+        {
 
-		public ActionResult Details(int id)
+            var artigos = new PaginatedList<Artigo>(rep.Artigos, page ?? 0, 20);
+            //rep.Dispose();
+            return View(artigos);
+        }        
+        #endregion
+
+        #region GET: /Artigos/Details/5
+
+        public ActionResult Details(int id)
 		{
 			var art = rep.GetArtigo(id);
 			rep.Dispose();
@@ -58,7 +68,7 @@ namespace LiberMvc.Controllers
 
 		#region POST: /Artigos/Create
 
-		[HttpPost, Auth(Roles = "Editor")]
+		[ValidateInput(false), HttpPost, Auth(Roles = "Editor")]
 		public ActionResult Create(Artigo form)
 		{
 			try
