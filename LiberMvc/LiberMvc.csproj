@@ -482,6 +482,7 @@
     <Content Include="Scripts\tinymce\jscripts\tiny_mce\utils\form_utils.js" />
     <Content Include="Scripts\tinymce\jscripts\tiny_mce\utils\mctabs.js" />
     <Content Include="Scripts\tinymce\jscripts\tiny_mce\utils\validate.js" />
+    <Content Include="Views\Artigos\Delete.aspx" />
     <Content Include="Views\Artigos\Table.aspx" />
     <Content Include="Views\Artigos\Details.aspx" />
     <Content Include="Views\Artigos\Edit.aspx" />

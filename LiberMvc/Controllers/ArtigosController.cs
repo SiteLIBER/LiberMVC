@@ -34,7 +34,7 @@ namespace LiberMvc.Controllers
 		}
 		#endregion
 
-        #region GET: /Artigos/
+        #region GET: /Artigos/Table
         public ActionResult Table(int? page)
         {
 
@@ -132,18 +132,18 @@ namespace LiberMvc.Controllers
 
 		#endregion
 
-		#region POST: /Artigos/Delete/5
+		#region POST: /Artigos/ConfirmDelete/5
 
-		[HttpPost, Auth(Roles = "Editor")]
-		public ActionResult Delete(int id, Artigo form)
+		[Auth(Roles = "Editor")]
+		public ActionResult ConfirmDelete(int id)
 		{
 			var art = rep.GetArtigo(id);
 			if (art.isOwnerOrAdmin)
 			{
-				rep.Delete(form);
+				rep.Delete(art);
 				rep.Save();
 				rep.Dispose();
-				return RedirectToAction("Index");
+				return RedirectToAction("Table");
 			}
 			else
 				return View("AcessoNegado");
