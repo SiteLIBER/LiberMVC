@@ -9,7 +9,6 @@ using Elmah;
 namespace LiberMvc.Controllers
 {
 	[Scc("Artigos")]
-	[HandleError(View = "Error")]
 	public class ArtigosController : Controller
 	{
 
@@ -34,19 +33,19 @@ namespace LiberMvc.Controllers
 		}
 		#endregion
 
-        #region GET: /Artigos/Table
-        public ActionResult Table(int? page)
-        {
+		#region GET: /Artigos/Table
+		public ActionResult Table(int? page)
+		{
 
-            var artigos = new PaginatedList<Artigo>(rep.Artigos, page ?? 0, 20);
-            //rep.Dispose();
-            return View(artigos);
-        }        
-        #endregion
+			var artigos = new PaginatedList<Artigo>(rep.Artigos, page ?? 0, 20);
+			//rep.Dispose();
+			return View(artigos);
+		}
+		#endregion
 
-        #region GET: /Artigos/Details/5
+		#region GET: /Artigos/Details/5
 
-        public ActionResult Details(int id)
+		public ActionResult Details(int id)
 		{
 			var art = rep.GetArtigo(id);
 			rep.Dispose();

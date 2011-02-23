@@ -45,6 +45,12 @@ namespace LiberMvc.Models
     partial void InsertArtigo(Artigo instance);
     partial void UpdateArtigo(Artigo instance);
     partial void DeleteArtigo(Artigo instance);
+    partial void InsertConta(Conta instance);
+    partial void UpdateConta(Conta instance);
+    partial void DeleteConta(Conta instance);
+    partial void InsertBlog(Blog instance);
+    partial void UpdateBlog(Blog instance);
+    partial void DeleteBlog(Blog instance);
     #endregion
 		
 		public DBDataContext() : 
@@ -114,6 +120,22 @@ namespace LiberMvc.Models
 			get
 			{
 				return this.GetTable<Artigo>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Conta> Contas
+		{
+			get
+			{
+				return this.GetTable<Conta>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Blog> Blogs
+		{
+			get
+			{
+				return this.GetTable<Blog>();
 			}
 		}
 	}
@@ -408,6 +430,8 @@ namespace LiberMvc.Models
 		
 		private EntitySet<Artigo> _Artigos;
 		
+		private EntitySet<Blog> _Blogs;
+		
 		private EntityRef<EstadoCivil> _EstadoCivil;
 		
 		private EntityRef<TipoUsuario> _TipoUsuario;
@@ -477,6 +501,7 @@ namespace LiberMvc.Models
 		public Usuario()
 		{
 			this._Artigos = new EntitySet<Artigo>(new Action<Artigo>(this.attach_Artigos), new Action<Artigo>(this.detach_Artigos));
+			this._Blogs = new EntitySet<Blog>(new Action<Blog>(this.attach_Blogs), new Action<Blog>(this.detach_Blogs));
 			this._EstadoCivil = default(EntityRef<EstadoCivil>);
 			this._TipoUsuario = default(EntityRef<TipoUsuario>);
 			this._GrauInstrucao = default(EntityRef<GrauInstrucao>);
@@ -1048,6 +1073,19 @@ namespace LiberMvc.Models
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Usuario_Blog", Storage="_Blogs", ThisKey="UsuarioID", OtherKey="EditorID")]
+		public EntitySet<Blog> Blogs
+		{
+			get
+			{
+				return this._Blogs;
+			}
+			set
+			{
+				this._Blogs.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="EstadoCivil_Usuario", Storage="_EstadoCivil", ThisKey="EstadoCivilID", OtherKey="EstadoCivilID", IsForeignKey=true)]
 		public EstadoCivil EstadoCivil
 		{
@@ -1177,6 +1215,18 @@ namespace LiberMvc.Models
 		}
 		
 		private void detach_Artigos(Artigo entity)
+		{
+			this.SendPropertyChanging();
+			entity.Editor = null;
+		}
+		
+		private void attach_Blogs(Blog entity)
+		{
+			this.SendPropertyChanging();
+			entity.Editor = this;
+		}
+		
+		private void detach_Blogs(Blog entity)
 		{
 			this.SendPropertyChanging();
 			entity.Editor = null;
@@ -1584,6 +1634,435 @@ namespace LiberMvc.Models
 					if ((value != null))
 					{
 						value.Artigos.Add(this);
+						this._EditorID = value.UsuarioID;
+					}
+					else
+					{
+						this._EditorID = default(int);
+					}
+					this.SendPropertyChanged("Editor");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="Contas")]
+	public partial class Conta : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ContaID;
+		
+		private System.Nullable<decimal> _Valor;
+		
+		private string _Descricao;
+		
+		private System.Nullable<System.DateTime> _Data;
+		
+		private string _Saldo;
+		
+		private System.DateTime _CriadoEm;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnContaIDChanging(int value);
+    partial void OnContaIDChanged();
+    partial void OnValorChanging(System.Nullable<decimal> value);
+    partial void OnValorChanged();
+    partial void OnDescricaoChanging(string value);
+    partial void OnDescricaoChanged();
+    partial void OnDataChanging(System.Nullable<System.DateTime> value);
+    partial void OnDataChanged();
+    partial void OnSaldoChanging(string value);
+    partial void OnSaldoChanged();
+    partial void OnCriadoEmChanging(System.DateTime value);
+    partial void OnCriadoEmChanged();
+    #endregion
+		
+		public Conta()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ContaID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int ContaID
+		{
+			get
+			{
+				return this._ContaID;
+			}
+			set
+			{
+				if ((this._ContaID != value))
+				{
+					this.OnContaIDChanging(value);
+					this.SendPropertyChanging();
+					this._ContaID = value;
+					this.SendPropertyChanged("ContaID");
+					this.OnContaIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Valor", DbType="Money")]
+		public System.Nullable<decimal> Valor
+		{
+			get
+			{
+				return this._Valor;
+			}
+			set
+			{
+				if ((this._Valor != value))
+				{
+					this.OnValorChanging(value);
+					this.SendPropertyChanging();
+					this._Valor = value;
+					this.SendPropertyChanged("Valor");
+					this.OnValorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Descricao", DbType="NVarChar(200)")]
+		public string Descricao
+		{
+			get
+			{
+				return this._Descricao;
+			}
+			set
+			{
+				if ((this._Descricao != value))
+				{
+					this.OnDescricaoChanging(value);
+					this.SendPropertyChanging();
+					this._Descricao = value;
+					this.SendPropertyChanged("Descricao");
+					this.OnDescricaoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Data", DbType="Date")]
+		public System.Nullable<System.DateTime> Data
+		{
+			get
+			{
+				return this._Data;
+			}
+			set
+			{
+				if ((this._Data != value))
+				{
+					this.OnDataChanging(value);
+					this.SendPropertyChanging();
+					this._Data = value;
+					this.SendPropertyChanged("Data");
+					this.OnDataChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Saldo", DbType="NVarChar(50)")]
+		public string Saldo
+		{
+			get
+			{
+				return this._Saldo;
+			}
+			set
+			{
+				if ((this._Saldo != value))
+				{
+					this.OnSaldoChanging(value);
+					this.SendPropertyChanging();
+					this._Saldo = value;
+					this.SendPropertyChanged("Saldo");
+					this.OnSaldoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CriadoEm", DbType="DateTime NOT NULL")]
+		public System.DateTime CriadoEm
+		{
+			get
+			{
+				return this._CriadoEm;
+			}
+			set
+			{
+				if ((this._CriadoEm != value))
+				{
+					this.OnCriadoEmChanging(value);
+					this.SendPropertyChanging();
+					this._CriadoEm = value;
+					this.SendPropertyChanged("CriadoEm");
+					this.OnCriadoEmChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute()]
+	public partial class Blog : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _BlogID;
+		
+		private int _EditorID;
+		
+		private string _Titulo;
+		
+		private string _Conteudo;
+		
+		private bool _Publicado;
+		
+		private System.DateTime _PublicadoEm;
+		
+		private System.DateTime _CriadoEm;
+		
+		private EntityRef<Usuario> _Usuario;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnBlogIDChanging(int value);
+    partial void OnBlogIDChanged();
+    partial void OnEditorIDChanging(int value);
+    partial void OnEditorIDChanged();
+    partial void OnTituloChanging(string value);
+    partial void OnTituloChanged();
+    partial void OnConteudoChanging(string value);
+    partial void OnConteudoChanged();
+    partial void OnPublicadoChanging(bool value);
+    partial void OnPublicadoChanged();
+    partial void OnPublicadoEmChanging(System.DateTime value);
+    partial void OnPublicadoEmChanged();
+    partial void OnCriadoEmChanging(System.DateTime value);
+    partial void OnCriadoEmChanged();
+    #endregion
+		
+		public Blog()
+		{
+			this._Usuario = default(EntityRef<Usuario>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BlogID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int BlogID
+		{
+			get
+			{
+				return this._BlogID;
+			}
+			set
+			{
+				if ((this._BlogID != value))
+				{
+					this.OnBlogIDChanging(value);
+					this.SendPropertyChanging();
+					this._BlogID = value;
+					this.SendPropertyChanged("BlogID");
+					this.OnBlogIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EditorID", DbType="Int NOT NULL")]
+		public int EditorID
+		{
+			get
+			{
+				return this._EditorID;
+			}
+			set
+			{
+				if ((this._EditorID != value))
+				{
+					if (this._Usuario.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnEditorIDChanging(value);
+					this.SendPropertyChanging();
+					this._EditorID = value;
+					this.SendPropertyChanged("EditorID");
+					this.OnEditorIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Titulo", DbType="NVarChar(250)")]
+		public string Titulo
+		{
+			get
+			{
+				return this._Titulo;
+			}
+			set
+			{
+				if ((this._Titulo != value))
+				{
+					this.OnTituloChanging(value);
+					this.SendPropertyChanging();
+					this._Titulo = value;
+					this.SendPropertyChanged("Titulo");
+					this.OnTituloChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Conteudo", DbType="NText", UpdateCheck=UpdateCheck.Never)]
+		public string Conteudo
+		{
+			get
+			{
+				return this._Conteudo;
+			}
+			set
+			{
+				if ((this._Conteudo != value))
+				{
+					this.OnConteudoChanging(value);
+					this.SendPropertyChanging();
+					this._Conteudo = value;
+					this.SendPropertyChanged("Conteudo");
+					this.OnConteudoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Publicado", DbType="Bit NOT NULL")]
+		public bool Publicado
+		{
+			get
+			{
+				return this._Publicado;
+			}
+			set
+			{
+				if ((this._Publicado != value))
+				{
+					this.OnPublicadoChanging(value);
+					this.SendPropertyChanging();
+					this._Publicado = value;
+					this.SendPropertyChanged("Publicado");
+					this.OnPublicadoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PublicadoEm", DbType="DateTime NOT NULL")]
+		public System.DateTime PublicadoEm
+		{
+			get
+			{
+				return this._PublicadoEm;
+			}
+			set
+			{
+				if ((this._PublicadoEm != value))
+				{
+					this.OnPublicadoEmChanging(value);
+					this.SendPropertyChanging();
+					this._PublicadoEm = value;
+					this.SendPropertyChanged("PublicadoEm");
+					this.OnPublicadoEmChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CriadoEm", DbType="DateTime NOT NULL")]
+		public System.DateTime CriadoEm
+		{
+			get
+			{
+				return this._CriadoEm;
+			}
+			set
+			{
+				if ((this._CriadoEm != value))
+				{
+					this.OnCriadoEmChanging(value);
+					this.SendPropertyChanging();
+					this._CriadoEm = value;
+					this.SendPropertyChanged("CriadoEm");
+					this.OnCriadoEmChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Usuario_Blog", Storage="_Usuario", ThisKey="EditorID", OtherKey="UsuarioID", IsForeignKey=true)]
+		public Usuario Editor
+		{
+			get
+			{
+				return this._Usuario.Entity;
+			}
+			set
+			{
+				Usuario previousValue = this._Usuario.Entity;
+				if (((previousValue != value) 
+							|| (this._Usuario.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Usuario.Entity = null;
+						previousValue.Blogs.Remove(this);
+					}
+					this._Usuario.Entity = value;
+					if ((value != null))
+					{
+						value.Blogs.Add(this);
 						this._EditorID = value.UsuarioID;
 					}
 					else

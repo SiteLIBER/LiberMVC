@@ -345,14 +345,14 @@ ul.formatted_list li strong {
 
 #main_content #artigos {
     float: left;
-    /*width: 430px;*/
+    width: 430px;
 }
 
 #main_content #blog 
 {
-	display: none;
-/*    float: right;
-    width: 235px;*/
+/*	display: none; */
+    float: right;
+    width: 235px;
 }
 
 

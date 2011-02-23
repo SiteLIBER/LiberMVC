@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<LiberMvc.Models.Artigo>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<LiberMvc.Models.Blog>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<script type="text/javascript" src="/Scripts/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
@@ -6,10 +6,9 @@
 	<div class="panel">
 		<h1>Editar artigo</h1>
 		<div id="editor-form">
-			<% Html.EnableClientValidation(); %>
 			<% using (Html.BeginForm()) {%>
 			<%= Html.ValidationSummary(true) %>
-			<%= Html.EditorForModel("Artigo") %>
+			<%= Html.EditorForModel("Blog") %>
 			<p class="actions">
 				<input type="submit" value="Enviar" class="button" />
 				<%= Html.ActionLink("Voltar a Lista", "Index", null, new { @class = "button" }) %>

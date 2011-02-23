@@ -19,7 +19,7 @@
 		<div class="drop-holder">
 			<div class="drop-content">
 				<ul>
-					<%--<li><a href="<%= Url.Action("Index", "Blog") %>">Blog</a></li>--%>
+					<li><a href="<%= Url.Action("Index", "Blog") %>">Blog</a></li>
 					<li><a href="<%= Url.Action("Index", "Artigos") %>">Artigos</a></li>
 					<li><a href="<%= Url.Action("Direitos", "Liber") %>">Direitos Individuais</a></li>
 					<li><a href="<%= Url.Action("Economia", "Liber") %>">Comércio e Economia</a></li>

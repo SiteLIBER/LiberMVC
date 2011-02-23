@@ -91,6 +91,9 @@
     <Compile Include="Helpers\PaginatedList.cs" />
     <Compile Include="Models\Artigo.cs" />
     <Compile Include="Models\ArtigoRepository.cs" />
+    <Compile Include="Models\Blog.cs" />
+    <Compile Include="Models\BlogRepository.cs" />
+    <Compile Include="Models\IBlogRepository.cs" />
     <Compile Include="Models\IArtigoRepository.cs" />
     <Compile Include="Models\Listas.cs" />
     <Compile Include="Models\FiliacaoModel.cs" />
@@ -119,6 +122,7 @@
       <DependentUpon>BancoTeste.mdf</DependentUpon>
     </Content>
     <Content Include="Content\images\actions_back.png" />
+    <Content Include="Content\images\article.png" />
     <Content Include="Content\images\bannerLIBERhor01.png" />
     <Content Include="Content\images\bannerLIBERvert01.png" />
     <Content Include="Content\images\book_ico.png" />
@@ -490,6 +494,14 @@
     <Content Include="Views\Artigos\Editor.aspx" />
     <Content Include="Views\Artigos\Index.aspx" />
     <Content Include="Views\Auth\BanidoBox.ascx" />
+    <Content Include="Views\Blog\Create.aspx" />
+    <Content Include="Views\Blog\Delete.aspx" />
+    <Content Include="Views\Blog\Details.aspx" />
+    <Content Include="Views\Blog\Edit.aspx" />
+    <Content Include="Views\Blog\Editor.aspx" />
+    <Content Include="Views\Blog\Home.ascx" />
+    <Content Include="Views\Blog\Index.aspx" />
+    <Content Include="Views\Blog\Table.aspx" />
     <Content Include="Views\Liber\Contato.aspx" />
     <Content Include="Views\Liber\Direitos.aspx" />
     <Content Include="Views\Liber\Diretorios.aspx" />
@@ -506,7 +518,6 @@
     <Content Include="Views\Auth\Login.aspx" />
     <Content Include="Views\Auth\LoginFalhou.aspx" />
     <Content Include="Views\Artigos\Home.ascx" />
-    <Content Include="Views\Blog\Home.ascx" />
     <Content Include="Views\Home\Destaque.ascx" />
     <Content Include="Views\Home\Enquete.ascx" />
     <Content Include="Views\Home\Index.aspx" />
@@ -518,7 +529,11 @@
     <Content Include="Views\Liber\Lideranca.aspx" />
     <Content Include="Views\Liber\Programa.aspx" />
     <Content Include="Views\Shared\BottomMenu.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\Blog.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\TabelaBlog.ascx" />
+    <Content Include="Views\Shared\DisplayTemplates\ListaBlog.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Tabela.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\Blog.ascx" />
     <Content Include="Views\Shared\FacebookBox.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\Artigo.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\DateTime.ascx" />

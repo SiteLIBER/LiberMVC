@@ -12,9 +12,8 @@
         </p>
 
 	    <div id="display-form">
-		    <% Html.EnableClientValidation(); %>
-			<% using (Html.BeginForm())
-			    { %>
+		   <% Html.EnableClientValidation(); %>
+			<% using (Html.BeginForm()) { %>
 				<%= Html.ValidationSummary(true)%>
 				<div class="display-item">
 					<span class="display-label obr">

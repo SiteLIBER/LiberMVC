@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BancoTeste" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\BancoTeste.mdf;Integrated Security=True;User Instance=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="liberConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=sql2k5.plesklogin.net;Initial Catalog=liber;Persist Security Info=True;User ID=liber" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="liberConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="EstadoCivil" Member="EstadoCivils">
     <Type Name="EstadoCivil">
       <Column Name="EstadoCivilID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -44,6 +44,7 @@
       <Column Name="OutroPartido" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="OutroPartidoQual" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="Usuario_Artigo" Member="Artigos" ThisKey="UsuarioID" OtherKey="EditorID" Type="Artigo" />
+      <Association Name="Usuario_Blog" Member="Blogs" ThisKey="UsuarioID" OtherKey="EditorID" Type="Blog" />
       <Association Name="EstadoCivil_Usuario" Member="EstadoCivil" ThisKey="EstadoCivilID" OtherKey="EstadoCivilID" Type="EstadoCivil" IsForeignKey="true" />
       <Association Name="TipoUsuario_Usuario" Member="TipoUsuario" ThisKey="TipoUsuarioID" OtherKey="TipoUsuarioID" Type="TipoUsuario" IsForeignKey="true" />
       <Association Name="GrauInstrucao_Usuario" Member="GrauInstrucao" ThisKey="GrauInstrucaoID" OtherKey="GrauInstrucaoID" Type="GrauInstrucao" IsForeignKey="true" />
@@ -69,6 +70,28 @@
       <Column Name="Autor" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
       <Column Name="Fonte" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Association Name="Usuario_Artigo" Member="Editor" ThisKey="EditorID" OtherKey="UsuarioID" Type="Usuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Contas">
+    <Type Name="Conta">
+      <Column Name="ContaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Valor" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Descricao" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Data" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Saldo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CriadoEm" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="Blog" Member="Blogs">
+    <Type Name="Blog">
+      <Column Name="BlogID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EditorID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Titulo" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Conteudo" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Publicado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PublicadoEm" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CriadoEm" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Usuario_Blog" Member="Editor" Storage="_Usuario" ThisKey="EditorID" OtherKey="UsuarioID" Type="Usuario" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

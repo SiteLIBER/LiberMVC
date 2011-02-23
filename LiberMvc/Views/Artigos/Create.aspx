@@ -7,6 +7,7 @@
 	<div class="panel">
 		<h1>Novo artigo</h1>
 		<div id="editor-form">
+			<% Html.EnableClientValidation(); %>
 			<% using (Html.BeginForm())	{%>
 			<%= Html.ValidationSummary(true) %>
 			<%= Html.EditorForModel("Artigo") %>
