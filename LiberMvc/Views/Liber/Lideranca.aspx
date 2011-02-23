@@ -4,66 +4,73 @@
 
     <div class="panel" id="post">
         <h1>Lideranças nacionais</h1>
+        
+        <ul class="formatted_list">
+            <li class="highlight"><strong>Presidente Nacional</strong>
+                Juliano Torres
+            </li>
+            <li><strong>Vice-presidente Nacional</strong>
+                Bernardo Santoro Pinto Machado
+            </li>
+            <li><strong>Secretário Geral</strong>
+                Guilherme Inojosa Fragoso Cavalcanti 
+            </li>
+            <li><strong>Tesoureiro</strong>
+                Bruno Paludo
+            </li>
+            <li><strong>Relações Públicas</strong>
+                Luciana Lopes Nominato Braga
+            </li>
+            <li><strong>Captação de Recursos</strong>
+                Felipe Kirsch
+            </li>
+            <li><strong>Comunicação</strong>
+                Odilon Candido
+            </li>
+            <li><strong>Marketing</strong>
+                André rufino
+            </li>
+            <li><strong>Corregedor</strong>
+                Carlo Rocha
+            </li>
+        </ul>
 
-        <div id="index">
-            <h1>Nosso Partido</h1>
+        <div style="float: left; padding-right: 10px">
+            <h2>Comite Julgador</h2>
 
-            <ul>
-                <li><a href="<%= Url.Action("Historia", "Liber") %>">História</a></li>
-		        <li><a href="<%= Url.Action("Filosofia", "Liber") %>">Filosofia</a></li>
-		        <li><a href="<%= Url.Action("Programa", "Liber") %>">Programa</a></li>
-			    <li><a href="<%= Url.Action("Estatuto", "Liber") %>">Estatuto</a></li>
-			    <li><a href="<%= Url.Action("Lideranca", "Liber") %>">Lideranças Nacionais</a></li>
-                <%-- <li><a href='<%= Url.Action("Contas", "Partido") %>'>Prestação de Contas</a></li> --%>
+            <ul class="formatted_list">
+                <li>Caio Magno Lima Campos</li>
+                <li>Fernando Fiori Chiocca</li>
+                <li>Filipe Rangel Celeti</li>
+                <li>Pedro Henrique Ferreira González</li>
+                <li>Thiago Guedes Santos</li>
             </ul>
         </div>
 
-        <h2>Presidente Nacional</h2>
-        <ul>
-            <li>Juliano Torres</li>
-        </ul>
+        <div style="float: left;  padding-right: 10px">
+            <h2>Comite Fiscal</h2>
 
-        <h2>Vice-presidente Nacional</h2>
-        <ul>
-            <li>Bernardo Santoro Pinto Machado</li>
-        </ul>
+            <ul class="formatted_list">
+                <li>Geraldo Boz Junior</li>
+                <li>Hélio Marcos Coutinho Beltrão</li>
+                <li>Thiago Pinheiro de Souza</li>
+            </ul>
+        </div>
 
-        <h2>Secretário Geral</h2>
-        <ul>
-            <li>Guilherme Inojosa Fragoso Cavalcanti</li>
-        </ul>
+        <div style="float: left">
+            <h2>Comite Executivo</h2>
 
-        <h2>Tesoureiro</h2>
-        <ul>
-            <li>Bruno Paludo</li>
-        </ul>
-
-        <h2>Comite Julgador</h2>
-        <ul>
-            <li>Caio Magno Lima Campos</li>
-            <li>Fernando Fiori Chiocca</li>
-            <li>Filipe Rangel Celeti</li>
-            <li>Pedro Henrique Ferreira González</li>
-            <li>Thiago Guedes Santos</li>
-        </ul>
-
-        <h2>Comite Fiscal</h2>
-        <ul>
-            <li>Geraldo Boz Junior</li>
-            <li>Hélio Marcos Coutinho Beltrão</li>
-            <li>Thiago Pinheiro de Souza</li>
-        </ul>
-
-        <h2>Comite Executivo</h2>
-        <ul>
-            <li>André Luiz de Freitas Paranhos</li>
-            <li>Antônio Mariz Sales Neto</li>
-            <li>Bruno Paludo</li>
-            <li>Carlo Sivieri de Assis Rocha</li>
-            <li>Luciana Lopes Nominato Braga</li>
-            <li>Roberto Fiori Chiocca</li>
-            <li>Sidnei Santana</li>
-        </ul>
+            <ul class="formatted_list">
+                <li>André Luiz de Freitas Paranhos</li>
+                <li>Antônio Mariz Sales Neto</li>
+                <li>Bruno Paludo</li>
+                <li>Carlo Sivieri de Assis Rocha</li>
+                <li>Luciana Lopes Nominato Braga</li>
+                <li>Roberto Fiori Chiocca</li>
+                <li>Sara de Cerqueira</li>
+                <li>Sidnei Santana</li>
+            </ul>
+        </div>
 
     </div>
 

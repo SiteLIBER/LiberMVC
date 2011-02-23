@@ -19,47 +19,31 @@
         </div>
 
         <p>
-            A premissa básica dessa filosofia diz que é ilegítimo praticar agressão
-            contra não agressores. O que se quer dizer com agressão não é assertividade,
-            argumentatividade, competitividade, ousadia, disputabilidade ou antagonismo.
-            O que se quer dizer com agressão é o emprego da violência, como a que tem
-            lugar no assassinato, estupro, assalto ou sequestro. O Libertarianismo não
-            implica em pacifismo; não proíbe o uso da violência em legítima defesa ou mesmo
-            retaliação à violência. A filosofia libertária condena apenas iniciar a violência
-            o uso de violência contra uma pessoa não violenta ou sua propriedade.
+            O Libertarianismo defende a maximização das liberdades individuais,
+            devolvendo às pessoas o direito de determinar a condução de suas vidas
+            e de realizar suas escolhas de acordo com suas próprias consciências,
+            desde que sem iniciar agressão contra terceiros, possibilitando, assim,
+            o pleno desenvolvimento de suas capacidades e felicidade.
         </p>
 
         <p>
-            Nada há de impróprio ou controverso nesta visão. A maioria das pessoas a apóia
-            de todo o coração. E, sem dúvida, esse sentimento é parte e parcela da nossa
-            civilização ocidental, guardada no relicário do direito natural.
+            O Libertarianismo abomina qualquer intervenção violenta na vida e nas escolhas
+            das pessoas, seja ela promovida por outros indivíduos ou por grupos.
+            Ademais, sempre que o estado viola o direito dos indivíduos de dispor
+            do próprio tempo e de seus bens, o resultado é desastroso – miséria,
+            escassez e guerras. Assim, o LIBER acredita que em um Livre Mercado de
+            bens e ideias, todos os indivíduos são beneficiados, independentemente de
+            sua aptidão física, classe social ou grau de instrução.
         </p>
 
         <p>
-            A singularidade do Libertarianismo é encontrada, não na declaração de seu princípio
-            básico, mas na maneira rigorosamente consistente a qual o princípio é aplicado.
-            Por exemplo, a maioria das pessoas não vê qualquer contradição entre este
-            princípio e nosso sistema tributário. O Libertarianismo vê.
-        </p>
-
-        <p>
-            A tributação é contrária ao princípio básico, porque envolve agressão contra
-            cidadãos não agressivos que se recusam a pagar impostos. Não faz a menor
-            diferença que o governo ofereça bens e serviços em troca da arrecadação.
-            O importante é que o chamado comércio (dinheiro em impostos por serviços do governo)
-            é coagido. O indivíduo não é livre para rejeitar a oferta. Tampouco o fato de que
-            a maioria dos cidadãos apóie essa tributação coercitiva faz qualquer diferença.
-            Mesmo quando endossada pela maioria, a iniciação de agressão física não é legítima.
-            O Libertarianismo condena-a nessa área, como a condena onde quer que ocorra.
-        </p>
-
-        <p>
-            Outra diferença entre as crenças dos liberais e as de outros membros da sociedade
-            é o anverso da visão de que a violência iniciatória é maligna. Os
-            libertários defendem que, no que se refere à teoria política, qualquer
-            coisa que não envolve a iniciação de agressão não é maligna, e que, no que
-            respeita a teoria política, qualquer coisa que não envolve a iniciação de
-            violência não é um mal punível e não deveria ser considerada ilegal.
+            O LIBER acredita que uma sociedade baseada na cooperação voluntária
+            é uma sociedade mais justa, solidária, coesa e próspera. Da mesma forma,
+            o LIBER entende que qualquer tentativa de criar justiça, solidariedade,
+            coesão ou prosperidade baseada na imposição, no uso de força,
+            em ameaças ou em sanções é absurda, imoral e sempre resultará no
+            exato oposto – na sociedade em que vivemos hoje, uma sociedade dividida,
+            onde reina a pobreza, a indiferença e a injustiça.
         </p>
 
     </div>

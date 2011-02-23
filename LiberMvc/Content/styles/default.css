@@ -106,6 +106,32 @@ table.show_table tbody tr td {
 
 /* ========================================================================== */
 
+ul.formatted_list {
+    margin: 0px;
+    padding: 0px;
+    
+    list-style: none;
+}
+
+ul.formatted_list li {
+    padding: 5px;
+    font-size: 13px;
+}
+
+ul.formatted_list li.highlight {
+    font-size: 20px;
+}
+
+ul.formatted_list li strong {
+    padding-right: 10px;
+    
+    color: #444;
+    font-family: Georgia;
+    font-style: italic;
+}
+
+/* ========================================================================== */
+
 .panel {
     margin: 0px 0px 5px 0px;
     padding: 5px;
