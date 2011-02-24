@@ -12,7 +12,7 @@
 </p>
 
 <ul>
-    <li> <strong class="article">Artigos</strong>
+    <li><strong class="article">Artigos</strong>
         <ul>
             <% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>
             <li><%= Html.ActionLink("Novo artigo", "Create", "Artigos")%></li>
@@ -34,5 +34,30 @@
       <li><a href="#">Últimas participações no fórum</a></li>
       <li><a href="#">Artigos favoritos</a></li>
       <li><a href="#">Contato</a></li> --%>
-  </ul>
+</ul>
+
+<ul>
+    <li><strong class="blog">Blog</strong>
+        <ul>
+            <% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>
+            <li><%= Html.ActionLink("Nova postagem", "Create", "Blog")%></li>
+            <% } %>
+
+            <% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>
+            <li><%= Html.ActionLink("Minhas postagens", "Editor", "Blog", new { id = Model.UsuarioID }, null)%></li>
+            <% } %>
+
+            <% if (Usuario.Logado.isAdmin) { %>
+            <li><%= Html.ActionLink("Todos as postagens", "Table", "Blog")%></li>
+            <% } else { %>
+            <li><%= Html.ActionLink("Todos as postagens", "Index", "Blog")%></li>
+            <% } %>
+        </ul>
+    </li>
+
+      <%-- <li><a href="#">Comentários</a></li>
+      <li><a href="#">Últimas participações no fórum</a></li>
+      <li><a href="#">Artigos favoritos</a></li>
+      <li><a href="#">Contato</a></li> --%>
+</ul>
 

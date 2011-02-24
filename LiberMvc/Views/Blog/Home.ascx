@@ -3,15 +3,16 @@
 <!-- BLOG BEGIN -->
 <div class="panel" id="blog">
 	<h1>Blog</h1>
-	<ul class="posts">
-		<% foreach (var blog in Model)
-		 { %>
-		<li>
-			<%= blog.PublicadoEm.ToShortDateString()%><br />
-			<%= Html.ActionLink(blog.Titulo, "Details", "Blog", new { id = blog.BlogID }, null)%>
-		</li>
-		<% } %>
-	</ul>
+
+	<% foreach (var blog in Model) { %>
+	<div class="article_resume">
+        <p class="general_informations">
+		    <span class="date"><%= blog.PublicadoEm.ToShortDateString()%></span><br />
+		    <%= Html.ActionLink(blog.Titulo, "Details", "Blog", new { id = blog.BlogID }, null)%>
+        </p>
+	</div>
+	<% } %>
+
 	<p class="actions">
 		<%= Html.ActionLink("Ir para o blog", "Index", "Blog", null, new { @class = "button" })%>
 		<br class="clear" />
