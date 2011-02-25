@@ -15,17 +15,17 @@
     <li><strong class="article">Artigos</strong>
         <ul>
             <% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>
-            <li><%= Html.ActionLink("Novo artigo", "Create", "Artigos")%></li>
+            <li><%= Html.ActionLink("Novo", "Create", "Artigos")%></li>
             <% } %>
 
             <% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>
-            <li><%= Html.ActionLink("Meus artigos", "Editor", "Artigos", new { id = Model.UsuarioID }, null)%></li>
+            <li><%= Html.ActionLink("Meus", "Editor", "Artigos", new { id = Model.UsuarioID }, null)%></li>
             <% } %>
 
             <% if (Usuario.Logado.isAdmin) { %>
-            <li><%= Html.ActionLink("Todos os artigos", "Table", "Artigos")%></li>
+            <li><%= Html.ActionLink("Todos", "Table", "Artigos")%></li>
             <% } else { %>
-            <li><%= Html.ActionLink("Todos os artigos", "Index", "Artigos")%></li>
+            <li><%= Html.ActionLink("Todos", "Index", "Artigos")%></li>
             <% } %>
         </ul>
     </li>
@@ -40,17 +40,17 @@
     <li><strong class="blog">Blog</strong>
         <ul>
             <% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>
-            <li><%= Html.ActionLink("Nova postagem", "Create", "Blog")%></li>
+            <li><%= Html.ActionLink("Novo", "Create", "Blog")%></li>
             <% } %>
 
             <% if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { %>
-            <li><%= Html.ActionLink("Minhas postagens", "Editor", "Blog", new { id = Model.UsuarioID }, null)%></li>
+            <li><%= Html.ActionLink("Meus", "Editor", "Blog", new { id = Model.UsuarioID }, null)%></li>
             <% } %>
 
             <% if (Usuario.Logado.isAdmin) { %>
-            <li><%= Html.ActionLink("Todos as postagens", "Table", "Blog")%></li>
+            <li><%= Html.ActionLink("Todos", "Table", "Blog")%></li>
             <% } else { %>
-            <li><%= Html.ActionLink("Todos as postagens", "Index", "Blog")%></li>
+            <li><%= Html.ActionLink("Todos", "Index", "Blog")%></li>
             <% } %>
         </ul>
     </li>

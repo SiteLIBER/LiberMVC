@@ -125,6 +125,7 @@
     <Content Include="Content\images\article.png" />
     <Content Include="Content\images\bannerLIBERhor01.png" />
     <Content Include="Content\images\bannerLIBERvert01.png" />
+    <Content Include="Content\images\blogger.png" />
     <Content Include="Content\images\book_ico.png" />
     <Content Include="Content\images\button_back.png" />
     <Content Include="Content\images\button_back_hover.png" />
