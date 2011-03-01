@@ -18,7 +18,6 @@
             </ul>
          </div>
 
-
         <p>
             O Libertários (LIBER) surgiu a partir de questionamentos e
             discussões numa comunidade da rede de relacionamentos,

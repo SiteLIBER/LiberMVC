@@ -7,53 +7,53 @@
         
         <ul class="formatted_list">
             <li class="highlight"><strong>Presidente Nacional</strong>
-                Juliano Torres
+                <a href="http://www.facebook.com/Julianotorres" target="_blank">Juliano Torres</a>
             </li>
             <li><strong>Vice-presidente Nacional</strong>
-                Bernardo Santoro Pinto Machado
+                <a href="http://www.facebook.com/profile.php?id=100002078219123" target="_blank">Bernardo Santoro Pinto Machado</a>
             </li>
             <li><strong>Secretário Geral</strong>
-                Guilherme Inojosa Fragoso Cavalcanti 
+                <a href="http://www.facebook.com/profile.php?id=1663780584" target="_blank">Guilherme Inojosa Fragoso Cavalcanti</a>
             </li>
             <li><strong>Tesoureiro</strong>
-                Bruno Paludo
+                <a href="http://www.facebook.com/Bruno.Paludo" target="_blank">Bruno Paludo</a>
             </li>
             <li><strong>Relações Públicas</strong>
-                Luciana Lopes Nominato Braga
+                <a href="http://www.facebook.com/luciana.lnb" target="_blank">Luciana Lopes Nominato Braga</a>
             </li>
             <li><strong>Captação de Recursos</strong>
-                Felipe Kirsch
+                <a href="http://www.facebook.com/fkirsch" target="_blank">Felipe Kirsch</a>
             </li>
             <li><strong>Comunicação</strong>
-                Odilon Candido
+                <a href="http://www.facebook.com/odilon.candido" target="_blank">Odilon Candido</a>
             </li>
             <li><strong>Marketing</strong>
-                André rufino
+                <a href="http://www.facebook.com/profile.php?id=800879729" target="_blank">André rufino</a>
             </li>
             <li><strong>Corregedor</strong>
-                Carlo Rocha
+                <a href="http://www.facebook.com/carlo.rocha" target="_blank">Carlo Rocha</a>             
             </li>
         </ul>
 
-        <div style="float: left; padding-right: 10px">
+        <div style="float: left; padding-right: 15px">
             <h2>Comite Julgador</h2>
 
             <ul class="formatted_list">
-                <li>Caio Magno Lima Campos</li>
-                <li>Fernando Fiori Chiocca</li>
-                <li>Filipe Rangel Celeti</li>
-                <li>Pedro Henrique Ferreira González</li>
-                <li>Thiago Guedes Santos</li>
+                <li><a href="http://www.facebook.com/caiomagnolc" target="_blank">Caio Magno Lima Campos</a></li>
+                <li><a href="http://www.facebook.com/chiocca" target="_blank">Fernando Fiori Chiocca</a></li>
+                <li><a href="http://www.facebook.com/filipeceleti" target="_blank">Filipe Rangel Celeti</a></li>
+                <li><a href="http://www.facebook.com/profile.php?id=100001335191421&ref=ts" target="_blank">Pedro Henrique Ferreira González</a></li>
+                <li><a href="http://www.facebook.com/profile.php?id=1813515840" target="_blank">Thiago Guedes Santos</a></li>
             </ul>
         </div>
 
-        <div style="float: left;  padding-right: 10px">
+        <div style="float: left;  padding-right: 15px">
             <h2>Comite Fiscal</h2>
 
             <ul class="formatted_list">
-                <li>Geraldo Boz Junior</li>
-                <li>Hélio Marcos Coutinho Beltrão</li>
-                <li>Thiago Pinheiro de Souza</li>
+                <li><a href="http://www.facebook.com/profile.php?id=100001878387467" target="_blank">Geraldo Boz Junior</a></li>
+                <li><a href="http://www.facebook.com/heliob" target="_blank">Hélio Marcos Coutinho Beltrão</a></li>
+                <li><a href="http://www.facebook.com/profile.php?id=100000921473730" target="_blank">Thiago Pinheiro de Souza</a></li>
             </ul>
         </div>
 
@@ -61,14 +61,14 @@
             <h2>Comite Executivo</h2>
 
             <ul class="formatted_list">
-                <li>André Luiz de Freitas Paranhos</li>
-                <li>Antônio Mariz Sales Neto</li>
-                <li>Bruno Paludo</li>
-                <li>Carlo Sivieri de Assis Rocha</li>
-                <li>Luciana Lopes Nominato Braga</li>
-                <li>Roberto Fiori Chiocca</li>
-                <li>Sara de Cerqueira</li>
-                <li>Sidnei Santana</li>
+                <li><a href="http://www.facebook.com/profile.php?id=100000166746735" target="_blank">André Luiz de Freitas Paranhos</a></li>
+                <li><a href="http://www.facebook.com/profile.php?id=100001304559022" target="_blank">Antônio Mariz Sales Neto</a></li>
+                <li><a href="http://www.facebook.com/Bruno.Paludo" target="_blank">Bruno Paludo</a></li>
+                <li><a href="http://www.facebook.com/carlo.rocha" target="_blank">Carlo Sivieri de Assis Rocha</a></li>
+                <li><a href="http://www.facebook.com/luciana.lnb" target="_blank">Luciana Lopes Nominato Braga</a></li>
+                <li><a href="http://www.facebook.com/rchiocca" target="_blank">Roberto Fiori Chiocca</a></li>
+                <li><a href="http://www.facebook.com/profile.php?id=1365278523" target="_blank">Sara de Cerqueira</a></li>
+                <li><a href="http://www.facebook.com/sidneisantana" target="_blank">Sidnei Santana</a></li>
             </ul>
         </div>
 
