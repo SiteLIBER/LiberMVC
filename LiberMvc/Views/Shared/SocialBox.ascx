@@ -5,7 +5,7 @@
  
     <p>
         <a href="http://www.formspring.me/Libertarios"><img src="<%= Url.Content("~/Content/images/formspring.png") %>" /></a>
-        <a href="http://www.youtube.com/user/CANALPLIBER"><img src="<%= Url.Content("~/Content/images/youtube.png") %>" /></a>
+        <a href="http://www.vimeo.com/user6149440"><img src="<%= Url.Content("~/Content/images/vimeo.png") %>" /></a>
         <a href="http://www.facebook.com/pages/Libertarios/131689188332"><img src="<%= Url.Content("~/Content/images/facebook.png") %>" /></a>
         <a href="http://twitter.com/sejaliber"><img src="<%= Url.Content("~/Content/images/twitter.png") %>" /></a>
         <a href="http://www.flickr.com/photos/sejaliber/"><img src="<%= Url.Content("~/Content/images/flickr.png") %>" /></a>
