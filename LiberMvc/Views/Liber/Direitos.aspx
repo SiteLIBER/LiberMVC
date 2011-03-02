@@ -180,7 +180,7 @@
             <strong>Princípio:</strong> A única situação de uso legítimo de força é na defesa dos direitos individuais - vida, liberdade, e a propriedade legalmente adquirida - contra agressão, seja por força ou por fraude. Esse direito é inerente ao indivíduo, o qual - com seu consentimento - pode ser ajudado por qualquer outro indivíduo ou grupo. O direito a se defender se estende à defesa contra atos agressivos do próprio Governo.</p>
 
         <p>
-            <strong>Soluções:</strong> O Governo deve se ater ao seu papel de protetor de direitos, e ser responsável por suas ações contra indivíduos. Defesa do fim imediato de todos os institutos jurídicos que concedem primazia do “interesse público” civil sobre o interesse privado. Governantes eleitos e burocratas devem ser igualmente responsáveis por tais ações, com prioridade em responsabilizar civilmente governantes e burocratas pelos danos causados pelo Governo contra os cidadãos.</p>
+            <strong>Soluções:</strong> O Governo deve se ater ao seu papel de protetor de direitos, e ser responsável por suas ações contra indivíduos. Defesa do fim imediato de todos os institutos jurídicos que concedem primazia do &quot;interesse público&quot; civil sobre o interesse privado. Governantes eleitos e burocratas devem ser igualmente responsáveis por tais ações, com prioridade em responsabilizar civilmente governantes e burocratas pelos danos causados pelo Governo contra os cidadãos.</p>
 
         <h2><a name="GovernoESaudeMental">10. Governo e Saúde Mental</a></h2>
 
