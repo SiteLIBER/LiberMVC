@@ -46,8 +46,8 @@
     <p class="actions">
 	    <input type="submit" value="Entrar" class="button" />
 	    <%= Html.ActionLink("Cadastre-se", "Cadastro", new { controller = "Usuario" }, new { @class = "button", @style = "float: left" })%>
-        
-        <br class="clear" />
+	    <%= Html.ActionLink("Esqueceu?", "EsqueciSenha", new { controller = "Usuario" }, new { @class = "button", @style = "float: left" })%>
+      <br class="clear" />
     </p>
 
 	<% } %>
