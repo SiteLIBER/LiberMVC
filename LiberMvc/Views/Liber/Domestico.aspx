@@ -60,7 +60,7 @@
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         
         <p>
-        	<strong>A questão:</strong> A poluição do meio-ambiente é vista hoje sob uma perspectiva socialista e estatista, onde o meio-ambiente é um bem “público” não passível de apropriação e os danos causados devem ser reparados mediante indenização ao Estado, que nunca repassa os valores para o meio-ambiente degradado.
+        	<strong>A questão:</strong> A poluição do meio-ambiente é vista hoje sob uma perspectiva socialista e estatista, onde o meio-ambiente é um bem "público" não passível de apropriação e os danos causados devem ser reparados mediante indenização ao Estado, que nunca repassa os valores para o meio-ambiente degradado.
         </p>
         
         <p>
@@ -149,7 +149,7 @@
         </p>
         
         <p>
-            <strong>Soluções:</strong> Eliminação da obrigatoriedade de certificação oficial para trabalhar em qualquer área. Abolição de todas as agências governamentais e não-governamentais federais, estaduais e locais que restrinjam a entrada em qualquer profissão ou regulam sua prática. Extinção de todo auxílio-desemprego, projetos de esmola e programas de ajuda aos pobres. Extinção de todas as leis que impedem um indivíduo de encontrar um emprego, tais como salário mínimo, a chamada “legislação protetiva” para mulheres e crianças, restrições governamentais no estabelecimento de creches, e a CLT. Fim do incentivo governamental para aposentadoria forçada. Estimular a subtituição do Estado pela iniciativa privada do campo da solidariedade através de maciços abatimentos em impostos em virtude de doações para entidades de caridade privadas.</p>
+            <strong>Soluções:</strong> Eliminação da obrigatoriedade de certificação oficial para trabalhar em qualquer área. Abolição de todas as agências governamentais e não-governamentais federais, estaduais e locais que restrinjam a entrada em qualquer profissão ou regulam sua prática. Extinção de todo auxílio-desemprego, projetos de esmola e programas de ajuda aos pobres. Extinção de todas as leis que impedem um indivíduo de encontrar um emprego, tais como salário mínimo, a chamada "legislação protetiva" para mulheres e crianças, restrições governamentais no estabelecimento de creches, e a CLT. Fim do incentivo governamental para aposentadoria forçada. Estimular a subtituição do Estado pela iniciativa privada do campo da solidariedade através de maciços abatimentos em impostos em virtude de doações para entidades de caridade privadas.</p>
         <h2><a name="LeisTrabalhistasCLTs">8. Leis Trabalhistas (CLTs)</a></h2>
         <p class="top"><a href="#Topo">Ir para o topo</a></p>
         <p> <strong>O Assunto:</strong> As ações arbitrárias da Justiça do Trabalho invadem os direitos à propriedade, elevam preços, geram desemprego e se impõem injustamente sobre os geradores de emprego. Acabam por transformar empregadores em criminosos e empregados em vítimas, prejudicando a economia. </p>
