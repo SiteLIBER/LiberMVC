@@ -78,6 +78,7 @@
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/paste/pasteword.htm" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/pagebreak/css/content.css" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/langs/pt.js" publishTime="01/18/2011 04:30:48" />
+    <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/img/button_bg_black.png" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/fullpage/js/fullpage.js" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/searchreplace/editor_plugin.js" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/buttons.gif" publishTime="01/18/2011 04:30:49" />
@@ -101,6 +102,7 @@
     <file relUrl="Views/Artigos/Index.aspx" publishTime="02/21/2011 23:17:35" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/media/editor_plugin_src.js" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/img/button_bg_silver.png" publishTime="01/18/2011 04:30:50" />
+    <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-frown.gif" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/acronym.htm" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/example/editor_plugin.js" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/media/langs/en_dlg.js" publishTime="01/18/2011 04:30:49" />
@@ -154,7 +156,7 @@
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/alert.gif" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/advhr/js/rule.js" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Content/images/menu_separator.png" publishTime="11/18/2010 10:11:08" />
-    <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/fullpage/langs/pt_dlg.js" publishTime="01/18/2011 04:30:49" />
+    <file relUrl="Content/images/panel_back.png" publishTime="11/18/2010 10:11:08" />
     <file relUrl="Views/Shared/DisplayTemplates/TabelaBlog.ascx" publishTime="02/23/2011 06:38:30" />
     <file relUrl="Views/Usuario/FiliacaoConfirma.aspx" publishTime="02/02/2011 19:47:11" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/advanced/skins/default/img/buttons.png" publishTime="01/18/2011 04:30:50" />
@@ -172,13 +174,12 @@
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/preview/example.html" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/example/dialog.htm" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Views/Shared/DisplayTemplates/ListaBlog.ascx" publishTime="02/23/2011 03:45:02" />
-    <file relUrl="Content/images/header_back_intern.png" publishTime="11/18/2010 10:11:08" />
     <file relUrl="Views/Web.config" publishTime="09/07/2010 21:08:02" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/spellchecker/css/content.css" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/advlink/langs/en_dlg.js" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/insertdatetime/editor_plugin_src.js" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/advlink/css/advlink.css" publishTime="01/18/2011 04:30:48" />
-    <file relUrl="Views/Shared/DisplayTemplates/Artigo.ascx" publishTime="03/02/2011 10:13:26" />
+    <file relUrl="Views/Shared/DisplayTemplates/Artigo.ascx" publishTime="03/03/2011 06:47:48" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/style/langs/pt_dlg.js" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Views/Shared/BottomMenu.ascx" publishTime="02/23/2011 07:01:36" />
     <file relUrl="Content/sunny/images/ui-bg_flat_50_5c5c5c_40x100.png" publishTime="10/07/2010 19:20:50" />
@@ -189,7 +190,7 @@
     <file relUrl="Views/Shared/RightMenu.ascx" publishTime="01/29/2011 13:55:45" />
     <file relUrl="Content/images/youtube.png" publishTime="11/18/2010 15:33:10" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/visualchars/editor_plugin.js" publishTime="01/18/2011 04:30:50" />
-    <file relUrl="Content/styles/default.css" publishTime="02/24/2011 02:26:26" />
+    <file relUrl="Content/styles/default.css" publishTime="03/03/2011 03:32:47" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/autosave/langs/en.js" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/del.htm" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Content/ui-darkness/images/ui-bg_inset-soft_30_f58400_1x100.png" publishTime="10/15/2010 15:19:25" />
@@ -211,6 +212,7 @@
     <file relUrl="Content/sunny/images/ui-icons_fadc7a_256x240.png" publishTime="10/07/2010 19:20:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/langs/en.js" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/examples/lists/link_list.js" publishTime="01/18/2011 04:30:48" />
+    <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/fullpage/langs/pt_dlg.js" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/examples/lists/image_list.js" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/advanced/js/anchor.js" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/examples/templates/layout1.htm" publishTime="01/18/2011 04:30:48" />
@@ -232,7 +234,7 @@
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/paste/pastetext.htm" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/simple/langs/en.js" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Views/Blog/Editor.aspx" publishTime="02/24/2011 02:26:26" />
-    <file relUrl="bin/LiberMvc.dll" publishTime="03/02/2011 10:16:50" />
+    <file relUrl="bin/LiberMvc.dll" publishTime="03/03/2011 06:57:38" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/template/langs/pt_dlg.js" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/wordcount/editor_plugin_src.js" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/advanced/image.htm" publishTime="01/18/2011 04:30:50" />
@@ -265,7 +267,7 @@
     <file relUrl="Views/Blog/Home.ascx" publishTime="02/24/2011 02:26:26" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/horizontal.gif" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Views/Liber/Domestico.aspx" publishTime="03/02/2011 02:49:34" />
-    <file relUrl="Views/Artigos/Editor.aspx" publishTime="02/21/2011 23:17:35" />
+    <file relUrl="Content/images/header_back_intern.png" publishTime="11/18/2010 10:11:08" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/example/js/dialog.js" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/examples/media/logo.jpg" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/advanced/editor_template_src.js" publishTime="02/17/2011 21:52:34" />
@@ -277,15 +279,14 @@
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/fullpage/css/fullpage.css" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/paste/editor_plugin.js" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/style/editor_plugin.js" publishTime="01/18/2011 04:30:49" />
-    <file relUrl="Views/Shared/DisplayTemplates/Blog.ascx" publishTime="03/02/2011 09:23:56" />
+    <file relUrl="Views/Shared/DisplayTemplates/Blog.ascx" publishTime="03/03/2011 06:48:12" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/ui_silver.css" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/table/langs/en_dlg.js" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/iespell/editor_plugin_src.js" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Content/images/creative_commons.png" publishTime="11/18/2010 10:11:08" />
     <file relUrl="Content/images/facebook.png" publishTime="11/18/2010 15:30:36" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/table/editor_plugin.js" publishTime="01/18/2011 04:30:50" />
-    <file relUrl="Views/Liber/Historia.aspx" publishTime="01/09/2011 18:54:52" />
-    <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/advhr/langs/pt_dlg.js" publishTime="01/18/2011 04:30:48" />
+    <file relUrl="Views/Liber/Historia.aspx" publishTime="03/03/2011 03:32:47" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/simple/editor_template_src.js" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Views/Usuario/EmailExiste.aspx" publishTime="11/22/2010 00:32:54" />
     <file relUrl="Views/Blog/Edit.aspx" publishTime="02/23/2011 01:15:26" />
@@ -319,14 +320,13 @@
     <file relUrl="Scripts/tinymce/examples/css/content.css" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/utils/form_utils.js" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Views/Liber/Lideranca.aspx" publishTime="03/02/2011 05:06:35" />
-    <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/emotions/editor_plugin.js" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/langs/en_dlg.js" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/fullscreen/editor_plugin.js" publishTime="01/18/2011 04:30:49" />
-    <file relUrl="bin/LiberMvc.pdb" publishTime="03/02/2011 10:16:50" />
+    <file relUrl="bin/LiberMvc.pdb" publishTime="03/03/2011 06:57:38" />
     <file relUrl="Views/Shared/FacebookBox.ascx" publishTime="02/23/2011 01:04:17" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/table/js/row.js" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/advimage/img/sample.gif" publishTime="01/18/2011 04:30:48" />
-    <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/img/button_bg_black.png" publishTime="01/18/2011 04:30:50" />
+    <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/emotions/editor_plugin.js" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/paste/editor_plugin_src.js" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/ui_black.css" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/table/editor_plugin_src.js" publishTime="01/18/2011 04:30:50" />
@@ -373,7 +373,7 @@
     <file relUrl="Content/sunny/images/ui-bg_inset-soft_30_ffffff_1x100.png" publishTime="10/07/2010 19:20:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/advlink/js/advlink.js" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Views/Shared/EditorTemplates/DateTime.ascx" publishTime="11/09/2010 02:06:40" />
-    <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-frown.gif" publishTime="01/18/2011 04:30:48" />
+    <file relUrl="Views/Shared/SocialBox.ascx" publishTime="03/01/2011 03:37:16" />
     <file relUrl="Content/sunny/images/ui-icons_bd7b00_256x240.png" publishTime="10/07/2010 19:20:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/table/row.htm" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/print/editor_plugin.js" publishTime="01/18/2011 04:30:49" />
@@ -424,7 +424,7 @@
     <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="02/17/2011 21:52:34" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/advanced/skins/o2k7/content.css" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/save/editor_plugin.js" publishTime="01/18/2011 04:30:49" />
-    <file relUrl="connectionStrings.config" publishTime="03/02/2011 10:16:36" />
+    <file relUrl="connectionStrings.config" publishTime="03/03/2011 06:08:41" />
     <file relUrl="Views/Usuario/Cadastro.aspx" publishTime="02/23/2011 02:23:53" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-embarassed.gif" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Content/sunny/images/ui-bg_diagonals-medium_20_d34d17_40x40.png" publishTime="10/07/2010 19:20:50" />
@@ -434,7 +434,7 @@
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/emotions/langs/pt_dlg.js" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/examples/word.html" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/simple/langs/pt.js" publishTime="01/18/2011 04:30:50" />
-    <file relUrl="Web.config" publishTime="03/02/2011 10:17:25" />
+    <file relUrl="Web.config" publishTime="03/03/2011 07:00:11" />
     <file relUrl="Content/images/logo_print.png" publishTime="01/30/2011 04:16:09" />
     <file relUrl="Scripts/MicrosoftMvcValidation.debug.js" publishTime="02/17/2011 21:52:34" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/directionality/editor_plugin.js" publishTime="01/18/2011 04:30:48" />
@@ -447,7 +447,7 @@
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/js/ins.js" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/template/editor_plugin_src.js" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/wordcount/editor_plugin.js" publishTime="01/18/2011 04:30:50" />
-    <file relUrl="Content/images/panel_back.png" publishTime="11/18/2010 10:11:08" />
+    <file relUrl="Views/Artigos/Editor.aspx" publishTime="02/21/2011 23:17:35" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/template/blank.htm" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/js/element_common.js" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Views/Home/Enquete.ascx" publishTime="11/05/2010 21:38:57" />
@@ -456,7 +456,7 @@
     <file relUrl="Views/Auth/AreaRestrita.aspx" publishTime="11/20/2010 07:52:35" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/themes/advanced/skins/default/dialog.css" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/media/img/flash.gif" publishTime="01/18/2011 04:30:49" />
-    <file relUrl="Views/Liber/Economia.aspx" publishTime="03/02/2011 02:49:34" />
+    <file relUrl="Views/Liber/Economia.aspx" publishTime="03/03/2011 03:32:47" />
     <file relUrl="Views/Shared/EditorTemplates/MultilineText.ascx" publishTime="11/11/2010 07:25:08" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/spellchecker/editor_plugin_src.js" publishTime="01/18/2011 04:30:49" />
     <file relUrl="Content/sunny/images/ui-bg_gloss-wave_90_fff9e5_500x100.png" publishTime="10/07/2010 19:20:50" />
@@ -474,7 +474,7 @@
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/langs/pt_dlg.js" publishTime="01/18/2011 04:30:50" />
     <file relUrl="Scripts/tinymce/examples/skins.html" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/textedit.js" publishTime="03/01/2011 03:37:16" />
-    <file relUrl="Views/Shared/SocialBox.ascx" publishTime="03/01/2011 03:37:16" />
+    <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/advhr/langs/pt_dlg.js" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Views/Liber/Diretorios.aspx" publishTime="11/20/2010 07:39:47" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-sealed.gif" publishTime="01/18/2011 04:30:48" />
     <file relUrl="Scripts/tinymce/jscripts/tiny_mce/plugins/layer/editor_plugin_src.js" publishTime="01/18/2011 04:30:49" />

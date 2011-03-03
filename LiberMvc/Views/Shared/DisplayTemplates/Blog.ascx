@@ -8,7 +8,7 @@
 
 	<span style="display: block; margin-top: 5px;">
 		<span class="addthis_toolbox addthis_default_style" style="float: left;">
-			<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like layout="button_count" show_faces="false" width="200"></fb:like>
+			<fb:like layout="button_count" show_faces="false" width="200"></fb:like>
 		</span>
 		
 		<!-- AddThis Button BEGIN -->
