@@ -30,7 +30,7 @@
             O Libertarianismo abomina qualquer intervenção violenta na vida e nas escolhas
             das pessoas, seja ela promovida por outros indivíduos ou por grupos.
             Ademais, sempre que o estado viola o direito dos indivíduos de dispor
-            do próprio tempo e de seus bens, o resultado é desastroso – miséria,
+            do próprio tempo e de seus bens, o resultado é desastroso - miséria,
             escassez e guerras. Assim, o LIBER acredita que em um Livre Mercado de
             bens e ideias, todos os indivíduos são beneficiados, independentemente de
             sua aptidão física, classe social ou grau de instrução.
@@ -42,7 +42,7 @@
             o LIBER entende que qualquer tentativa de criar justiça, solidariedade,
             coesão ou prosperidade baseada na imposição, no uso de força,
             em ameaças ou em sanções é absurda, imoral e sempre resultará no
-            exato oposto – na sociedade em que vivemos hoje, uma sociedade dividida,
+            exato oposto - na sociedade em que vivemos hoje, uma sociedade dividida,
             onde reina a pobreza, a indiferença e a injustiça.
         </p>
 

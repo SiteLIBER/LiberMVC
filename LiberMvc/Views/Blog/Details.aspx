@@ -11,9 +11,9 @@
 
 	    <p class="actions">
 	    <% if (Model.isOwnerOrAdmin) { %>
-		    <%= Html.ActionLink("Editar", "Edit", new { id = Model.BlogID }, new { @class = "button" }) %>
+		    <%: Html.ActionLink("Editar", "Edit", new { id = Model.BlogID }, new { @class = "button" }) %>
 	    <% } %>
-		    <%= Html.ActionLink("Voltar a lista", "Index", null, new { @class = "button" }) %>
+		    <%: Html.ActionLink("Voltar a lista", "Index", null, new { @class = "button" }) %>
 
             <br class="clear" />
 	    </p>

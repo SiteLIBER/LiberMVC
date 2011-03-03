@@ -28,7 +28,7 @@
                 <a href="http://www.facebook.com/odilon.candido" target="_blank">Odilon Candido</a>
             </li>
             <li><strong>Marketing</strong>
-                <a href="http://www.facebook.com/profile.php?id=800879729" target="_blank">André rufino</a>
+                <a href="http://www.facebook.com/profile.php?id=800879729" target="_blank">André Rufino</a>
             </li>
             <li><strong>Corregedor</strong>
                 <a href="http://www.facebook.com/carlo.rocha" target="_blank">Carlo Rocha</a>             

@@ -48,6 +48,7 @@ namespace LiberMvc.Controllers
 		public ActionResult Details(int id)
 		{
 			var blog = rep.GetBlog(id);
+			ViewData["Title"] = blog.Titulo;
 			var ed = blog.Editor.Nome;
 			rep.Dispose();
 			return (blog.Publicado || blog.isOwnerOrAdmin) ? View(blog) : View();

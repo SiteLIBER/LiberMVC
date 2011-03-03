@@ -93,6 +93,7 @@
     <Compile Include="Models\ArtigoRepository.cs" />
     <Compile Include="Models\Blog.cs" />
     <Compile Include="Models\BlogRepository.cs" />
+    <Compile Include="Models\EsqueciModel.cs" />
     <Compile Include="Models\IBlogRepository.cs" />
     <Compile Include="Models\IArtigoRepository.cs" />
     <Compile Include="Models\Listas.cs" />
@@ -136,6 +137,7 @@
     <Content Include="Content\images\donate_ico.png" />
     <Content Include="Content\images\edit.png" />
     <Content Include="Content\images\facebook.png" />
+    <Content Include="Content\images\facebook_mini.png" />
     <Content Include="Content\images\flickr.png" />
     <Content Include="Content\images\footer_back.png" />
     <Content Include="Content\images\formspring.png" />
@@ -159,7 +161,9 @@
     <Content Include="Content\images\pdf_file.png" />
     <Content Include="Content\images\top_ico.png" />
     <Content Include="Content\images\twitter.png" />
+    <Content Include="Content\images\twitter_mini.png" />
     <Content Include="Content\images\user_box_list_title_back.png" />
+    <Content Include="Content\images\vimeo.png" />
     <Content Include="Content\images\youtube.png" />
     <Content Include="Content\styles\default.css" />
     <Content Include="Content\styles\destaque.css" />
@@ -562,6 +566,7 @@
     <Content Include="Views\Shared\UserBox.ascx" />
     <Content Include="Views\Shared\VideoBox.ascx" />
     <Content Include="Views\Usuario\Cadastro.aspx" />
+    <Content Include="Views\Usuario\EsqueciSenha.aspx" />
     <Content Include="Views\Usuario\FiliacaoImprimir.aspx" />
     <Content Include="Views\Usuario\EmailExiste.aspx" />
     <Content Include="Views\Usuario\Filiacao.aspx" />
@@ -608,6 +613,9 @@
     <None Include="Content\download\Ata_CGNacional_2010.04.10.pdf" />
     <None Include="Content\download\estatuto.pdf" />
     <None Include="Content\download\fundacao.pdf" />
+    <Content Include="mailSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Models\DB.dbml">
       <SubType>Designer</SubType>
       <Generator>MSLinqToSQLGenerator</Generator>

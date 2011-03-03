@@ -40,6 +40,9 @@
 
         <ul class="annexes">
             <li class="pdf_file">
+                <a id="A1" runat="server" href="https://docs.google.com/viewer?a=v&pid=explorer&chrome=true&srcid=0B5jQImhGjAOONGU2MTA0NGUtYzllZS00NTkzLWE4NGItMzVjODQ5ZTYwZjcz&hl=en" target="_blank">Carta de Helio Beltrao em apoio a fundação do LIBER.</a>
+            </li>
+            <li class="pdf_file">
                 <a runat="server" href="~/Content/download/Ata_CGNacional_2010.04.10.pdf" target="_blank">
                     Ata da Convenção Geral do Diretório Nacional do
                     Libertários em Porto Alegre na data de 10 de abril de

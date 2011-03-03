@@ -41,6 +41,7 @@ a.button, input.button {
     color: #000;
     text-shadow: 1px 1px 1px #fff;
     text-align: center;
+    font-size: 14px;
     background-image: url("../images/button_back.png");
     background-repeat: repeat-x;
     background-color: /*#ffd100*/ #ccc;
@@ -664,6 +665,7 @@ ul.formatted_list li strong {
     margin: 5px 0px;
     padding: 0px;
 
+    font-size: 13px;
     list-style-position: inside;
 }
 

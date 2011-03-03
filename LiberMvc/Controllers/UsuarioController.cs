@@ -7,6 +7,7 @@ using LiberMvc.Models;
 using System.Web.Security;
 using AutoMapper;
 using Elmah;
+using System.Net.Mail;
 
 namespace LiberMvc.Controllers
 {
@@ -120,6 +121,48 @@ namespace LiberMvc.Controllers
 			return View(rep.PegarFiliado());
 		}
 		#endregion
+
+		#region GET: EsqueciSenha
+		public ActionResult EsqueciSenha()
+		{
+			return View(new EsqueciModel());
+		}
+		#endregion
+
+		#region POST: EsqueciSenha
+		[HttpPost]
+		public ActionResult EsqueciSenha(EsqueciModel form)
+		{
+
+			Usuario usuario = rep.ListaUsuarios().SingleOrDefault(u => u.Email == form.Email);
+
+			if (usuario != null)
+			{
+				SmtpClient smtp = new SmtpClient();
+				smtp.EnableSsl = smtp.Port != 25;
+				
+				MailMessage mail = new MailMessage();
+				mail.From = new MailAddress("noreply@pliber.org.br");
+				mail.To.Add(new MailAddress(usuario.Email, usuario.Nome));
+				mail.Subject = "Liber - Esqueci minha senha";
+				mail.Body = "Sua senha é: " + usuario.Senha;
+
+				smtp.Send(mail);
+
+				form.ErrorMessage = "Senha enviada com sucesso!";
+				form.Email = "";				
+				return View(form);
+			}
+			else 
+			{
+				form.ErrorMessage = "E-mail não se encontra em nossa base!";
+
+				return View(form);
+			}
+
+		}
+		#endregion
+
 	}
 
 
