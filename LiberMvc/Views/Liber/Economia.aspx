@@ -9,7 +9,7 @@
     	    <h1>Índice</h1>
 
             <ol>
-			    <li><a href="#AEconomia">A Ecnomia</a></li>
+			    <li><a href="#AEconomia">A Economia</a></li>
 			    <li><a href="#Taxacao">Taxação</a></li>
 			    <li><a href="#InflacaoEDepressao">Inflação e depressão</a></li>
                 <li><a href="#FinancasEInvestimentoDeCapital">Finanças e investimentos de capital</a></li>
