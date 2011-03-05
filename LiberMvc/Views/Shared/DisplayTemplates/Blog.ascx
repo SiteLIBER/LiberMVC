@@ -3,8 +3,8 @@
 <h1><%: Model.Titulo %></h1>
 
 <p class="general_informations">
-	<span class="date"><%: Model.PublicadoEm.ToShortDateString() %></span>
-  <span class="author"><%: Model.Editor.Nome %></span>
+    <span class="date"><%: Model.PublicadoEm.ToShortDateString() %></span>
+    <span class="author"><%: Model.Editor.Nome %></span>
 
 	<span style="display: block; margin-top: 5px;">
 		<span class="addthis_toolbox addthis_default_style" style="float: left;">
