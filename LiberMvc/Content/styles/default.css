@@ -661,6 +661,28 @@ ul.formatted_list li strong {
     background-position: right center;
 }
 
+#post .image {
+    margin: 5px;
+    padding: 5px;
+    
+    text-align: center;
+    /**/
+}
+
+#post .image img {
+    margin: 0px;
+    padding: 3px;
+    
+    border: 1px solid #ccc;
+}
+
+#post .image .legend {
+    color: #444;
+    font-size: 12px;
+    font-style: italic;
+    font-family: Georgia;
+}
+
 #post ul {
     margin: 5px 0px;
     padding: 0px;

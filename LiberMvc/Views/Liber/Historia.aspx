@@ -43,6 +43,11 @@
             mas ainda nesse momento em organização.
         </p>
 
+        <p class="image">
+            <img src="<%= Url.Content("~/Content/images/fundacao.jpg") %>" alt="Fundação" /><br />
+            <span class="legend">Reunião de fundação do LIBER, 20 de Junho de 2009.</span>
+        </p>
+
         <p>
             Em Abril de 2010 realizamos nossa segunda convenção nacional e nela
             foi corrigido alguns rumos do LIBER. Desde lá passamos a tentar

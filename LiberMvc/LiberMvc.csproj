@@ -147,6 +147,7 @@
     <Content Include="Content\images\footer_back.png" />
     <Content Include="Content\images\formspring.png" />
     <Content Include="Content\images\forum_ico.png" />
+    <Content Include="Content\images\fundacao.jpg" />
     <Content Include="Content\images\header_back.png" />
     <Content Include="Content\images\header_back_intern.png" />
     <Content Include="Content\images\invite_ico.png" />

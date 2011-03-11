@@ -11,13 +11,13 @@
                 </div>
 
                 <div  class="slide" id="slide_2">
-                    <p><a href="http://mises.org.br/EAMain.aspx" target="_blank">O Instituto Ludwig von Mises Brasil estará
+                    <p><a href="http://pliber.org/Blog/Details/2">O Instituto Ludwig von Mises Brasil estará
                         realizando o II Seminário de Economia Austríaca em Porto Alegre nos
                         dias 9 e 10 de abril de 2011.</a></p>
                 </div>
 
                 <div  class="slide" id="slide_3">
-                    <p><a href="http://www.forumdaliberdade.com.br/fl24/" target="_blank">Forum da Liberdade está em sua
+                    <p><a href="http://pliber.org/Blog/Details/4">Forum da Liberdade está em sua
                        24ª edição esse ano. É de longe o maior Fórum de Discussões Liberais e
                        Libertárias da América Latina.</a></p>
                 </div>
