@@ -68,7 +68,7 @@
     position: absolute;
     top: 32px;
     left: -100px;
-    z-index: 0px;
+    z-index: 200;
 }
 
 .drop-content {

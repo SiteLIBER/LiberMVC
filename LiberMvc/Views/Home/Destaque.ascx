@@ -1,31 +1,36 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
-<%--
-<div id="destaque">
-    <div class="panel"> 
-        <h1>LIBER no Fórum da Liberdade</h1>
 
-        <div id="main_box">
-					<p>
-						<object type="application/x-shockwave-flash" height="300" width="400" id="live_embed_player_flash" data="http://www.justin.tv/widgets/live_embed_player.swf?channel=libertarios" bgcolor="#000000">
-							<param name="allowFullScreen" value="true" />
-							<param name="allowScriptAccess" value="always" />
-							<param name="allowNetworking" value="all" />
-							<param name="movie" value="http://www.justin.tv/widgets/live_embed_player.swf" />
-							<param name="flashvars" value="channel=libertarios&auto_play=false&start_volume=25" />
-							<param name="wmode" value="transparent" />
-						</object>
-					</p>
-					<p>
-                <a href="http://www.justin.tv/libertarios#r=nXXbvM8~&s=em" class="button" style="display: block; width: 382px">
-                    Assista ao vivo o canal libertv no <strong>Justin.tv</strong>
-                </a>
-            </p>
+<div id="slides_wrapper">
+   <div id="slider">
+
+        <div class="scroll">
+		    <div class="scrollContainer">
+                <div class="slide" id="slide_1">
+                    <p><a href="http://pliber.org/Blog/Details/3">O Prtido Libertários está organizando
+                       esse ano em Porto Alegre sua terceira reunião nacional.</a></p>
+                </div>
+
+                <div  class="slide" id="slide_2">
+                    <p><a href="http://mises.org.br/EAMain.aspx" target="_blank">O Instituto Ludwig von Mises Brasil estará
+                        realizando o II Seminário de Economia Austríaca em Porto Alegre nos
+                        dias 9 e 10 de abril de 2011.</a></p>
+                </div>
+
+                <div  class="slide" id="slide_3">
+                    <p><a href="http://www.forumdaliberdade.com.br/fl24/" target="_blank">Forum da Liberdade está em sua
+                       24ª edição esse ano. É de longe o maior Fórum de Discussões Liberais e
+                       Libertárias da América Latina.</a></p>
+                </div>
+            </div>
         </div>
 
-        <div id="information_box">
-            <p>Confira ao vivo aquí:</p>
-        </div>
+        <ul class="navigation">
+		    <li class="first"><a href="#1">Reunião nacional do LIBER</a></li>
+		    <li><a href="#2">II Seminário de Escola Austríaca</a></li>
+		    <li class="last"><a href="#3">XXIV Fórum da Liberdade</a></li>
+        </ul>
 
-        <br class="clear" />
     </div>
-</div>--%>
+
+    <br class="clear" />
+</div>

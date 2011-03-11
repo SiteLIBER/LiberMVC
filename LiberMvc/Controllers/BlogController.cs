@@ -26,7 +26,7 @@ namespace LiberMvc.Controllers
 		public ActionResult Index(int? page)
 		{
 
-			var blogs = new PaginatedList<Blog>(rep.BlogsPublicados, page ?? 0, 5);
+			var blogs = new PaginatedList<Blog>(rep.BlogsPublicados, page ?? 0, 10);
 			//blogs.ToList().Max(b => b.Editor.Nome);
 			//rep.Dispose();
 			return View(blogs);

@@ -1,0 +1,120 @@
+#slides_wrapper {
+    width: 693px;
+    height: 321px;
+    
+    background-image: url("../images/destaque/shadow_bottom.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#slider {
+	margin: 0 auto;
+	height: 300px;
+	position: relative;
+
+    border: 1px solid #444;
+    /*border-bottom-color: #aaa;*/
+    background-image: url("../images/destaque/division_back.png");
+    background-repeat: no-repeat;
+    background-position: center 265px;
+
+}
+
+#slider ul.navigation {
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+
+	list-style: none;	
+}
+
+#slider ul.navigation li {
+	padding: 0px 2px;
+	float: left;
+	
+	font-size: 13px;
+	border-left: 1px dotted #fff;
+}
+
+#slider ul.navigation li.first {
+	margin-left: 75px;
+}
+
+#slider ul.navigation li.first {
+	border-left: none;
+}
+
+#slider ul.navigation li a {
+	padding: 4px 6px;
+	display: block;
+	
+	color: #555;
+	text-shadow: 1px 1px 0px #fff;
+	text-decoration: none;
+}
+
+#slider ul.navigation li a.selected {
+    color: #000;
+}
+
+#slider ul.navigation li a:hover {
+	color: #000;
+}
+
+.scroll {
+	height: 265px;
+	overflow: auto;
+}
+
+.scrollContainer .slide {
+	margin: 0px;
+	padding: 0px;
+	height: 265px;
+	width: 693px;
+	clear: both;
+
+	background-repeat: no-repeat;
+}
+
+.scrollContainer .slide p {
+    margin: 0px;
+    padding: 5px;
+ 
+    background-image: url("../images/destaque/legend_back.png");
+}
+
+.scrollContainer .slide p a {
+    color: #fff;
+    text-shadow: 1px 1px 0px #000;
+    text-decoration: none;
+}
+
+.scrollContainer .slide p a:hover {
+    text-decoration: underline;
+}
+
+#slide_1 {
+    background-image: url("../images/destaque/reuniao_nacional.png");
+}
+
+#slide_2 {
+    background-image: url("../images/destaque/escola_austriaca.png");
+}
+
+#slide_3 {
+    background-image: url("../images/destaque/forum_liberdade.png");
+}
+
+/*
+.scrollButtons {
+	position: absolute;
+	top: 150px;
+	cursor: pointer;
+}
+
+.scrollButtons.left {
+	left: -20px;
+}
+
+.scrollButtons.right {
+	right: -20px;
+}*/

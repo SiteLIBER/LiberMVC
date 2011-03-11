@@ -132,7 +132,12 @@
     <Content Include="Content\images\button_back_hover.png" />
     <Content Include="Content\images\creative_commons.png" />
     <Content Include="Content\images\date_back.png" />
-    <Content Include="Content\images\destaque\forum_liberdade_mg.png" />
+    <Content Include="Content\images\destaque\division_back.png" />
+    <Content Include="Content\images\destaque\escola_austriaca.png" />
+    <Content Include="Content\images\destaque\forum_liberdade.png" />
+    <Content Include="Content\images\destaque\legend_back.png" />
+    <Content Include="Content\images\destaque\reuniao_nacional.png" />
+    <Content Include="Content\images\destaque\shadow_bottom.png" />
     <Content Include="Content\images\destroy.png" />
     <Content Include="Content\images\donate_ico.png" />
     <Content Include="Content\images\edit.png" />
@@ -166,7 +171,7 @@
     <Content Include="Content\images\vimeo.png" />
     <Content Include="Content\images\youtube.png" />
     <Content Include="Content\styles\default.css" />
-    <Content Include="Content\styles\destaque.css" />
+    <Content Include="Content\styles\slides.css" />
     <Content Include="Content\styles\forms.css" />
     <Content Include="Content\styles\menu.css" />
     <Content Include="Content\styles\Site.css" />
@@ -208,6 +213,10 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-ui-1.8.5.custom.min.js" />
     <Content Include="Scripts\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="Scripts\slides\coda-slider.js" />
+    <Content Include="Scripts\slides\jquery.localscroll.js" />
+    <Content Include="Scripts\slides\jquery.scrollTo-1.4.2-min.js" />
+    <Content Include="Scripts\slides\jquery.serialScroll-1.2.2.js" />
     <Content Include="Scripts\textedit.js" />
     <Content Include="Scripts\tinymce\changelog.txt" />
     <Content Include="Scripts\tinymce\examples\css\content.css" />
@@ -611,6 +620,7 @@
     </Content>
     <None Include="Content\download\apoio.pdf" />
     <None Include="Content\download\Ata_CGNacional_2010.04.10.pdf" />
+    <None Include="Content\download\carta_helio_beltrao.pdf" />
     <None Include="Content\download\estatuto.pdf" />
     <None Include="Content\download\fundacao.pdf" />
     <Content Include="mailSettings.config">

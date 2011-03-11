@@ -19,28 +19,54 @@
          </div>
 
         <p>
-            O Libertários (LIBER) surgiu a partir de questionamentos e
-            discussões numa comunidade da rede de relacionamentos,
-            o Orkut, sobre quando iria ser criado um partido defensor da
-            Liberdade no Brasil. Após este questionamento, Fernando Fiori
-            Chiocca resolveu criar uma comunidade específica, no final
-            de 2005, para reunir pessoas com este objetivo.
+            A ideia de criar o Libertários surgiu na rede social Orkut.
+            Foi criada uma comunidade e interessados começaram a entrar.
+            Por lá mesmo começamos a esboçar nossas propostas, todas advindas
+            da aplicação do Libertarianismo. A primeira geração do partido
+            começou a estudar a lei eleitoral e exemplos para descobrir
+            como fundar um partido no Brasil. Além disso, foi criado um site,
+            mas toda a movimentação ocorria ainda nessa comunidade.
         </p>
 
         <p>
-            Passado cerca de 3 anos de muitos debates,
-            discussões e de várias mudanças entre os membros, o Libertários
-            teve finalmente sua primeira reunião nacional que aconteceu dia
-            20 de junho de 2009 na cidade de Belo Horizonte, em Minas Gerais.
-            Nesta data foi aprovado o estatuto, o programa e elegeu-se o
-            diretório nacional com o objetivo de estruturar o LIBER e
-            prepará-lo para futuramente participar das discussões políticas
-            em nível nacional.
+            O segundo momento marcante na nossa história aconteceu em Belo
+            Horizonte em Junho de 2009. Nessa ocasião os fundadores realizaram uma
+            convenção nacional para fundar o LIBER. Nesse evento foi aprovado o
+            nosso estatuto, nosso programa e também foi eleito um diretório
+            nacional com o objetivo de se responsabilizar oficialmente pelo
+            LIBER e perseguir os passos para sua fundação.
+        </p>
+
+        <p>
+            Em 19 de janeiro de 2009 conseguimos publicar o nosso estatuto e programa no
+            Diário Oficial, nos tornando assim oficialmente um partido,
+            mas ainda nesse momento em organização.
+        </p>
+
+        <p>
+            Em Abril de 2010 realizamos nossa segunda convenção nacional e nela
+            foi corrigido alguns rumos do LIBER. Desde lá passamos a tentar
+            profissionalizar as atividades partidárias e nos posicionar
+            de forma mais adequada.
+        </p>
+
+        <p>
+            Nosso CNPJ que nos permite abrir conta e banco e fazer compras
+            em nome da instituição partido Libertários foi alcançado em janeiro
+            de 2011, completando assim a primeira etapa da fundação
+            de um partido, que é o registro civil.
+        </p>
+
+        <p>
+            Nesse exato momento estamos nos organizando para concluir a segunda etapa,
+            que é recolher cerca de 500 mil assinaturas de apoio ao registro do partido
+            Libertários no TSE. Se você tem disposição e quer ver a liberdade
+            triunfando no Brasil, ajude-nos nessa tarefa.
         </p>
 
         <ul class="annexes">
             <li class="pdf_file">
-                <a id="A1" runat="server" href="https://docs.google.com/viewer?a=v&pid=explorer&chrome=true&srcid=0B5jQImhGjAOONGU2MTA0NGUtYzllZS00NTkzLWE4NGItMzVjODQ5ZTYwZjcz&hl=en" target="_blank">Carta de Helio Beltrao em apoio a fundação do LIBER.</a>
+                <a id="A1" runat="server" href="~/Content/download/carta_helio_beltrao.pdf" target="_blank">Carta de Helio Beltrao em apoio a fundação do LIBER.</a>
             </li>
             <li class="pdf_file">
                 <a runat="server" href="~/Content/download/Ata_CGNacional_2010.04.10.pdf" target="_blank">
