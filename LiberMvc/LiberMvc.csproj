@@ -619,14 +619,14 @@
     <Content Include="connectionStrings.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="mailSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Content\download\apoio.pdf" />
     <None Include="Content\download\Ata_CGNacional_2010.04.10.pdf" />
     <None Include="Content\download\carta_helio_beltrao.pdf" />
     <None Include="Content\download\estatuto.pdf" />
     <None Include="Content\download\fundacao.pdf" />
-    <Content Include="mailSettings.config">
-      <SubType>Designer</SubType>
-    </Content>
     <None Include="Models\DB.dbml">
       <SubType>Designer</SubType>
       <Generator>MSLinqToSQLGenerator</Generator>
