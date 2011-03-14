@@ -6,7 +6,7 @@
         <div class="scroll">
 		    <div class="scrollContainer">
                 <div class="slide" id="slide_1">
-                    <p><a href="http://pliber.org/Blog/Details/3">O Prtido Libertários está organizando
+                    <p><a href="http://pliber.org/Blog/Details/3">O Partido Libertários está organizando
                        esse ano em Porto Alegre sua terceira reunião nacional.</a></p>
                 </div>
 
