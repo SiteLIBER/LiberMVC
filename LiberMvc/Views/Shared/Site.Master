@@ -3,32 +3,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 
+
 <head>
-	<asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
 	<title><%: (ViewData["Title"] != null) ? ViewData["Title"] + " | " : "" %>Libertários - LIBER | O Partido da Liberdade</title>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-	<meta property="og:image" content="http://www.pliber.org.br<%= Url.Content("~/Content/images/liber_logo.png") %>"/> 
-
-    <link href="<%= Url.Content("~/Content/styles/menu.css") %>" rel="stylesheet" type="text/css" />
+	<meta property="og:image" content="http://www.pliber.org.br<%= Url.Content("~/Content/images/liber_logo.png") %>" />
+	
+	<link href="<%= Url.Content("~/Content/styles/menu.css") %>" rel="stylesheet" type="text/css" />
 	<link href="<%= Url.Content("~/Content/styles/forms.css") %>" rel="stylesheet" type="text/css" />
 	<link href="<%= Url.Content("~/Content/styles/default.css") %>" rel="stylesheet" type="text/css" />
 	<link href="<%= Url.Content("~/Content/styles/slides.css") %>" rel="stylesheet" type="text/css" />
 	<link href="<%= Url.Content("~/favicon.ico") %>" rel="shortcut icon" />
-
+	
 	<script src="<%= Url.Content("~/Scripts/MicrosoftAjax.js") %>" type="text/javascript"></script>
 	<script src="<%= Url.Content("~/Scripts/MicrosoftMvcAjax.js") %>" type="text/javascript"></script>
 	<script src="<%= Url.Content("~/Scripts/MicrosoftMvcValidation.js") %>" type="text/javascript"></script>
 	<script src="<%= Url.Content("~/Scripts/jquery-1.4.1.min.js") %>" type="text/javascript"></script>
-    
-    <script src="<%= Url.Content("~/Scripts/slides/jquery.scrollTo-1.4.2-min.js") %>" type="text/javascript"></script>
-	<script src="<%= Url.Content("~/Scripts/slides/jquery.localscroll.js") %>" type="text/javascript"></script>
-	<script src="<%= Url.Content("~/Scripts/slides/jquery.serialScroll-1.2.2.js") %>" type="text/javascript"></script>
-	<script src="<%= Url.Content("~/Scripts/slides/coda-slider.js") %>" type="text/javascript" charset="utf-8"></script>
-
 	<script src="http://connect.facebook.net/pt_BR/all.js#xfbml=1"></script>
-	
-    <script type="text/javascript">
+	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-7466906-2']);
 		_gaq.push(['_trackPageview']);
@@ -39,6 +32,7 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 	</script>
+	<asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
 	<div id="wrapper">

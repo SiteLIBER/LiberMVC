@@ -1,19 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<LiberMvc.Models.FiliacaoModel>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-	<script type="text/javascript">
-		$(function () {
-			$("#imprimir").click(function () {
-				var url = '<%= Url.Action("FiliacaoImprimir") %>';
-				window.open(url, "filiacao_imprimir", "");
-			});
-
-			$("#anualidade").click(function () {
-				var url = '<%= Url.Action("Anualidade") %>';
-				window.location = url;
-			});
-		});
-	</script>
 	<div class="panel" id="post">
 		<h1>Filiação - Confirme e Imprima</h1>
 		<p>
@@ -226,4 +213,20 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="RightContent" runat="server">
 	<% Html.RenderPartial("RightMenu", null); %>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="HeadContent" runat="server">
+	<script type="text/javascript">
+		$(function () {
+			$("#imprimir").click(function () {
+				var url = '<%= Url.Action("FiliacaoImprimir") %>';
+				window.open(url, "filiacao_imprimir", "");
+			});
+
+			$("#anualidade").click(function () {
+				var url = '<%= Url.Action("Anualidade") %>';
+				window.location = url;
+			});
+		});
+	</script>
 </asp:Content>

@@ -24,10 +24,11 @@
 		<p>
 			Os Ítens em <strong style="color: red">vermelho</strong> são obrigatórios.</p>
 		<div id="display-form">
-			<% using (Html.BeginForm()) {%>
-
-			<%= Html.ValidationSummary(true) %>
 			<% Html.EnableClientValidation(); %>
+
+			<% using (Html.BeginForm()) {%>
+			<%= Html.ValidationSummary(true) %>
+
 			<fieldset>
 				<legend>Dados Pessoais</legend>
 				<div class="display-item">
