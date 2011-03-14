@@ -25,6 +25,18 @@ namespace LiberMvc
 			);
 		}
 
+		protected void Session_Start(object sender, EventArgs e)
+		{
+			var url = HttpContext.Current.Request.Url.OriginalString;
+			if (url.IndexOf("pliber.org.br") < 0)
+			{
+				if (url.IndexOf("libertarios.com.br") > -1)
+					HttpContext.Current.Response.Redirect(url.Replace("libertarios.com.br", "pliber.org.br"), true);
+				if (url.IndexOf("pliber.org") > -1)
+					HttpContext.Current.Response.Redirect(url.Replace("pliber.org", "pliber.org.br"), true);
+			}
+		}
+
 		protected void Application_Start()
 		{
 			AreaRegistration.RegisterAllAreas();
