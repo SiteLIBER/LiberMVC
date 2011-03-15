@@ -19,6 +19,12 @@
         </div>
 
         <p>
+			O LIBER é uma instituição de atuação política, sem fins lucrativos,
+			que visa difundir os preceitos do Libertarianismo, doutrina filosófica
+			baseada nos princípios da não agressão e da auto-propriedade.
+		</p>
+        
+        <p>
             O Libertarianismo defende a maximização das liberdades individuais,
             devolvendo às pessoas o direito de determinar a condução de suas vidas
             e de realizar suas escolhas de acordo com suas próprias consciências,
@@ -45,6 +51,12 @@
             exato oposto - na sociedade em que vivemos hoje, uma sociedade dividida,
             onde reina a pobreza, a indiferença e a injustiça.
         </p>
+
+		<p>
+        	O LIBER movimenta-se para tornar-se um partido político, ampliando, assim,
+        	seu leque de atuação, de forma a permitir a difusão do Libertarianismo
+        	dentro da própria “máquina estatal”.
+		</p>
 
     </div>
 
