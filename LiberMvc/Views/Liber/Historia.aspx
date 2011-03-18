@@ -7,15 +7,14 @@
 
         <div id="index">
             <h1>Nosso Partido</h1>
-
-            <ul>
-                <li><a href="<%= Url.Action("Historia", "Liber") %>">História</a></li>
-		        <li><a href="<%= Url.Action("Filosofia", "Liber") %>">Filosofia</a></li>
-		        <li><a href="<%= Url.Action("Programa", "Liber") %>">Programa</a></li>
-			    <li><a href="<%= Url.Action("Estatuto", "Liber") %>">Estatuto</a></li>
-			    <li><a href="<%= Url.Action("Lideranca", "Liber") %>">Lideranças Nacionais</a></li>
-                <%-- <li><a href='<%= Url.Action("Contas", "Partido") %>'>Prestação de Contas</a></li> --%>
-            </ul>
+					<ul>
+						<li><a href="<%= Url.Action("Historia", "Liber") %>">História</a></li>
+						<li><a href="<%= Url.Action("Filosofia", "Liber") %>">Filosofia</a></li>
+						<li><a href="<%= Url.Action("Programa", "Liber") %>">Programa</a></li>
+						<li><a href="<%= Url.Action("Estatuto", "Liber") %>">Estatuto</a></li>
+						<li><a href="<%= Url.Action("Lideranca", "Liber") %>">Lideranças Nacionais</a></li>
+						<li><a href='<%= Url.Action("Contas", "Liber") %>'>Prestação de Contas</a></li>
+					</ul>
          </div>
 
         <p>
@@ -71,17 +70,17 @@
 
         <ul class="annexes">
             <li class="pdf_file">
-                <a id="A1" runat="server" href="~/Content/download/carta_helio_beltrao.pdf" target="_blank">Carta de Helio Beltrao em apoio a fundação do LIBER.</a>
+                <a id="A1" href="<%= Url.Content("~/Content/download/carta_helio_beltrao.pdf") %>" target="_blank">Carta de Helio Beltrao em apoio a fundação do LIBER.</a>
             </li>
             <li class="pdf_file">
-                <a runat="server" href="~/Content/download/Ata_CGNacional_2010.04.10.pdf" target="_blank">
+                <a href="<%= Url.Content("~/Content/download/Ata_CGNacional_2010.04.10.pdf") %>" target="_blank">
                     Ata da Convenção Geral do Diretório Nacional do
                     Libertários em Porto Alegre na data de 10 de abril de
                     2010.
                 </a>
             </li>
             <li class="pdf_file">
-                <a runat="server" href="~/Content/download/fundacao.pdf" target="_blank">Veja a ata de fundação aqui.</a>
+                <a href="<%= Url.Content("~/Content/download/fundacao.pdf") %>" target="_blank">Veja a ata de fundação aqui.</a>
             </li>
         </ul>
 

@@ -40,7 +40,7 @@
 			<li><a href='<%= Url.Action("Doacao", "Liber") %>'>Faça uma doação</a></li>
 			<li><a href='<%= Url.Action("Divulgacao", "Liber") %>'>Divulgue</a></li>
 			<%--<li><a href='<%= Url.Action("Newsletter", "Liber") %>'>Newsletter</a></li>--%>
-			<%--<li><a href='<%= Url.Action("Liber500", "Liber") %>'>Liber 500</a></li>--%>
+			<li><a href='<%= Url.Action("Liber500", "Liber") %>'>Liber 500</a></li>
 			<%--<li><a href='<%= Url.Action("Index", "Forum") %>'>Fórum</a></li>--%>
 			<li><a href='<%= Url.Action("Contato", "Liber") %>'>Contato</a></li>
 		</ul>

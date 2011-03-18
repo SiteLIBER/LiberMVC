@@ -15,7 +15,7 @@
            é somente um manifesto de apoio ao registro do <strong>LIBER</strong>.</p>
 
         <p id="ficha_btn">
-            <a href="~/Content/download/ficha_apoio_liber_500.pdf">Baixe a ficha de apoio ao LIBER</a>
+            <a href="<%: Url.Content("~/Content/download/ficha_apoio_liber_500.pdf") %>">Baixe a ficha de apoio ao LIBER</a>
         </p>
 
         <h2>Dados obrigatórios:</h2>
