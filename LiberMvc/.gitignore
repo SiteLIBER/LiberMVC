@@ -4,3 +4,4 @@
 /bin
 /App_Data
 mailSettings.config
+connectionStrings.noar.config

@@ -38,7 +38,7 @@
         <div style="float: left; padding-right: 15px">
             <h2>Comite Julgador</h2>
 
-            <ul class="formatted_list">
+            <ul class="formatted_list" style="margin: 0px;">
                 <li><a href="http://www.facebook.com/caiomagnolc" target="_blank">Caio Magno Lima Campos</a></li>
                 <li><a href="http://www.facebook.com/chiocca" target="_blank">Fernando Fiori Chiocca</a></li>
                 <li><a href="http://www.facebook.com/filipeceleti" target="_blank">Filipe Rangel Celeti</a></li>
@@ -50,7 +50,7 @@
         <div style="float: left;  padding-right: 15px">
             <h2>Comite Fiscal</h2>
 
-            <ul class="formatted_list">
+            <ul class="formatted_list" style="margin: 0px;">
                 <li><a href="http://www.facebook.com/profile.php?id=100001878387467" target="_blank">Geraldo Boz Junior</a></li>
                 <li><a href="http://www.facebook.com/heliob" target="_blank">Hélio Marcos Coutinho Beltrão</a></li>
                 <li><a href="http://www.facebook.com/profile.php?id=100000921473730" target="_blank">Thiago Pinheiro de Souza</a></li>
@@ -60,7 +60,7 @@
         <div style="float: left">
             <h2>Comite Executivo</h2>
 
-            <ul class="formatted_list">
+            <ul class="formatted_list" style="margin: 0px;">
                 <li><a href="http://www.facebook.com/profile.php?id=100000166746735" target="_blank">André Luiz de Freitas Paranhos</a></li>
                 <li><a href="http://www.facebook.com/profile.php?id=100001304559022" target="_blank">Antônio Mariz Sales Neto</a></li>
                 <li><a href="http://www.facebook.com/Bruno.Paludo" target="_blank">Bruno Paludo</a></li>

@@ -6,18 +6,18 @@
         <div class="scroll">
 		    <div class="scrollContainer">
                 <div class="slide" id="slide_1">
-                    <p><a href="http://pliber.org/Blog/Details/3">O Prtido Libertários está organizando
+                    <p><a href="<%: Url.Action("Details", "Blog", new {id = 3}) %>">O Partido Libertários está organizando
                        esse ano em Porto Alegre sua terceira reunião nacional.</a></p>
                 </div>
 
                 <div  class="slide" id="slide_2">
-                    <p><a href="http://pliber.org/Blog/Details/2">O Instituto Ludwig von Mises Brasil estará
+                    <p><a href="<%: Url.Action("Details", "Blog", new {id = 2}) %>">O Instituto Ludwig von Mises Brasil estará
                         realizando o II Seminário de Economia Austríaca em Porto Alegre nos
                         dias 9 e 10 de abril de 2011.</a></p>
                 </div>
 
                 <div  class="slide" id="slide_3">
-                    <p><a href="http://pliber.org/Blog/Details/4">Forum da Liberdade está em sua
+                    <p><a href="<%: Url.Action("Details", "Blog", new {id = 4}) %>">Forum da Liberdade está em sua
                        24ª edição esse ano. É de longe o maior Fórum de Discussões Liberais e
                        Libertárias da América Latina.</a></p>
                 </div>

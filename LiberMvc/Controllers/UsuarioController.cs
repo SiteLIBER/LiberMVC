@@ -37,6 +37,7 @@ namespace LiberMvc.Controllers
 		#endregion
 
 		#region Perfil
+		[Auth]
 		public ActionResult Perfil(int id)
 		{
 				return View(rep.PegarPerfil(id));

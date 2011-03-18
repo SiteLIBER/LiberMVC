@@ -623,14 +623,14 @@ ul.formatted_list li strong {
 /* ========================================================================== */
 
 #post p {
-    margin-left: 10px;
+    margin: 10px;
 
     font-size: 13px;
     color: #333333;
 }
 
 #post pre {
-    margin-left: 10px;
+    margin: 10px;
     padding: 5px;
     
     white-space: normal;
@@ -640,7 +640,7 @@ ul.formatted_list li strong {
 }
 
 #post address {
-    margin-left: 10px;
+    margin: 10px;
     padding: 5px;
     
     color: #000;
@@ -684,7 +684,7 @@ ul.formatted_list li strong {
 }
 
 #post ul {
-    margin: 5px 0px;
+    margin: 10px;
     padding: 0px;
 
     font-size: 13px;
@@ -739,7 +739,40 @@ ul.formatted_list li strong {
     padding: 3px;
     float: left;
     display: block;
+    
 }
+
+#post #ficha_btn {
+    margin: 0px;
+    padding: 65px 0px 0px 0px;
+    height: 121px;
+    
+    background-image: url("../images/ficha_apoio_back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#post #ficha_btn a {
+    margin: 0px auto;
+    padding: 43px 0px 37px 0px;
+    display: block;
+    width: 316px;
+    
+    color: #111;
+    text-decoration: none;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    background-image: url("../images/ficha_apoio_btn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#post #ficha_btn a:hover {
+    color: #000;
+    background-image: url("../images/ficha_apoio_btn_hover.png");
+}
+
 
 /* ========================================================================== */
 

@@ -143,6 +143,9 @@
     <Content Include="Content\images\edit.png" />
     <Content Include="Content\images\facebook.png" />
     <Content Include="Content\images\facebook_mini.png" />
+    <Content Include="Content\images\ficha_apoio_back.png" />
+    <Content Include="Content\images\ficha_apoio_btn.png" />
+    <Content Include="Content\images\ficha_apoio_btn_hover.png" />
     <Content Include="Content\images\flickr.png" />
     <Content Include="Content\images\footer_back.png" />
     <Content Include="Content\images\formspring.png" />
@@ -527,6 +530,7 @@
     <Content Include="Views\Liber\Exterior.aspx" />
     <Content Include="Views\Liber\FAQ.aspx" />
     <Content Include="Views\Liber\Imprensa.aspx" />
+    <Content Include="Views\Liber\Liber500.aspx" />
     <Content Include="Views\Shared\AcessoNegado.aspx" />
     <Content Include="Views\Auth\AreaRestrita.aspx" />
     <Content Include="Views\Auth\Banido.aspx" />
@@ -619,14 +623,15 @@
     <Content Include="connectionStrings.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="mailSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Content\download\apoio.pdf" />
     <None Include="Content\download\Ata_CGNacional_2010.04.10.pdf" />
     <None Include="Content\download\carta_helio_beltrao.pdf" />
     <None Include="Content\download\estatuto.pdf" />
+    <None Include="Content\download\ficha_apoio_liber_500.pdf" />
     <None Include="Content\download\fundacao.pdf" />
-    <Content Include="mailSettings.config">
-      <SubType>Designer</SubType>
-    </Content>
     <None Include="Models\DB.dbml">
       <SubType>Designer</SubType>
       <Generator>MSLinqToSQLGenerator</Generator>

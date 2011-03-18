@@ -44,6 +44,11 @@ namespace LiberMvc.Controllers
 			return View();
 		}
 
+        public ActionResult Liber500()
+        {
+            return View();
+        }
+
 		public ActionResult Direitos()
 		{
 			return View();
