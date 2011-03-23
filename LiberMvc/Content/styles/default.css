@@ -359,9 +359,7 @@ ul.formatted_list li strong {
     width: 430px;
 }
 
-#main_content #blog 
-{
-/*	display: none; */
+#main_content #blog {
     float: right;
     width: 235px;
 }
@@ -761,7 +759,7 @@ ul.formatted_list li strong {
     color: #111;
     text-decoration: none;
     text-align: center;
-    font-size: 21px;
+    font-size: 15px;
     font-weight: bold;
     background-image: url("../images/ficha_apoio_btn.png");
     background-repeat: no-repeat;

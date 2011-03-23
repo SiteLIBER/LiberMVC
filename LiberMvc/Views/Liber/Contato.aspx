@@ -2,8 +2,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-	<div class="panel" id="doacao">
+	<div class="panel" id="post">
 		<h1>Contato</h1>
+
+        <p>
+            Em caso de dúvida quanto a quem entrar em contato para esclarecer sua dúvida,
+            mande um e-mail para o Secretário Geral, que ele vai poder encaminhar
+            o e-mail para o responsável.
+        </p>
 
         <ul class="formatted_list">
             <li class="highlight"><strong>Presidente</strong>

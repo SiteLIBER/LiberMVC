@@ -5,7 +5,7 @@
     <div class="panel" id="post">
         <h1>LIBER 500</h1>
         
-        <h2>Fichas de Apoio ao Registro - Desafio LIBER 500</h2>
+        <h2>Fichas de apoio ao registro - desafio LIBER 500</h2>
 
         <p>O <strong>LIBER</strong> está coletando as 500 mil assinaturas necessárias para
            registrar o partido junto ao TSE e disputar eleições.
@@ -15,7 +15,7 @@
            é somente um manifesto de apoio ao registro do <strong>LIBER</strong>.</p>
 
         <p id="ficha_btn">
-            <a href="~/Content/download/ficha_apoio_liber_500.pdf">Baixe a ficha de apoio ao LIBER</a>
+            <a href="<%: Url.Content("~/Content/download/ficha_apoio_liber_500.pdf") %>" target="_blank">Baixe a ficha de apoio e o manual para coleta de assinaturas</a>
         </p>
 
         <h2>Dados obrigatórios:</h2>
@@ -27,7 +27,7 @@
             <li>Assinatura (como no título de eleitor)</li>
         </ul>
 
-        <h2>A ficha devem ser enviadas para:</h2>
+        <h2>As fichas devem ser enviadas para:</h2>
 
         <address>
             <br />
