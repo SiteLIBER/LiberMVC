@@ -6,9 +6,8 @@
 		<h1>Contato</h1>
 
         <p>
-            Em caso de dúvida quanto a quem entrar em contato para esclarecer sua dúvida,
-            mande um e-mail para o Secretário Geral, que ele vai poder encaminhar
-            o e-mail para o responsável.
+            Em caso de dúvida, envie um e-mail para <a href="mailto:contato@pliber.org.br">contato@pliber.org.br</a>.
+            O Secretário Geral encaminhará a mensagem para o responsável.
         </p>
 
         <ul class="formatted_list">
