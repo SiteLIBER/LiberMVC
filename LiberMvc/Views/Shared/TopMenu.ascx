@@ -57,7 +57,7 @@
 				</div>
 			</div>
 		</li>--%>
-	<%--<li class="rows_0"><a href="<%= Url.Action("Diretorios", "Liber") %>"><span>Diretórios</span></a></li> --%>
+	<li class="rows_0"><a href="<%= Url.Action("Diretorios", "Liber") %>"><span>Diretórios</span></a></li>
 	<%--<li class="rows_0"><a href="<%= Url.Action("Index", "Loja") %>"><span>Loja</span></a></li>--%>
 	<li class="rows_0"><a href="<%= Url.Action("FAQ", "Liber") %>"><span>FAQ</span></a></li>
 </ul>
