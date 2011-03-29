@@ -34,7 +34,7 @@ namespace LiberMvc.Models
 		}
 		public IQueryable<Blog> BlogsHome
 		{
-			get { return BlogsPublicados.Take(5); }
+			get { return BlogsPublicados.Take(10); }
 		}
 		public IQueryable<Blog> BlogsDoUsuario(int id)
 		{

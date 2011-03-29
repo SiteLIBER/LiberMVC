@@ -27,7 +27,7 @@ namespace LiberMvc
 
 		protected void Session_Start(object sender, EventArgs e)
 		{
-			var url = HttpContext.Current.Request.Url.OriginalString;
+			var url = HttpContext.Current.Request.Url.AbsoluteUri;
 			if (url.IndexOf("pliber.org.br") < 0)
 			{
 				if (url.IndexOf("www") < 0)
