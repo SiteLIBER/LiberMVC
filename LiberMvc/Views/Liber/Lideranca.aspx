@@ -13,7 +13,7 @@
                 <a href="http://www.facebook.com/carlo.rocha" target="_blank">Carlo Rocha</a> 
             </li>
             <li><strong>Secretário Geral</strong>
-			    <a href="http://www.facebook.com/Julianotorres" target="_blank">Juliano Torres</a>           
+	<a href="http://www.facebook.com/Julianotorres" target="_blank">Juliano Torres</a>           
             </li>
             <li><strong>Tesoureiro</strong>
                 <a href="http://www.facebook.com/Bruno.Paludo" target="_blank">Bruno Paludo</a>
@@ -65,15 +65,15 @@
                 <li><a href="http://www.facebook.com/brunobca" target="_blank">Bruno Aguiar</a></li>
                 <li><a href="http://www.facebook.com/Bruno.Paludo" target="_blank">Bruno Paludo</a></li>
                 <li><a href="http://www.facebook.com/fcastanhola" target="_blank">Fabiano Marques</a></li>
-				<li><a href="http://www.facebook.com/fkirsch" target="_blank">Felipe Kirsch</a></li>
-				<li><a href="http://www.facebook.com/profile.php?id=1663780584" target="_blank">Guilherme Inojosa Fragoso Cavalcanti</a></li>
-				<li><a href="http://www.facebook.com/max.salles" target="_blank">Herond Salles</a></li>
-				<li>Itamar Oliveira</li>
-				<li>Kaio Felipe Santos</li>
+	<li><a href="http://www.facebook.com/fkirsch" target="_blank">Felipe Kirsch</a></li>
+	<li><a href="http://www.facebook.com/profile.php?id=1663780584" target="_blank">Guilherme Inojosa Fragoso Cavalcanti</a></li>
+	<li><a href="http://www.facebook.com/max.salles" target="_blank">Herond Salles</a></li>
+	<li>Itamar Oliveira</li>
+	<li><a href="http://www.facebook.com/felipe.kaio" target="_blank">Kaio Felipe Santos</a></li>
                 <li><a href="http://www.facebook.com/luciana.lnb" target="_blank">Luciana Lopes Nominato Braga</a></li>
                 <li><a href="http://www.facebook.com/MujoGT" target="_blank">Ney Fonseca</a></li>
                 <li><a href="http://www.facebook.com/sidneisantana" target="_blank">Sidnei Santana</a></li>
-				<li><a href="http://www.facebook.com/profile.php?id=100001114750010" target="_blank">Willian Adamczyk</a></li>
+	<li><a href="http://www.facebook.com/profile.php?id=100001114750010" target="_blank">Willian Adamczyk</a></li>
             </ul>
         </div>
 
