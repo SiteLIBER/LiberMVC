@@ -1,9 +1,6 @@
-
-
 /obj
 /bin
 /App_Data
 mailSettings.config
 connectionStrings.noar.config
 LiberMvc.Publish.xml
-LiberMvc.suo
