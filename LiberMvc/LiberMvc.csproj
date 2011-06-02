@@ -45,6 +45,18 @@
     <Reference Include="Elmah">
       <HintPath>lib\Elmah.dll</HintPath>
     </Reference>
+    <Reference Include="Facebook">
+      <HintPath>..\packages\Facebook.5.0.26.0\lib\net40-client\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Web">
+      <HintPath>..\packages\FacebookWeb.5.0.26.0\lib\net40\Facebook.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Web.Mvc, Version=5.0.26.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\packages\FacebookWebMvc.5.0.26.0\lib\net40\Facebook.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="FBConnectAuth">
+      <HintPath>..\packages\FbConnectAuth.0.9\lib\FBConnectAuth.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -640,14 +652,18 @@
     <None Include="Models\DB.dbml.layout">
       <DependentUpon>DB.dbml</DependentUpon>
     </None>
+    <Content Include="packages.config" />
     <None Include="Scripts\tinymce\examples\media\sample.dcr" />
     <None Include="Scripts\tinymce\examples\media\sample.ram" />
     <None Include="Scripts\tinymce\examples\media\sample.rm" />
+    <Content Include="Views\Shared\FacebookInit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

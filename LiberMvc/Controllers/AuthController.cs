@@ -78,6 +78,14 @@ namespace LiberMvc.Controllers
 		}
 		#endregion
 
+		#region Facebook Login
+		public ActionResult FacebookLogin(Facebook.Web.Mvc.FacebookAuthorizeInfo info)
+		{
+			return View();
+		}
+		
+		#endregion
+
 		#region LogOff
 		public ActionResult LogOff()
 		{
