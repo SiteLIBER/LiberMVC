@@ -39,7 +39,7 @@
 
         <p>
             Em 19 de janeiro de 2010 conseguimos publicar o nosso estatuto e programa no
-            Diário Oficial, nos tornando assim oficialmente um partido,
+            Diário Oficial da União, nos tornando assim oficialmente um partido,
             mas ainda nesse momento em organização.
         </p>
 
