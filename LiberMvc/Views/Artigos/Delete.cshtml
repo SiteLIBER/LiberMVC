@@ -1,0 +1,29 @@
+﻿@model LiberMvc.Models.Artigo
+
+
+
+	<div class="panel">
+	    <h1>Artigo</h1>
+
+        <div class="article">
+            @Html.DisplayForModel("Artigo")
+        </div>
+
+	    <p class="actions">
+	    @if (Model.isOwnerOrAdmin) { 
+		    @Html.ActionLink("Apagar", "ConfirmDelete", new { id = Model.ArtigoID }, new { @class = "button" })
+	     } 
+		    @Html.ActionLink("Voltar a lista", "Table", null, new { @class = "button" })
+
+            <br class="clear" />
+	    </p>
+
+	</div>
+
+
+@section RightContent {
+
+	 @Html.Partial("_RightMenu") 
+
+}
+

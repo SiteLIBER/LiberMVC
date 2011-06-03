@@ -7,7 +7,7 @@
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{A887CDFC-E1BB-48EF-9D54-627F5F0D572C}</ProjectGuid>
-    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <ProjectTypeGuids>{e53f8fea-eae0-44a6-8774-ffd645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LiberMvc</RootNamespace>
@@ -57,6 +57,7 @@
     <Reference Include="FBConnectAuth">
       <HintPath>..\packages\FbConnectAuth.0.9\lib\FBConnectAuth.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -69,7 +70,7 @@
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
@@ -79,6 +80,8 @@
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Mobile" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.WebPages" />
+    <Reference Include="System.Web.Helpers" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ArtigosController.cs" />
@@ -516,90 +519,49 @@
     <Content Include="Scripts\tinymce\jscripts\tiny_mce\utils\form_utils.js" />
     <Content Include="Scripts\tinymce\jscripts\tiny_mce\utils\mctabs.js" />
     <Content Include="Scripts\tinymce\jscripts\tiny_mce\utils\validate.js" />
-    <Content Include="Views\Artigos\Delete.aspx" />
-    <Content Include="Views\Artigos\Table.aspx" />
-    <Content Include="Views\Artigos\Details.aspx" />
-    <Content Include="Views\Artigos\Edit.aspx" />
-    <Content Include="Views\Artigos\Create.aspx" />
-    <Content Include="Views\Artigos\Editor.aspx" />
-    <Content Include="Views\Artigos\Index.aspx" />
-    <Content Include="Views\Auth\BanidoBox.ascx" />
-    <Content Include="Views\Blog\Create.aspx" />
-    <Content Include="Views\Blog\Delete.aspx" />
-    <Content Include="Views\Blog\Details.aspx" />
-    <Content Include="Views\Blog\Edit.aspx" />
-    <Content Include="Views\Blog\Editor.aspx" />
-    <Content Include="Views\Blog\Home.ascx" />
-    <Content Include="Views\Blog\Index.aspx" />
-    <Content Include="Views\Blog\Table.aspx" />
-    <Content Include="Views\Liber\Contato.aspx" />
-    <Content Include="Views\Liber\Direitos.aspx" />
-    <Content Include="Views\Liber\Diretorios.aspx" />
-    <Content Include="Views\Liber\Divulgacao.aspx" />
-    <Content Include="Views\Liber\Doacao.aspx" />
-    <Content Include="Views\Liber\Domestico.aspx" />
-    <Content Include="Views\Liber\Economia.aspx" />
-    <Content Include="Views\Liber\Exterior.aspx" />
-    <Content Include="Views\Liber\FAQ.aspx" />
-    <Content Include="Views\Liber\Imprensa.aspx" />
-    <Content Include="Views\Liber\Liber500.aspx" />
-    <Content Include="Views\Shared\AcessoNegado.aspx" />
-    <Content Include="Views\Auth\AreaRestrita.aspx" />
-    <Content Include="Views\Auth\Banido.aspx" />
-    <Content Include="Views\Auth\Login.aspx" />
-    <Content Include="Views\Auth\LoginFalhou.aspx" />
-    <Content Include="Views\Artigos\Home.ascx" />
-    <Content Include="Views\Home\Destaque.ascx" />
-    <Content Include="Views\Home\Enquete.ascx" />
-    <Content Include="Views\Home\Index.aspx" />
-    <Content Include="Views\Home\RightHome.ascx" />
-    <Content Include="Views\Liber\Contas.aspx" />
-    <Content Include="Views\Liber\Estatuto.aspx" />
-    <Content Include="Views\Liber\Filosofia.aspx" />
-    <Content Include="Views\Liber\Historia.aspx" />
-    <Content Include="Views\Liber\Lideranca.aspx" />
-    <Content Include="Views\Liber\Programa.aspx" />
-    <Content Include="Views\Shared\BottomMenu.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\Blog.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\TabelaBlog.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\ListaBlog.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\Tabela.ascx" />
-    <Content Include="Views\Shared\EditorTemplates\Blog.ascx" />
-    <Content Include="Views\Shared\FacebookBox.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\Artigo.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\DateTime.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\Lista.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\Object.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\SimNao.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\String.ascx" />
-    <Content Include="Views\Shared\DonateBox.ascx" />
-    <Content Include="Views\Shared\EditorTemplates\Artigo.ascx" />
-    <Content Include="Views\Shared\EditorTemplates\DateTime.ascx" />
-    <Content Include="Views\Shared\DisplayTemplates\Password.ascx" />
-    <Content Include="Views\Shared\EditorTemplates\MultilineText.ascx" />
-    <Content Include="Views\Shared\EditorTemplates\Object.ascx" />
-    <Content Include="Views\Shared\EditorTemplates\SimNao.ascx" />
-    <Content Include="Views\Shared\EditorTemplates\Html.ascx" />
-    <Content Include="Views\Shared\Error.aspx" />
-    <Content Include="Views\Shared\EventsBox.ascx" />
-    <Content Include="Views\Shared\Liber500Box.ascx" />
-    <Content Include="Views\Shared\LoginBox.ascx" />
-    <Content Include="Views\Auth\LoginFalhouBox.ascx" />
-    <Content Include="Views\Shared\PanelBox.ascx" />
-    <Content Include="Views\Shared\RightMenu.ascx" />
-    <Content Include="Views\Shared\SocialBox.ascx" />
-    <Content Include="Views\Shared\TopMenu.ascx" />
-    <Content Include="Views\Shared\UserBox.ascx" />
-    <Content Include="Views\Shared\VideoBox.ascx" />
-    <Content Include="Views\Usuario\Cadastro.aspx" />
-    <Content Include="Views\Usuario\EsqueciSenha.aspx" />
-    <Content Include="Views\Usuario\FiliacaoImprimir.aspx" />
-    <Content Include="Views\Usuario\EmailExiste.aspx" />
-    <Content Include="Views\Usuario\Filiacao.aspx" />
-    <Content Include="Views\Usuario\FiliacaoConfirma.aspx" />
-    <Content Include="Views\Usuario\NaoEncontrado.aspx" />
-    <Content Include="Views\Usuario\Perfil.aspx" />
-    <Content Include="Views\Usuario\RightCadastro.ascx" />
+    <Content Include="Views\Artigos\Create.cshtml" />
+    <Content Include="Views\Artigos\Delete.cshtml" />
+    <Content Include="Views\Artigos\Details.cshtml" />
+    <Content Include="Views\Artigos\Edit.cshtml" />
+    <Content Include="Views\Artigos\Editor.cshtml" />
+    <Content Include="Views\Artigos\_Home.cshtml" />
+    <Content Include="Views\Artigos\Index.cshtml" />
+    <Content Include="Views\Artigos\Table.cshtml" />
+    <Content Include="Views\Auth\AreaRestrita.cshtml" />
+    <Content Include="Views\Auth\Banido.cshtml" />
+    <Content Include="Views\Auth\_BanidoBox.cshtml" />
+    <Content Include="Views\Auth\Login.cshtml" />
+    <Content Include="Views\Auth\LoginFalhou.cshtml" />
+    <Content Include="Views\Auth\_LoginFalhouBox.cshtml" />
+    <Content Include="Views\Blog\Create.cshtml" />
+    <Content Include="Views\Blog\Delete.cshtml" />
+    <Content Include="Views\Blog\Details.cshtml" />
+    <Content Include="Views\Blog\Edit.cshtml" />
+    <Content Include="Views\Blog\Editor.cshtml" />
+    <Content Include="Views\Blog\_Home.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Blog\Table.cshtml" />
+    <Content Include="Views\Home\_Destaque.cshtml" />
+    <Content Include="Views\Home\_Enquete.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\_RightHome.cshtml" />
+    <Content Include="Views\Shared\FacebookInit.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Shared\_Layout.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Usuario\Cadastro.cshtml" />
+    <Content Include="Views\Usuario\EmailExiste.cshtml" />
+    <Content Include="Views\Usuario\EsqueciSenha.cshtml" />
+    <Content Include="Views\Usuario\Filiacao.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Usuario\FiliacaoConfirma.cshtml" />
+    <Content Include="Views\Usuario\FiliacaoImprimir.cshtml" />
+    <Content Include="Views\Usuario\NaoEncontrado.cshtml" />
+    <Content Include="Views\Usuario\Perfil.cshtml" />
+    <Content Include="Views\Usuario\_RightCadastro.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -621,10 +583,33 @@
     <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
     <Content Include="Scripts\MicrosoftMvcValidation.js" />
     <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
-    <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Web.config" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\Helper.cshtml" />
     <None Include="CodeTemplates\AddController\Controller.tt" />
     <None Include="CodeTemplates\AddView\Create.tt" />
     <None Include="CodeTemplates\AddView\Delete.tt" />
@@ -644,6 +629,9 @@
     <None Include="Content\download\estatuto.pdf" />
     <None Include="Content\download\ficha_apoio_liber_500.pdf" />
     <None Include="Content\download\fundacao.pdf" />
+    <Content Include="facebook.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Models\DB.dbml">
       <SubType>Designer</SubType>
       <Generator>MSLinqToSQLGenerator</Generator>
@@ -656,7 +644,60 @@
     <None Include="Scripts\tinymce\examples\media\sample.dcr" />
     <None Include="Scripts\tinymce\examples\media\sample.ram" />
     <None Include="Scripts\tinymce\examples\media\sample.rm" />
-    <Content Include="Views\Shared\FacebookInit.cshtml" />
+    <Content Include="Views\Liber\Contas.cshtml" />
+    <Content Include="Views\Liber\Contato.cshtml" />
+    <Content Include="Views\Liber\Direitos.cshtml" />
+    <Content Include="Views\Liber\Diretorios.cshtml" />
+    <Content Include="Views\Liber\Divulgacao.cshtml" />
+    <Content Include="Views\Liber\Doacao.cshtml" />
+    <Content Include="Views\Liber\Domestico.cshtml" />
+    <Content Include="Views\Liber\Economia.cshtml" />
+    <Content Include="Views\Liber\Estatuto.cshtml" />
+    <Content Include="Views\Liber\Exterior.cshtml" />
+    <Content Include="Views\Liber\FAQ.cshtml" />
+    <Content Include="Views\Liber\Filosofia.cshtml" />
+    <Content Include="Views\Liber\Historia.cshtml" />
+    <Content Include="Views\Liber\Imprensa.cshtml" />
+    <Content Include="Views\Liber\Liber500.cshtml" />
+    <Content Include="Views\Liber\Lideranca.cshtml" />
+    <Content Include="Views\Liber\Programa.cshtml" />
+    <Content Include="Views\Shared\AcessoNegado.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Shared\_BottomMenu.cshtml" />
+    <Content Include="Views\Shared\_DonateBox.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_EventsBox.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Shared\_FacebookBox.cshtml" />
+    <Content Include="Views\Shared\_Liber500Box.cshtml" />
+    <Content Include="Views\Shared\_LoginBox.cshtml" />
+    <Content Include="Views\Shared\_PanelBox.cshtml" />
+    <Content Include="Views\Shared\_RightMenu.cshtml" />
+    <Content Include="Views\Shared\_SocialBox.cshtml" />
+    <Content Include="Views\Shared\_TopMenu.cshtml" />
+    <Content Include="Views\Shared\UserBox.cshtml" />
+    <Content Include="Views\Shared\VideoBox.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Artigo.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Blog.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\DateTime.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Lista.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\ListaBlog.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Object.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Password.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SimNao.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\String.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Tabela.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\TabelaBlog.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Artigo.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Blog.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Html.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\MultilineText.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Object.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\SimNao.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
@@ -681,8 +722,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>2782</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost/LiberMvc</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

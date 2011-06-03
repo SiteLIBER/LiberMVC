@@ -48,7 +48,7 @@ namespace LiberMvc.Controllers
 		public ActionResult Details(int id)
 		{
 			var art = rep.GetArtigo(id);
-			ViewData["Title"] = art.Titulo;
+			ViewBag.Title = art.Titulo;
 			rep.Dispose();
 			return (art.Publicado || art.isOwnerOrAdmin) ? View(art) : View();
 		}

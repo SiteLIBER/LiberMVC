@@ -46,7 +46,7 @@ namespace LiberMvc.Controllers
 
         public ActionResult Liber500()
         {
-					ViewData["Title"] = "Liber 500";
+					ViewBag.Title = "Liber 500";
           return View();
         }
 

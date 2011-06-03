@@ -1,0 +1,22 @@
+﻿
+
+@* TENHA ATITUDE BEGIN *@
+ @Html.Partial("_PanelBox") 
+@* TENHA ATITUDE END *@
+
+@* LOGIN BEGIN *@
+<div class="panel" id="loginbox">
+	@Html.Action((!Request.IsAuthenticated) ? "LoginBox" : "UserBox", "Usuario")
+</div>
+@* LOGIN END *@
+
+@* FACEBOOK BEGIN *@
+ @Html.Partial("_FacebookBox") 
+@* FACEBOOK END *@
+
+@* REDES SOCIAIS BEGIN *@
+ @Html.Partial("_SocialBox") 
+@* REDES SOCIAIS END *@
+
+
+
