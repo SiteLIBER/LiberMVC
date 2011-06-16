@@ -10,7 +10,8 @@
 		<address>
 			<b>Felipe Kirsch</b><br />
 			Rua dos Caetés, 737, ap 707, Perdizes<br />
-			São Paulo - SP - CEP 05016-081<br />
+			São Paulo - SP<br />
+			CEP 05016-081<br />
 		</address>
 		<p>
 			A anualidade deve ser paga, para que o filiado tenha direito a voto:

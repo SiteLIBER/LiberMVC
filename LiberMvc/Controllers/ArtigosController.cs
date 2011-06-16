@@ -45,12 +45,19 @@ namespace LiberMvc.Controllers
 
 		#region GET: /Artigos/Details/5
 
-		public ActionResult Details(int id)
+		public ActionResult Details(int? id)
 		{
-			var art = rep.GetArtigo(id);
-			ViewData["Title"] = art.Titulo;
-			rep.Dispose();
-			return (art.Publicado || art.isOwnerOrAdmin) ? View(art) : View();
+			if (id.HasValue)
+			{
+				var art = rep.GetArtigo(id.Value);
+				if (art != null)
+				{
+					ViewData["Title"] = art.Titulo;
+					rep.Dispose();
+					return (art.Publicado || art.isOwnerOrAdmin) ? View(art) : View();
+				}
+			}
+			return View("ItemNotFound");
 		}
 
 		#endregion

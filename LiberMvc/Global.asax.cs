@@ -17,7 +17,24 @@ namespace LiberMvc
 		public static void RegisterRoutes(RouteCollection routes)
 		{
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-			
+			//routes.IgnoreRoute("{*favicon}", new { favicon = @"(.*/)?favicon.ico(/.*)?" });
+
+			#region remove old stuff
+			//routes.IgnoreRoute("{*stats}", new { stats = @"stats(/.*)?" });
+			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "stats" });
+			//routes.IgnoreRoute("{*php}", new { php = @".*\.php(/.*)?" });
+			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "index.php" });
+			//routes.IgnoreRoute("{*rss}", new { rss = @"(.*)?rss(\.xml)?(/.*)?" });
+			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "rss.xml" });
+			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "crss" });
+			//routes.IgnoreRoute("{*user}", new { user = @"user(/.*)?" });
+			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "user" });
+			//routes.IgnoreRoute("{*files}", new { files = @"files(/.*)?" });
+			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "files" });
+			//routes.IgnoreRoute("{*forum}", new { forum = @"forum(/.*)?" });
+			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "forum" });
+			#endregion
+
 			routes.MapRoute(
 					"Default", // Route name
 					"{controller}/{action}/{id}", // URL with parameters
@@ -27,6 +44,11 @@ namespace LiberMvc
 
 		protected void Session_Start(object sender, EventArgs e)
 		{
+			#region fix session exception when download breaks by user
+			string sessionId = Session.SessionID;
+			#endregion
+
+			#region redirect to correct url
 			var url = HttpContext.Current.Request.Url.AbsoluteUri;
 			if (url.IndexOf("pliber.org.br") < 0)
 			{
@@ -42,12 +64,14 @@ namespace LiberMvc
 				if (url.IndexOf("www") < 0)
 					HttpContext.Current.Response.Redirect(url.Replace("//", "//www."), true);
 			}
+			#endregion
 		}
 
 		protected void Application_Start()
 		{
 			AreaRegistration.RegisterAllAreas();
 
+			#region AutoMapper Declarations
 			Mapper.CreateMap<Usuario, FiliacaoModel>();
 			Mapper.CreateMap<FiliacaoModel, Usuario>();
 			
@@ -55,7 +79,8 @@ namespace LiberMvc
 			
 			Mapper.CreateMap<PerfilModel, Usuario>();
 			Mapper.CreateMap<Usuario, PerfilModel>();
-		
+			#endregion
+
 			RegisterRoutes(RouteTable.Routes);
 		}
 	}
