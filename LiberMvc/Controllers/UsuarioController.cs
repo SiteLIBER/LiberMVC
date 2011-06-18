@@ -47,7 +47,7 @@ namespace LiberMvc.Controllers
 		#region LoginBox
 		public ActionResult LoginBox()
 		{
-				return View();
+				return PartialView("_LoginBox");
 		}
 		#endregion
 
@@ -55,7 +55,7 @@ namespace LiberMvc.Controllers
 		[Auth]
 		public ActionResult UserBox()
 		{
-				return View(rep.PegarUsuarioLogado());
+				return PartialView("_UserBox", rep.PegarUsuarioLogado());
 		}
 		#endregion
 

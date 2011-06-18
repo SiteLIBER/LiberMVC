@@ -64,7 +64,7 @@
 			var id = this.href;
 			id = id.substring(id.lastIndexOf("/"));
 			if (confirm("Deseja realmente apagar este artigo?"))
-				window.location = '<%= Url.Action("ConfirmDelete") %>' + id;
+				window.location = '@Url.Action("ConfirmDelete")' + id;
 		});
 	});
 </script>

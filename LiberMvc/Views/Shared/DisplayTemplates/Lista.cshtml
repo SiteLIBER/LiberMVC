@@ -12,7 +12,7 @@
 		<span class="date">@art.PublicadoEm.ToShortDateString()</span>
 		<span class="author">
 			Por @Html.Label(art.Autor ?? art.Editor.Nome)
-			@*<%= Html.ActionLink(art.Editor.Nome, "Editor", "Artigos", new { id=art.EditorID }, null) %>*@
+			@*@Html.ActionLink(art.Editor.Nome, "Editor", "Artigos", new { id=art.EditorID }, null)*@
 		</span>
 	</p>
 	<p class="abstract">

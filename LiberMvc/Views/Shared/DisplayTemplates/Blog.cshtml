@@ -8,7 +8,7 @@
 
 	<span style="display: block; margin-top: 5px;">
 		<span class="addthis_toolbox addthis_default_style" style="float: left;">
-			<fb:like layout="button_count" show_faces="false" width="200"></fb:like>
+			<fb:like layout="button_count" show_faces="false" width="200" href="@Request.Url"></fb:like>
 		</span>
 		
 		<!-- AddThis Button BEGIN -->
@@ -27,5 +27,5 @@
 </p>
 
 <div class="article_body">
-	@Model.Conteudo
+	@Html.Raw(Model.Conteudo)
 </div>

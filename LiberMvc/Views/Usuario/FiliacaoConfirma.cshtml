@@ -8,10 +8,10 @@
 			Assine e entregue para o representante do partido em alguma reunião, ou envie para:
 		</p>
 		<address>
-			<b>Juliano Torres</b><br />
-			Av. Bias Fortes, n984/102, Lourdes<br />
-			Belo Horizonte - MG<br />
-			30170-011
+			<b>Felipe Kirsch</b><br />
+			Rua dos Caetés, 737, ap 707, Perdizes<br />
+			São Paulo - SP<br />
+			CEP 05016-081<br />
 		</address>
 		<p>
 			A anualidade deve ser paga, para que o filiado tenha direito a voto:
@@ -222,12 +222,12 @@
 	<script type="text/javascript">
 		$(function () {
 			$("#imprimir").click(function () {
-				var url = '<%= Url.Action("FiliacaoImprimir") %>';
+				var url = '@Url.Action("FiliacaoImprimir")';
 				window.open(url, "filiacao_imprimir", "");
 			});
 
 			$("#anualidade").click(function () {
-				var url = '<%= Url.Action("Anualidade") %>';
+				var url = '@Url.Action("Anualidade")';
 				window.location = url;
 			});
 		});
