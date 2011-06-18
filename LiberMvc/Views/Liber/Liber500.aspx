@@ -24,10 +24,10 @@
 		<h2>
 			As fichas devem ser enviadas para:</h2>
 		<address>
-			<b>Felipe Kirsch</b><br />
-			Rua dos Caetés, 737, ap 707, Perdizes<br />
-			São Paulo - SP<br />
-			CEP 05016-081<br />
+			<b>Bernardo Santoro</b><br />
+			Rua Henrique Raffard nº 337, Bingen<br />
+			Petrópolis - RJ<br />
+			CEP 25665-062<br />
 		</address>
 	</div>
 </asp:Content>
