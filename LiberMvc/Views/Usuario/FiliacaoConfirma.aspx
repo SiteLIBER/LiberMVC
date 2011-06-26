@@ -2,16 +2,16 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<div class="panel" id="post">
-		<h1>Filiação - Confirme e Imprima</h1>
+		<h1>
+			Filiação - Confirme e Imprima</h1>
 		<p>
-			Confira seus dados e imprima a ficha de filiação. 
-			Assine e entregue para o representante do partido em alguma reunião, ou envie para:
+			Confira seus dados e imprima a ficha de filiação. Assine e entregue para o representante do partido em alguma reunião, ou envie para:
 		</p>
 		<address>
-			<b>Juliano Torres</b><br />
-			Av. Bias Fortes, n984/102, Lourdes<br />
-			Belo Horizonte - MG<br />
-			30170-011
+			<b>Felipe Kirsch</b><br />
+			Rua dos Caetés, 737, ap 707, Perdizes<br />
+			São Paulo - SP<br />
+			CEP 05016-081<br />
 		</address>
 		<p>
 			A anualidade deve ser paga, para que o filiado tenha direito a voto:
@@ -47,64 +47,56 @@
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Nome) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.Nome) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.DataNasc) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.DataNasc) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Naturalidade) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.Naturalidade) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.NomePai) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.NomePai) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.NomeMae) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.NomeMae) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.EstadoCivilID) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.Label(Model.ListaEstadoCivil.FirstOrDefault(l => l.EstadoCivilID == Model.EstadoCivilID).Descricao) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Profissao) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.Profissao) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.GrauInstrucaoID) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.Label(Model.ListaGrauInstrucao.FirstOrDefault(l=> l.GrauInstrucaoID == Model.GrauInstrucaoID).Descricao) %>
 				</span>
 			</div>
@@ -114,40 +106,35 @@
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Endereco) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.Endereco) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Cidade) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.Cidade) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Estado) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.Label(Model.ListaEstados[Model.Estado]) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.CEP) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.CEP) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Telefone) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.Telefone) %>
 				</span>
 			</div>
@@ -157,49 +144,44 @@
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.TituloEleitor) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.TituloEleitor) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Zona) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.Zona) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.Secao) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.Secao) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.MunicipioUF) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.MunicipioUF) %>
 				</span>
 			</div>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.OutroPartido) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.OutroPartido) %>
 				</span>
 			</div>
-			<% if (Model.OutroPartido) { %>
+			<% if (Model.OutroPartido)
+			{ %>
 			<div class="editor-item">
 				<span class="editor-label">
 					<%= Html.LabelFor(model => model.OutroPartidoQual) %>
-				</span>
-				<span class="editor-field">
+				</span><span class="editor-field">
 					<%= Html.DisplayFor(model => model.OutroPartidoQual) %>
 				</span>
 			</div>
@@ -214,7 +196,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="RightContent" runat="server">
 	<% Html.RenderPartial("RightMenu", null); %>
 </asp:Content>
-
 <asp:Content ID="Content3" ContentPlaceHolderID="HeadContent" runat="server">
 	<script type="text/javascript">
 		$(function () {

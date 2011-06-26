@@ -42,8 +42,12 @@
     <Reference Include="AutoMapper">
       <HintPath>lib\AutoMapper.dll</HintPath>
     </Reference>
-    <Reference Include="Elmah">
-      <HintPath>lib\Elmah.dll</HintPath>
+    <Reference Include="Elmah, Version=1.2.13605.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\elmah.corelibrary.1.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah.Contrib.Mvc">
+      <HintPath>..\packages\Elmah.Contrib.Mvc.1.0\lib\net40\Elmah.Contrib.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -548,6 +552,7 @@
     <Content Include="Views\Liber\Lideranca.aspx" />
     <Content Include="Views\Liber\Programa.aspx" />
     <Content Include="Views\Shared\BottomMenu.ascx" />
+    <Content Include="Views\Shared\ItemNotFound.aspx" />
     <Content Include="Views\Shared\DisplayTemplates\Blog.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\TabelaBlog.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\ListaBlog.ascx" />
@@ -640,6 +645,7 @@
     <None Include="Models\DB.dbml.layout">
       <DependentUpon>DB.dbml</DependentUpon>
     </None>
+    <Content Include="packages.config" />
     <None Include="Scripts\tinymce\examples\media\sample.dcr" />
     <None Include="Scripts\tinymce\examples\media\sample.ram" />
     <None Include="Scripts\tinymce\examples\media\sample.rm" />
