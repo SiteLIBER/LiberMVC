@@ -346,6 +346,72 @@ ul.formatted_list li strong {
 
 /* ========================================================================== */
 
+#banner {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#banner li {
+    height: 300px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#banner li a {
+    display: block;
+    height: 300px;
+}
+
+#banner li a span {
+    display: none;
+}
+
+#banner li#banner_1 {
+    background-image: url("../images/destaque/01LIB_bannerIMPOSTO.jpg");
+}
+
+#banner li#banner_2 {
+    background-image: url("../images/destaque/01LIB_bannerDROGAS.jpg");
+}
+
+#banner li#banner_3 {
+    background-image: url("../images/destaque/01LIB_banner500.jpg");
+}
+
+.bx-pager {
+    top: 4px;
+    right: 0px;
+    position: absolute;
+    float: right;
+}
+
+.bx-pager a {
+    padding: 6px 11px;
+    margin: 1px 5px 1px 0px;
+    display: block;
+    
+    color: #fff;
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #000;
+}
+
+.bx-pager a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+}
+
+.bx-pager a.pager-active {
+    color: #000;
+    background-color: #ffd200;
+}
+
+/* ========================================================================== */
+
 #main_content {
     margin: 0px;
     padding: 5px 0px 0px 5px;

@@ -120,6 +120,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Content\images\destaque\01LIB_banner500.jpg" />
+    <Content Include="Content\images\destaque\01LIB_bannerDROGAS.jpg" />
+    <Content Include="Content\images\destaque\01LIB_bannerIMPOSTO.jpg" />
+    <Content Include="Scripts\bxSlider.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\BancoTeste.mdf" />
@@ -551,6 +555,7 @@
     <Content Include="Views\Liber\Historia.aspx" />
     <Content Include="Views\Liber\Lideranca.aspx" />
     <Content Include="Views\Liber\Programa.aspx" />
+    <Content Include="Views\Shared\Banner.ascx" />
     <Content Include="Views\Shared\BottomMenu.ascx" />
     <Content Include="Views\Shared\ItemNotFound.aspx" />
     <Content Include="Views\Shared\DisplayTemplates\Blog.ascx" />
