@@ -641,7 +641,9 @@
     <None Include="Content\download\carta_helio_beltrao.pdf" />
     <None Include="Content\download\estatuto.pdf" />
     <None Include="Content\download\ficha_apoio_liber_500.pdf" />
+    <None Include="Content\download\ficha_apoio_liber_500_2.pdf" />
     <None Include="Content\download\fundacao.pdf" />
+    <None Include="Content\download\manual_500.pdf" />
     <None Include="Models\DB.dbml">
       <SubType>Designer</SubType>
       <Generator>MSLinqToSQLGenerator</Generator>

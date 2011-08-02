@@ -11,8 +11,9 @@
 		<p>
 			A assinatura desta ficha não representa filiação ao partido, é somente um manifesto de apoio ao registro do <strong>LIBER</strong>.</p>
 		<p id="ficha_btn">
-			<a href="<%: Url.Content("~/Content/download/ficha_apoio_liber_500.pdf") %>" target="_blank">Baixe a ficha de apoio e o manual para coleta de assinaturas</a>
-		</p>
+			<a href="<%: Url.Content("~/Content/download/ficha_apoio_liber_500_2.pdf") %>" target="_blank" class="first_btn">Baixe a ficha de apoio</a>
+            <a href="<%: Url.Content("~/Content/download/manual_500.pdf") %>" target="_blank" class="last_btn">Baixe o manual para coleta de assinaturas</a>
+        </p>
 		<h2>
 			Dados obrigatórios:</h2>
 		<ul>

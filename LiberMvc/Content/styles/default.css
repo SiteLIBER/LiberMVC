@@ -808,33 +808,37 @@ ul.formatted_list li strong {
 
 #post #ficha_btn {
     margin: 0px;
-    padding: 65px 0px 0px 0px;
-    height: 121px;
-    
-    background-image: url("../images/ficha_apoio_back.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    padding: 20px 0;
 }
 
 #post #ficha_btn a {
     margin: 0px auto;
-    padding: 43px 0px 37px 0px;
+    padding: 10px 20px;
     display: block;
-    width: 316px;
+    width: 320px;
     
     color: #111;
     text-decoration: none;
     text-align: center;
     font-size: 15px;
     font-weight: bold;
-    background-image: url("../images/ficha_apoio_btn.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    border: 1px solid #6d6332;
+    background: #ffd200;
+}
+
+#post #ficha_btn a.first_btn {
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px dotted #6d6332;
+}
+
+#post #ficha_btn a.last_btn {
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
 }
 
 #post #ficha_btn a:hover {
     color: #000;
-    background-image: url("../images/ficha_apoio_btn_hover.png");
+    background: #ffdc38;
 }
 
 
