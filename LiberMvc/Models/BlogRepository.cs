@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Linq;
 using System.Web;
-using AutoMapper;
 using System.Collections.Generic;
 namespace LiberMvc.Models
 {
-	public class BlogRepository : IBlogRepository
+	public class BlogRepository
 	{
 
 		#region Database
-		public DBDataContext db;
+		public LiberDB db;
 
-		public BlogRepository() : this(new DBDataContext()) {	}
+		public BlogRepository() : this(new LiberDB()) {	}
 
-		public BlogRepository(DBDataContext context)
+		public BlogRepository(LiberDB context)
 		{ 
 		  db = context;
 		}

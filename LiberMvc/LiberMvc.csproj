@@ -39,15 +39,15 @@
     <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper">
-      <HintPath>lib\AutoMapper.dll</HintPath>
-    </Reference>
     <Reference Include="Elmah, Version=1.2.13605.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\elmah.corelibrary.1.2\lib\Elmah.dll</HintPath>
     </Reference>
     <Reference Include="Elmah.Contrib.Mvc">
       <HintPath>..\packages\Elmah.Contrib.Mvc.1.0\lib\net40\Elmah.Contrib.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Facebook">
       <HintPath>..\packages\Facebook.5.0.26.0\lib\net40-client\Facebook.dll</HintPath>
@@ -68,6 +68,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.ComponentModel.DataAnnotations">
@@ -106,12 +107,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AdminTituloController.cs" />
     <Compile Include="Controllers\ArtigosController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LiberController.cs" />
     <Compile Include="Controllers\PagSeguroController.cs" />
+    <Compile Include="Controllers\TesteController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -126,26 +129,35 @@
     </Compile>
     <Compile Include="Helpers\CustomExtensions.cs" />
     <Compile Include="Helpers\PaginatedList.cs" />
+    <Compile Include="Models\ICadastroModel.cs" />
+    <Compile Include="Models\IEndereco.cs" />
+    <Compile Include="Models\IPerfilModel.cs" />
+    <Compile Include="Models\IPessoa.cs" />
+    <Compile Include="Models\LiberDBInitializer.cs" />
     <Compile Include="Models\Artigo.cs" />
     <Compile Include="Models\ArtigoRepository.cs" />
+    <Compile Include="Models\Autor.cs" />
+    <Compile Include="Models\AutorPostagem.cs" />
     <Compile Include="Models\Blog.cs" />
     <Compile Include="Models\BlogRepository.cs" />
+    <Compile Include="Models\Endereco.cs" />
     <Compile Include="Models\EsqueciModel.cs" />
-    <Compile Include="Models\IBlogRepository.cs" />
-    <Compile Include="Models\IArtigoRepository.cs" />
+    <Compile Include="Models\EstadoCivil.cs" />
+    <Compile Include="Models\Filiado.cs" />
+    <Compile Include="Models\GrauInstrucao.cs" />
+    <Compile Include="Models\LiberDB.cs" />
     <Compile Include="Models\Listas.cs" />
     <Compile Include="Models\FiliacaoModel.cs" />
-    <Compile Include="Models\IUsuarioRepository.cs" />
     <Compile Include="Models\LoginModel.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\CadastroModel.cs" />
-    <Compile Include="Models\DB.designer.cs">
-      <DependentUpon>DB.dbml</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
     <Compile Include="Models\PerfilModel.cs" />
+    <Compile Include="Models\Pessoa.cs" />
+    <Compile Include="Models\Postagem.cs" />
+    <Compile Include="Models\TipoPostagem.cs" />
+    <Compile Include="Models\Titulo.cs" />
+    <Compile Include="Models\TituloPessoa.cs" />
     <Compile Include="Models\Usuario.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -657,14 +669,6 @@
     <None Include="Content\download\estatuto.pdf" />
     <None Include="Content\download\fundacao.pdf" />
     <None Include="Content\download\ficha_apoio_liber_500.pdf" />
-    <None Include="Models\DB.dbml">
-      <SubType>Designer</SubType>
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DB.designer.cs</LastGenOutput>
-    </None>
-    <None Include="Models\DB.dbml.layout">
-      <DependentUpon>DB.dbml</DependentUpon>
-    </None>
     <Content Include="packages.config" />
     <None Include="Scripts\tinymce\examples\media\sample.dcr" />
     <None Include="Scripts\tinymce\examples\media\sample.ram" />
@@ -724,6 +728,13 @@
     <Content Include="Views\Shared\EditorTemplates\Object.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\SimNao.cshtml" />
     <Content Include="Views\Shared\_ItemNotFound.cshtml" />
+    <Content Include="Views\Teste\Route.cshtml" />
+    <Content Include="Views\Teste\RouteRedirect.cshtml" />
+    <Content Include="Views\AdminTitulo\Index.cshtml" />
+    <Content Include="Views\AdminTitulo\Details.cshtml" />
+    <Content Include="Views\AdminTitulo\Create.cshtml" />
+    <Content Include="Views\AdminTitulo\Edit.cshtml" />
+    <Content Include="Views\AdminTitulo\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

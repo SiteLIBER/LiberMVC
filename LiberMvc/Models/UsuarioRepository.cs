@@ -1,21 +1,20 @@
 ﻿using System;
 using System.Linq;
 using System.Web;
-using AutoMapper;
 using System.Web.Security;
 
 namespace LiberMvc.Models
 {
-	public class UsuarioRepository : IUsuarioRepository
+	public class UsuarioRepository
 	{
-		DBDataContext db = new DBDataContext();
+		LiberDB db = new LiberDB();
 		public IQueryable<Usuario> ListaUsuarios()
 		{
 			return db.Usuarios;
 		}
 		public Usuario PegarUsuario(int id)
 		{
-			return db.Usuarios.FirstOrDefault(u => u.UsuarioID == id);
+			return db.Usuarios.FirstOrDefault(u => u.PessoaID == id);
 		}
 		public Usuario PegarUsuario(LoginModel form)
 		{
@@ -34,25 +33,29 @@ namespace LiberMvc.Models
 			var q = db.Usuarios.Where(usr => usr.Email == form.Email);
 			if (q.Count() > 0) return null;
 
-			Usuario u = Mapper.Map<CadastroModel, Usuario>(form);
-			u.TipoUsuario = db.TipoUsuarios.FirstOrDefault(t => t.Descricao == "Usuario");
-			db.Usuarios.InsertOnSubmit(u);
+			Usuario u = form as ICadastroModel as Usuario;
+			u.Pessoa.Titulos.Add(new TituloPessoa
+			{
+				TituloID = db.Titulos.FirstOrDefault(t => t.Codigo == "Usuario").TituloID
+			});
+
+			db.Usuarios.Add(u);
 			return u;
 		}
 		public PerfilModel PegarPerfil(int id)
 		{
-			return Mapper.Map<Usuario, PerfilModel>(db.Usuarios.FirstOrDefault(u => u.UsuarioID == id));
+			return db.Usuarios.FirstOrDefault(u => u.PessoaID == id) as IPerfilModel as PerfilModel;
 		}
 		public FiliacaoModel PegarFiliado()
 		{
-			var model = Mapper.Map<Usuario, FiliacaoModel>(PegarUsuarioLogado());
-			model.ListaEstadoCivil = db.EstadoCivils;
-			model.ListaGrauInstrucao = db.GrauInstrucaos;
+			var model = PegarUsuarioLogado() as IEndereco as FiliacaoModel;
+			model.ListaEstadoCivil = db.EstadoCivil;
+			model.ListaGrauInstrucao = db.GrauInstrucao;
 			return model;
 		}
 		public void Salvar()
 		{
-			db.SubmitChanges();
+			db.SaveChanges();
 		}
 	}
 }

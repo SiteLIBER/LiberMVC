@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.Mvc;
 using LiberMvc.Models;
 using System.Web.Security;
-using AutoMapper;
 using Elmah;
 using System.Net.Mail;
 
@@ -16,13 +15,11 @@ namespace LiberMvc.Controllers
 	{
 
 		#region Repository
-		IUsuarioRepository rep;
+		UsuarioRepository rep;
 
-		public UsuarioController() : this(new UsuarioRepository()) {	}
-
-		public UsuarioController(IUsuarioRepository repository)
-		{ 
-		  rep = repository;
+		public UsuarioController() 
+		{
+		  rep = new UsuarioRepository();
 		}
 		#endregion
 

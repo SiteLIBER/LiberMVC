@@ -4,11 +4,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LiberMvc.Models
 {
-	public class PerfilModel
+	public class PerfilModel : IPerfilModel
 	{
 		[Required(ErrorMessage = "*")]
-		[DisplayName("Nome:")]
-		public string Nome { get; set; }
+		[DisplayName("Apelido:")]
+		public string Apelido { get; set; }
 
 		[Required(ErrorMessage = "*")]
 		[DataType(DataType.EmailAddress)]

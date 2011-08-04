@@ -12,13 +12,11 @@ namespace LiberMvc.Controllers
 	public class BlogController : Controller
 	{
 		#region Repository
-		IBlogRepository rep;
+		BlogRepository rep;
 
-		public BlogController() : this(new BlogRepository()) { }
-
-		public BlogController(IBlogRepository repository)
+		public BlogController() 
 		{
-			rep = repository;
+			rep = new BlogRepository();
 		}
 		#endregion
 

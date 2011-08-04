@@ -9,19 +9,15 @@ using Elmah;
 
 namespace LiberMvc.Controllers
 {
-	[Scc("Auth")]
-	[HandleError(View = "Error")]
 	public class AuthController : Controller
 	{
 
 		#region Repository
-		IUsuarioRepository rep;
+		UsuarioRepository rep;
 
-		public AuthController() : this(new UsuarioRepository()) {	}
-
-		public AuthController(IUsuarioRepository repository)
+		public AuthController()
 		{ 
-		  rep = repository;
+		  rep = new UsuarioRepository();
 		}
 		#endregion
 
@@ -71,8 +67,8 @@ namespace LiberMvc.Controllers
 
 			if (usuario.Banido)
 				return arBanido;
-			
-			form.Logar(usuario);
+
+			usuario.Logar(form.Lembrar);
 			return arLogado;
 			
 		}

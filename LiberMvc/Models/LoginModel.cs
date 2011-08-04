@@ -12,12 +12,6 @@ namespace LiberMvc.Models
 {
 	public class LoginModel
 	{
-		public void Logar(Usuario usuario)
-		{
-			Usuario.Logado.Roles = usuario.TipoUsuario.Descricao;
-			FormsAuthentication.SetAuthCookie(usuario.UsuarioID.ToString(), Lembrar);
-		}
-
 		[Required(ErrorMessage="*")]
 		[DisplayName("E-mail")]
 		[DataType(DataType.EmailAddress)]

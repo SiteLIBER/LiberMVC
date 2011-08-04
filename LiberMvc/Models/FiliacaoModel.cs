@@ -6,11 +6,11 @@ using System.Collections.Generic;
 
 namespace LiberMvc.Models
 {
-	public class FiliacaoModel
+	public class FiliacaoModel : IEndereco, IPessoa
 	{
 		// Dados Pessoais
 		[ScaffoldColumn(false)]
-		public string UsuarioID { get; set; }
+		public int PessoaID { get; set; }
 
 		[DisplayName("Nome Completo:"), StringLength(250), Required(ErrorMessage = "*")]
 		public string Nome { get; set; }
@@ -45,7 +45,7 @@ namespace LiberMvc.Models
 
 		// Contato
 		[DisplayName("Endereço residencial:"), StringLength(250), Required(ErrorMessage = "*")]
-		public string Endereco { get; set; }
+		public string Logradouro { get; set; }
 
 		[DisplayName("Cidade:"), StringLength(250), Required(ErrorMessage = "*")]
 		public string Cidade { get; set; }
@@ -62,22 +62,6 @@ namespace LiberMvc.Models
 
 
 		// Dados Eleitorais
-		[DisplayName("Título de Eleitor:"), StringLength(12), Required(ErrorMessage = "*")]
-		public string TituloEleitor { get; set; }
-
-		[DisplayName("Zona:"), StringLength(4), Required(ErrorMessage = "*")]
-		public string Zona { get; set; }
-
-		[DisplayName("Seção:"), StringLength(4), Required(ErrorMessage = "*")]
-		public string Secao { get; set; }
-
-		[DisplayName("Município - UF:"), StringLength(250), Required(ErrorMessage = "*")]
-		public string MunicipioUF { get; set; }
-
-		[DisplayName("Encontra-se filiado a outro partido?"), UIHint("SimNao")]
-		public bool OutroPartido { get; set; }
-
-		[DisplayName("Se sim, qual?"), StringLength(50)]
-		public string OutroPartidoQual { get; set; }
+		public Filiado Filiado { get; set; }
 	}
 }

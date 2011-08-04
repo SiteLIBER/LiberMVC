@@ -7,8 +7,6 @@ using Elmah;
 
 namespace LiberMvc.Controllers
 {
-	[Scc("Liber")]
-	[HandleError(View = "Error")]
 	public class LiberController : Controller
 	{
 		//

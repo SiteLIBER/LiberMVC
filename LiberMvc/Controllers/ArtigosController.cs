@@ -8,18 +8,15 @@ using Elmah;
 
 namespace LiberMvc.Controllers
 {
-	[Scc("Artigos")]
 	public class ArtigosController : Controller
 	{
 
 		#region Repository
-		IArtigoRepository rep;
+		ArtigoRepository rep;
 
-		public ArtigosController() : this(new ArtigoRepository()) { }
-
-		public ArtigosController(IArtigoRepository repository)
+		public ArtigosController()
 		{
-			rep = repository;
+			rep = new ArtigoRepository();
 		}
 		#endregion
 
@@ -159,7 +156,7 @@ namespace LiberMvc.Controllers
 		#endregion
 
 		#region GET: /Artigos/Home
-		public ActionResult Home()
+		public PartialViewResult Home()
 		{
 			var artigos = rep.ArtigosHome;
 			//rep.Dispose();

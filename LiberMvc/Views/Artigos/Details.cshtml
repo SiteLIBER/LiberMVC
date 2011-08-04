@@ -26,3 +26,14 @@
 	 @Html.Partial("_RightMenu") 
 
 }
+
+@section HeadContent {
+	<meta property="og:type" content="text" />
+	<meta property="og:image" content="http://www.pliber.org.br@(Url.Content("~/Content/images/liber_logo.png"))" />
+	<meta property="og:title" content="@Model.Titulo"/>
+	<meta property="og:url" content="@Request.Url" />
+	<meta property="og:description" content="@Model.Chamada" />
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+		{ lang: 'pt-BR' }
+	</script>
+}

@@ -7,11 +7,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LiberMvc.Models
 {
-	public class CadastroModel
+	public class CadastroModel : ICadastroModel
 	{
 		[Required(ErrorMessage = "*")]
-		[DisplayName("Nome:")]
-		public string Nome { get; set; }
+		[DisplayName("Apelido:")]
+		public string Apelido { get; set; }
 
 		[Required(ErrorMessage = "*")]
 		[DataType(DataType.EmailAddress)]

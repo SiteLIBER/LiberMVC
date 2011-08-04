@@ -4,11 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-using AutoMapper;
+
 namespace LiberMvc
 {
 	using Models;
 	using System.Web.Caching;
+	using System.Data.Entity;
 	// Note: For instructions on enabling IIS6 or IIS7 classic mode, 
 	// visit http://go.microsoft.com/?LinkId=9394801
 
@@ -36,6 +37,13 @@ namespace LiberMvc
 			#endregion
 
 			routes.MapRoute(
+					"Postagem", // Route name
+					"#/{id}", // URL with parameters
+					new { controller = "Postagem", action = "Details", id = 0 }, // Parameter defaults
+					new { id = @"\d+" }
+			);
+
+			routes.MapRoute(
 					"Default", // Route name
 					"{controller}/{action}/{id}", // URL with parameters
 					new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
@@ -47,6 +55,8 @@ namespace LiberMvc
 			#region fix session exception when download breaks by user
 			string sessionId = Session.SessionID;
 			#endregion
+
+			Database.SetInitializer(new LiberDBInitializer());
 
 			#region redirect to correct url
 			var url = HttpContext.Current.Request.Url.AbsoluteUri;
@@ -70,16 +80,6 @@ namespace LiberMvc
 		protected void Application_Start()
 		{
 			AreaRegistration.RegisterAllAreas();
-
-			#region AutoMapper Declarations
-			Mapper.CreateMap<Usuario, FiliacaoModel>();
-			Mapper.CreateMap<FiliacaoModel, Usuario>();
-
-			Mapper.CreateMap<CadastroModel, Usuario>();
-
-			Mapper.CreateMap<PerfilModel, Usuario>();
-			Mapper.CreateMap<Usuario, PerfilModel>();
-			#endregion
 		
 			RegisterRoutes(RouteTable.Routes);
 		}

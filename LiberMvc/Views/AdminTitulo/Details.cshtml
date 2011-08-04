@@ -1,0 +1,25 @@
+﻿@model LiberMvc.Models.Titulo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Titulo</legend>
+
+    <div class="display-label">Codigo</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Codigo)
+    </div>
+
+    <div class="display-label">Nome</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.TituloID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

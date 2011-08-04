@@ -34,5 +34,17 @@ namespace LiberMvc.Models
 			{ "SE", "Sergipe" },
 			{ "TO", "Tocantins" }
 		};
+
+		public static IDictionary<string, string> Sexo = new Dictionary<string, string>
+		{
+			{ "F", "Feminino" },
+			{ "M", "Masculino" }
+		};
+
+		public static IDictionary<bool, string> SimNao = new Dictionary<bool, string>
+		{
+			{ true, "Sim" },
+			{ false, "Não" }
+		};
 	}
 }

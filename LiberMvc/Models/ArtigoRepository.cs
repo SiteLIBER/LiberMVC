@@ -1,22 +1,22 @@
 ﻿using System;
 using System.Linq;
 using System.Web;
-using AutoMapper;
 using System.Collections.Generic;
 namespace LiberMvc.Models
 {
-	public class ArtigoRepository : IArtigoRepository
+	public class ArtigoRepository
 	{
 
 		#region Database
-		public DBDataContext db;
 
-		public ArtigoRepository() : this(new DBDataContext()) {	}
+		public LiberDB db;
 
-		public ArtigoRepository(DBDataContext context)
+		public ArtigoRepository() : this(new LiberDB()) { }
+		public ArtigoRepository(LiberDB context)
 		{ 
 		  db = context;
 		}
+
 		#endregion
 
 		#region Query Methods
