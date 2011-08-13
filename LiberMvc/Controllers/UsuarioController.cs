@@ -52,7 +52,7 @@ namespace LiberMvc.Controllers
 		[Auth]
 		public ActionResult UserBox()
 		{
-				return PartialView("_UserBox", rep.PegarUsuarioLogado());
+				return PartialView("_UserBox", rep.UsuarioLogado);
 		}
 		#endregion
 
@@ -72,7 +72,7 @@ namespace LiberMvc.Controllers
 			if (usuario != null)
 			{
 				rep.Salvar();
-				new LoginModel().Logar(rep.PegarUsuario(usuario.UsuarioID));
+				usuario.Logar(false);
 				return (form.DesejaFiliacao) ? RedirectToAction("Filiacao") : RedirectToAction("Index", "Home");
 			}
 			else
@@ -96,7 +96,7 @@ namespace LiberMvc.Controllers
 				return View(model);
 			}
 
-			Usuario usuario = rep.PegarUsuarioLogado();
+			Usuario usuario = rep.UsuarioLogado;
 			UpdateModel(usuario);
 			rep.Salvar();
 
@@ -132,7 +132,7 @@ namespace LiberMvc.Controllers
 		public ActionResult EsqueciSenha(EsqueciModel form)
 		{
 
-			Usuario usuario = rep.ListaUsuarios().SingleOrDefault(u => u.Email == form.Email);
+			Usuario usuario = rep.ListaUsuarios.SingleOrDefault(u => u.Email == form.Email);
 
 			if (usuario != null)
 			{
@@ -141,7 +141,7 @@ namespace LiberMvc.Controllers
 				
 				MailMessage mail = new MailMessage();
 				mail.From = new MailAddress("noreply@pliber.org.br");
-				mail.To.Add(new MailAddress(usuario.Email, usuario.Nome));
+				mail.To.Add(new MailAddress(usuario.Email, usuario.Apelido));
 				mail.Subject = "Liber - Esqueci minha senha";
 				mail.Body = "Sua senha é: " + usuario.Senha;
 

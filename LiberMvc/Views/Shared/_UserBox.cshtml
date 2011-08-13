@@ -5,11 +5,14 @@
 <h1>Painel do usuário</h1>
 
 <p id="user_informations">
-    @Model.Nome |
-    @Html.ActionLink("Meu Perfil", "Perfil", "Usuario", new { id = Model.UsuarioID }, null) |
+    @Model.Apelido |
+    @Html.ActionLink("Meu Perfil", "Perfil", "Usuario", new { id = Model.PessoaID }, null) |
     @Html.ActionLink("Sair", "LogOff", "Auth")
     <br />
-    <strong>@Model.TipoUsuario.Descricao</strong>
+		@foreach (var titulo in Model.Pessoa.Titulos)
+	{
+    <strong>@titulo.Titulo.Nome</strong><br />
+	}
 </p>
 
 <ul>
@@ -20,7 +23,7 @@
              } 
 
             @if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { 
-            <li>@Html.ActionLink("Meus", "Editor", "Artigos", new { id = Model.UsuarioID }, null)</li>
+            <li>@Html.ActionLink("Meus", "Editor", "Artigos", new { id = Model.PessoaID }, null)</li>
              } 
 
             @if (Usuario.Logado.isAdmin) { 
@@ -45,7 +48,7 @@
              } 
 
             @if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin) { 
-            <li>@Html.ActionLink("Meus", "Editor", "Blog", new { id = Model.UsuarioID }, null)</li>
+            <li>@Html.ActionLink("Meus", "Editor", "Blog", new { id = Model.PessoaID }, null)</li>
              } 
 
             @if (Usuario.Logado.isAdmin) { 

@@ -1,10 +1,10 @@
-﻿@model LiberMvc.Models.Artigo
+﻿@model LiberMvc.Models.Postagem
 
 <h1>@Model.Titulo</h1>
 
 <p class="general_informations">
 	<span class="date">@Model.PublicadoEm.ToShortDateString()</span> 
-	<span class="author">@Model.Autor</span>
+	@Helper.NomeAutor(Model)
 
 	<span style="display: block; margin-top: 5px;">
 		<span class="addthis_toolbox addthis_default_style" style="float: left;">

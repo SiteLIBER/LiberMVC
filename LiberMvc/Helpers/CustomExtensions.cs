@@ -24,6 +24,10 @@ public static class CustomExtensions
 		return result;
 	}
 
+	static public string ToShortDateString(this DateTime? data)
+	{
+		return (data.HasValue) ? data.Value.ToShortDateString() : null;
+	}
 	
 	static public DateTime SetYear(this DateTime data)
 	{

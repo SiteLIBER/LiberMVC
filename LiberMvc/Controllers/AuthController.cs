@@ -44,12 +44,12 @@ namespace LiberMvc.Controllers
 			ActionResult arValidacaoFalhou;
 			if (Request.IsAjaxRequest())
 			{
-				arLoginFalhou = View("LoginFalhouBox"); // JavaScript("window.location='" + Url.Action("LoginFalhou") + "';");
-				arBanido = View("BanidoBox"); // JavaScript("window.location='" + Url.Action("Banido") + "';");
+				arLoginFalhou = PartialView("_LoginFalhouBox"); // JavaScript("window.location='" + Url.Action("LoginFalhou") + "';");
+				arBanido = PartialView("_BanidoBox"); // JavaScript("window.location='" + Url.Action("Banido") + "';");
 				arLogado = (!String.IsNullOrEmpty(returnUrl)) 
 					? (ActionResult)JavaScript("window.location='" + returnUrl + "';")
 					: JavaScript("$('#loginbox').load('" + Url.Action("UserBox", "Usuario") + "');"); //JavaScript("$(function(){$('#loginbox').load('" + Url.Action("UserBox", "Usuario") + "');});");
-				arValidacaoFalhou = View("LoginFalhouBox");
+				arValidacaoFalhou = PartialView("_LoginFalhouBox");
 			}
 			else
 			{

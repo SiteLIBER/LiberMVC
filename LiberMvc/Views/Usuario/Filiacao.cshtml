@@ -31,70 +31,70 @@
 				<legend>Dados Pessoais</legend>
 				<div class="display-item">
 					<span class="display-label obr">
-						@Html.LabelFor(model => model.Nome)
+						@Html.LabelFor(model => model.Pessoa.Nome)
 					</span><span class="display-field">
-						@Html.EditorFor(model => model.Nome)
-						@Html.ValidationMessageFor(model => model.Nome)
+						@Html.EditorFor(model => model.Pessoa.Nome)
+						@Html.ValidationMessageFor(model => model.Pessoa.Nome)
 					</span>
 				</div>
 				<div class="display-item">
 					<span class="display-label obr">
-						@Html.LabelFor(model => model.DataNasc)
+						@Html.LabelFor(model => model.Pessoa.DataNasc)
 					</span><span class="display-field">
-						@Html.EditorFor(model => model.DataNasc)
-						@Html.ValidationMessageFor(model => model.DataNasc)
+						@Html.EditorFor(model => model.Pessoa.DataNasc)
+						@Html.ValidationMessageFor(model => model.Pessoa.DataNasc)
 					</span>
 				</div>
 				<div class="display-item">
 					<span class="display-label obr">
-						@Html.LabelFor(model => model.Naturalidade)
+						@Html.LabelFor(model => model.Pessoa.Naturalidade)
 					</span><span class="display-field">
-						@Html.EditorFor(model => model.Naturalidade)
-						@Html.ValidationMessageFor(model => model.Naturalidade)
+						@Html.EditorFor(model => model.Pessoa.Naturalidade)
+						@Html.ValidationMessageFor(model => model.Pessoa.Naturalidade)
 					</span>
 				</div>
 				<div class="display-item">
 					<span class="display-label obr">
-						@Html.LabelFor(model => model.NomePai)
+						@Html.LabelFor(model => model.Pessoa.NomePai)
 					</span><span class="display-field">
-						@Html.EditorFor(model => model.NomePai)
-						@Html.ValidationMessageFor(model => model.NomePai)
+						@Html.EditorFor(model => model.Pessoa.NomePai)
+						@Html.ValidationMessageFor(model => model.Pessoa.NomePai)
 					</span>
 				</div>
 				<div class="display-item">
 					<span class="display-label obr">
-						@Html.LabelFor(model => model.NomeMae)
+						@Html.LabelFor(model => model.Pessoa.NomeMae)
 					</span><span class="display-field">
-						@Html.EditorFor(model => model.NomeMae)
-						@Html.ValidationMessageFor(model => model.NomeMae)
+						@Html.EditorFor(model => model.Pessoa.NomeMae)
+						@Html.ValidationMessageFor(model => model.Pessoa.NomeMae)
 					</span>
 				</div>
 				<div class="display-item">
 					<span class="display-label obr">
-						@Html.LabelFor(model => model.EstadoCivilID)
+						@Html.LabelFor(model => model.Pessoa.EstadoCivilID)
 					</span><span class="display-field">
-						@(Html.DropDownListFor(model => model.EstadoCivilID,
+						@(Html.DropDownListFor(model => model.Pessoa.EstadoCivilID,
 							new SelectList(Model.ListaEstadoCivil, "EstadoCivilID", "Descricao"),
 							"Selecione o Estado Civil"))
-						@Html.ValidationMessageFor(model => model.EstadoCivilID)
+						@Html.ValidationMessageFor(model => model.Pessoa.EstadoCivilID)
 					</span>
 				</div>
 				<div class="display-item">
 					<span class="display-label obr">
-						@Html.LabelFor(model => model.Profissao)
+						@Html.LabelFor(model => model.Pessoa.Profissao)
 					</span><span class="display-field">
-						@Html.EditorFor(model => model.Profissao)
-						@Html.ValidationMessageFor(model => model.Profissao)
+						@Html.EditorFor(model => model.Pessoa.Profissao)
+						@Html.ValidationMessageFor(model => model.Pessoa.Profissao)
 					</span>
 				</div>
 				<div class="display-item">
 					<span class="display-label obr">
-						@Html.LabelFor(model => model.GrauInstrucaoID)
+						@Html.LabelFor(model => model.Pessoa.GrauInstrucaoID)
 					</span><span class="display-field">
-						@(Html.DropDownListFor(model => model.GrauInstrucaoID,
+						@(Html.DropDownListFor(model => model.Pessoa.GrauInstrucaoID,
 							new SelectList(Model.ListaGrauInstrucao, "GrauInstrucaoID", "Descricao"),
 							"Selecione o Grau de Instrução"))
-						@Html.ValidationMessageFor(model => model.GrauInstrucaoID)
+						@Html.ValidationMessageFor(model => model.Pessoa.GrauInstrucaoID)
 					</span>
 				</div>
 			</fieldset>
@@ -102,44 +102,44 @@
 				<legend>Contato</legend>
 				<div class="display-item">
 					<span class="display-label obr">
-						@Html.LabelFor(model => model.Endereco)
+						@Html.LabelFor(model => model.Pessoa.Endereco.Logradouro)
 					</span><span class="display-field">
-						@Html.EditorFor(model => model.Endereco)
-						@Html.ValidationMessageFor(model => model.Endereco)
+						@Html.EditorFor(model => model.Pessoa.Endereco.Logradouro)
+						@Html.ValidationMessageFor(model => model.Pessoa.Endereco.Logradouro)
 					</span>
 				</div>
 				<div class="display-item">
 					<span class="display-label obr">
-						@Html.LabelFor(model => model.Cidade)
+						@Html.LabelFor(model => model.Pessoa.Endereco.Cidade)
 					</span><span class="display-field">
-						@Html.EditorFor(model => model.Cidade)
-						@Html.ValidationMessageFor(model => model.Cidade)
+						@Html.EditorFor(model => model.Pessoa.Endereco.Cidade)
+						@Html.ValidationMessageFor(model => model.Pessoa.Endereco.Cidade)
 					</span>
 				</div>
 				<div class="display-item">
 					<span class="display-label obr">
-						@Html.LabelFor(model => model.Estado)
+						@Html.LabelFor(model => model.Pessoa.Endereco.Estado)
 					</span><span class="display-field">
-						@(Html.DropDownListFor(model => model.Estado,
+						@(Html.DropDownListFor(model => model.Pessoa.Endereco.Estado,
 							new SelectList(Model.ListaEstados, "Key", "Value"),
 							" -- "))
-						@Html.ValidationMessageFor(model => model.Estado)
+						@Html.ValidationMessageFor(model => model.Pessoa.Endereco.Estado)
 					</span>
 				</div>
 				<div class="display-item">
 					<span class="display-label obr">
-						@Html.LabelFor(model => model.CEP)
+						@Html.LabelFor(model => model.Pessoa.Endereco.CEP)
 					</span><span class="display-field">
-						@Html.EditorFor(model => model.CEP)
-						@Html.ValidationMessageFor(model => model.CEP)
+						@Html.EditorFor(model => model.Pessoa.Endereco.CEP)
+						@Html.ValidationMessageFor(model => model.Pessoa.Endereco.CEP)
 					</span>
 				</div>
 				<div class="display-item">
 					<span class="display-label obr">
-						@Html.LabelFor(model => model.Telefone)
+						@Html.LabelFor(model => model.Pessoa.Telefone)
 					</span><span class="display-field">
-						@Html.EditorFor(model => model.Telefone)
-						@Html.ValidationMessageFor(model => model.Telefone)
+						@Html.EditorFor(model => model.Pessoa.Telefone)
+						@Html.ValidationMessageFor(model => model.Pessoa.Telefone)
 					</span>
 				</div>
 			</fieldset>
@@ -147,56 +147,56 @@
 				<legend>Dados Eleitorais</legend>
 				<div class="display-item">
 					<div class="display-label obr">
-						@Html.LabelFor(model => model.TituloEleitor)
+						@Html.LabelFor(model => model.Filiado.TituloEleitor)
 					</div>
 					<div class="display-field">
-						@Html.EditorFor(model => model.TituloEleitor)
-						@Html.ValidationMessageFor(model => model.TituloEleitor)
+						@Html.EditorFor(model => model.Filiado.TituloEleitor)
+						@Html.ValidationMessageFor(model => model.Filiado.TituloEleitor)
 					</div>
 				</div>
 				<div class="display-item">
 					<div class="display-label obr">
-						@Html.LabelFor(model => model.Zona)
+						@Html.LabelFor(model => model.Filiado.Zona)
 					</div>
 					<div class="display-field">
-						@Html.EditorFor(model => model.Zona)
-						@Html.ValidationMessageFor(model => model.Zona)
+						@Html.EditorFor(model => model.Filiado.Zona)
+						@Html.ValidationMessageFor(model => model.Filiado.Zona)
 					</div>
 				</div>
 				<div class="display-item">
 					<div class="display-label obr">
-						@Html.LabelFor(model => model.Secao)
+						@Html.LabelFor(model => model.Filiado.Secao)
 					</div>
 					<div class="display-field">
-						@Html.EditorFor(model => model.Secao)
-						@Html.ValidationMessageFor(model => model.Secao)
+						@Html.EditorFor(model => model.Filiado.Secao)
+						@Html.ValidationMessageFor(model => model.Filiado.Secao)
 					</div>
 				</div>
 				<div class="display-item">
 					<div class="display-label obr">
-						@Html.LabelFor(model => model.MunicipioUF)
+						@Html.LabelFor(model => model.Filiado.MunicipioUF)
 					</div>
 					<div class="display-field">
-						@Html.EditorFor(model => model.MunicipioUF)
-						@Html.ValidationMessageFor(model => model.MunicipioUF)
+						@Html.EditorFor(model => model.Filiado.MunicipioUF)
+						@Html.ValidationMessageFor(model => model.Filiado.MunicipioUF)
 					</div>
 				</div>
 				<div class="display-item">
 					<div class="display-label">
-						@Html.LabelFor(model => model.OutroPartido)
+						@Html.LabelFor(model => model.Filiado.OutroPartido)
 					</div>
 					<div class="display-field">
-						@Html.EditorFor(model => model.OutroPartido)
-						@Html.ValidationMessageFor(model => model.OutroPartido)
+						@Html.EditorFor(model => model.Filiado.OutroPartido)
+						@Html.ValidationMessageFor(model => model.Filiado.OutroPartido)
 					</div>
 				</div>
 				<div class="display-item">
 					<div class="display-label">
-						@Html.LabelFor(model => model.OutroPartidoQual)
+						@Html.LabelFor(model => model.Filiado.OutroPartidoQual)
 					</div>
 					<div class="display-field">
-						@Html.EditorFor(model => model.OutroPartidoQual)
-						@Html.ValidationMessageFor(model => model.OutroPartidoQual)
+						@Html.EditorFor(model => model.Filiado.OutroPartidoQual)
+						@Html.ValidationMessageFor(model => model.Filiado.OutroPartidoQual)
 					</div>
 				</div>
 			</fieldset>

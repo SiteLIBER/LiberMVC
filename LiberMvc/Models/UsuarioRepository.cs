@@ -7,15 +7,36 @@ namespace LiberMvc.Models
 {
 	public class UsuarioRepository
 	{
-		LiberDB db = new LiberDB();
-		public IQueryable<Usuario> ListaUsuarios()
+		#region Database
+		internal LiberDB db;
+		public UsuarioRepository() : this(new LiberDB()) { }
+		public UsuarioRepository(LiberDB context)
+		{ 
+			db = context;
+		}
+		#endregion
+
+		#region Queries
+		public IQueryable<Usuario> ListaUsuarios
 		{
-			return db.Usuarios;
+			get
+			{
+				return db.Usuarios;
+			}
 		}
 		public Usuario PegarUsuario(int id)
 		{
 			return db.Usuarios.FirstOrDefault(u => u.PessoaID == id);
 		}
+		public Usuario UsuarioLogado
+		{
+			get
+			{
+				return PegarUsuario(Usuario.Logado.ID);
+			}
+		}
+		#endregion
+
 		public Usuario PegarUsuario(LoginModel form)
 		{
 			return (from u in db.Usuarios
@@ -23,34 +44,38 @@ namespace LiberMvc.Models
 							& u.Senha == form.Senha
 							select u).FirstOrDefault();
 		}
-		public Usuario PegarUsuarioLogado()
-		{
-			return PegarUsuario(Usuario.Logado.ID);
-		}
 		public Usuario Cadastrar(CadastroModel form) 
 		{
-			form.Email = form.Email.Trim();
-			var q = db.Usuarios.Where(usr => usr.Email == form.Email);
+			var u = form.Usuario;
+			u.Email = u.Email.Trim();
+			var q = db.Usuarios.Where(usr => usr.Email == u.Email);
 			if (q.Count() > 0) return null;
 
-			Usuario u = form as ICadastroModel as Usuario;
+			u = db.Usuarios.Add(u);
+			
 			u.Pessoa.Titulos.Add(new TituloPessoa
 			{
 				TituloID = db.Titulos.FirstOrDefault(t => t.Codigo == "Usuario").TituloID
 			});
 
-			db.Usuarios.Add(u);
 			return u;
 		}
 		public PerfilModel PegarPerfil(int id)
 		{
-			return db.Usuarios.FirstOrDefault(u => u.PessoaID == id) as IPerfilModel as PerfilModel;
+			return new PerfilModel { 
+				Usuario = db.Usuarios.FirstOrDefault(u => u.PessoaID == id)
+			};
 		}
 		public FiliacaoModel PegarFiliado()
 		{
-			var model = PegarUsuarioLogado() as IEndereco as FiliacaoModel;
-			model.ListaEstadoCivil = db.EstadoCivil;
-			model.ListaGrauInstrucao = db.GrauInstrucao;
+			var pessoa = UsuarioLogado.Pessoa;
+			var model = new FiliacaoModel
+			{
+				Pessoa = pessoa,
+				ListaEstadoCivil = db.EstadoCivil,
+				ListaGrauInstrucao = db.GrauInstrucao,
+				Filiado = pessoa.Filiado
+			};
 			return model;
 		}
 		public void Salvar()

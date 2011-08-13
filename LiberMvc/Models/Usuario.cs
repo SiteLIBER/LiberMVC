@@ -4,10 +4,11 @@ using System.Web.Security;
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 using System.Linq;
+using System.ComponentModel;
 
 namespace LiberMvc.Models
 {
-	public partial class Usuario : ICadastroModel, IPerfilModel
+	public partial class Usuario
 	{
 
 		//public void TipoUsuario()
@@ -19,16 +20,21 @@ namespace LiberMvc.Models
 
 		public Int64? FacebookID { get; set; }
 
+		[Required(ErrorMessage = "*")]
+		[DisplayName("Apelido:")]
 		public string Apelido { get; set; }
 
-		[StringLength(50), DataType(DataType.Password), Required]
+		[StringLength(50), DataType(DataType.Password)]
+		[DisplayName("Senha:"), Required(ErrorMessage = "*")]
 		public string Senha { get; set; }
 
-		[StringLength(250), DataType(DataType.EmailAddress), Required]
+		[StringLength(250), DataType(DataType.EmailAddress)]
+		[DisplayName("E-mail:"), Required(ErrorMessage = "*")]
 		public string Email { get; set; }
 		
 		public bool Banido { get; set; }
 
+		[DisplayName("Desejo receber newsletter")]
 		public bool ReceberNewsletter { get; set; }
 
 		public DateTime CriadoEm { get; set; }
@@ -52,8 +58,8 @@ namespace LiberMvc.Models
 					HttpContext.Current.Session["roles"] = value;
 				}
 			}
-			public static bool isAdmin { get { return Roles.Contains("Admin"); } }
-			public static bool isEditor { get { return Roles.Contains("Editor"); } }
+			public static bool isAdmin { get { return (Roles != null) ? Roles.Contains("Admin") : false; } }
+			public static bool isEditor { get { return (Roles != null) ? Roles.Contains("Editor") : false; } }
 		}
 		#endregion
 

@@ -1,4 +1,5 @@
 ﻿@using System.Web.Mvc
+@using LiberMvc.Models
 
 @helper Script(string scriptUrl, UrlHelper url)
 {
@@ -8,4 +9,23 @@
 @helper Content(string contentUrl, UrlHelper url)
 {
 	<link href="@url.Content("~/Content/" + contentUrl)" rel="stylesheet" type="text/css" />
+}
+
+@helper NomeAutor(Postagem post) {
+	<span class="author">Por
+		@foreach (var i in post.Autores) {
+			@Html.Label(i.Autor.Nome)
+			if (i.AutorID != post.Autores.Last().AutorID) { <text> & </text> }
+		}
+	</span>
+}
+
+@helper Image(string imageUrl, UrlHelper url, string alt = "")
+{
+	<img src="@url.Content("~/Content/images/" + imageUrl)" alt="@alt"/>
+}
+
+@helper LinkedImage(string imageUrl, string link, UrlHelper url, string alt = "")
+{
+	<a href="@link"><img src="@url.Content("~/Content/images/" + imageUrl)" alt="@alt"/></a>
 }

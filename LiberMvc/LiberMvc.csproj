@@ -108,12 +108,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AdminTituloController.cs" />
-    <Compile Include="Controllers\ArtigosController.cs" />
+    <Compile Include="Controllers\ArtigosController.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Controllers\AuthController.cs" />
-    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\BlogController.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LiberController.cs" />
     <Compile Include="Controllers\PagSeguroController.cs" />
+    <Compile Include="Controllers\PostagemController.cs" />
     <Compile Include="Controllers\TesteController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Default.aspx.cs">
@@ -129,17 +134,24 @@
     </Compile>
     <Compile Include="Helpers\CustomExtensions.cs" />
     <Compile Include="Helpers\PaginatedList.cs" />
-    <Compile Include="Models\ICadastroModel.cs" />
+    <Compile Include="Models\Artigo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\ArtigoRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Blog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\BlogRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\PostagemRepository.cs" />
     <Compile Include="Models\IEndereco.cs" />
-    <Compile Include="Models\IPerfilModel.cs" />
     <Compile Include="Models\IPessoa.cs" />
     <Compile Include="Models\LiberDBInitializer.cs" />
-    <Compile Include="Models\Artigo.cs" />
-    <Compile Include="Models\ArtigoRepository.cs" />
     <Compile Include="Models\Autor.cs" />
     <Compile Include="Models\AutorPostagem.cs" />
-    <Compile Include="Models\Blog.cs" />
-    <Compile Include="Models\BlogRepository.cs" />
     <Compile Include="Models\Endereco.cs" />
     <Compile Include="Models\EsqueciModel.cs" />
     <Compile Include="Models\EstadoCivil.cs" />
@@ -556,28 +568,16 @@
     <Content Include="Scripts\tinymce\jscripts\tiny_mce\utils\form_utils.js" />
     <Content Include="Scripts\tinymce\jscripts\tiny_mce\utils\mctabs.js" />
     <Content Include="Scripts\tinymce\jscripts\tiny_mce\utils\validate.js" />
-    <Content Include="Views\Artigos\Create.cshtml" />
-    <Content Include="Views\Artigos\Delete.cshtml" />
-    <Content Include="Views\Artigos\Details.cshtml" />
-    <Content Include="Views\Artigos\Edit.cshtml" />
-    <Content Include="Views\Artigos\Editor.cshtml" />
     <Content Include="Views\Artigos\_Home.cshtml" />
     <Content Include="Views\Artigos\Index.cshtml" />
-    <Content Include="Views\Artigos\Table.cshtml" />
     <Content Include="Views\Auth\AreaRestrita.cshtml" />
     <Content Include="Views\Auth\Banido.cshtml" />
     <Content Include="Views\Auth\_BanidoBox.cshtml" />
     <Content Include="Views\Auth\Login.cshtml" />
     <Content Include="Views\Auth\LoginFalhou.cshtml" />
     <Content Include="Views\Auth\_LoginFalhouBox.cshtml" />
-    <Content Include="Views\Blog\Create.cshtml" />
-    <Content Include="Views\Blog\Delete.cshtml" />
-    <Content Include="Views\Blog\Details.cshtml" />
-    <Content Include="Views\Blog\Edit.cshtml" />
-    <Content Include="Views\Blog\Editor.cshtml" />
     <Content Include="Views\Blog\_Home.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
-    <Content Include="Views\Blog\Table.cshtml" />
     <Content Include="Views\Home\_Destaque.cshtml" />
     <Content Include="Views\Home\_Enquete.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -608,22 +608,10 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Scripts\jquery-1.4.1.js" />
-    <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\MicrosoftAjax.js" />
-    <Content Include="Scripts\MicrosoftAjax.debug.js" />
-    <Content Include="Scripts\MicrosoftMvcAjax.js" />
-    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
-    <Content Include="Scripts\MicrosoftMvcValidation.js" />
-    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
     <Content Include="Views\Web.config" />
-    <Content Include="Scripts\jquery-1.4.4.js" />
-    <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
-    <Content Include="Scripts\jquery-1.4.4.min.js" />
     <Content Include="Scripts\jquery-ui.js" />
     <Content Include="Scripts\jquery-ui.min.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
@@ -654,9 +642,6 @@
     <None Include="CodeTemplates\AddView\Edit.tt" />
     <None Include="CodeTemplates\AddView\Empty.tt" />
     <None Include="CodeTemplates\AddView\List.tt" />
-    <Content Include="connectionStrings.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="mailSettings.config">
       <SubType>Designer</SubType>
     </Content>
@@ -718,10 +703,6 @@
     <Content Include="Views\Shared\DisplayTemplates\Password.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\SimNao.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\String.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\Tabela.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\TabelaBlog.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\Artigo.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\Blog.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Html.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\MultilineText.cshtml" />
@@ -735,6 +716,11 @@
     <Content Include="Views\AdminTitulo\Create.cshtml" />
     <Content Include="Views\AdminTitulo\Edit.cshtml" />
     <Content Include="Views\AdminTitulo\Delete.cshtml" />
+    <Content Include="Views\Postagem\Index.cshtml" />
+    <Content Include="Views\Postagem\Details.cshtml" />
+    <Content Include="Views\Postagem\Create.cshtml" />
+    <Content Include="Views\Postagem\Edit.cshtml" />
+    <Content Include="Views\Postagem\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

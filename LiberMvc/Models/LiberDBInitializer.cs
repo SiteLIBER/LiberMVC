@@ -7,9 +7,9 @@ using System.Data.Entity;
 namespace LiberMvc.Models
 {
 #if DEBUG
-	public class LiberDBInitializer : DropCreateDatabaseIfModelChanges<DB>
+	public class LiberDBInitializer : DropCreateDatabaseIfModelChanges<LiberDB>
 #else
-	public class LiberDBInitializer : CreateDatabaseIfNotExists<LiberDB> // trocar ao ir pro ar
+	public class LiberDBInitializer : CreateDatabaseIfNotExists<LiberDB>
 #endif
 	{
 		protected override void Seed(LiberDB context)
@@ -42,11 +42,20 @@ namespace LiberMvc.Models
 
 			#endregion
 
-			#region 
+			#region TipoPostagem
 
 			context.TiposPostagem.Add(new TipoPostagem { TipoPostagemID = 1, Descricao = "Blog" });
 			context.TiposPostagem.Add(new TipoPostagem { TipoPostagemID = 2, Descricao = "Artigo" });
 
+			#endregion
+
+			#region Titulos
+
+			context.Titulos.Add(new Titulo { TituloID = 1, Nome = "Usuário", Codigo = "Usuario" });
+			context.Titulos.Add(new Titulo { TituloID = 2, Nome = "Filiado", Codigo = "Filiado" });
+			context.Titulos.Add(new Titulo { TituloID = 3, Nome = "Administrador", Codigo = "Admin" });
+			context.Titulos.Add(new Titulo { TituloID = 4, Nome = "Editor", Codigo = "Editor" });
+			
 			#endregion
 
 			#region Save

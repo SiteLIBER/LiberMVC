@@ -16,5 +16,10 @@ namespace LiberMvc.Models
 
 		[StringLength(1000), DataType(DataType.MultilineText)]
 		public string Descricao { get; set; }
+
+		[ForeignKey("Pessoa")]
+		public int? PessoaID { get; set; }
+
+		public virtual Pessoa Pessoa { get; set; }
 	}
 }

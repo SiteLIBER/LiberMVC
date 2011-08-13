@@ -55,5 +55,13 @@ namespace LiberMvc.Models
 
 		public virtual ICollection<AutorPostagem> Autores { get; set; }
 
+		[HiddenInput(DisplayValue = false)]
+		public bool isEditorOrAdmin
+		{
+			get
+			{
+				return (Usuario.Logado.isEditor || Usuario.Logado.isAdmin);
+			}
+		}
 	}
 }

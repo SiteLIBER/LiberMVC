@@ -36,7 +36,7 @@ namespace LiberMvc
 			if (Usuario.Logado.Roles == null)
 			{
 				if (rep == null) rep = new UsuarioRepository();
-				Usuario.Logado.Roles = rep.PegarUsuarioLogado().Pessoa.Titulos.Select(t => t.Titulo.Codigo).ToList();
+				Usuario.Logado.Roles = rep.UsuarioLogado.Pessoa.Titulos.Select(t => t.Titulo.Codigo).ToList();
 			}
 			var myroles = Usuario.Logado.Roles;
 			return string.IsNullOrEmpty(Roles) || !myroles.TrueForAll(r => !Roles.Split(',').Contains(r)) || myroles.Contains("Admin");

@@ -34,73 +34,73 @@
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.Nome)
+				@Html.LabelFor(model => model.Pessoa.Nome)
 			</span>
             <span class="editor-field">
-				@Html.DisplayFor(model => model.Nome)
+				@Html.DisplayFor(model => model.Pessoa.Nome)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.DataNasc)
+				@Html.LabelFor(model => model.Pessoa.DataNasc)
 			</span>
             <span class="editor-field">
-				@Html.DisplayFor(model => model.DataNasc)
+				@Html.DisplayFor(model => model.Pessoa.DataNasc)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.Naturalidade)
+				@Html.LabelFor(model => model.Pessoa.Naturalidade)
 			</span>
             <span class="editor-field">
-				@Html.DisplayFor(model => model.Naturalidade)
+				@Html.DisplayFor(model => model.Pessoa.Naturalidade)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.NomePai)
+				@Html.LabelFor(model => model.Pessoa.NomePai)
 			</span>
             <span class="editor-field">
-				@Html.DisplayFor(model => model.NomePai)
+				@Html.DisplayFor(model => model.Pessoa.NomePai)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.NomeMae)
+				@Html.LabelFor(model => model.Pessoa.NomeMae)
 			</span>
             <span class="editor-field">
-				@Html.DisplayFor(model => model.NomeMae)
+				@Html.DisplayFor(model => model.Pessoa.NomeMae)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.EstadoCivilID)
+				@Html.LabelFor(model => model.Pessoa.EstadoCivilID)
 			</span>
             <span class="editor-field">
-				@Html.Label(Model.ListaEstadoCivil.FirstOrDefault(l => l.EstadoCivilID == Model.EstadoCivilID).Descricao)
+				@Html.Label(Model.ListaEstadoCivil.FirstOrDefault(l => l.EstadoCivilID == Model.Pessoa.EstadoCivilID).Descricao)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.Profissao)
+				@Html.LabelFor(model => model.Pessoa.Profissao)
 			</span>
             <span class="editor-field">
-				@Html.DisplayFor(model => model.Profissao)
+				@Html.DisplayFor(model => model.Pessoa.Profissao)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.GrauInstrucaoID)
+				@Html.LabelFor(model => model.Pessoa.GrauInstrucaoID)
 			</span>
             <span class="editor-field">
-				@Html.Label(Model.ListaGrauInstrucao.FirstOrDefault(l=> l.GrauInstrucaoID == Model.GrauInstrucaoID).Descricao)
+				@Html.Label(Model.ListaGrauInstrucao.FirstOrDefault(l=> l.GrauInstrucaoID == Model.Pessoa.GrauInstrucaoID).Descricao)
 			</span>
 		</div>
 	</fieldset>
@@ -110,46 +110,46 @@
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.Endereco)
+				@Html.LabelFor(model => model.Pessoa.Endereco.Logradouro)
 			</span>
             <span class="editor-field">
-				@Html.DisplayFor(model => model.Endereco)
+				@Html.DisplayFor(model => model.Pessoa.Endereco.Logradouro)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.Cidade)
+				@Html.LabelFor(model => model.Pessoa.Endereco.Cidade)
 			</span>
             <span class="editor-field">
-				@Html.DisplayFor(model => model.Cidade)
+				@Html.DisplayFor(model => model.Pessoa.Endereco.Cidade)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.Estado)
+				@Html.LabelFor(model => model.Pessoa.Endereco.Estado)
 			</span>
             <span class="editor-field">
-				@Html.Label(Model.ListaEstados[Model.Estado])
+				@Html.Label(Model.ListaEstados[Model.Pessoa.Endereco.Estado])
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.CEP)
+				@Html.LabelFor(model => model.Pessoa.Endereco.CEP)
 			</span>
             <span class="editor-field">
-				@Html.DisplayFor(model => model.CEP)
+				@Html.DisplayFor(model => model.Pessoa.Endereco.CEP)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.Telefone)
+				@Html.LabelFor(model => model.Pessoa.Telefone)
 			</span>
             <span class="editor-field">
-				@Html.DisplayFor(model => model.Telefone)
+				@Html.DisplayFor(model => model.Pessoa.Telefone)
 			</span>
 		</div>
 
@@ -160,56 +160,57 @@
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.TituloEleitor)
+				@Html.LabelFor(model => model.Filiado.TituloEleitor)
 			</span>
 			<span class="editor-field">
-				@Html.DisplayFor(model => model.TituloEleitor)
+				@Html.DisplayFor(model => model.Filiado.TituloEleitor)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.Zona)
+				@Html.LabelFor(model => model.Filiado.Zona)
 			</span>
 			<span class="editor-field">
-				@Html.DisplayFor(model => model.Zona)
+				@Html.DisplayFor(model => model.Filiado.Zona)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.Secao)
+				@Html.LabelFor(model => model.Filiado.Secao)
 			</span>
 			<span class="editor-field">
-				@Html.DisplayFor(model => model.Secao)
+				@Html.DisplayFor(model => model.Filiado.Secao)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label obr">
-				@Html.LabelFor(model => model.MunicipioUF)
+				@Html.LabelFor(model => model.Filiado.MunicipioUF)
 			</span>
 			<span class="editor-field">
-				@Html.DisplayFor(model => model.MunicipioUF)
+				@Html.DisplayFor(model => model.Filiado.MunicipioUF)
 			</span>
 		</div>
 
 		<div class="editor-item">
 			<span class="editor-label">
-				@Html.LabelFor(model => model.OutroPartido)
+				@Html.LabelFor(model => model.Filiado.OutroPartido)
 			</span>
 			<span class="editor-field">
-				@Html.DisplayFor(model => model.OutroPartido)
+				@Html.DisplayFor(model => model.Filiado.OutroPartido)
 			</span>
 		</div>
 
-        @if (Model.OutroPartido) { 
+        @if (Model.Filiado.OutroPartido)
+				{ 
 		<div class="editor-item">
 			<span class="editor-label">
-				@Html.LabelFor(model => model.OutroPartidoQual)
+				@Html.LabelFor(model => model.Filiado.OutroPartidoQual)
 			</span>
 			<span class="editor-field">
-				@Html.DisplayFor(model => model.OutroPartidoQual)
+				@Html.DisplayFor(model => model.Filiado.OutroPartidoQual)
 			</span>
 		</div>
          } 

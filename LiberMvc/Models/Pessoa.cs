@@ -7,7 +7,7 @@ using System.ComponentModel;
 
 namespace LiberMvc.Models
 {
-	public class Pessoa : LiberMvc.Models.IPessoa
+	public class Pessoa
 	{
 		[Key]
 		public int PessoaID { get; set; }
@@ -50,6 +50,9 @@ namespace LiberMvc.Models
 		public virtual GrauInstrucao GrauInstrucao { get; set; }
 		
 		public virtual ICollection<TituloPessoa> Titulos { get; set; }
+
+		public virtual Filiado Filiado { get; set; }
+
 
 	}
 }

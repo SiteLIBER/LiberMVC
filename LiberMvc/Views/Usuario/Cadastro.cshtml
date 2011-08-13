@@ -15,28 +15,28 @@
 				
 			<div class="display-item">
 				<span class="display-label obr">
-					@Html.LabelFor(model => model.Nome)
+					@Html.LabelFor(model => model.Usuario.Apelido)
 				</span><span class="display-field">
-					@Html.EditorFor(model => model.Nome)
-					@Html.ValidationMessageFor(model => model.Nome)
+					@Html.EditorFor(model => model.Usuario.Apelido)
+					@Html.ValidationMessageFor(model => model.Usuario.Apelido)
 				</span>
 			</div>
 
 			<div class="display-item">
 				<span class="display-label obr">
-					@Html.LabelFor(model => model.Email)
+					@Html.LabelFor(model => model.Usuario.Email)
 				</span><span class="display-field">
-					@Html.EditorFor(model => model.Email)
-					@Html.ValidationMessageFor(model => model.Email)
+					@Html.EditorFor(model => model.Usuario.Email)
+					@Html.ValidationMessageFor(model => model.Usuario.Email)
 				</span>
 			</div>
 
 			<div class="display-item">
 				<span class="display-label obr">
-					@Html.LabelFor(model => model.Senha)
+					@Html.LabelFor(model => model.Usuario.Senha)
 				</span><span class="display-field">
-					@Html.EditorFor(model => model.Senha)
-					@Html.ValidationMessageFor(model => model.Senha)
+					@Html.EditorFor(model => model.Usuario.Senha)
+					@Html.ValidationMessageFor(model => model.Usuario.Senha)
 				</span>
 			</div>
 
@@ -44,8 +44,8 @@
 
 			<div class="display-item">
 				<span class="display-label"></span><span class="display-field">
-					@Html.EditorFor(model => model.ReceberNewsletter)
-					@Html.LabelFor(model => model.ReceberNewsletter)
+					@Html.EditorFor(model => model.Usuario.ReceberNewsletter)
+					@Html.LabelFor(model => model.Usuario.ReceberNewsletter)
 				</span>
 			</div>
 
