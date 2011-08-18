@@ -38,7 +38,7 @@ namespace LiberMvc
 
 			routes.MapRoute(
 					"Postagem", // Route name
-					"#/{id}/{title}", // URL with parameters
+					"P/{id}/{title}", // URL with parameters
 					new { controller = "Postagem", action = "Details", id = 0, title = UrlParameter.Optional }, // Parameter defaults
 					new { id = @"\d+" }
 			);

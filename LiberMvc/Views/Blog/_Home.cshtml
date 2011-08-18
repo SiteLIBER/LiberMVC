@@ -1,7 +1,4 @@
-﻿@*@{
-	Layout = null;
-}*@
-@using LiberMvc.Models
+﻿@using LiberMvc.Models
 @model IEnumerable<Postagem>
 
 <!-- BLOG BEGIN -->
@@ -12,7 +9,7 @@
 	<div class="article_resume">
         <p class="general_informations">
 		    <span class="date">@blog.PublicadoEm.ToShortDateString()</span><br />
-		    @Html.ActionLink(blog.Titulo, "Details", "Postagem", new { id = blog.PostagemID, title = blog.Titulo }, null)
+		    @Html.ActionLink(blog.Titulo, "Details", "Postagem", new { id = blog.PostagemID, title = Url.FormatTitle(blog.Titulo) }, null)
         </p>
 	</div>
 	 } }

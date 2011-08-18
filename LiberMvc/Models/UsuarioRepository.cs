@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Web;
 using System.Web.Security;
+using System.Collections.Generic;
 
 namespace LiberMvc.Models
 {
@@ -50,14 +51,15 @@ namespace LiberMvc.Models
 			u.Email = u.Email.Trim();
 			var q = db.Usuarios.Where(usr => usr.Email == u.Email);
 			if (q.Count() > 0) return null;
-
-			u = db.Usuarios.Add(u);
-			
+			u.CriadoEm = DateTime.Now;
+			u.Pessoa = new Pessoa();
+			u.Pessoa.Endereco = new Endereco();
+			u.Pessoa.Titulos = new List<TituloPessoa>();
 			u.Pessoa.Titulos.Add(new TituloPessoa
 			{
 				TituloID = db.Titulos.FirstOrDefault(t => t.Codigo == "Usuario").TituloID
 			});
-
+			u = db.Usuarios.Add(u);
 			return u;
 		}
 		public PerfilModel PegarPerfil(int id)

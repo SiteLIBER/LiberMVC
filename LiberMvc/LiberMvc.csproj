@@ -694,11 +694,8 @@
     <Content Include="Views\Shared\_UserBox.cshtml" />
     <Content Include="Views\Shared\_VideoBox.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\Artigo.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\Blog.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Post.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\DateTime.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\Lista.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\ListaBlog.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Object.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Password.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\SimNao.cshtml" />
@@ -716,11 +713,7 @@
     <Content Include="Views\AdminTitulo\Create.cshtml" />
     <Content Include="Views\AdminTitulo\Edit.cshtml" />
     <Content Include="Views\AdminTitulo\Delete.cshtml" />
-    <Content Include="Views\Postagem\Index.cshtml" />
     <Content Include="Views\Postagem\Details.cshtml" />
-    <Content Include="Views\Postagem\Create.cshtml" />
-    <Content Include="Views\Postagem\Edit.cshtml" />
-    <Content Include="Views\Postagem\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

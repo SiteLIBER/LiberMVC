@@ -4,6 +4,8 @@ using System.Web;
 using System.Collections.Generic;
 using System.Data;
 using System.Collections;
+using System.Data.Entity;
+
 namespace LiberMvc.Models
 {
 	public class PostagemRepository
@@ -77,7 +79,7 @@ namespace LiberMvc.Models
 
 		public Postagem GetPostagem(int id)
 		{
-			return db.Postagens.SingleOrDefault(a => a.PostagemID == id);
+			return db.Postagens.Include(p => p.TipoPostagem).SingleOrDefault(a => a.PostagemID == id);
 		}
 
 		#endregion

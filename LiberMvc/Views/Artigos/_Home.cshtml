@@ -11,7 +11,7 @@
 	
 		<div id="artigo_destaque" class="article_resume">
 			<h2>
-				@Html.ActionLink(first.Titulo, "Details", "Postagem", new { id = first.PostagemID, title = first.Titulo }, null)
+				@Html.ActionLink(first.Titulo, "Details", "Postagem", new { id = first.PostagemID, title = Url.FormatTitle(first.Titulo) }, null)
 			</h2>
 			<p class="general_informations">
 				<span class="date">

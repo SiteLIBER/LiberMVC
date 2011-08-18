@@ -1,55 +1,47 @@
 ﻿@model LiberMvc.Models.Postagem
-
 @{
-    ViewBag.Title = "Details";
+	ViewBag.Title = "Details";
 }
-
-<h2>Details</h2>
-
-<fieldset>
-    <legend>Postagem</legend>
-
-    <div class="display-label">TipoPostagem</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.TipoPostagem.Descricao)
-    </div>
-
-    <div class="display-label">Titulo</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Titulo)
-    </div>
-
-    <div class="display-label">Chamada</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Chamada)
-    </div>
-
-    <div class="display-label">Conteudo</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Conteudo)
-    </div>
-
-    <div class="display-label">Publicado</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Publicado)
-    </div>
-
-    <div class="display-label">PublicadoEm</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.PublicadoEm)
-    </div>
-
-    <div class="display-label">CriadoEm</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.CriadoEm)
-    </div>
-
-    <div class="display-label">Fonte</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Fonte)
-    </div>
-</fieldset>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id=Model.PostagemID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<div class="panel">
+	<h1>@Model.TipoPostagem.Descricao</h1>
+	<div class="article">
+		<h1>@Model.Titulo</h1>
+		<p class="general_informations">
+			<span class="date">@Model.PublicadoEm.ToShortDateString()</span>
+			@Helper.NomeAutor(Model)
+			<span style="display: block; margin-top: 5px;"><span class="addthis_toolbox addthis_default_style" style="float: left;">
+				<g:plusone size="small"></g:plusone>
+				<fb:like layout="button_count" show_faces="false" width="200" href="@Request.Url"></fb:like>
+			</span>
+				<!-- AddThis Button BEGIN -->
+				<span class="addthis_toolbox addthis_default_style" style="float: right;" addthis:title="@Url.Encode(Model.Titulo)"><a href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=xa-4d6c7b090593ecfb" class="addthis_button_compact">Compartilhar</a> <span class="addthis_separator">|</span> <a class="addthis_button_preferred_1"></a><a class="addthis_button_preferred_2"></a><a class="addthis_button_preferred_4"></a></span>
+				<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4d6c7b090593ecfb"></script>
+				<!-- AddThis Button END -->
+			</span>
+			<br class="clear" />
+		</p>
+		<div class="article_body">
+			@Html.Raw(Model.Conteudo)
+		</div>
+	</div>
+	<p class="actions">
+		@*	    @if (Model.isOwnerOrAdmin) { 
+		    @Html.ActionLink("Editar", "Edit", new { id = Model.ArtigoID }, new { @class = "button" })
+	     } *@
+		@Html.ActionLink("Voltar a lista", "Index", Model.TipoPostagem.Descricao, null, new { @class = "button" })
+		<br class="clear" />
+	</p>
+</div>
+@section RightContent {
+	@Html.Partial("_RightMenu")
+}
+@section HeadContent {
+	<meta property="og:type" content="text" />
+	<meta property="og:image" content="http://www.pliber.org.br@(Url.Content("~/Content/images/liber_logo.png"))" />
+	<meta property="og:title" content="@Model.Titulo"/>
+	<meta property="og:url" content="@Request.Url" />
+	<meta property="og:description" content="@Model.Chamada" />
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+		{ lang: 'pt-BR' }
+	</script>
+}

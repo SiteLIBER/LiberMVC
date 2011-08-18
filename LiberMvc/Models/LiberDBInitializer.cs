@@ -45,7 +45,7 @@ namespace LiberMvc.Models
 			#region TipoPostagem
 
 			context.TiposPostagem.Add(new TipoPostagem { TipoPostagemID = 1, Descricao = "Blog" });
-			context.TiposPostagem.Add(new TipoPostagem { TipoPostagemID = 2, Descricao = "Artigo" });
+			context.TiposPostagem.Add(new TipoPostagem { TipoPostagemID = 2, Descricao = "Artigos" });
 
 			#endregion
 
