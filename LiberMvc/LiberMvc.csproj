@@ -15,6 +15,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>true</MvcBuildViews>
     <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,17 +47,20 @@
     <Reference Include="Elmah.Contrib.Mvc">
       <HintPath>..\packages\Elmah.Contrib.Mvc.1.0\lib\net40\Elmah.Contrib.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.4.1.10715.0\lib\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Facebook">
-      <HintPath>..\packages\Facebook.5.0.26.0\lib\net40-client\Facebook.dll</HintPath>
+    <Reference Include="Facebook, Version=5.2.1.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Facebook.5.2.1.0\lib\net40-client\Facebook.dll</HintPath>
     </Reference>
-    <Reference Include="Facebook.Web">
-      <HintPath>..\packages\FacebookWeb.5.0.26.0\lib\net40\Facebook.Web.dll</HintPath>
+    <Reference Include="Facebook.Web, Version=5.2.1.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\FacebookWeb.5.2.1.0\lib\net40\Facebook.Web.dll</HintPath>
     </Reference>
-    <Reference Include="Facebook.Web.Mvc, Version=5.0.26.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
-      <HintPath>..\packages\FacebookWebMvc.5.0.26.0\lib\net40\Facebook.Web.Mvc.dll</HintPath>
+    <Reference Include="Facebook.Web.Mvc, Version=5.2.1.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\FacebookWebMvc.5.2.1.0\lib\net40\Facebook.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="FBConnectAuth">
       <HintPath>..\packages\FbConnectAuth.0.9\lib\FBConnectAuth.dll</HintPath>
@@ -107,6 +111,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AdminMenuController.cs" />
+    <Compile Include="Controllers\AdminPaginaController.cs" />
+    <Compile Include="Controllers\AdminPostagemController.cs" />
     <Compile Include="Controllers\AdminTituloController.cs" />
     <Compile Include="Controllers\ArtigosController.cs">
       <SubType>Code</SubType>
@@ -134,18 +142,14 @@
     </Compile>
     <Compile Include="Helpers\CustomExtensions.cs" />
     <Compile Include="Helpers\PaginatedList.cs" />
-    <Compile Include="Models\Artigo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Models\ArtigoRepository.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Models\Blog.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\BlogRepository.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\Pagina.cs" />
     <Compile Include="Models\PostagemRepository.cs" />
     <Compile Include="Models\IEndereco.cs" />
     <Compile Include="Models\IPessoa.cs" />
@@ -276,9 +280,9 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\jquery-1.6.1-vsdoc.js" />
-    <Content Include="Scripts\jquery-1.6.1.js" />
-    <Content Include="Scripts\jquery-1.6.1.min.js" />
+    <Content Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.5.custom.min.js" />
     <Content Include="Scripts\jquery.ui.datepicker-pt-BR.js" />
     <Content Include="Scripts\slides\coda-slider.js" />
@@ -582,9 +586,6 @@
     <Content Include="Views\Home\_Enquete.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\_RightHome.cshtml" />
-    <Content Include="Views\Shared\FacebookInit.cshtml">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="Views\Shared\_Layout.cshtml">
       <SubType>Code</SubType>
     </Content>
@@ -714,6 +715,23 @@
     <Content Include="Views\AdminTitulo\Edit.cshtml" />
     <Content Include="Views\AdminTitulo\Delete.cshtml" />
     <Content Include="Views\Postagem\Details.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\AdminMenu\Index.cshtml" />
+    <Content Include="Views\AdminMenu\Details.cshtml" />
+    <Content Include="Views\AdminMenu\Create.cshtml" />
+    <Content Include="Views\AdminMenu\Edit.cshtml" />
+    <Content Include="Views\AdminMenu\Delete.cshtml" />
+    <Content Include="Views\AdminPagina\Index.cshtml" />
+    <Content Include="Views\AdminPagina\Details.cshtml" />
+    <Content Include="Views\AdminPagina\Create.cshtml" />
+    <Content Include="Views\AdminPagina\Edit.cshtml" />
+    <Content Include="Views\AdminPagina\Delete.cshtml" />
+    <Content Include="Views\AdminPostagem\Index.cshtml" />
+    <Content Include="Views\AdminPostagem\Details.cshtml" />
+    <Content Include="Views\AdminPostagem\Create.cshtml" />
+    <Content Include="Views\AdminPostagem\Edit.cshtml" />
+    <Content Include="Views\AdminPostagem\Delete.cshtml" />
+    <Content Include="Views\Shared\FacebookInit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

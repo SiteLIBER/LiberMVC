@@ -20,6 +20,10 @@ namespace LiberMvc.Models
 		public DbSet<TipoPostagem> TiposPostagem { get; set; }
 		public DbSet<GrauInstrucao> GrauInstrucao { get; set; }
 		public DbSet<EstadoCivil> EstadoCivil { get; set; }
+		public DbSet<Pagina> Paginas { get; set; }
+		public DbSet<Menu> Menus { get; set; }
+
+
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{

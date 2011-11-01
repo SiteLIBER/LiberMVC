@@ -1,0 +1,25 @@
+﻿@model LiberMvc.Models.Menu
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Menu</legend>
+
+    <div class="display-label">Root</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Root.Titulo)
+    </div>
+
+    <div class="display-label">Titulo</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titulo)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.MenuID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

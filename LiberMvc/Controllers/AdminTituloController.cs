@@ -8,7 +8,8 @@ using System.Web.Mvc;
 using LiberMvc.Models;
 
 namespace LiberMvc.Controllers
-{ 
+{
+		[Auth(Roles = "Editor")]
     public class AdminTituloController : Controller
     {
         private LiberDB db = new LiberDB();

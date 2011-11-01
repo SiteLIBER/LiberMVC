@@ -16,19 +16,19 @@ namespace LiberMvc.Models
 		[Required] 
 		public int TipoPostagemID { get; set; }
 
-		[Required(ErrorMessage = "'Título do artigo' é um campo obrigatório.")]
+		[Required(ErrorMessage = "'Título' é um campo obrigatório.")]
 		[StringLength(250, ErrorMessage = "'Titulo' não pode ter mais de 250 caracteres.")]
-		[DisplayName("Título do artigo:")]
+		[DisplayName("Título:")]
 		public string Titulo { get; set; }
 
-		[Required(ErrorMessage = "'Chamada nas listas' é um campo obrigatório.")]
+		[Required(ErrorMessage = "'Chamada' é um campo obrigatório.")]
 		[StringLength(1000, ErrorMessage = "'Chamada' não pode ter mais de 1000 caracteres.")]
-		[DisplayName("Chamada nas listas:")]
+		[DisplayName("Chamada:")]
 		[DataType(DataType.MultilineText)]
 		public string Chamada { get; set; }
 
-		[Required(ErrorMessage = "'Corpo do artigo' é um campo obrigatório.")]
-		[DisplayName("Corpo do artigo:")]
+		[Required(ErrorMessage = "'Texto' é um campo obrigatório.")]
+		[DisplayName("Texto:")]
 		[DataType(DataType.Html)]
 		public string Conteudo { get; set; }
 
@@ -53,6 +53,7 @@ namespace LiberMvc.Models
 		[ForeignKey("TipoPostagemID")]
 		public TipoPostagem TipoPostagem { get; set; }
 
+		[Required]
 		public virtual ICollection<AutorPostagem> Autores { get; set; }
 
 		[HiddenInput(DisplayValue = false)]

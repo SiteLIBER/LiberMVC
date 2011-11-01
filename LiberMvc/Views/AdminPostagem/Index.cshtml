@@ -1,0 +1,81 @@
+﻿@model IEnumerable<LiberMvc.Models.Postagem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            TipoPostagem
+        </th>
+        <th>
+            Titulo
+        </th>
+        <th>
+            Chamada
+        </th>
+        <th>
+            Conteudo
+        </th>
+        <th>
+            Publicado
+        </th>
+        <th>
+            PublicadoEm
+        </th>
+        <th>
+            CriadoEm
+        </th>
+        <th>
+            Fonte
+        </th>
+        <th>
+            isEditorOrAdmin
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoPostagem.Descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Chamada)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Conteudo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Publicado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PublicadoEm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CriadoEm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fonte)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isEditorOrAdmin)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PostagemID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PostagemID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PostagemID })
+        </td>
+    </tr>
+}
+
+</table>
