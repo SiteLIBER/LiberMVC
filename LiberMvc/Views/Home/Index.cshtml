@@ -1,8 +1,8 @@
 ﻿@section HeadContent {
 
-	<script src="@Url.Content("~/Scripts/slides/jquery.scrollTo-1.4.2-min.js")" type="text/javascript"></script>
-	<script src="@Url.Content("~/Scripts/slides/jquery.localscroll.js")" type="text/javascript"></script>
-	<script src="@Url.Content("~/Scripts/slides/jquery.serialScroll-1.2.2.js")" type="text/javascript"></script>
+	@Helper.Script("slides/jquery.scrollTo-1.4.2-min.js", Url)
+	@Helper.Script("slides/jquery.localscroll.js", Url)
+	@Helper.Script("slides/jquery.serialScroll-1.2.2.js", Url)
 	<script src="@Url.Content("~/Scripts/slides/coda-slider.js")" type="text/javascript" charset="utf-8"></script>
 
 }

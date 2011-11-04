@@ -20,4 +20,5 @@ namespace LiberMvc.Models
 		
 		public Filiado Filiado { get; set; }
 	}
+
 }

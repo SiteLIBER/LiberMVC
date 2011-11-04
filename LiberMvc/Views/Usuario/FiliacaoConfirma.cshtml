@@ -206,7 +206,8 @@
 	 }
 		</fieldset>
 		<p class="actions">
-			<input id="imprimir" type="button" class="button" value="Imprimir" />
+			<input id="imprimir" type="button" class="button" value="Imprimir" /> 
+			<input id="editar" type="button" class="button" value="Editar" /> 
 			<br class="clear" />
 		</p>
 	</div>
@@ -224,6 +225,11 @@
 			$("#imprimir").click(function () {
 				var url = '@Url.Action("FiliacaoImprimir")';
 				window.open(url, "filiacao_imprimir", "");
+			});
+
+			$("#editar").click(function () {
+				var url = '@Url.Action("Filiacao")';
+				window.location = url;
 			});
 
 			$("#anualidade").click(function () {

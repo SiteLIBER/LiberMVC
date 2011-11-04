@@ -1,8 +1,11 @@
-﻿@model System.Web.Mvc.HandleErrorInfo
-
-
-    <h2>
-        Sorry, an error occurred while processing your request.
-    </h2>
-
-
+﻿@model System.Exception
+<h2>
+	Sorry, an error occurred while processing your request.
+</h2>
+@{ 
+	#if DEBUG 
+	<h4>
+		@Model.ToString()
+	</h4>
+	#endif
+}

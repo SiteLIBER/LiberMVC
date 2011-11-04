@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.ComponentModel.DataAnnotations;
+
+namespace LiberMvc.Models
+{
+	public class Agenda
+	{
+		[Key]
+		public int AgendaID { get; set; }
+
+		[StringLength(200)]
+		public string Titulo { get; set; }
+
+		[DataType(DataType.MultilineText)]
+		public string Conteudo { get; set; }
+
+		public DateTime DataInicio { get; set; }
+
+		public DateTime? DataFim { get; set; }
+
+	}
+}

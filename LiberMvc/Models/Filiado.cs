@@ -13,6 +13,8 @@ namespace LiberMvc.Models
 		[Key, ForeignKey("Pessoa")]
 		public int PessoaID { get; set; }
 
+		public virtual Pessoa Pessoa { get; set; }
+
 		// Dados Eleitorais
 		[DisplayName("Título de Eleitor:"), StringLength(20), Required(ErrorMessage = "*")]
 		public string TituloEleitor { get; set; }
@@ -35,6 +37,5 @@ namespace LiberMvc.Models
 		[HiddenInput(DisplayValue = false)]
 		public DateTime FiliadoEm { get; set; }
 
-		public virtual Pessoa Pessoa { get; set; }
 	}
 }

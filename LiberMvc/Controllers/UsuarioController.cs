@@ -7,6 +7,8 @@ using LiberMvc.Models;
 using System.Web.Security;
 using Elmah;
 using System.Net.Mail;
+using System.Data.Entity.Validation;
+using System.Diagnostics;
 
 namespace LiberMvc.Controllers
 {
@@ -65,18 +67,34 @@ namespace LiberMvc.Controllers
 		[HttpPost]
 		public ActionResult Cadastro(CadastroModel form)
 		{
+
 			if (!ModelState.IsValid)
 				return View();
 
 			var usuario = rep.Cadastrar(form);
 			if (usuario != null)
 			{
-				rep.Salvar();
-				usuario.Logar(false);
-				return (form.DesejaFiliacao) ? RedirectToAction("Filiacao") : RedirectToAction("Index", "Home");
+				try
+				{
+					rep.Salvar();
+					usuario.Logar(false);
+					return (form.DesejaFiliacao) ? RedirectToAction("Filiacao") : RedirectToAction("Index", "Home");
+				}
+				catch (DbEntityValidationException dbEx)
+				{
+					foreach (var validationErrors in dbEx.EntityValidationErrors)
+					{
+						foreach (var validationError in validationErrors.ValidationErrors)
+						{
+							Trace.TraceInformation("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
+						}
+					}
+					return View("Error", dbEx);
+				}
 			}
 			else
 				return View("EmailExiste");
+
 		}
 		#endregion
 
@@ -90,17 +108,34 @@ namespace LiberMvc.Controllers
 		[Auth, HttpPost]
 		public ActionResult Filiacao(FiliacaoModel form)
 		{
+				var model = rep.PegarFiliado();
 			if (!ModelState.IsValid)
 			{
-				var model = rep.PegarFiliado();
 				return View(model);
 			}
 
-			Usuario usuario = rep.UsuarioLogado;
-			UpdateModel(usuario);
-			rep.Salvar();
-
-			return RedirectToAction("FiliacaoConfirma");
+			//Usuario usuario = rep.UsuarioLogado;
+			//UpdateModel(usuario.Pessoa);
+			
+			UpdateModel(model);
+			
+			try
+			{
+				rep.Salvar();
+				return RedirectToAction("FiliacaoConfirma");
+			}
+			catch (DbEntityValidationException dbEx)
+			{
+				foreach (var validationErrors in dbEx.EntityValidationErrors)
+				{
+					foreach (var validationError in validationErrors.ValidationErrors)
+					{
+						Trace.TraceInformation("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
+					}
+				}
+				return View("Error", dbEx);
+			}
+			
 		}
 		#endregion
 

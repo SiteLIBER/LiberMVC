@@ -18,10 +18,11 @@ namespace LiberMvc.Models
 		[Key, ForeignKey("Pessoa")]
 		public int PessoaID { get; set; }
 
+		public virtual Pessoa Pessoa { get; set; }
+
 		public Int64? FacebookID { get; set; }
 
-		[Required(ErrorMessage = "*")]
-		[DisplayName("Apelido:")]
+		[DisplayName("Apelido:"), Required(ErrorMessage = "*")]
 		public string Apelido { get; set; }
 
 		[StringLength(50), DataType(DataType.Password)]
@@ -38,9 +39,7 @@ namespace LiberMvc.Models
 		public bool ReceberNewsletter { get; set; }
 
 		public DateTime CriadoEm { get; set; }
-
-		public virtual Pessoa Pessoa { get; set; }
-
+		
 
 		#region Logado
 		public static class Logado

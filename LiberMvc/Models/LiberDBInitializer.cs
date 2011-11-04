@@ -19,26 +19,38 @@ namespace LiberMvc.Models
 
 			#region GrauInstrucao
 
-			context.GrauInstrucao.Add(new GrauInstrucao { GrauInstrucaoID = 1, Descricao = "Ensino Fundamental (1ª a 8ª)" });
-			context.GrauInstrucao.Add(new GrauInstrucao { GrauInstrucaoID = 2, Descricao = "Ensino Médio (Colegial)" });
-			context.GrauInstrucao.Add(new GrauInstrucao { GrauInstrucaoID = 3, Descricao = "Ensino Médio (Magistério)" });
-			context.GrauInstrucao.Add(new GrauInstrucao { GrauInstrucaoID = 4, Descricao = "Superior - Técnica" });
-			context.GrauInstrucao.Add(new GrauInstrucao { GrauInstrucaoID = 5, Descricao = "Superior - Graduação" });
-			context.GrauInstrucao.Add(new GrauInstrucao { GrauInstrucaoID = 6, Descricao = "Especialização e extensão" });
-			context.GrauInstrucao.Add(new GrauInstrucao { GrauInstrucaoID = 7, Descricao = "Pós-graduação" });
-			context.GrauInstrucao.Add(new GrauInstrucao { GrauInstrucaoID = 8, Descricao = "MBA" });
-			context.GrauInstrucao.Add(new GrauInstrucao { GrauInstrucaoID = 9, Descricao = "Mestrado" });
-			context.GrauInstrucao.Add(new GrauInstrucao { GrauInstrucaoID = 10, Descricao = "Doutorado" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Selecione o Grau de Instrução" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Ensino Fundamental (1ª a 8ª) [Incompleto]" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Ensino Fundamental (1ª a 8ª)" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Ensino Médio (Colegial) [Incompleto]" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Ensino Médio (Colegial)" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Ensino Médio (Magistério) [Incompleto]" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Ensino Médio (Magistério)" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Superior - Técnica [Incompleto]" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Superior - Técnica" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Superior - Graduação [Incompleto]" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Superior - Graduação" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Especialização e extensão [Incompleto]" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Especialização e extensão" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Pós-graduação [Incompleto]" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Pós-graduação" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "MBA [Incompleto]" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "MBA" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Mestrado [Incompleto]" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Mestrado" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Doutorado [Incompleto]" });
+			context.GrauInstrucao.Add(new GrauInstrucao { Descricao = "Doutorado" });
 
 			#endregion
 
 			#region EstadoCivil
-
-			context.EstadoCivil.Add(new EstadoCivil { EstadoCivilID = 1, Descricao = "Solteiro (a)" });
-			context.EstadoCivil.Add(new EstadoCivil { EstadoCivilID = 2, Descricao = "Casado (a)" });
-			context.EstadoCivil.Add(new EstadoCivil { EstadoCivilID = 3, Descricao = "Divorciado (a)" });
-			context.EstadoCivil.Add(new EstadoCivil { EstadoCivilID = 4, Descricao = "Viúvo (a)" });
-			context.EstadoCivil.Add(new EstadoCivil { EstadoCivilID = 5, Descricao = "Outros" });
+			
+			context.EstadoCivil.Add(new EstadoCivil { Descricao = "Selecione o Estado Civil" });
+			context.EstadoCivil.Add(new EstadoCivil { Descricao = "Solteiro (a)" });
+			context.EstadoCivil.Add(new EstadoCivil { Descricao = "Casado (a)" });
+			context.EstadoCivil.Add(new EstadoCivil { Descricao = "Divorciado (a)" });
+			context.EstadoCivil.Add(new EstadoCivil { Descricao = "Viúvo (a)" });
+			context.EstadoCivil.Add(new EstadoCivil { Descricao = "Outros" });
 
 			#endregion
 

@@ -52,14 +52,30 @@ namespace LiberMvc.Models
 			var q = db.Usuarios.Where(usr => usr.Email == u.Email);
 			if (q.Count() > 0) return null;
 			u.CriadoEm = DateTime.Now;
-			u.Pessoa = new Pessoa();
-			u.Pessoa.Endereco = new Endereco();
+			u.Pessoa = new Pessoa { 
+				Nome = "",
+				Naturalidade = "",
+				NomePai = "",
+				NomeMae = "",
+				Profissao = "",
+				Telefone = "",
+				DataNasc = DateTime.Now,
+				EstadoCivilID = 1,
+ 				GrauInstrucaoID = 1
+			};
+			u.Pessoa.Endereco = new Endereco { 
+				Logradouro = "",
+				Cidade = "",
+				Estado = "",
+				CEP = ""
+			};
 			u.Pessoa.Titulos = new List<TituloPessoa>();
 			u.Pessoa.Titulos.Add(new TituloPessoa
 			{
 				TituloID = db.Titulos.FirstOrDefault(t => t.Codigo == "Usuario").TituloID
 			});
 			u = db.Usuarios.Add(u);
+			
 			return u;
 		}
 		public PerfilModel PegarPerfil(int id)
@@ -71,6 +87,15 @@ namespace LiberMvc.Models
 		public FiliacaoModel PegarFiliado()
 		{
 			var pessoa = UsuarioLogado.Pessoa;
+			if (pessoa.Filiado == null)
+			{
+				pessoa.Filiado = new Filiado
+				{
+					Pessoa = pessoa,
+					PessoaID = pessoa.PessoaID,
+					FiliadoEm = DateTime.Now
+				};
+			}
 			var model = new FiliacaoModel
 			{
 				Pessoa = pessoa,

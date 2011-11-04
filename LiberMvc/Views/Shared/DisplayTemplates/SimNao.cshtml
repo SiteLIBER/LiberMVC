@@ -1,2 +1,2 @@
-﻿@model bool
-@(Model ? Html.Label("Sim") : Html.Label("Não"))
+﻿@model bool?
+@((Model.HasValue && Model.Value) ? Html.Label("Sim") : Html.Label("Não"))

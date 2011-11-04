@@ -22,6 +22,7 @@ namespace LiberMvc.Models
 		public DbSet<EstadoCivil> EstadoCivil { get; set; }
 		public DbSet<Pagina> Paginas { get; set; }
 		public DbSet<Menu> Menus { get; set; }
+		public DbSet<Agenda> Agendas { get; set; }
 
 
 

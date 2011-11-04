@@ -9,16 +9,16 @@ namespace LiberMvc.Models
 {
 	public class Endereco : IEndereco
 	{
-		[StringLength(250), DisplayName("Endereço")]
+		[StringLength(250), DisplayName("Endereço"), Required(ErrorMessage = "*", AllowEmptyStrings = true)]
 		public string Logradouro { get; set; }
 
-		[StringLength(250)]
+		[StringLength(250), Required(ErrorMessage = "*", AllowEmptyStrings = true)]
 		public string Cidade { get; set; }
 
-		[StringLength(2)]
+		[StringLength(2), Required(ErrorMessage = "*", AllowEmptyStrings = true)]
 		public string Estado { get; set; }
-		
-		[StringLength(9), DisplayName("CEP")]
+
+		[StringLength(9), DisplayName("CEP"), Required(ErrorMessage = "*", AllowEmptyStrings = true)]
 		public string CEP { get; set; }
 	}
 }
