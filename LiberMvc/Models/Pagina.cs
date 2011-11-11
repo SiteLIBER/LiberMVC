@@ -33,13 +33,12 @@ namespace LiberMvc.Models
 		[DataType(DataType.Date)]
 		public DateTime? CriadoEm { get; set; }
 
-		[Required]
-		public int MenuID { get; set; }
+		//[InverseProperty("Pagina")]
+		//public virtual ICollection<Menu> Menus { get; set; }
 
-		[ForeignKey("MenuID")]
-		public Menu Menu { get; set; }
+		public string Link { get; set; }
 
-		[HiddenInput(DisplayValue = false)]
+		[NotMapped]
 		public bool isEditorOrAdmin
 		{
 			get

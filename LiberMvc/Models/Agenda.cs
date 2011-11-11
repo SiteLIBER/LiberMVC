@@ -14,12 +14,17 @@ namespace LiberMvc.Models
 		[StringLength(200)]
 		public string Titulo { get; set; }
 
-		[DataType(DataType.MultilineText)]
-		public string Conteudo { get; set; }
-
 		public DateTime DataInicio { get; set; }
 
 		public DateTime? DataFim { get; set; }
+		
+		[StringLength(200)]
+		public string Local { get; set; }
+
+		[DataType(DataType.MultilineText)]
+		public string Conteudo { get; set; }
+
+
 
 	}
 }

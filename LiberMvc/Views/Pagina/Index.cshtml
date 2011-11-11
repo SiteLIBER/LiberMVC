@@ -1,0 +1,13 @@
+﻿@model LiberMvc.Models.Pagina
+@{
+	ViewBag.Title = Model.Titulo;
+}
+<div class="panel"  id="post">
+    <h1>@Model.Titulo</h1>
+
+@Html.Raw(Model.Conteudo)
+</div>
+
+@section RightContent {
+	@Html.Partial("_RightMenu")
+}

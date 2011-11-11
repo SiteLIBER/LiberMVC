@@ -112,8 +112,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AdminController.cs" />
-    <Compile Include="Controllers\AdminMenuController.cs" />
-    <Compile Include="Controllers\AdminPaginaController.cs" />
     <Compile Include="Controllers\AdminPostagemController.cs" />
     <Compile Include="Controllers\AdminTituloController.cs" />
     <Compile Include="Controllers\ArtigosController.cs">
@@ -125,6 +123,7 @@
     </Compile>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LiberController.cs" />
+    <Compile Include="Controllers\PaginaController.cs" />
     <Compile Include="Controllers\PagSeguroController.cs" />
     <Compile Include="Controllers\PostagemController.cs" />
     <Compile Include="Controllers\TesteController.cs" />
@@ -143,12 +142,7 @@
     <Compile Include="Helpers\CustomExtensions.cs" />
     <Compile Include="Helpers\PaginatedList.cs" />
     <Compile Include="Models\Agenda.cs" />
-    <Compile Include="Models\Blog.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Models\BlogRepository.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Models\PaginaRepository.cs" />
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\Pagina.cs" />
     <Compile Include="Models\PostagemRepository.cs" />
@@ -662,23 +656,23 @@
     <None Include="Scripts\tinymce\examples\media\sample.dcr" />
     <None Include="Scripts\tinymce\examples\media\sample.ram" />
     <None Include="Scripts\tinymce\examples\media\sample.rm" />
-    <Content Include="Views\Liber\Contas.cshtml" />
-    <Content Include="Views\Liber\Contato.cshtml" />
-    <Content Include="Views\Liber\Direitos.cshtml" />
-    <Content Include="Views\Liber\Diretorios.cshtml" />
-    <Content Include="Views\Liber\Divulgacao.cshtml" />
-    <Content Include="Views\Liber\Doacao.cshtml" />
-    <Content Include="Views\Liber\Domestico.cshtml" />
-    <Content Include="Views\Liber\Economia.cshtml" />
-    <Content Include="Views\Liber\Estatuto.cshtml" />
-    <Content Include="Views\Liber\Exterior.cshtml" />
-    <Content Include="Views\Liber\FAQ.cshtml" />
-    <Content Include="Views\Liber\Filosofia.cshtml" />
-    <Content Include="Views\Liber\Historia.cshtml" />
-    <Content Include="Views\Liber\Imprensa.cshtml" />
-    <Content Include="Views\Liber\Liber500.cshtml" />
-    <Content Include="Views\Liber\Lideranca.cshtml" />
-    <Content Include="Views\Liber\Programa.cshtml" />
+    <Content Include="Views\Liber.bkp\Contas.cshtml" />
+    <Content Include="Views\Liber.bkp\Contato.cshtml" />
+    <Content Include="Views\Liber.bkp\Direitos.cshtml" />
+    <Content Include="Views\Liber.bkp\Diretorios.cshtml" />
+    <Content Include="Views\Liber.bkp\Divulgacao.cshtml" />
+    <Content Include="Views\Liber.bkp\Doacao.cshtml" />
+    <Content Include="Views\Liber.bkp\Domestico.cshtml" />
+    <Content Include="Views\Liber.bkp\Economia.cshtml" />
+    <Content Include="Views\Liber.bkp\Estatuto.cshtml" />
+    <Content Include="Views\Liber.bkp\Exterior.cshtml" />
+    <Content Include="Views\Liber.bkp\FAQ.cshtml" />
+    <Content Include="Views\Liber.bkp\Filosofia.cshtml" />
+    <Content Include="Views\Liber.bkp\Historia.cshtml" />
+    <Content Include="Views\Liber.bkp\Imprensa.cshtml" />
+    <Content Include="Views\Liber.bkp\Liber500.cshtml" />
+    <Content Include="Views\Liber.bkp\Lideranca.cshtml" />
+    <Content Include="Views\Liber.bkp\Programa.cshtml" />
     <Content Include="Views\Shared\AcessoNegado.cshtml">
       <SubType>Code</SubType>
     </Content>
@@ -698,7 +692,7 @@
     <Content Include="Views\Shared\_UserBox.cshtml" />
     <Content Include="Views\Shared\_VideoBox.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\Post.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Postagem.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\DateTime.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Object.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Password.cshtml" />
@@ -719,22 +713,17 @@
     <Content Include="Views\AdminTitulo\Delete.cshtml" />
     <Content Include="Views\Postagem\Details.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
-    <Content Include="Views\AdminMenu\Index.cshtml" />
-    <Content Include="Views\AdminMenu\Details.cshtml" />
-    <Content Include="Views\AdminMenu\Create.cshtml" />
-    <Content Include="Views\AdminMenu\Edit.cshtml" />
-    <Content Include="Views\AdminMenu\Delete.cshtml" />
-    <Content Include="Views\AdminPagina\Index.cshtml" />
-    <Content Include="Views\AdminPagina\Details.cshtml" />
-    <Content Include="Views\AdminPagina\Create.cshtml" />
-    <Content Include="Views\AdminPagina\Edit.cshtml" />
-    <Content Include="Views\AdminPagina\Delete.cshtml" />
     <Content Include="Views\AdminPostagem\Index.cshtml" />
     <Content Include="Views\AdminPostagem\Details.cshtml" />
     <Content Include="Views\AdminPostagem\Create.cshtml" />
     <Content Include="Views\AdminPostagem\Edit.cshtml" />
     <Content Include="Views\AdminPostagem\Delete.cshtml" />
     <Content Include="Views\Shared\FacebookInit.cshtml" />
+    <Content Include="Views\Pagina\Index.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Postagem.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Pagina.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Pagina.cshtml" />
+    <Content Include="Views\Shared\NotFound.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
