@@ -38,17 +38,6 @@ namespace LiberMvc.Controllers
 		public ActionResult Details(int? id)
 		{
 			return RedirectToAction("Details", "Postagem", new { id = id + 200 });
-			//if (id.HasValue)
-			//{
-			//  var art = rep.GetPostagem(id.Value);
-			//  if (art != null)
-			//  {
-			//    ViewBag.Title = art.Titulo;
-			//    rep.Dispose();
-			//    return (art.Publicado || art.isEditorOrAdmin) ? View(art) : View();
-			//  }
-			//}
-			//return View("ItemNotFound");
 		}
 
 		#endregion

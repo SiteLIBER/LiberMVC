@@ -47,20 +47,21 @@
     <Reference Include="Elmah.Contrib.Mvc">
       <HintPath>..\packages\Elmah.Contrib.Mvc.1.0\lib\net40\Elmah.Contrib.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.4.1.10715.0\lib\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="Facebook, Version=5.2.1.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+    <Reference Include="EntityFramework, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Facebook.5.2.1.0\lib\net40-client\Facebook.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.4.2.0.0\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Facebook.Web, Version=5.2.1.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+    <Reference Include="Facebook, Version=5.3.2.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\FacebookWeb.5.2.1.0\lib\net40\Facebook.Web.dll</HintPath>
+      <HintPath>..\packages\Facebook.5.3.2.0\lib\net40-client\Facebook.dll</HintPath>
     </Reference>
-    <Reference Include="Facebook.Web.Mvc, Version=5.2.1.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+    <Reference Include="Facebook.Web, Version=5.3.2.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\FacebookWebMvc.5.2.1.0\lib\net40\Facebook.Web.Mvc.dll</HintPath>
+      <HintPath>..\packages\FacebookWeb.5.3.2.0\lib\net40\Facebook.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Web.Mvc, Version=5.3.2.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\FacebookWebMvc.5.3.2.0\lib\net40\Facebook.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="FBConnectAuth">
       <HintPath>..\packages\FbConnectAuth.0.9\lib\FBConnectAuth.dll</HintPath>
@@ -111,6 +112,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AdminAutorController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AdminPostagemController.cs" />
     <Compile Include="Controllers\AdminTituloController.cs" />
@@ -126,7 +128,6 @@
     <Compile Include="Controllers\PaginaController.cs" />
     <Compile Include="Controllers\PagSeguroController.cs" />
     <Compile Include="Controllers\PostagemController.cs" />
-    <Compile Include="Controllers\TesteController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -140,6 +141,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\CustomExtensions.cs" />
+    <Compile Include="Helpers\FbJson.cs" />
     <Compile Include="Helpers\PaginatedList.cs" />
     <Compile Include="Models\Agenda.cs" />
     <Compile Include="Models\PaginaRepository.cs" />
@@ -275,9 +277,9 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\jquery-1.6.4-vsdoc.js" />
-    <Content Include="Scripts\jquery-1.6.4.js" />
-    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.5.custom.min.js" />
     <Content Include="Scripts\jquery.maskedinput-1.3.js" />
     <Content Include="Scripts\jquery.maskedinput-1.3.min.js" />
@@ -653,6 +655,7 @@
     <None Include="Content\download\fundacao.pdf" />
     <None Include="Content\download\ficha_apoio_liber_500.pdf" />
     <Content Include="packages.config" />
+    <Content Include="fbchannel.ashx" />
     <None Include="Scripts\tinymce\examples\media\sample.dcr" />
     <None Include="Scripts\tinymce\examples\media\sample.ram" />
     <None Include="Scripts\tinymce\examples\media\sample.rm" />
@@ -704,8 +707,6 @@
     <Content Include="Views\Shared\EditorTemplates\Object.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\SimNao.cshtml" />
     <Content Include="Views\Shared\_ItemNotFound.cshtml" />
-    <Content Include="Views\Teste\Route.cshtml" />
-    <Content Include="Views\Teste\RouteRedirect.cshtml" />
     <Content Include="Views\AdminTitulo\Index.cshtml" />
     <Content Include="Views\AdminTitulo\Details.cshtml" />
     <Content Include="Views\AdminTitulo\Create.cshtml" />
@@ -713,17 +714,22 @@
     <Content Include="Views\AdminTitulo\Delete.cshtml" />
     <Content Include="Views\Postagem\Details.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
-    <Content Include="Views\AdminPostagem\Index.cshtml" />
     <Content Include="Views\AdminPostagem\Details.cshtml" />
     <Content Include="Views\AdminPostagem\Create.cshtml" />
     <Content Include="Views\AdminPostagem\Edit.cshtml" />
     <Content Include="Views\AdminPostagem\Delete.cshtml" />
-    <Content Include="Views\Shared\FacebookInit.cshtml" />
     <Content Include="Views\Pagina\Index.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Postagem.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Pagina.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Pagina.cshtml" />
     <Content Include="Views\Shared\NotFound.cshtml" />
+    <Content Include="Views\AdminPostagem\Index.cshtml" />
+    <Content Include="Views\AdminAutor\Index.cshtml" />
+    <Content Include="Views\AdminAutor\Details.cshtml" />
+    <Content Include="Views\AdminAutor\Create.cshtml" />
+    <Content Include="Views\AdminAutor\Edit.cshtml" />
+    <Content Include="Views\AdminAutor\Delete.cshtml" />
+    <Content Include="Views\Shared\FacebookInit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

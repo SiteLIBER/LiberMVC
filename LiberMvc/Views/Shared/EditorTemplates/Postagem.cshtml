@@ -1,5 +1,11 @@
 ﻿@model LiberMvc.Models.Postagem
-
+<div class="editor-label">
+	@Html.LabelFor(model => model.TipoPostagemID, "TipoPostagem")
+</div>
+<div class="editor-field">
+	@Html.DropDownList("TipoPostagemID", String.Empty)
+	@Html.ValidationMessageFor(model => model.TipoPostagemID)
+</div>
 <div class="editor-label">
 	@Html.LabelFor(model => model.Titulo)
 </div>
@@ -43,11 +49,11 @@
 		@Html.ValidationMessageFor(model => model.CriadoEm)
 	</div> *@
 @*<div class="editor-label">
-	@Html.LabelFor(model => model.Autor)
+	@Html.LabelFor(model => model.Autores)
 </div>
 <div class="editor-field">
-	@Html.EditorFor(model => model.Autor)
-	@Html.ValidationMessageFor(model => model.Autor)
+	@Html.EditorFor(model => model.Autores, Model.Autores)
+	@Html.ValidationMessageFor(model => model.Autores)
 </div>*@
 <div class="editor-label">
 	@Html.LabelFor(model => model.Fonte)

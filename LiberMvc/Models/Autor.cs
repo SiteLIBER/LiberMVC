@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace LiberMvc.Models
 {
@@ -12,6 +13,7 @@ namespace LiberMvc.Models
 		public int AutorID { get; set; }
 
 		[StringLength(250)]
+		[DisplayName("Nome do Autor")]
 		public string Nome { get; set; }
 
 		[StringLength(1000), DataType(DataType.MultilineText)]

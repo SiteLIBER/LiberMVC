@@ -38,13 +38,5 @@ namespace LiberMvc.Models
 
 		public string Link { get; set; }
 
-		[NotMapped]
-		public bool isEditorOrAdmin
-		{
-			get
-			{
-				return (Usuario.Logado.isEditor || Usuario.Logado.isAdmin);
-			}
-		}
 	}
 }

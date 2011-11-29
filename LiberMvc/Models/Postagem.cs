@@ -12,8 +12,9 @@ namespace LiberMvc.Models
 	{
 		[Key]
 		public int PostagemID { get; set; }
-		
-		[Required] 
+
+		[Required]
+		[DisplayName("Tipo de Postagem:")]
 		public int TipoPostagemID { get; set; }
 
 		[Required(ErrorMessage = "'Título' é um campo obrigatório.")]
@@ -36,7 +37,6 @@ namespace LiberMvc.Models
 		[DisplayName("Publicado:")]
 		public bool Publicado { get; set; }
 
-		[Required(ErrorMessage = "'Publicado em' é um campo obrigatório.")]
 		[DisplayName("Publicado em:")]
 		[DataType(DataType.Date)]
 		public DateTime? PublicadoEm { get; set; }
@@ -53,16 +53,7 @@ namespace LiberMvc.Models
 		[ForeignKey("TipoPostagemID")]
 		public TipoPostagem TipoPostagem { get; set; }
 
-		[Required]
+		//[Required]
 		public virtual ICollection<AutorPostagem> Autores { get; set; }
-
-		[HiddenInput(DisplayValue = false)]
-		public bool isEditorOrAdmin
-		{
-			get
-			{
-				return (Usuario.Logado.isEditor || Usuario.Logado.isAdmin);
-			}
-		}
 	}
 }

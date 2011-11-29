@@ -31,7 +31,11 @@
 		@Html.ActionLink("Voltar a lista", "Index", Model.TipoPostagem.Descricao, null, new { @class = "button" })
 		<br class="clear" />
 	</p>
+	<p class="">
+		<fb:comments xid="@Model.PostagemID" canpost="true" width="683px" candelete="true" href="@Request.Url"></fb:comments>
+	</p>
 </div>
+
 @section RightContent {
 	@Html.Partial("_RightMenu")
 }

@@ -1,2 +1,2 @@
 ﻿@model DateTime?
-@Model.Value.ToShortDateString()
+@((Model.HasValue) ? Model.Value.ToShortDateString() : ViewData.ModelMetadata.NullDisplayText)

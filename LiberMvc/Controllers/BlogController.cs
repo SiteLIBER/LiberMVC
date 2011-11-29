@@ -25,8 +25,6 @@ namespace LiberMvc.Controllers
 		public ActionResult Index(int? page)
 		{
 			var blogs = new PaginatedList<Postagem>(rep.BlogsPublicados.Include(p => p.Autores), page ?? 0, 10);
-			//blogs.ToList().Max(b => b.Editor.Nome);
-			//rep.Dispose();
 			return View(blogs);
 		}
 		#endregion
@@ -38,18 +36,6 @@ namespace LiberMvc.Controllers
 		public ActionResult Details(int? id)
 		{
 			return RedirectToAction("Details", "Postagem", new { id = id });
-			//if (id.HasValue)
-			//{
-			//  var blog = rep.GetPostagem(id.Value);
-			//  if (blog != null && blog.TipoPostagem.Descricao == "Blog")
-			//  {
-			//    ViewBag.Title = blog.Titulo;
-			//    //var ed = blog.Autores.Select;
-			//    //rep.Dispose();
-			//    return (blog.Publicado || blog.isEditorOrAdmin) ? View(blog) : View();
-			//  }
-			//}
-			//return View("ItemNotFound");
 		}
 
 		#endregion

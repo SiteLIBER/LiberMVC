@@ -14,7 +14,8 @@
 @helper NomeAutor(Postagem post) {
 	<span class="author">Por
 		@foreach (var i in post.Autores) {
-			@Html.Label(i.Autor.Nome)
+			@i.Autor.Nome
+			
 			if (i.AutorID != post.Autores.Last().AutorID) { <text> & </text> }
 		}
 	</span>

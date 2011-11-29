@@ -39,7 +39,10 @@ namespace LiberMvc.Controllers
 			Postagem postagem = rep.GetPostagem(id);
 			if (title == null)
 				return RedirectToAction("Details", new { id = id, title = postagem.Titulo });
-			return View(postagem);
+			if (postagem.Publicado)
+				return View(postagem);
+			else
+				return View("NotFound");
 		}
 
 		#endregion

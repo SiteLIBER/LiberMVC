@@ -27,7 +27,7 @@ namespace LiberMvc.Models
 		{
 			get
 			{
-				return Postagens.Where(p => p.TipoPostagem.Descricao == "Artigos");
+				return Postagens.Where(p => p.TipoPostagem.Descricao == "Artigo");
 			}
 		}
 		public IQueryable<Postagem> ArtigosPublicados
@@ -64,7 +64,7 @@ namespace LiberMvc.Models
 		{
 			get
 			{
-				return db.Postagens
+				return db.Postagens.Include(p => p.TipoPostagem)
 					.OrderByDescending(a => a.PublicadoEm)
 					.ThenByDescending(a => a.PostagemID);
 			}
@@ -119,7 +119,8 @@ namespace LiberMvc.Models
 
 		public void Dispose()
 		{ 
-			db.Dispose();
+			if (db != null)
+				db.Dispose();
 		}
 
 		#endregion

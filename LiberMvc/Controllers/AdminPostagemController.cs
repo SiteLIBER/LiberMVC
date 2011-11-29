@@ -8,106 +8,143 @@ using System.Web.Mvc;
 using LiberMvc.Models;
 
 namespace LiberMvc.Controllers
-{ 
-    public class AdminPostagemController : Controller
-    {
-        private LiberDB db = new LiberDB();
+{
+	[Auth(Roles = "Editor")]
+	public class AdminPostagemController : Controller
+	{
+		#region Repository
+		PostagemRepository rep;
 
-        //
-        // GET: /AdminPostagem/
+		public AdminPostagemController()
+		{
+			rep = new PostagemRepository();
+		}
+		#endregion
+		
+		#region GET: /AdminPostagem/
 
-        public ViewResult Index()
-        {
-            var postagens = db.Postagens.Include(p => p.TipoPostagem);
-            return View(postagens.ToList());
-        }
+		public ViewResult Index(int? page)
+		{
+			var postagens = new PaginatedList<Postagem>(rep.Postagens, page ?? 0, 20);
+			return View(postagens);
+		}
 
-        //
-        // GET: /AdminPostagem/Details/5
+		#endregion
 
-        public ViewResult Details(int id)
-        {
-            Postagem postagem = db.Postagens.Find(id);
-            return View(postagem);
-        }
+		#region GET: /AdminPostagem/Details/5
 
-        //
-        // GET: /AdminPostagem/Create
+		public ViewResult Details(int id)
+		{
+			Postagem postagem = rep.GetPostagem(id);
+			return View(postagem);
+		}
 
-        public ActionResult Create()
-        {
-            ViewBag.TipoPostagemID = new SelectList(db.TiposPostagem, "TipoPostagemID", "Descricao");
-            return View();
-        } 
+		#endregion
 
-        //
-        // POST: /AdminPostagem/Create
+		#region GET: /AdminPostagem/Create
 
-        [HttpPost]
-        public ActionResult Create(Postagem postagem)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Postagens.Add(postagem);
-                db.SaveChanges();
-                return RedirectToAction("Index");  
-            }
+		public ActionResult Create()
+		{
+			ViewBag.TipoPostagemID = new SelectList(rep.TiposPostagem, "TipoPostagemID", "Descricao");
+			return View();
+		}
 
-            ViewBag.TipoPostagemID = new SelectList(db.TiposPostagem, "TipoPostagemID", "Descricao", postagem.TipoPostagemID);
-            return View(postagem);
-        }
-        
-        //
-        // GET: /AdminPostagem/Edit/5
- 
-        public ActionResult Edit(int id)
-        {
-            Postagem postagem = db.Postagens.Find(id);
-            ViewBag.TipoPostagemID = new SelectList(db.TiposPostagem, "TipoPostagemID", "Descricao", postagem.TipoPostagemID);
-            return View(postagem);
-        }
+		#endregion
 
-        //
-        // POST: /AdminPostagem/Edit/5
+		#region POST: /AdminPostagem/Create
 
-        [HttpPost]
-        public ActionResult Edit(Postagem postagem)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(postagem).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            ViewBag.TipoPostagemID = new SelectList(db.TiposPostagem, "TipoPostagemID", "Descricao", postagem.TipoPostagemID);
-            return View(postagem);
-        }
+		[HttpPost, ValidateInput(false)]
+		public ActionResult Create(Postagem postagem)
+		{
+			if (ModelState.IsValid)
+			{
+				try
+				{
+					rep.Add(postagem);
+					rep.Save();
+					rep.Dispose();
+					return RedirectToAction("Details", new { id = postagem.PostagemID });
+				}
+				catch (Exception err)
+				{
+					return View("Error", err);
+				}
+			}
+			ViewBag.TipoPostagemID = new SelectList(rep.TiposPostagem.ToList(), "TipoPostagemID", "Descricao", postagem.TipoPostagemID);
+			return View(postagem);
+		}
 
-        //
-        // GET: /AdminPostagem/Delete/5
- 
-        public ActionResult Delete(int id)
-        {
-            Postagem postagem = db.Postagens.Find(id);
-            return View(postagem);
-        }
+		#endregion
 
-        //
-        // POST: /AdminPostagem/Delete/5
+		#region GET: /AdminPostagem/Edit/5
 
-        [HttpPost, ActionName("Delete")]
-        public ActionResult DeleteConfirmed(int id)
-        {            
-            Postagem postagem = db.Postagens.Find(id);
-            db.Postagens.Remove(postagem);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
+		public ActionResult Edit(int id)
+		{
+			var post = rep.GetPostagem(id);
+			ViewBag.TipoPostagemID = new SelectList(rep.TiposPostagem, "TipoPostagemID", "Descricao", post.TipoPostagemID);
+			return View(post);
+		}
 
-        protected override void Dispose(bool disposing)
-        {
-            db.Dispose();
-            base.Dispose(disposing);
-        }
-    }
+		#endregion
+
+		#region POST: /AdminPostagem/Edit/5
+
+		[HttpPost, ValidateInput(false)]
+		public ActionResult Edit(int id, Postagem postagem)
+		{
+			if (ModelState.IsValid)
+			{
+				try
+				{
+					rep.Edit(postagem);
+					rep.Save();
+					rep.Dispose();
+					return RedirectToAction("Details", new { id = id });
+				}
+				catch (Exception err)
+				{
+					return View("Error", err);
+				}
+			}
+			ViewBag.TipoPostagemID = new SelectList(rep.TiposPostagem.ToList(), "TipoPostagemID", "Descricao", postagem.TipoPostagemID);
+			return View(postagem);
+		}
+
+		#endregion
+
+		#region GET: /AdminPostagem/Delete/5
+
+		public ActionResult Delete(int id)
+		{
+			var post = rep.GetPostagem(id);
+			rep.Dispose();
+			return View(post);
+		}
+
+		#endregion
+
+		#region POST: /AdminPostagem/Delete/5
+
+		[HttpPost, ActionName("Delete")]
+		public ActionResult DeleteConfirmed(int id)
+		{
+			var post = rep.GetPostagem(id);
+			rep.Delete(post);
+			rep.Save();
+			rep.Dispose();
+			return RedirectToAction("Index");
+		}
+
+		#endregion
+
+		#region Dispose
+		
+		protected override void Dispose(bool disposing)
+		{
+			rep.Dispose();
+			base.Dispose(disposing);
+		}
+		
+		#endregion
+	}
 }

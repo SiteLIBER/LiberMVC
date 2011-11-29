@@ -1,0 +1,30 @@
+﻿@model LiberMvc.Models.Autor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Autor</legend>
+
+    <div class="display-label">Nome</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="display-label">Descricao</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Descricao)
+    </div>
+
+    <div class="display-label">Pessoa</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Pessoa.Nome)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.AutorID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
