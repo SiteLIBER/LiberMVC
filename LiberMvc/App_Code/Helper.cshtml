@@ -30,3 +30,18 @@
 {
 	<a href="@link"><img src="@url.Content("~/Content/images/" + imageUrl)" alt="@alt"/></a>
 }
+
+@helper Pager(LiberMvc.IPaginatedList model, UrlHelper url)
+{
+	
+	var route = url.RequestContext.RouteData.Values;
+	if (model.HasPreviousPage)
+	{ 
+		<a href="@url.RouteUrl(new { action = route["action"].ToString(), controller = route["controller"].ToString(), id = route["id"], page = (model.PageIndex - 1) })" class="button"><< Anterior</a>
+	}
+
+	if (model.HasNextPage)
+	{ 
+		<a href="@url.RouteUrl(new { action = route["action"].ToString(), controller = route["controller"].ToString(), id = route["id"], page = (model.PageIndex + 1) })" class="button">Próxima >></a>
+	}
+}

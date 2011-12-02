@@ -1,0 +1,40 @@
+﻿@model LiberMvc.Models.Pagina
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Pagina</legend>
+
+    <div class="display-label">Titulo</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titulo)
+    </div>
+
+    <div class="display-label">Conteudo</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Conteudo)
+    </div>
+		<br class="clear" />
+    <div class="display-label">Publicado</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Publicado)
+    </div>
+
+    <div class="display-label">CriadoEm</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CriadoEm)
+    </div>
+
+    <div class="display-label">Link</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Link)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.PaginaID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

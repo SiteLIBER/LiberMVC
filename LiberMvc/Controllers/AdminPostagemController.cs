@@ -25,7 +25,7 @@ namespace LiberMvc.Controllers
 
 		public ViewResult Index(int? page)
 		{
-			var postagens = new PaginatedList<Postagem>(rep.Postagens, page ?? 0, 20);
+			var postagens = new PaginatedList<Postagem>(rep.Postagens, page ?? 0, 5);
 			return View(postagens);
 		}
 

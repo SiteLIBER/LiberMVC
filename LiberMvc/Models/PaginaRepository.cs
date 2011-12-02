@@ -3,6 +3,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Collections.Generic;
+using System.Data;
 
 namespace LiberMvc.Models
 {
@@ -35,7 +36,26 @@ namespace LiberMvc.Models
 		}
 		#endregion
 
+		#region Insert/Edit/Delete Methods
 
+		public void Add(Pagina pagina)
+		{
+			pagina.CriadoEm = DateTime.Now;
+			db.Paginas.Add(pagina);
+		}
+
+		public void Edit(Pagina pagina)
+		{
+			db.Entry(pagina).State = EntityState.Modified;
+		}
+
+		public void Delete(Pagina pagina)
+		{
+			db.Paginas.Remove(pagina);
+		}
+
+
+		#endregion
 
 		#region Persistence
 
@@ -54,7 +74,5 @@ namespace LiberMvc.Models
 		}
 
 		#endregion
-
-
 	}
 }

@@ -26,7 +26,7 @@ namespace LiberMvc.Controllers
 		public ViewResult Index(string page)
 		{
 			Pagina pagina = rep.PegarPagina(page);
-			if (pagina != null)
+			if (pagina != null && pagina.Publicado)
 				return View(pagina);
 			else
 				return View("NotFound");

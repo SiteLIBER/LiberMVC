@@ -1,6 +1,5 @@
 ﻿@model LiberMvc.PaginatedList<Postagem>
 @using LiberMvc.Models
-@{ var route = Url.RequestContext.RouteData.Values; }
 <div class="panel">
 	<h1>
 		Artigos</h1>
@@ -19,23 +18,18 @@
 			</p>
 		</div>
 		} }
+
 	<div class="actions">
-		@if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin)
+@*		@if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin)
 	{ 
 			@Html.ActionLink("Criar novo", "Create", null, new { @class = "button" })
 	}
 		@if (Usuario.Logado.isAdmin)
 	{ 
 			@Html.ActionLink("Listar para edição", "Table", null, new { @class = "button" })
-	}
-		@if (Model.HasPreviousPage)
-	{ 
-			@Html.ActionLink("<< Anterior", route["action"].ToString(), new { id = route["id"], page = (Model.PageIndex - 1) }, new { @class = "button" })
-	}
-		@if (Model.HasNextPage)
-	{ 
-			@Html.ActionLink("Próxima >>", route["action"].ToString(), new { id = route["id"], page = (Model.PageIndex + 1) }, new { @class = "button" })
-	}
+	}*@
+	
+	@Helper.Pager(Model, Url)
 		<br class="clear" />
 	</div>
 </div>

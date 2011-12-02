@@ -114,6 +114,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AdminAutorController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AdminPaginaController.cs" />
     <Compile Include="Controllers\AdminPostagemController.cs" />
     <Compile Include="Controllers\AdminTituloController.cs" />
     <Compile Include="Controllers\ArtigosController.cs">
@@ -142,6 +143,7 @@
     </Compile>
     <Compile Include="Helpers\CustomExtensions.cs" />
     <Compile Include="Helpers\FbJson.cs" />
+    <Compile Include="Helpers\IPaginatedList.cs" />
     <Compile Include="Helpers\PaginatedList.cs" />
     <Compile Include="Models\Agenda.cs" />
     <Compile Include="Models\PaginaRepository.cs" />
@@ -730,6 +732,11 @@
     <Content Include="Views\AdminAutor\Edit.cshtml" />
     <Content Include="Views\AdminAutor\Delete.cshtml" />
     <Content Include="Views\Shared\FacebookInit.cshtml" />
+    <Content Include="Views\AdminPagina\Index.cshtml" />
+    <Content Include="Views\AdminPagina\Details.cshtml" />
+    <Content Include="Views\AdminPagina\Create.cshtml" />
+    <Content Include="Views\AdminPagina\Edit.cshtml" />
+    <Content Include="Views\AdminPagina\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

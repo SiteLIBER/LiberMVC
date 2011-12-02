@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace LiberMvc
 {
-	public class PaginatedList<T> : List<T>
+	public class PaginatedList<T> : List<T>, IPaginatedList
 	{
 
 		public int PageIndex { get; private set; }
