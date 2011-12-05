@@ -53,7 +53,11 @@ namespace LiberMvc.Models
 		[ForeignKey("TipoPostagemID")]
 		public TipoPostagem TipoPostagem { get; set; }
 
-		//[Required]
+		[UIHint("Autores")]
 		public virtual ICollection<AutorPostagem> Autores { get; set; }
+
+		[NotMapped]
+		public IEnumerable<int> SelectedItemIds { get; set; }
+
 	}
 }

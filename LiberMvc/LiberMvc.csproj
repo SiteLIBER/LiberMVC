@@ -186,6 +186,8 @@
     <Content Include="App_Data\BancoTeste_log.ldf">
       <DependentUpon>BancoTeste.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\chosen-sprite.png" />
+    <Content Include="Content\chosen.css" />
     <Content Include="Content\images\actions_back.png" />
     <Content Include="Content\images\article.png" />
     <Content Include="Content\images\bannerLIBERhor01.png" />
@@ -279,6 +281,8 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\chosen.jquery.js" />
+    <Content Include="Scripts\chosen.jquery.min.js" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />

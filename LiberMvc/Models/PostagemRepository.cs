@@ -82,6 +82,13 @@ namespace LiberMvc.Models
 			return db.Postagens.Include(p => p.TipoPostagem).SingleOrDefault(a => a.PostagemID == id);
 		}
 
+		public IQueryable<Autor> Autores
+		{
+			get
+			{
+				return db.Autores;
+			}
+		}
 		#endregion
 
 		#region Insert/Edit/Delete Methods
@@ -124,6 +131,7 @@ namespace LiberMvc.Models
 		}
 
 		#endregion
+
 
 
 	}

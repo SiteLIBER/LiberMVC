@@ -48,13 +48,13 @@
 		@Html.EditorFor(model => model.CriadoEm)
 		@Html.ValidationMessageFor(model => model.CriadoEm)
 	</div> *@
-@*<div class="editor-label">
+<div class="editor-label">
 	@Html.LabelFor(model => model.Autores)
 </div>
 <div class="editor-field">
-	@Html.EditorFor(model => model.Autores, Model.Autores)
+	@Html.ListBoxFor(m => m.SelectedItemIds, (MultiSelectList) ViewBag.Autores, new { @class = "autores", @data_placeholder = "Selecione um Autor" })
 	@Html.ValidationMessageFor(model => model.Autores)
-</div>*@
+</div>
 <div class="editor-label">
 	@Html.LabelFor(model => model.Fonte)
 </div>
@@ -62,3 +62,4 @@
 	@Html.EditorFor(model => model.Fonte)
 	@Html.ValidationMessageFor(model => model.Fonte)
 </div>
+

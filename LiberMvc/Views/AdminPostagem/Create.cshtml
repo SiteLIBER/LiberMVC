@@ -24,7 +24,10 @@
 @section HeadContent {
 	@Helper.Script("jquery-ui-1.8.5.custom.min.js", Url)
 	@Helper.Script("jquery.ui.datepicker-pt-BR.js", Url)
+	@Helper.Script("chosen.jquery.min.js", Url)
+	
 	@Helper.Css("ui-darkness/jquery-ui-1.8.5.custom.css", Url)
+	@Helper.Css("chosen.css", Url)
 	<script type="text/javascript">
 		$(function () {
 			$(".datePicker").datepicker();
@@ -33,6 +36,8 @@
 				tinyMCE.triggerSave();
 				//$("form").submit();
 			});
+
+			$(".autores").chosen();
 		});
 	</script>
 }

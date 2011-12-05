@@ -45,6 +45,7 @@ namespace LiberMvc.Controllers
 
 		public ActionResult Create()
 		{
+			ViewBag.Autores = new MultiSelectList(rep.Autores, "AutorID", "Nome");
 			ViewBag.TipoPostagemID = new SelectList(rep.TiposPostagem, "TipoPostagemID", "Descricao");
 			return View();
 		}
@@ -60,6 +61,10 @@ namespace LiberMvc.Controllers
 			{
 				try
 				{
+					postagem.Autores = new List<AutorPostagem>();
+					if (postagem.SelectedItemIds != null)
+						foreach (var i in postagem.SelectedItemIds)
+							postagem.Autores.Add(new AutorPostagem { AutorID = i });
 					rep.Add(postagem);
 					rep.Save();
 					rep.Dispose();
@@ -70,6 +75,7 @@ namespace LiberMvc.Controllers
 					return View("Error", err);
 				}
 			}
+			ViewBag.Autores = new MultiSelectList(rep.Autores, "AutorID", "Nome", postagem.SelectedItemIds);
 			ViewBag.TipoPostagemID = new SelectList(rep.TiposPostagem.ToList(), "TipoPostagemID", "Descricao", postagem.TipoPostagemID);
 			return View(postagem);
 		}
@@ -81,6 +87,8 @@ namespace LiberMvc.Controllers
 		public ActionResult Edit(int id)
 		{
 			var post = rep.GetPostagem(id);
+			post.SelectedItemIds = post.Autores.Select(a => a.AutorID);
+			ViewBag.Autores = new MultiSelectList(rep.Autores, "AutorID", "Nome", post.SelectedItemIds);
 			ViewBag.TipoPostagemID = new SelectList(rep.TiposPostagem, "TipoPostagemID", "Descricao", post.TipoPostagemID);
 			return View(post);
 		}
@@ -90,22 +98,29 @@ namespace LiberMvc.Controllers
 		#region POST: /AdminPostagem/Edit/5
 
 		[HttpPost, ValidateInput(false)]
-		public ActionResult Edit(int id, Postagem postagem)
+		public ActionResult Edit(Postagem postagem)
 		{
 			if (ModelState.IsValid)
 			{
 				try
 				{
 					rep.Edit(postagem);
+					rep.db.AutoresPostagens.Where(ap => ap.PostagemID == postagem.PostagemID).ToList().ForEach(ap => rep.db.AutoresPostagens.Remove(ap));
+					postagem.Autores = new List<AutorPostagem>();
+					if (postagem.SelectedItemIds != null)
+						foreach (var i in postagem.SelectedItemIds)
+							postagem.Autores.Add(new AutorPostagem { AutorID = i });
+
 					rep.Save();
 					rep.Dispose();
-					return RedirectToAction("Details", new { id = id });
+					return RedirectToAction("Details", new { id = postagem.PostagemID });
 				}
 				catch (Exception err)
 				{
 					return View("Error", err);
 				}
 			}
+			ViewBag.Autores = new MultiSelectList(rep.Autores, "AutorID", "Nome", postagem.SelectedItemIds);
 			ViewBag.TipoPostagemID = new SelectList(rep.TiposPostagem.ToList(), "TipoPostagemID", "Descricao", postagem.TipoPostagemID);
 			return View(postagem);
 		}
