@@ -3,14 +3,15 @@
 	ViewBag.Title = "Nova postagem";
 	//Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-	@Helper.Script("tinymce/jscripts/tiny_mce/tiny_mce.js", Url)
-	@Helper.Script("textedit.js", Url)
+@Helper.Script("tinymce/jscripts/tiny_mce/tiny_mce.js", Url)
+@Helper.Script("textedit.js", Url)
 <div class="panel">
 	<h1>@ViewBag.Title</h1>
 	<div id="editor-form">
 		@{ Html.EnableClientValidation(); }
 		@using (Html.BeginForm())
 	{
+			@Html.AntiForgeryToken()
 			@Html.ValidationSummary(true)
 			@Html.EditorForModel("Postagem")
 			<p class="actions">
@@ -25,7 +26,6 @@
 	@Helper.Script("jquery-ui-1.8.5.custom.min.js", Url)
 	@Helper.Script("jquery.ui.datepicker-pt-BR.js", Url)
 	@Helper.Script("chosen.jquery.min.js", Url)
-	
 	@Helper.Css("ui-darkness/jquery-ui-1.8.5.custom.css", Url)
 	@Helper.Css("chosen.css", Url)
 	<script type="text/javascript">

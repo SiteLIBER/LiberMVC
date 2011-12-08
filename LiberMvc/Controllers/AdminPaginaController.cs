@@ -50,7 +50,7 @@ namespace LiberMvc.Controllers
 
 		#region POST: /AdminPagina/Create
 
-		[HttpPost, ValidateInput(false)]
+		[HttpPost]
 		public ActionResult Create(Pagina pagina)
 	{
 			if (ModelState.IsValid)
@@ -84,7 +84,7 @@ namespace LiberMvc.Controllers
 
 		#region  POST: /AdminPagina/Edit/5
 		
-		[HttpPost, ValidateInput(false)]
+		[HttpPost]
 		public ActionResult Edit(int id, Pagina pagina)
 		{
 			if (ModelState.IsValid)

@@ -22,6 +22,7 @@ namespace LiberMvc.Models
 		[Required(ErrorMessage = "'Texto' é um campo obrigatório.")]
 		[DisplayName("Texto:")]
 		[DataType(DataType.Html)]
+		[AllowHtml]
 		public string Conteudo { get; set; }
 
 		[UIHint("SimNao")]

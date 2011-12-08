@@ -13,7 +13,7 @@ namespace LiberMvc.Models
 		[Key]
 		public int PostagemID { get; set; }
 
-		[Required]
+		[Required(ErrorMessage = "'Tipo de Postagem' é um campo obrigatório.")]
 		[DisplayName("Tipo de Postagem:")]
 		public int TipoPostagemID { get; set; }
 
@@ -31,6 +31,7 @@ namespace LiberMvc.Models
 		[Required(ErrorMessage = "'Texto' é um campo obrigatório.")]
 		[DisplayName("Texto:")]
 		[DataType(DataType.Html)]
+		[AllowHtml]
 		public string Conteudo { get; set; }
 
 		[UIHint("SimNao")]
@@ -54,6 +55,7 @@ namespace LiberMvc.Models
 		public TipoPostagem TipoPostagem { get; set; }
 
 		[UIHint("Autores")]
+		[DisplayName("Autor(es):")]
 		public virtual ICollection<AutorPostagem> Autores { get; set; }
 
 		[NotMapped]

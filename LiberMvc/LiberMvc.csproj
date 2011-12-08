@@ -741,6 +741,14 @@
     <Content Include="Views\AdminPagina\Create.cshtml" />
     <Content Include="Views\AdminPagina\Edit.cshtml" />
     <Content Include="Views\AdminPagina\Delete.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Shared\_BottomMenuAdmin.cshtml" />
+    <Content Include="Views\Shared\_TopMenuAdmin.cshtml" />
+    <Content Include="Views\Admin\_ViewStart.cshtml" />
+    <Content Include="Views\AdminAutor\_ViewStart.cshtml" />
+    <Content Include="Views\AdminPagina\_ViewStart.cshtml" />
+    <Content Include="Views\AdminPostagem\_ViewStart.cshtml" />
+    <Content Include="Views\AdminTitulo\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

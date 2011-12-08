@@ -54,7 +54,8 @@ namespace LiberMvc.Controllers
 
 		#region POST: /AdminPostagem/Create
 
-		[HttpPost, ValidateInput(false)]
+		[HttpPost]
+		[ValidateAntiForgeryToken]
 		public ActionResult Create(Postagem postagem)
 		{
 			if (ModelState.IsValid)
@@ -97,7 +98,8 @@ namespace LiberMvc.Controllers
 
 		#region POST: /AdminPostagem/Edit/5
 
-		[HttpPost, ValidateInput(false)]
+		[HttpPost]
+		[ValidateAntiForgeryToken]
 		public ActionResult Edit(Postagem postagem)
 		{
 			if (ModelState.IsValid)
@@ -140,7 +142,7 @@ namespace LiberMvc.Controllers
 
 		#region POST: /AdminPostagem/Delete/5
 
-		[HttpPost, ActionName("Delete")]
+		[HttpPost, ActionName("Delete"), ValidateAntiForgeryToken]
 		public ActionResult DeleteConfirmed(int id)
 		{
 			var post = rep.GetPostagem(id);
