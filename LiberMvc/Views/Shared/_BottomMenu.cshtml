@@ -1,11 +1,19 @@
-﻿
-<div id="footer_general_informations">
+﻿<div id="footer_general_informations">
 	<p>
 		O LIBER é uma instituição de atuação política, sem fins lucrativos, que visa difundir os preceitos do Libertarianismo, doutrina filosófica baseada nos princípios da não agressão e da auto-propriedade.
 	</p>
 </div>
 <!-- IMPORTANT LINKS BEGIN -->
 <div id="important_links">
+	<div>
+		<h1>Ideias</h1>
+			<ul>
+				<li><a href='@Url.Action("Index", "Blog")'><b>Blog</b></a></li>
+				<li><a href='@Url.Action("Index", "Artigos")'><b>Artigos</b></a></li>
+				<li><a href="@Url.Action("Index", "Videos")"><span><b>Vídeos</b></span></a></li>
+			</ul>
+
+	</div>
 	<div>
 		<h1>
 			Nosso Partido</h1>
@@ -20,10 +28,8 @@
 	</div>
 	<div>
 		<h1>
-			Ideias</h1>
+			Programa</h1>
 		<ul>
-			<li><a href='@Url.Action("Index", "Blog")'>Blog</a></li>
-			<li><a href='@Url.Action("Index", "Artigos")'>Artigos</a></li>
 			<li><a href='@Url.Action("Direitos", "Liber")'>Direitos Individuais</a></li>
 			<li><a href='@Url.Action("Economia", "Liber")'>Comércio e Economia</a></li>
 			<li><a href='@Url.Action("Domestico", "Liber")'>Assuntos Domésticos</a></li>
@@ -56,13 +62,9 @@
 </div>
 <!-- IMPORTANT LINKS END -->
 <p id="general_links">
-	@*<a href="#">Mapa do Site</a> |*@
-	@*<a href="#">Política de Privacidade</a> |*@
-	@*<a href="#">Administração</a> |*@
-	<a href='@Url.Action("Contato", "Liber")'>Contato</a>
+	@*<a href="#">Mapa do Site</a> |*@ @*<a href="#">Política de Privacidade</a> |*@ @*<a href="#">Administração</a> |*@ <a href='@Url.Action("Contato", "Liber")'>Contato</a>
 </p>
 <p id="copy">
 	<img src="/Content/images/creative_commons.png" /><br />
 	Esta obra é licenciada sob uma licença <a href="http://creativecommons.org/licenses/by/2.0/br/">Creative Commons Atribuio 2.0 Brasil.</a>
 </p>
-

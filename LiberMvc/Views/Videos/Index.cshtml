@@ -1,0 +1,37 @@
+﻿@model LiberMvc.PaginatedList<Postagem>
+@using LiberMvc.Models
+<div class="panel">
+	<h1>Vídeos</h1>
+	@{ foreach (var art in Model)
+		{ 
+		<div class="article_resume">
+			<h2>
+				@Html.ActionLink(art.Titulo, "Details", "Postagem", new { id = art.PostagemID, title = Url.FormatTitle(art.Titulo) }, null)
+			</h2>
+			<p class="general_informations">
+				<span class="date">@art.PublicadoEm.ToShortDateString()</span>
+				@Helper.NomeAutor(art)
+			</p>
+			<p class="abstract">
+				@art.Chamada
+			</p>
+		</div>
+		} }
+
+	<div class="actions">
+@*		@if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin)
+	{ 
+			@Html.ActionLink("Criar novo", "Create", null, new { @class = "button" })
+	}
+		@if (Usuario.Logado.isAdmin)
+	{ 
+			@Html.ActionLink("Listar para edição", "Table", null, new { @class = "button" })
+	}*@
+	
+	@Helper.Pager(Model, Url)
+		<br class="clear" />
+	</div>
+</div>
+@section RightContent {
+	@Html.Partial("_RightMenu")
+}

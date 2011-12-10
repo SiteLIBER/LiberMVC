@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Postagem>
+@using LiberMvc.Models
+<!-- ARTICLES BEGIN -->
+<div class="panel" id="artigos">
+	<h1>Videos</h1>
+	@{
+		var first = Model.FirstOrDefault();
+		if (first != null)
+		{
+	
+		<div id="artigo_destaque" class="article_resume">
+			<h2>
+				@Html.ActionLink(first.Titulo, "Details", "Postagem", new { id = first.PostagemID, title = Url.FormatTitle(first.Titulo) }, null)
+			</h2>
+			<p class="general_informations">
+				<span class="date">
+				@first.PublicadoEm.ToShortDateString()</span> @Helper.NomeAutor(first)
+			</p>
+			<p class="abstract">
+				@Html.Raw(first.Chamada)
+			</p>
+		</div>
+		
+			var others = Model.Skip(1);
+			 if (others != null)
+			 {
+				 foreach (var art in others)
+				 { 
+		<div class="article_resume">
+			<h2>
+				@Html.ActionLink(art.Titulo, "Details", "Postagem", new { id = art.PostagemID, title = art.Titulo }, null)
+			</h2>
+			<p class="general_informations">
+				<span class="date">
+					@art.PublicadoEm.Value.ToShortDateString()</span> @Helper.NomeAutor(art)
+			</p>
+			<p class="abstract">
+				@art.Chamada
+			</p>
+		</div>
+				 }
+			 }
+			
+		}
+	}
+	<p class="actions">
+		@Html.ActionLink("Mais videos", "Index", "Videos", null, new { @class = "button" })
+		<br class="clear" />
+	</p>
+</div>
+<!-- ARTICLES END -->

@@ -1,9 +1,21 @@
 ﻿@model LiberMvc.Models.Postagem
 @{
 	ViewBag.Title = "Details";
+	var cntr = "";
+	switch(Model.TipoPostagem.Descricao){
+		case "Video":
+			cntr = "Videos";
+			break;
+		case "Artigo":
+			cntr = "Artigos";
+			break;
+		case "Blog":
+			cntr = "Blog";
+			break;
+	}
 }
 <div class="panel">
-	<h1>@Model.TipoPostagem.Descricao</h1>
+	<h1><a href="@Url.RouteUrl(new {controller=cntr})">@Model.TipoPostagem.Descricao</a></h1>
 	<div class="article">
 		<h1>@Model.Titulo</h1>
 		<p class="general_informations">

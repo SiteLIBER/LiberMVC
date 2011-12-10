@@ -58,6 +58,24 @@ namespace LiberMvc.Models
 		}
 		#endregion
 
+		#region Video
+		public IQueryable<Postagem> Videos
+		{
+			get
+			{
+				return Postagens.Where(p => p.TipoPostagem.Descricao == "Video");
+			}
+		}
+		public IQueryable<Postagem> VideosPublicados
+		{
+			get { return Videos.Where(a => a.Publicado); }
+		}
+		public IQueryable<Postagem> VideosDoUsuario(int id)
+		{
+			return VideosPublicados.Where(p => p.Autores.Select(a => a.Autor.PessoaID).Contains(id));
+		}
+		#endregion
+
 		#region Postagem
 
 		public IQueryable<Postagem> Postagens
@@ -131,8 +149,6 @@ namespace LiberMvc.Models
 		}
 
 		#endregion
-
-
 
 	}
 }

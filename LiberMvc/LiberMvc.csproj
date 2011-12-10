@@ -130,6 +130,7 @@
     <Compile Include="Controllers\PagSeguroController.cs" />
     <Compile Include="Controllers\PostagemController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Controllers\VideosController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -749,6 +750,7 @@
     <Content Include="Views\AdminPagina\_ViewStart.cshtml" />
     <Content Include="Views\AdminPostagem\_ViewStart.cshtml" />
     <Content Include="Views\AdminTitulo\_ViewStart.cshtml" />
+    <Content Include="Views\Videos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
