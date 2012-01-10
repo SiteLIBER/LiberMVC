@@ -36,8 +36,6 @@ namespace LiberMvc.Models
 				return PegarUsuario(Usuario.Logado.ID);
 			}
 		}
-		#endregion
-
 		public Usuario PegarUsuario(LoginModel form)
 		{
 			return (from u in db.Usuarios
@@ -45,6 +43,15 @@ namespace LiberMvc.Models
 							& u.Senha == form.Senha
 							select u).FirstOrDefault();
 		}
+		public Usuario PegarUsuarioDoFacebook(Int64 facebookId)
+		{
+			return db.Usuarios.FirstOrDefault(u => u.FacebookID == facebookId);
+		}
+		#endregion
+
+
+
+
 		public Usuario Cadastrar(CadastroModel form) 
 		{
 			var u = form.Usuario;

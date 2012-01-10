@@ -62,8 +62,6 @@ namespace LiberMvc
 			string sessionId = Session.SessionID;
 			#endregion
 
-			Database.SetInitializer(new LiberDBInitializer());
-
 			#region redirect to correct url
 			var url = HttpContext.Current.Request.Url.AbsoluteUri;
 			if (url.IndexOf("pliber.org.br") < 0)
@@ -86,6 +84,8 @@ namespace LiberMvc
 		protected void Application_Start()
 		{
 			AreaRegistration.RegisterAllAreas();
+			
+			Database.SetInitializer(new LiberDBInitializer());
 		
 			RegisterRoutes(RouteTable.Routes);
 		}
