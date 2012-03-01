@@ -23,7 +23,7 @@ namespace LiberMvc.Controllers
 		}
 		#endregion
 
-		#region Index
+		#region GET: /Auth
 		public ActionResult Index()
 		{
 			if (Request.IsAuthenticated)
@@ -33,7 +33,7 @@ namespace LiberMvc.Controllers
 		}
 		#endregion
 
-		#region Login
+		#region POST: /Auth/Login
 		[HttpPost]
 		public ActionResult Login(LoginModel form, string returnUrl)
 		{
@@ -76,10 +76,10 @@ namespace LiberMvc.Controllers
 		}
 		#endregion
 
-		#region GET: /Login/Facebook
+		#region GET: /Auth/Facebook
 		public ActionResult Facebook()
 		{
-			if (FacebookWebContext.Current.IsAuthenticated())
+			if (FacebookWebContext.Current.IsAuthenticated() && FacebookWebContext.Current.HasPermission("email"))
 			{
 				return RedirectToAction("FacebookAuth");
 			}
@@ -87,23 +87,33 @@ namespace LiberMvc.Controllers
 		}
 		#endregion
 
-		#region GET: /Login/FacebookAuth
-		[FacebookAuthorize(LoginUrl = "/Login/Facebook")]
+		#region GET: /Auth/FacebookAuth
+		[FacebookAuthorize(LoginUrl = "/Auth/Facebook", Permissions="email")]
 		public ActionResult FacebookAuth()
 		{
 			var client = new FacebookWebClient();
 			dynamic me = client.Get("me");
 			long facebookId = Convert.ToInt64(me.id);
+			string email = me.email;
 			var usuario = rep.PegarUsuarioDoFacebook(facebookId);
 			if (usuario != null)
 			{
-				usuario.Logar(false);
+				usuario.Logar(true);
 				return RedirectToRoute(new { controller = "Home" });
 			}
 			else
 			{
-				//return View("LoginFailed", new LoginModel { UserName = me.name });
-				return RedirectToAction("FacebookRegister");
+				usuario = rep.PegarUsuario(email);
+				if (usuario != null)
+				{
+					usuario.FacebookID = facebookId;
+					rep.Editar(usuario);
+					rep.Salvar();
+					usuario.Logar(true);
+					return RedirectToRoute(new { controller = "Home" });
+				}
+				else
+					return RedirectToAction("FacebookRegister");
 			}
 		}
 		#endregion
@@ -111,8 +121,6 @@ namespace LiberMvc.Controllers
 		#region GET: /Login/FacebookRegister
 		public ActionResult FacebookRegister()
 		{
-			ViewBag.Factions = FbJson.Create(factionRepository.ListAllFactions.Select(i => new FbJsonItem { ID = i.FactionID, Name = i.Name }));
-			ViewBag.Races = FbJson.Create(raceRepository.ListAllRaces.Select(i => new FbJsonItem { ID = i.RaceID, Name = i.Name }));
 			return View();
 		}
 		#endregion
@@ -120,51 +128,9 @@ namespace LiberMvc.Controllers
 		#region GET: /Login/FacebookRegistered
 
 		[FacebookAuthorize(LoginUrl = "/Login/Facebook")]
-		public ActionResult FacebookRegistered()
+		public ActionResult FacebookRegistered(CadastroModel form)
 		{
-			dynamic fb = FacebookWebContext.Current.SignedRequest.Data;
-			//{"registration":
-			//  {"name":"XXXXXX",
-			//  "email":"ZZZZZ@gmail.com",
-			//  "faction":"5",
-			//  "race":"5"},
-			//"user":{"country":"br","locale":"pt_BR"},
-			//"user_id":"0000000000"}
-			long facebookId = Convert.ToInt64(fb.user_id);
-			short factionId = Convert.ToInt16(fb.registration.faction);
-			short raceId = Convert.ToInt16(fb.registration.race);
-			int rank = (playerRepository.db.Players.Count() > 0) ? playerRepository.db.Players.Max(p => p.Rank).ToInt32() + 1 : 1;
-
-			Player player = playerRepository.GetPlayerByFacebookID(facebookId);
-			if (player != null)
-			{
-				player.Login(false);
-				return RedirectToRoute(new { controller = "Game" });
-			}
-
-			var newPlayer = new Player
-			{
-				FacebookID = facebookId,
-				Name = fb.registration.name,
-				Password = Guid.NewGuid().ToString(),
-				Email = fb.registration.email,
-				Activated = true,
-				FactionID = factionId,
-				RaceID = raceId,
-				Rank = rank,
-				Gold = 10000,
-				Tax = 10,
-				Created = DateTime.Now
-			};
-			playerRepository.Add(newPlayer);
-			playerRepository.Save();
-
-			player = playerRepository.GetPlayerByFacebookID(facebookId);
-			playerRepository.ResetPlayer(player, DateTime.Now);
-
-			playerRepository.Save();
-
-			player.Login(false);
+			rep.Cadastrar(form);
 			return RedirectToRoute(new { @controller = "Game" });
 		}
 		#endregion

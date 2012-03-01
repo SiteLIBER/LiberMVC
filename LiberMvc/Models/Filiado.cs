@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace LiberMvc.Models
 {
+	[Table("Filiados", Schema = "liber")]
 	public class Filiado
 	{
 		[Key, ForeignKey("Pessoa")]

@@ -40,20 +40,20 @@
     <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Elmah, Version=1.2.13605.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Elmah, Version=1.2.14318.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\elmah.corelibrary.1.2\lib\Elmah.dll</HintPath>
+      <HintPath>..\packages\elmah.corelibrary.1.2.1\lib\Elmah.dll</HintPath>
     </Reference>
     <Reference Include="Elmah.Contrib.Mvc">
       <HintPath>..\packages\Elmah.Contrib.Mvc.1.0\lib\net40\Elmah.Contrib.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+    <Reference Include="EntityFramework, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EntityFramework.4.2.0.0\lib\net40\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.4.3.0\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Facebook, Version=5.3.2.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+    <Reference Include="Facebook, Version=5.4.1.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Facebook.5.3.2.0\lib\net40-client\Facebook.dll</HintPath>
+      <HintPath>..\packages\Facebook.5.4.1.0\lib\net40-client\Facebook.dll</HintPath>
     </Reference>
     <Reference Include="Facebook.Web, Version=5.3.2.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -143,10 +143,15 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\CustomExtensions.cs" />
-    <Compile Include="Helpers\FbJson.cs" />
     <Compile Include="Helpers\IPaginatedList.cs" />
     <Compile Include="Helpers\PaginatedList.cs" />
+    <Compile Include="Migrations\201202290730521_Initial.cs" />
+    <Compile Include="Migrations\201202290730521_Initial.Designer.cs">
+      <DependentUpon>201202290730521_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Agenda.cs" />
+    <Compile Include="Models\Conta.cs" />
     <Compile Include="Models\PaginaRepository.cs" />
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\Pagina.cs" />
@@ -210,6 +215,7 @@
     <Content Include="Content\images\edit.png" />
     <Content Include="Content\images\facebook.png" />
     <Content Include="Content\images\facebook_mini.png" />
+    <Content Include="Content\images\fbIcon.png" />
     <Content Include="Content\images\ficha_apoio_back.png" />
     <Content Include="Content\images\ficha_apoio_btn.png" />
     <Content Include="Content\images\ficha_apoio_btn_hover.png" />

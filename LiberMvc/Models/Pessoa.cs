@@ -7,6 +7,7 @@ using System.ComponentModel;
 
 namespace LiberMvc.Models
 {
+	[Table("Pessoas", Schema = "liber")]
 	public class Pessoa
 	{
 		[Key]

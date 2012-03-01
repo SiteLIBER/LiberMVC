@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LiberMvc.Models
 {
+	[Table("AutoresPostagens", Schema = "liber")]
 	public class AutorPostagem
 	{
 		[Key, Column(Order = 0)]

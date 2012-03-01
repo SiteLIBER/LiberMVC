@@ -43,15 +43,20 @@ namespace LiberMvc.Models
 							& u.Senha == form.Senha
 							select u).FirstOrDefault();
 		}
+		public Usuario PegarUsuario(string email)
+		{
+			return (from u in db.Usuarios
+							where u.Email == email.Trim()
+							select u).FirstOrDefault();
+		}
 		public Usuario PegarUsuarioDoFacebook(Int64 facebookId)
 		{
 			return db.Usuarios.FirstOrDefault(u => u.FacebookID == facebookId);
 		}
 		#endregion
 
-
-
-
+		#region Methods
+		
 		public Usuario Cadastrar(CadastroModel form) 
 		{
 			var u = form.Usuario;
@@ -116,5 +121,11 @@ namespace LiberMvc.Models
 		{
 			db.SaveChanges();
 		}
+		public void Editar(Usuario usuario)
+		{
+			db.Entry(usuario).State = System.Data.EntityState.Modified;
+		}
+		
+		#endregion 
 	}
 }

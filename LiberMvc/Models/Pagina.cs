@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace LiberMvc.Models
 {
+	[Table("Paginas", Schema = "liber")]
 	public class Pagina
 	{
 		[Key]

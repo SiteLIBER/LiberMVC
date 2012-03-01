@@ -59,7 +59,7 @@
 		</li>*@
 	<li><a href="@Url.Action("Diretorios", "Liber")"><span>Diretórios</span></a></li>
 	<li><a href="@Url.Action("FAQ", "Liber")"><span>FAQ</span></a></li>
-	@if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin)
+ @if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin)
  {
 		<li><a href="@Url.Action("Index", "Admin")"><span>Admin</span></a></li>
  }

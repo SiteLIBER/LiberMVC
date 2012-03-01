@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LiberMvc.Models
 {
+	[Table("Agendas", Schema="liber")]
 	public class Agenda
 	{
 		[Key]

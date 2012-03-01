@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.ComponentModel.DataAnnotations;
 
 namespace LiberMvc.Models
 {
@@ -22,7 +23,7 @@ namespace LiberMvc.Models
 		public DbSet<EstadoCivil> EstadoCivil { get; set; }
 		public DbSet<Pagina> Paginas { get; set; }
 		public DbSet<Agenda> Agendas { get; set; }
-
+		public DbSet<Conta> Contas { get; set; }
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{

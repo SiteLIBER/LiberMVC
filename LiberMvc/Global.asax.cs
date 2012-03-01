@@ -85,7 +85,7 @@ namespace LiberMvc
 		{
 			AreaRegistration.RegisterAllAreas();
 			
-			Database.SetInitializer(new LiberDBInitializer());
+			//Database.SetInitializer(new LiberDBInitializer());
 		
 			RegisterRoutes(RouteTable.Routes);
 		}

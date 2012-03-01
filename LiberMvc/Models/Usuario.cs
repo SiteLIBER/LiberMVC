@@ -8,6 +8,7 @@ using System.ComponentModel;
 
 namespace LiberMvc.Models
 {
+	[Table("Usuarios", Schema = "liber")]
 	public partial class Usuario
 	{
 
