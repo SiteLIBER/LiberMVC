@@ -18,23 +18,7 @@ namespace LiberMvc
 		public static void RegisterRoutes(RouteCollection routes)
 		{
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-			//routes.IgnoreRoute("{*favicon}", new { favicon = @"(.*/)?favicon.ico(/.*)?" });
-
-			#region remove old stuff - disabled
-			//routes.IgnoreRoute("{*stats}", new { stats = @"stats(/.*)?" });
-			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "stats" });
-			//routes.IgnoreRoute("{*php}", new { php = @".*\.php(/.*)?" });
-			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "index.php" });
-			//routes.IgnoreRoute("{*rss}", new { rss = @"(.*)?rss(\.xml)?(/.*)?" });
-			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "rss.xml" });
-			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "crss" });
-			//routes.IgnoreRoute("{*user}", new { user = @"user(/.*)?" });
-			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "user" });
-			//routes.IgnoreRoute("{*files}", new { files = @"files(/.*)?" });
-			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "files" });
-			//routes.IgnoreRoute("{*forum}", new { forum = @"forum(/.*)?" });
-			////routes.IgnoreRoute("{*folder}/{*pathInfo}", new { folder = "forum" });
-			#endregion
+			routes.IgnoreRoute("{*favicon}", new { favicon = @"(.*/)?favicon.ico(/.*)?" });
 
 			routes.MapRoute(
 					"Postagem", // Route name
