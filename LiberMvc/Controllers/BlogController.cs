@@ -4,11 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using LiberMvc.Models;
-using Elmah;
 
 namespace LiberMvc.Controllers
 {
-	[Scc("Blog")]
+
 	public class BlogController : Controller
 	{
 		#region Repository

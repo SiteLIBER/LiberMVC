@@ -6,12 +6,10 @@ using System.Web.Mvc;
 using LiberMvc.Models;
 using System.Web.Security;
 using AutoMapper;
-using Elmah;
 using System.Net.Mail;
 
 namespace LiberMvc.Controllers
 {
-	[Scc("Usuario")]
 	public class UsuarioController : Controller
 	{
 
