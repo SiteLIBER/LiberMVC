@@ -661,6 +661,7 @@
     <Content Include="facebook.config">
       <SubType>Designer</SubType>
     </Content>
+    <None Include="Content\download\Apoio o Registro do Partido Libertários.pdf" />
     <None Include="Content\download\apoio.pdf" />
     <None Include="Content\download\Ata_CGNacional_2010.04.10.pdf" />
     <None Include="Content\download\carta_helio_beltrao.pdf" />

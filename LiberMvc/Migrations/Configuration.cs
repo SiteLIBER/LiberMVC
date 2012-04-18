@@ -4327,7 +4327,7 @@ namespace LiberMvc.Migrations
 
         <p id=""ficha_btn"">
 
-            <a href=""/Content/download/ficha_apoio_liber_500.pdf"" target=""_blank"">Baixe a ficha de apoio e o manual para coleta de assinaturas</a>
+            <a href=""/Content/download/Apoio o Registro do Partido Libertários.pdf"" target=""_blank"">Baixe a ficha de apoio e o manual para coleta de assinaturas</a>
 
         </p>
 
