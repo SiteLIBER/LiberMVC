@@ -5,11 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using LiberMvc.Models;
 using System.Web.Security;
-using Elmah;
 
 namespace LiberMvc.Controllers
 {
-	[Scc("Auth")]
 	[HandleError(View = "Error")]
 	public class AuthController : Controller
 	{
