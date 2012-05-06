@@ -15,6 +15,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>true</MvcBuildViews>
     <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,7 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ExcludeApp_Data>true</ExcludeApp_Data>
-    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -42,12 +43,8 @@
     <Reference Include="AutoMapper">
       <HintPath>lib\AutoMapper.dll</HintPath>
     </Reference>
-    <Reference Include="Elmah, Version=1.2.13605.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\elmah.corelibrary.1.2\lib\Elmah.dll</HintPath>
-    </Reference>
-    <Reference Include="Elmah.Contrib.Mvc">
-      <HintPath>..\packages\Elmah.Contrib.Mvc.1.0\lib\net40\Elmah.Contrib.Mvc.dll</HintPath>
+    <Reference Include="Elmah">
+      <HintPath>..\packages\elmah.1.1\lib\Elmah.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -123,6 +120,8 @@
     <Content Include="Content\images\destaque\01LIB_banner500.jpg" />
     <Content Include="Content\images\destaque\01LIB_bannerDROGAS.jpg" />
     <Content Include="Content\images\destaque\01LIB_bannerIMPOSTO.jpg" />
+    <Content Include="Content\images\destaque\confEA3.jpg" />
+    <Content Include="Content\images\destaque\reuniao_nacional.jpg" />
     <Content Include="Scripts\bxSlider.min.js" />
   </ItemGroup>
   <ItemGroup>
