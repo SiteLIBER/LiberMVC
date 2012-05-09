@@ -40,16 +40,15 @@
     <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Elmah, Version=1.2.14318.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\elmah.corelibrary.1.2.1\lib\Elmah.dll</HintPath>
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
     </Reference>
     <Reference Include="Elmah.Contrib.Mvc">
       <HintPath>..\packages\Elmah.Contrib.Mvc.1.0\lib\net40\Elmah.Contrib.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EntityFramework.4.3.0\lib\net40\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Facebook, Version=5.4.1.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -192,16 +191,22 @@
     <Content Include="App_Data\BancoTeste_log.ldf">
       <DependentUpon>BancoTeste.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Readme\Elmah.txt" />
     <Content Include="Content\chosen-sprite.png" />
     <Content Include="Content\chosen.css" />
     <Content Include="Content\images\actions_back.png" />
+    <Content Include="Content\images\agenda_detail.png" />
     <Content Include="Content\images\article.png" />
+    <Content Include="Content\images\attitude_icons.png" />
     <Content Include="Content\images\bannerLIBERhor01.png" />
     <Content Include="Content\images\bannerLIBERvert01.png" />
     <Content Include="Content\images\blogger.png" />
     <Content Include="Content\images\book_ico.png" />
+    <Content Include="Content\images\box_bg.png" />
     <Content Include="Content\images\button_back.png" />
     <Content Include="Content\images\button_back_hover.png" />
+    <Content Include="Content\images\calendar.png" />
+    <Content Include="Content\images\clock_icon.png" />
     <Content Include="Content\images\creative_commons.png" />
     <Content Include="Content\images\date_back.png" />
     <Content Include="Content\images\destaque\division_back.png" />
@@ -214,6 +219,7 @@
     <Content Include="Content\images\donate_ico.png" />
     <Content Include="Content\images\edit.png" />
     <Content Include="Content\images\facebook.png" />
+    <Content Include="Content\images\facebook_login.png" />
     <Content Include="Content\images\facebook_mini.png" />
     <Content Include="Content\images\fbIcon.png" />
     <Content Include="Content\images\ficha_apoio_back.png" />
@@ -226,33 +232,47 @@
     <Content Include="Content\images\fundacao.jpg" />
     <Content Include="Content\images\header_back.png" />
     <Content Include="Content\images\header_back_intern.png" />
+    <Content Include="Content\images\ideas_categories_icons.png" />
+    <Content Include="Content\images\ideas_cateries_icons.png" />
+    <Content Include="Content\images\ideas_item_detail.png" />
     <Content Include="Content\images\invite_ico.png" />
     <Content Include="Content\images\join.png" />
     <Content Include="Content\images\libertarios.png" />
     <Content Include="Content\images\liber_footer.png" />
     <Content Include="Content\images\liber_logo.png" />
+    <Content Include="Content\images\local_icon.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logo_footer.png" />
     <Content Include="Content\images\logo_print.png" />
     <Content Include="Content\images\mail.png" />
     <Content Include="Content\images\megaphone_ico.png" />
+    <Content Include="Content\images\megaphone_icon.png" />
     <Content Include="Content\images\menu_back.png" />
     <Content Include="Content\images\menu_back_hover.png" />
     <Content Include="Content\images\menu_separator.png" />
+    <Content Include="Content\images\more_detail.png" />
+    <Content Include="Content\images\old_news_title_detail.png" />
     <Content Include="Content\images\orkut.png" />
     <Content Include="Content\images\panel_back.png" />
     <Content Include="Content\images\panel_title_back.png" />
     <Content Include="Content\images\pdf_file.png" />
+    <Content Include="Content\images\previous_next_icons.png" />
+    <Content Include="Content\images\social_icons.png" />
     <Content Include="Content\images\top_ico.png" />
     <Content Include="Content\images\twitter.png" />
     <Content Include="Content\images\twitter_mini.png" />
     <Content Include="Content\images\user_box_list_title_back.png" />
     <Content Include="Content\images\vimeo.png" />
     <Content Include="Content\images\youtube.png" />
+    <Content Include="Content\liber_dados.sql" />
+    <Content Include="Content\liber_schema.sql" />
+    <Content Include="Content\styles\application.css" />
     <Content Include="Content\styles\default.css" />
-    <Content Include="Content\styles\slides.css" />
+    <Content Include="Content\styles\filiacao_print.css" />
     <Content Include="Content\styles\forms.css" />
     <Content Include="Content\styles\menu.css" />
     <Content Include="Content\styles\Site.css" />
-    <Content Include="Content\styles\filiacao_print.css" />
+    <Content Include="Content\styles\slides.css" />
     <Content Include="Content\sunny\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
     <Content Include="Content\sunny\images\ui-bg_flat_30_cccccc_40x100.png" />
     <Content Include="Content\sunny\images\ui-bg_flat_50_5c5c5c_40x100.png" />
@@ -270,6 +290,20 @@
     <Content Include="Content\sunny\images\ui-icons_fadc7a_256x240.png" />
     <Content Include="Content\sunny\images\ui-icons_ffe180_256x240.png" />
     <Content Include="Content\sunny\jquery-ui-1.8.5.custom.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
     <Content Include="Content\ui-darkness\images\ui-bg_flat_30_cccccc_40x100.png" />
     <Content Include="Content\ui-darkness\images\ui-bg_flat_50_5c5c5c_40x100.png" />
     <Content Include="Content\ui-darkness\images\ui-bg_glass_20_555555_1x400.png" />
@@ -288,12 +322,14 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\application.js" />
     <Content Include="Scripts\chosen.jquery.js" />
     <Content Include="Scripts\chosen.jquery.min.js" />
-    <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
-    <Content Include="Scripts\jquery-1.7.1.js" />
-    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-1.7.2-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.7.2.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.5.custom.min.js" />
+    <Content Include="Scripts\jquery.bxSlider.min.js" />
     <Content Include="Scripts\jquery.maskedinput-1.3.js" />
     <Content Include="Scripts\jquery.maskedinput-1.3.min.js" />
     <Content Include="Scripts\jquery.ui.datepicker-pt-BR.js" />
@@ -594,10 +630,10 @@
     <Content Include="Views\Auth\_LoginFalhouBox.cshtml" />
     <Content Include="Views\Blog\_Home.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
-    <Content Include="Views\Home\_Destaque.cshtml" />
+    <Content Include="Views\Home\_Banner.cshtml" />
     <Content Include="Views\Home\_Enquete.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\_RightHome.cshtml" />
+    <Content Include="Views\Home\_SideBar.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml">
       <SubType>Code</SubType>
     </Content>
@@ -631,20 +667,6 @@
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
-    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
-    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="Content\themes\base\jquery-ui.css" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\Helper.cshtml" />
@@ -661,15 +683,19 @@
     <Content Include="facebook.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="packages.config" />
+    <Content Include="fbchannel.ashx" />
     <None Include="Content\download\Apoio o Registro do Partido Libertários.pdf" />
     <None Include="Content\download\apoio.pdf" />
     <None Include="Content\download\Ata_CGNacional_2010.04.10.pdf" />
     <None Include="Content\download\carta_helio_beltrao.pdf" />
     <None Include="Content\download\estatuto.pdf" />
-    <None Include="Content\download\fundacao.pdf" />
     <None Include="Content\download\ficha_apoio_liber_500.pdf" />
-    <Content Include="packages.config" />
-    <Content Include="fbchannel.ashx" />
+    <None Include="Content\download\fundacao.pdf" />
+    <None Include="Content\fonts\steelfish_rg-webfont.eot" />
+    <None Include="Content\fonts\steelfish_rg-webfont.ttf" />
+    <None Include="Content\fonts\steelfish_rg-webfont.woff" />
+    <Content Include="Content\OldViews.zip" />
     <None Include="Scripts\tinymce\examples\media\sample.dcr" />
     <None Include="Scripts\tinymce\examples\media\sample.ram" />
     <None Include="Scripts\tinymce\examples\media\sample.rm" />
@@ -703,8 +729,7 @@
     <Content Include="Views\Shared\_Liber500Box.cshtml" />
     <Content Include="Views\Shared\_LoginBox.cshtml" />
     <Content Include="Views\Shared\_PanelBox.cshtml" />
-    <Content Include="Views\Shared\_RightMenu.cshtml" />
-    <Content Include="Views\Shared\_SocialBox.cshtml" />
+    <Content Include="Views\Shared\_SideBar.cshtml" />
     <Content Include="Views\Shared\_TopMenu.cshtml" />
     <Content Include="Views\Shared\_UserBox.cshtml" />
     <Content Include="Views\Shared\_VideoBox.cshtml" />

@@ -1,20 +1,21 @@
 ﻿@section HeadContent {
 
+	@Helper.Script("jquery.bxSlider.min.js", Url)
 	@Helper.Script("slides/jquery.scrollTo-1.4.2-min.js", Url)
 	@Helper.Script("slides/jquery.localscroll.js", Url)
 	@Helper.Script("slides/jquery.serialScroll-1.2.2.js", Url)
-	<script src="@Url.Content("~/Scripts/slides/coda-slider.js")" type="text/javascript" charset="utf-8"></script>
-
+@*	<script src="@Url.Content("~/Scripts/slides/coda-slider.js")" type="text/javascript" charset="utf-8"></script>
+*@
 }
 
 
-	@Html.Partial("_Destaque")  
-	@Html.Action( "Home", "Artigos")
+	@Html.Partial("_Banner")  
+	@Html.Action("Home", "Artigos")
 	@Html.Action("Home", "Blog")
 
 
-@section RightContent {
+@section SideBar {
 
-	 @Html.Partial("_RightHome")
+	 @Html.Partial("_SideBar")
 
 }

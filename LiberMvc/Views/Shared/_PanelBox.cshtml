@@ -2,20 +2,56 @@
 	Layout = null;
 }
 
+<!-- ATTITUDE BEGIN -->
+<div id="attitude_box">
+	<h2>
+		Tenha atitude</h2>
+	<ul>
+		<li class="join_item"><a href="@Url.Action("Filiacao", "Usuario")">Filie-se</a></li>
+		<li class="donate_item"><a href="@Url.Action("Doacao", "Liber")">Contribua</a></li>
+		<li class="liber500_item"><a href="@Url.Action("Liber500", "Liber")">LIBER 500</a></li>
+		<li class="share_item"><a href="@Url.Action("Divulgacao", "Liber")">Divulgue</a></li>
+		<li class="social_item">
+			<a class="facebook_item" href="http://www.facebook.com/sejaliber" target="_blank">Facebook</a> 
+			<a class="twitter_item" href="http://twitter.com/sejaliber" target="_blank">Twitter</a> 
+			<a class="youtube_item" href="http://www.vimeo.com/user6149440" target="_blank">YouTube</a> 
+			<a class="formspring_item" href="http://www.formspring.me/Libertarios" target="_blank">Formspring</a> 
+		</li>
+	</ul>
+</div>
+<!-- ATTITUDE END -->
+
+@*
 <div class="panel" id="tenha_atitude">
     <h1>Tenha atitude</h1>
  
     <ul style="float:left">
-        <li class="join"><a href='@Url.Action("Filiacao", "Usuario")'>Filie-se</a></li>
-        <li class="donate"><a href='@Url.Action("Doacao", "Liber")'>Contribua</a></li>
+        <li class="join"><a href=''>Filie-se</a></li>
+        <li class="donate"><a href=''>Contribua</a></li>
     </ul>
 
     <ul style="float:right"> 
         <li class="know"><a href='@Url.Action("Filosofia", "Liber")'>Conheça mais</a></li>
-        <li class="promotion"><a href='@Url.Action("Divulgacao", "Liber")'>Divulgue</a></li>
-				@* <li class="invite"><a href='@Url.Action("Convide", "Usuario")'>Convide amigos</a></li>*@
-        @* <li class="forum"><a href='@Url.Action("Index", "Forum")'>Debata</a></li> *@
+        <li class="promotion"><a href=''>Divulgue</a></li>
+				 <li class="invite"><a href='@Url.Action("Convide", "Usuario")'>Convide amigos</a></li>
+         <li class="forum"><a href='@Url.Action("Index", "Forum")'>Debata</a></li> 
     </ul>
  
     <br class="clear" />
-</div>
+</div>*@
+
+@*<div class="panel" id="redes_sociais"> 
+    <h1>Redes sociais</h1> 
+ 
+    <p>
+        <a href="http://www.formspring.me/Libertarios"><img src="@Url.Content("~/Content/images/formspring.png")" /></a>
+        <a href="http://www.vimeo.com/user6149440"><img src="@Url.Content("~/Content/images/vimeo.png")" /></a>
+        <a href="http://www.facebook.com/pages/Libertarios/131689188332"><img src="@Url.Content("~/Content/images/facebook.png")" /></a>
+        <a href="http://twitter.com/sejaliber"><img src="@Url.Content("~/Content/images/twitter.png")" /></a>
+        <a href="http://www.flickr.com/photos/sejaliber/"><img src="@Url.Content("~/Content/images/flickr.png")" /></a>
+        <a href="http://www.orkut.com.br/Main#Community?cmm=107501389"><img src="@Url.Content("~/Content/images/orkut.png")" /></a>
+    </p>
+
+</div>*@
+
+ 

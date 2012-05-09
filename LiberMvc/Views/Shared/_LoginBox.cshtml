@@ -2,60 +2,53 @@
 	Layout = null;
 }
 @model LiberMvc.Models.LoginModel
-
-  <h1>Login</h1>
-
+<!-- LOGIN BEGIN -->
+<div id="login_box">
+	<h2>
+		Login</h2>
 	<div class="editor-item" id="loginerror"></div>
-	
 	@{ Html.EnableClientValidation(); }
-
 	@using (Ajax.BeginForm(new AjaxOptions
 		{
 			UpdateTargetId = "loginerror",
 			Url = (string.IsNullOrEmpty(Request.QueryString["returnUrl"]))
 			? Url.Action("Login", "Auth")
-			: Url.Action("Login", "Auth") + "?ReturnUrl=" + Request.QueryString["returnUrl"]		
+			: Url.Action("Login", "Auth") + "?ReturnUrl=" + Request.QueryString["returnUrl"]
 		}))
-		{ 
+ { 
 	
-	<div class="editor-item">@Html.ValidationSummary(true)</div>
+		<div class="editor-item">@Html.ValidationSummary(true)</div>
 
-	<div class="editor-item">
-		<span class="editor-label" style="width: 100px">@Html.LabelFor(m => m.Email):</span> 
-		<span class="editor-field">
+	 
+		<div class="input string">
+			@Html.LabelFor(m => m.Email)
 			@Html.TextBoxFor(m => m.Email)
-			<span class="editor-error">@Html.ValidationMessageFor(m => m.Email)</span>
-		</span>
-	</div>
+			<span class="editor-error">@Html.ValidationMessageFor(m => m.Email)</span> </div>
 
-	<div class="editor-item">
-		<span class="editor-label" style="width: 100px">@Html.LabelFor(m => m.Senha):</span>
-		<span class="editor-field">
+		<div class="input string">
+			@Html.LabelFor(m => m.Senha)
 			@Html.PasswordFor(m => m.Senha)
-			<span class="editor-error">@Html.ValidationMessageFor(m => m.Senha)</span>
-		</span>
-	</div>
+			<span class="editor-error">@Html.ValidationMessageFor(m => m.Senha)</span> </div>
 
-	<div class="editor-item">
-		<span class="editor-label" style="width: 100px"></span>
-		<span class="editor-field">
+		<div class="input checkbox">
 			@Html.CheckBoxFor(m => m.Lembrar)
 			@Html.LabelFor(m => m.Lembrar)
-		</span>
-	</div>
+		</div>
+	 
 
-    <br class="clear" />
+		<div class="actions">
+			<input type="submit" value="Entrar">
+		</div>
 
-    <p class="actions">
-	    <input type="submit" value="Entrar" class="button" />
-	    @Html.ActionLink("Cadastre-se", "Cadastro", new { controller = "Usuario" }, new { @class = "button", @style = "float: left" })
-	    @Html.ActionLink("Esqueceu?", "EsqueciSenha", new { controller = "Usuario" }, new { @class = "button", @style = "float: left" })
-      <br class="clear" />
-    </p>
+		<div class="aux_links">
+			<p>@Html.ActionLink("Cadastre-se", "Cadastro", new { controller = "Usuario" })</p>
+			<p>@Html.ActionLink("Esqueceu?", "EsqueciSenha", new { controller = "Usuario" })</p>
+			<p class="facebook_login">
+				<a href="#">
+					<img src="@Url.Content("~/Content/images/facebook_login.png")" alt="Conectar com o Facebook" width="115" height="40"></a></p>
+		</div>
+	 
 
-	 } 
-
-	
-
-	
-
+ }
+</div>
+<!-- LOGIN END -->
