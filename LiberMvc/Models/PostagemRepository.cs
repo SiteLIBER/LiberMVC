@@ -76,6 +76,24 @@ namespace LiberMvc.Models
 		}
 		#endregion
 
+		#region Ideias
+		public IQueryable<Postagem> Ideias
+		{
+			get
+			{
+				return Postagens;
+			}
+		}
+		public IQueryable<Postagem> IdeiasPublicadas
+		{
+			get { return Ideias.Where(a => a.Publicado); }
+		}
+		public IQueryable<Postagem> IdeiasDoUsuario(int id)
+		{
+			return IdeiasPublicadas.Where(p => p.Autores.Select(a => a.Autor.PessoaID).Contains(id));
+		}
+		#endregion
+
 		#region Postagem
 
 		public IQueryable<Postagem> Postagens
@@ -87,6 +105,7 @@ namespace LiberMvc.Models
 					.ThenByDescending(a => a.PostagemID);
 			}
 		}
+
 		public IQueryable<TipoPostagem> TiposPostagem
 		{
 			get

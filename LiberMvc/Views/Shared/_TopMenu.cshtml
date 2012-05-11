@@ -1,24 +1,32 @@
 ﻿@using LiberMvc.Models
 <ul id="main_navigation">
-	<li class="active"><a href="@Url.Action("Index", "Home")"><span>Home</span></a></li>
-	<li><a href="@Url.Action("Index", "Blog")"><span>Blog</span></a></li>
-	<li><a href="@Url.Action("Index", "Artigos")"><span>Artigos</span></a></li>
-	<li><a href="@Url.Action("Index", "Videos")"><span>Vídeos</span></a></li>
-	<li><a href="#"><span>Nosso Partido</span></a>
+	<li class="active"><a href="@Url.Action("Index", "Home")">Home</a></li>
+	<li><a href="#">Ideias</a>
+		<div class="drop-holder">
+			<div class="drop-content">
+				<ul>
+					<li><a href="@Url.Action("Index", "Blog")">Blog</a></li>
+					<li><a href="@Url.Action("Index", "Artigos")">Artigos</a></li>
+					<li><a href="@Url.Action("Index", "Videos")">Vídeos</a></li>
+				</ul>
+			</div>
+		</div>
+	</li>
+	<li><a href="#">Nosso Partido</a>
 		<div class="drop-holder">
 			<div class="drop-content">
 				<ul>
 					<li><a href="@Url.RouteUrl(new { controller = "Pagina", page = "Historia" })">História</a></li>
 					<li><a href="@Url.RouteUrl(new { controller = "Pagina", page = "Filosofia" })">Filosofia</a></li>
 					<li><a href="@Url.RouteUrl(new { controller = "Pagina", page = "Programa" })">Programa</a></li>
-					<li><a href="@Url.RouteUrl(new { controller = "Pagina", page = "Estatuto" })")">Estatuto</a></li>
+					<li><a href="@Url.RouteUrl(new { controller = "Pagina", page = "Estatuto" })">Estatuto</a></li>
 					<li><a href="@Url.RouteUrl(new { controller = "Pagina", page = "Lideranca" })">Lideranças Nacionais</a></li>
 					<li><a href="@Url.RouteUrl(new { controller = "Pagina", page = "Contas" })">Prestação de Contas</a></li>
 				</ul>
 			</div>
 		</div>
 	</li>
-	<li><a href="#"><span>Programa</span></a>
+	<li><a href="#">Programa</a>
 		<div class="drop-holder">
 			<div class="drop-content">
 				<ul>
@@ -30,7 +38,7 @@
 			</div>
 		</div>
 	</li>
-	<li><a href="#"><span>Participe</span></a>
+	<li><a href="#">Participe</a>
 		<div class="drop-holder">
 			<div class="drop-content">
 				<ul>
@@ -46,7 +54,7 @@
 			</div>
 		</div>
 	</li>
-	@*<li class="rows_3"><a href="#"><span>Mídia</span></a>
+	@*<li class="rows_3"><a href="#">Mídia</a>
 			<div class="drop-holder">
 				<div class="drop-content">
 						<ul>
@@ -57,11 +65,11 @@
 				</div>
 			</div>
 		</li>*@
-	<li><a href="@Url.Action("Diretorios", "Liber")"><span>Diretórios</span></a></li>
-	<li><a href="@Url.Action("FAQ", "Liber")"><span>FAQ</span></a></li>
+	<li><a href="@Url.Action("Diretorios", "Liber")">Diretórios</a></li>
+	<li><a href="@Url.Action("FAQ", "Liber")">FAQ</a></li>
  @if (Usuario.Logado.isEditor || Usuario.Logado.isAdmin)
  {
-		<li><a href="@Url.Action("Index", "Admin")"><span>Admin</span></a></li>
+		<li><a href="@Url.Action("Index", "Admin")">Admin</a></li>
  }
 @*<li class="rows_0"><a href="@Url.Action("Index", "Loja")"><span>Loja</span></a></li>*@
 </ul>

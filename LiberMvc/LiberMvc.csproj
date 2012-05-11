@@ -264,8 +264,6 @@
     <Content Include="Content\images\user_box_list_title_back.png" />
     <Content Include="Content\images\vimeo.png" />
     <Content Include="Content\images\youtube.png" />
-    <Content Include="Content\liber_dados.sql" />
-    <Content Include="Content\liber_schema.sql" />
     <Content Include="Content\styles\application.css" />
     <Content Include="Content\styles\default.css" />
     <Content Include="Content\styles\filiacao_print.css" />
@@ -631,9 +629,8 @@
     <Content Include="Views\Blog\_Home.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Home\_Banner.cshtml" />
-    <Content Include="Views\Home\_Enquete.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\_SideBar.cshtml" />
+    <Content Include="Views\Shared\_SideBar.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml">
       <SubType>Code</SubType>
     </Content>
@@ -695,7 +692,6 @@
     <None Include="Content\fonts\steelfish_rg-webfont.eot" />
     <None Include="Content\fonts\steelfish_rg-webfont.ttf" />
     <None Include="Content\fonts\steelfish_rg-webfont.woff" />
-    <Content Include="Content\OldViews.zip" />
     <None Include="Scripts\tinymce\examples\media\sample.dcr" />
     <None Include="Scripts\tinymce\examples\media\sample.ram" />
     <None Include="Scripts\tinymce\examples\media\sample.rm" />
@@ -729,7 +725,6 @@
     <Content Include="Views\Shared\_Liber500Box.cshtml" />
     <Content Include="Views\Shared\_LoginBox.cshtml" />
     <Content Include="Views\Shared\_PanelBox.cshtml" />
-    <Content Include="Views\Shared\_SideBar.cshtml" />
     <Content Include="Views\Shared\_TopMenu.cshtml" />
     <Content Include="Views\Shared\_UserBox.cshtml" />
     <Content Include="Views\Shared\_VideoBox.cshtml" />
@@ -783,6 +778,7 @@
     <Content Include="Views\AdminPostagem\_ViewStart.cshtml" />
     <Content Include="Views\AdminTitulo\_ViewStart.cshtml" />
     <Content Include="Views\Videos\Index.cshtml" />
+    <Content Include="Views\Postagem\_IdeiasHome.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
@@ -790,7 +786,9 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Layout\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

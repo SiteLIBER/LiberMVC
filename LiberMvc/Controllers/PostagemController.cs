@@ -47,6 +47,16 @@ namespace LiberMvc.Controllers
 
 		#endregion
 
+
+		#region GET: /Postagem/IdeiasHome
+		public PartialViewResult IdeiasHome()
+		{
+			var ideias = new PaginatedList<Postagem>(rep.IdeiasPublicadas, 0, 4);
+			//rep.Dispose();
+			return PartialView("_IdeiasHome", ideias);
+		}
+		#endregion
+
 		////
 		//// GET: /Postagem/Create
 

@@ -12,36 +12,41 @@
 }
 
 @helper NomeAutor(Postagem post) {
-	<span class="author">Por
-		@foreach (var i in post.Autores) {
-			@i.Autor.Nome
-			
-			if (i.AutorID != post.Autores.Last().AutorID) { <text> & </text> }
+<b>Por:</b>
+		foreach (var i in post.Autores) {
+
+			if (i.AutorID != post.Autores.Last().AutorID)
+			{ 
+				@i.Autor.Nome<text>, </text> 
+			}
+			else
+			{
+				@i.Autor.Nome
+			}
 		}
-	</span>
 }
 
 @helper Image(string imageUrl, UrlHelper url, string alt = "")
-{
+	{
 	<img src="@url.Content("~/Content/images/" + imageUrl)" alt="@alt"/>
 }
 
 @helper LinkedImage(string imageUrl, string link, UrlHelper url, string alt = "")
-{
+	{
 	<a href="@link"><img src="@url.Content("~/Content/images/" + imageUrl)" alt="@alt"/></a>
 }
 
 @helper Pager(LiberMvc.IPaginatedList model, UrlHelper url)
-{
+	{
 	
-	var route = url.RequestContext.RouteData.Values;
-	if (model.HasPreviousPage)
-	{ 
+		var route = url.RequestContext.RouteData.Values;
+		if (model.HasPreviousPage)
+		{ 
 		<a href="@url.RouteUrl(new { action = route["action"].ToString(), controller = route["controller"].ToString(), id = route["id"], page = (model.PageIndex - 1) })" class="button"><< Anterior</a>
-	}
+		}
 
-	if (model.HasNextPage)
-	{ 
+		if (model.HasNextPage)
+		{ 
 		<a href="@url.RouteUrl(new { action = route["action"].ToString(), controller = route["controller"].ToString(), id = route["id"], page = (model.PageIndex + 1) })" class="button">Próxima >></a>
-	}
+		}
 }

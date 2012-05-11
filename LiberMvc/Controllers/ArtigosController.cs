@@ -37,7 +37,7 @@ namespace LiberMvc.Controllers
 
 		public ActionResult Details(int? id)
 		{
-			return RedirectToAction("Details", "Postagem", new { id = id + 200 });
+			return RedirectToAction("Details", "Postagem", new { id = id + 400 });
 		}
 
 		#endregion
