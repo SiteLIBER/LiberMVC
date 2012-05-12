@@ -209,6 +209,9 @@
     <Content Include="Content\images\clock_icon.png" />
     <Content Include="Content\images\creative_commons.png" />
     <Content Include="Content\images\date_back.png" />
+    <Content Include="Content\images\destaque\1.jpg" />
+    <Content Include="Content\images\destaque\2.jpg" />
+    <Content Include="Content\images\destaque\3.jpg" />
     <Content Include="Content\images\destaque\division_back.png" />
     <Content Include="Content\images\destaque\escola_austriaca.png" />
     <Content Include="Content\images\destaque\forum_liberdade.png" />
