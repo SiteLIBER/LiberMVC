@@ -1,0 +1,27 @@
+﻿@model IEnumerable<LiberMvc.Models.Postagem>
+<!-- OLD NOTICIAS BEGIN -->
+        <div id="old_news">
+        <h3><span>Anteriores</span></h3>
+
+        <ul>
+    		@foreach (var item in Model)
+              {
+
+                  <li>
+                  <p class="date">@item.PublicadoEm</p>
+ 
+                  <p>
+				  <a href="@Url.Action("Details", "Postagem", new { id = item.PostagemID, title = Url.FormatTitle(item.Titulo) })">
+                            @item.Titulo
+                  </a></p>
+                   </li>
+	      }			
+        </ul>
+        </div>
+
+<!-- OLD IDEAS END -->
+
+
+
+
+

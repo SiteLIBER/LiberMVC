@@ -1,0 +1,40 @@
+﻿@model LiberMvc.Models.Agenda
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Agenda</legend>
+
+    <div class="display-label">Titulo</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titulo)
+    </div>
+
+    <div class="display-label">DataInicio</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataInicio)
+    </div>
+
+    <div class="display-label">DataFim</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataFim)
+    </div>
+
+    <div class="display-label">Local</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Local)
+    </div>
+
+    <div class="display-label">Conteudo</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Conteudo)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.AgendaID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

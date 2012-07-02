@@ -12,15 +12,18 @@
 		case "Blog":
 			cntr = "Blog";
 			break;
+		case "Noticias":
+			cntr = "Noticias";
+			break;
 	}
 }
 <div class="panel">
-	<h1><a href="@Url.RouteUrl(new {controller=cntr})">@Model.TipoPostagem.Descricao</a></h1>
-	<div class="article">
-		<h1>@Model.Titulo</h1>
-		<p class="general_informations">
+	<div id="article_box">
+		<p class="content">
+	        <span class="url"><a href="@Url.RouteUrl(new {controller=cntr})">@Model.TipoPostagem.Descricao</a></span>
 			<span class="date">@Model.PublicadoEm.ToShortDateString()</span>
 			@Helper.NomeAutor(Model)
+	        <h2>@Model.Titulo</h2>
 			<span style="display: block; margin-top: 5px;"><span class="addthis_toolbox addthis_default_style" style="float: left;">
 				<g:plusone size="small"></g:plusone>
 				<fb:like layout="button_count" show_faces="false" width="200" href="@Request.Url"></fb:like>

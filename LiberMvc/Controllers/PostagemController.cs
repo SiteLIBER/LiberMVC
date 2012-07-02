@@ -57,7 +57,26 @@ namespace LiberMvc.Controllers
 		}
 		#endregion
 
-		////
+
+        #region GET: /Postagem/NoticiasHome
+        public PartialViewResult NoticiasHome()
+        {
+            var noticias = new PaginatedList<Postagem>(rep.NoticiasPublicadas, 0, 5);
+            //rep.Dispose();
+            return PartialView("_NoticiasHome", noticias);
+        }
+        #endregion
+
+        #region GET: /Postagem/OldNoticiasHome
+        public PartialViewResult OldNoticiasHome()
+        {
+            var noticias = new PaginatedList<Postagem>(rep.NoticiasPublicadas, 1, 5);
+            //rep.Dispose();
+            return PartialView("_OldNoticiasHome", noticias);
+        }
+        #endregion
+
+        ////
 		//// GET: /Postagem/Create
 
 		//public ActionResult Create()

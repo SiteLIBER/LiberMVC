@@ -238,11 +238,11 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 ** Latest news & Ideas
 */
 
-#latest_news, #ideas {
+#latest_news, #ideas, #internal, # {
 	margin-top: 30px;
 }
 
-#latest_news h2, #ideas h2 {
+#latest_news h2, #ideas h2, #internal h2 {
 	margin-bottom: 8px;
 	padding-top: 5px;
 	line-height: 100%;
@@ -257,13 +257,13 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 	background: #fff;
 }
 
-#latest_news .content_wrapper, #ideas .content_wrapper {
+#latest_news .content_wrapper, #ideas .content_wrapper, #internal .content_wrapper {
 	padding: 10px;
 
 	background: #ddd url("../images/box_bg.png");
 }
 
-#latest_news .content, #ideas .content {
+#latest_news .content, #ideas .content , #internal .content {
 	border: 1px solid #c1c1c1;
 	background: #fff;
 }
@@ -772,12 +772,27 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 	background: url("../images/ideas_categories_icons.png") no-repeat;
 }
 
-#article_box .content .date {
-	margin: -10px 0 10px 0;
-    padding-left: 54px;
 
-	font-size: 11px;
-	font-weight: bold;
+#article_box .date {
+    margin: 0 0 10px 40px;
+    padding: 5px;
+    height: 32px;
+
+    font-weight: bold;
+    border-radius: 3px;
+    background: #ffc82e url("../images/clock_icon.png") no-repeat 85px center;
+}
+
+
+
+#article_box .content .date {
+    margin: 0 0 10px 40px;
+    padding: 5px;
+    height: 32px;
+
+    font-weight: bold;
+    border-radius: 3px;
+    background: #ffc82e url("../images/clock_icon.png") no-repeat 85px center;
 }
 
 #article_box h2 {
@@ -794,6 +809,23 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 }
 
 #article_box h2 a:hover {
+	text-decoration: underline;
+}
+
+#article_box .content url {
+	margin-bottom: 20px;
+	line-height: 100%;
+	min-height: 127px;
+}
+
+#article_box .content url a {
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#article_box .content url a:hover {
 	text-decoration: underline;
 }
 

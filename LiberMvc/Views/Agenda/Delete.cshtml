@@ -1,0 +1,43 @@
+﻿@model LiberMvc.Models.Agenda
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Agenda</legend>
+
+    <div class="display-label">Titulo</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titulo)
+    </div>
+
+    <div class="display-label">DataInicio</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataInicio)
+    </div>
+
+    <div class="display-label">DataFim</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataFim)
+    </div>
+
+    <div class="display-label">Local</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Local)
+    </div>
+
+    <div class="display-label">Conteudo</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Conteudo)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

@@ -1,0 +1,29 @@
+
+<div id="latest_news">
+	<h2>Últimas Notícias</h2>
+	<div class="content_wrapper">
+		<div id="content">
+			<ul>
+				@foreach (var item in Model)
+		{
+
+					<li class="@item.TipoPostagem.Descricao.ToLower()">
+						<div class="header">
+							<p class="category">@item.TipoPostagem.Descricao</p>
+							<p class="date">@item.PublicadoEm.ToShortDateString()</p>
+							<h3>
+								<a href="@Url.Action("Details", "Postagem", new { id = item.PostagemID, title = Url.FormatTitle(item.Titulo) })">@item.Titulo</a>
+							</h3>
+							<p class="author">@Helper.NomeAutor(item)</p>
+						</div>
+						<p class="abstract">
+							@item.Chamada
+						</p>
+						<p class="more">
+							<a href="@Url.Action("Details", "Postagem", new { id = item.PostagemID, title = Url.FormatTitle(item.Titulo) })">Saiba +</a></p>
+					</li>
+		}
+			</ul>
+		</div>
+	</div>
+</div>

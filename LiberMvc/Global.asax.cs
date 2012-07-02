@@ -33,7 +33,14 @@ namespace LiberMvc
 					new { controller = "Pagina", action = "Index", page = "" } // Parameter defaults
 			);
 
-			routes.MapRoute(
+            routes.MapRoute(
+                    "Agenda", // Route name
+                    "Agenda/{id}/{title}", // URL with parameters
+                    new { controller = "Agenda", action = "Details", id = 0, title = UrlParameter.Optional }, // Parameter defaults
+                    new { id = @"\d+" }
+            );
+
+            routes.MapRoute(
 					"Default", // Route name
 					"{controller}/{action}/{id}", // URL with parameters
 					new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults

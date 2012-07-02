@@ -116,6 +116,7 @@
     <Compile Include="Controllers\AdminPaginaController.cs" />
     <Compile Include="Controllers\AdminPostagemController.cs" />
     <Compile Include="Controllers\AdminTituloController.cs" />
+    <Compile Include="Controllers\AgendaController.cs" />
     <Compile Include="Controllers\ArtigosController.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -150,7 +151,12 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Agenda.cs" />
+    <Compile Include="Models\Artigo.cs" />
+    <Compile Include="Models\ArtigoRepository.cs" />
+    <Compile Include="Models\Blog.cs" />
+    <Compile Include="Models\BlogRepository.cs" />
     <Compile Include="Models\Conta.cs" />
+    <Compile Include="Models\AgendaRepository.cs" />
     <Compile Include="Models\PaginaRepository.cs" />
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\Pagina.cs" />
@@ -626,7 +632,6 @@
     <Content Include="Views\Auth\Login.cshtml" />
     <Content Include="Views\Auth\LoginFalhou.cshtml" />
     <Content Include="Views\Auth\_LoginFalhouBox.cshtml" />
-    <Content Include="Views\Blog\_Home.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Home\_Banner.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -779,6 +784,18 @@
     <Content Include="Views\AdminTitulo\_ViewStart.cshtml" />
     <Content Include="Views\Videos\Index.cshtml" />
     <Content Include="Views\Postagem\_IdeiasHome.cshtml" />
+    <Content Include="Views\Agenda\Create.cshtml" />
+    <Content Include="Views\Agenda\Delete.cshtml" />
+    <Content Include="Views\Agenda\Details.cshtml" />
+    <Content Include="Views\Agenda\Edit.cshtml" />
+    <Content Include="Views\Agenda\Index.cshtml" />
+    <Content Include="Views\Agenda\_AgendaHome.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Postagem\_NoticiasHome.cshtml" />
+    <Content Include="Views\Postagem\_OldNoticiasHome.cshtml">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

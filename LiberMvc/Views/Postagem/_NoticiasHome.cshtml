@@ -1,0 +1,46 @@
+﻿@model IEnumerable<LiberMvc.Models.Postagem>
+<!-- NOTICIAS BEGIN -->
+<div id="latest_news">
+    <h2>Últimas notícias</h2>
+
+    <div class="content_wrapper">
+    <div class="content">
+
+        <div id="latest_news_highlights">
+        <ul class="slides">
+    		@foreach (var item in Model)
+              {
+
+                <li>
+                    <h3><a href="#">@item.Titulo</a></h3>
+                    <p class="author"> @Helper.NomeAutor(item)</p>
+                    <p class="image">
+						<a href="@Url.Action("Details", "Postagem", new { id = item.PostagemID, title = Url.FormatTitle(item.Titulo) })">
+                            <img src="images/news1.png" alt="@item.Chamada.ToLower()" width="380" height="200" />
+                        </a>
+
+                    </p>
+                </li>
+              }
+        </ul>
+
+        <p class="pagination">
+            <span class="previous">Anterior</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span class="next">Próximo</span>
+        </p>
+        </div>
+
+    	@Html.Action("OldNoticiasHome", "Postagem") 
+        
+
+    </div>
+    </div>
+</div>
+
+
+<!-- IDEAS END -->

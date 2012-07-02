@@ -1,0 +1,56 @@
+﻿@model IEnumerable<LiberMvc.Models.Agenda>
+<!-- AGENDA BEGIN -->
+<div id="agenda_wrapper">
+    @if (Model != null && Model.Count() > 0)
+    { 
+
+        <div id="agenda">
+            @{var item1 = Model.First();   }
+            <h2>
+                Agenda</h2>
+            <div class="main_event">
+                <p class="datetime">
+                    <span class="day">@item1.DataInicio.Day</span> <span class="month">@item1.DataInicio.Month</span>
+                    <span class="year">@item1.DataInicio.Year</span> <span class="hour">@item1.DataInicio.Hour</span>
+                </p>
+                <h2>
+                    <a href="#">@item1.Titulo</a>
+                </h2>
+                <p class="info">
+                    @item1.Chamada
+                </p>
+                <p class="local">
+                    @item1.Local
+                </p>
+                <p class="more">
+                    <a href="@Url.Action("Details", "Agenda", new { id = item1.AgendaID, title = Url.FormatTitle(item1.Titulo) })">
+                        @item1.Conteudo
+                    </a>
+                </p>
+            </div>
+            <ul class="other_events">
+                @foreach (var item in Model.Skip(1))
+                {
+        
+                    <li>
+                        <p class="date">
+                            <span class="day">@item.DataInicio.Day</span> <span class="month">@item.DataInicio.Month</span>
+                            <span class="year">@item.DataInicio.Year</span> <span class="hour">@item.DataInicio.Hour</span>
+                        </p>
+                        <p class="more">
+                            <a href="@Url.Action("Details", "Agenda", new { id = item.AgendaID, title = Url.FormatTitle(item.Titulo) })">
+                                @item.Conteudo
+                            </a>
+                        </p>
+                        <h2>
+                            <a href="#">@item.Titulo</a>
+                        </h2>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+    <p class="full_agenda">
+        <a href="#">Ver agenda completa</a></p>
+</div>
+<!-- AGENDA END -->

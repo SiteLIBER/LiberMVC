@@ -76,12 +76,44 @@ namespace LiberMvc.Models
 		}
 		#endregion
 
+
+        #region Noticias
+        public IQueryable<Postagem> Noticias
+        {
+            get
+            {
+                return Postagens.Where(p => p.TipoPostagem.Descricao == "Noticias")
+                    .OrderByDescending(a => a.PublicadoEm)
+                    .ThenByDescending(a => a.PostagemID);
+                ;
+            }
+        }
+        public IQueryable<Postagem> NoticiasPublicadas
+        {
+            get { return Noticias.Where(a => a.Publicado); }
+        }
+        public IQueryable<Postagem> NoticiasDoUsuario(int id)
+        {
+            return NoticiasPublicadas.Where(p => p.Autores.Select(a => a.AutorID).Contains(id));
+        }
+        #endregion
+
+
+
+
+
+
+
+
+
+
+
 		#region Ideias
 		public IQueryable<Postagem> Ideias
 		{
 			get
 			{
-				return Postagens;
+                return Postagens.Where(p => p.TipoPostagem.Descricao != "Noticias");
 			}
 		}
 		public IQueryable<Postagem> IdeiasPublicadas

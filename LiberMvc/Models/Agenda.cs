@@ -25,6 +25,9 @@ namespace LiberMvc.Models
 		[DataType(DataType.MultilineText)]
 		public string Conteudo { get; set; }
 
+        [StringLength(100), Required ]
+        public string Chamada { get; set; }
+
 
 
 	}
