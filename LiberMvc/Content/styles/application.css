@@ -8,7 +8,47 @@
     font-style: normal;
 
 }
-
+@font-face {
+    font-family: "AlteHaasGroteskRegular";
+    src: url("../fonts/AlteHaasGroteskRegular.eot");
+    src: url("../fonts/AlteHaasGroteskRegular.eot?#iefix") format("embedded-opentype"),
+	 	 url("../fonts/AlteHaasGroteskRegular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: "GillSans";
+    src: url("../fonts/GillSans.eot");
+    src: url("../fonts/GillSans.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/GillSans.ttf") format("truetype");
+    font-weight: normal;
+	font-style: normal;
+}	
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../fonts/HelveticaNeue.eot");
+	src: url("../fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/HelveticaNeue.ttf") format("truetype"),
+		 url("../fonts/HelveticaNeue.dfont") format("dfont");
+	font-weight: normal;
+	font-style: normal;
+}	
+@font-face {
+    font-family: "HelveticaNeueCond";
+    src: url("../fonts/HelveticaCdBlk.eot");
+	src: url("../fonts/HelveticaCdBlk.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/HelveticaCdBlk.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: "MyriadPro";
+    src: url("../fonts/MyriadPro-SemiExtIt.otf");
+		 url("../fonts/MyriadPro-SemiExtIt.otf") format("opentype"),
+		 url("../fonts/MyriadPro-LightCondIt.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}	
 * {
     margin: 0;
     padding: 0;
@@ -153,19 +193,17 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 #banner ul.slides li {
 	width: 680px;
 	height: 270px;
+	display: none;
+
 
 	background: #fff;
 }
 
-#banner ul.slides li a {
-	width: 680px;
-	height: 270px;
+#banner ul.slides li.active {
 	display: block;
 }
 
-
 #banner .pagination {
-    margin-top: -270px;
 	padding: 0 4px;
 	float: right;
 	width: 22px;
@@ -238,11 +276,11 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 ** Latest news & Ideas
 */
 
-#latest_news, #ideas, #internal, # {
+#latest_news, #ideas {
 	margin-top: 30px;
 }
 
-#latest_news h2, #ideas h2, #internal h2 {
+#latest_news h2, #ideas h2 {
 	margin-bottom: 8px;
 	padding-top: 5px;
 	line-height: 100%;
@@ -257,13 +295,13 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 	background: #fff;
 }
 
-#latest_news .content_wrapper, #ideas .content_wrapper, #internal .content_wrapper {
+#latest_news .content_wrapper, #ideas .content_wrapper {
 	padding: 10px;
 
 	background: #ddd url("../images/box_bg.png");
 }
 
-#latest_news .content, #ideas .content , #internal .content {
+#latest_news .content, #ideas .content {
 	border: 1px solid #c1c1c1;
 	background: #fff;
 }
@@ -772,27 +810,12 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 	background: url("../images/ideas_categories_icons.png") no-repeat;
 }
 
-
-#article_box .date {
-    margin: 0 0 10px 40px;
-    padding: 5px;
-    height: 32px;
-
-    font-weight: bold;
-    border-radius: 3px;
-    background: #ffc82e url("../images/clock_icon.png") no-repeat 85px center;
-}
-
-
-
 #article_box .content .date {
-    margin: 0 0 10px 40px;
-    padding: 5px;
-    height: 32px;
+	margin: -10px 0 10px 0;
+    padding-left: 54px;
 
-    font-weight: bold;
-    border-radius: 3px;
-    background: #ffc82e url("../images/clock_icon.png") no-repeat 85px center;
+	font-size: 11px;
+	font-weight: bold;
 }
 
 #article_box h2 {
@@ -809,23 +832,6 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 }
 
 #article_box h2 a:hover {
-	text-decoration: underline;
-}
-
-#article_box .content url {
-	margin-bottom: 20px;
-	line-height: 100%;
-	min-height: 127px;
-}
-
-#article_box .content url a {
-	color: #000;
-	font-size: 18px;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-#article_box .content url a:hover {
 	text-decoration: underline;
 }
 
@@ -948,7 +954,7 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 #agenda_wrapper .full_agenda a {
 	padding: 5px 10px;
 	display: block;
-
+	
 	color: #f0bc2c;
 	font-size: 14px;
 	font-weight: bold;
@@ -969,7 +975,7 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 	padding-right: 15px;
 	float: left;
 	width: 200px;
-
+	
 	background: url("../images/calendar.png") no-repeat left 3px;
 }
 
@@ -1046,7 +1052,7 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 #counter_tax_wrapper {
 	margin: 30px auto 0 auto;
 	width: 955px;
-
+	
 	border-bottom: 1px solid #232227;
 }
 
@@ -1112,7 +1118,7 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 	width: 40px;
 	height: 60px;
 	line-height: 100%;
-
+	
 	font-size: 52px;
 	font-weight: normal;
 	text-shadow: 0 1px 0 #fff;
@@ -1135,9 +1141,9 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 #footer_wrapper {
 	margin: 0 auto;
 	width: 955px;
-
+	
 	border-top: 1px solid #454449;
-	background: #2b2a30 url("../images/logo_footer.png") no-repeat 790px bottom;;
+	background: #2b2a30 url("../images/logo_footer.png") no-repeat 790px bottom;
 }
 
 #footer {
@@ -1147,7 +1153,7 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 #footer #ombudsman {
 	padding: 10px 0 10px 120px;
 	float: left;
-
+	
 	background: url("../images/megaphone_icon.png") no-repeat left center;
 }
 
@@ -1185,7 +1191,7 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 #footer #copyright {
 	padding-top: 40px;
 	clear: both;
-
+	
 	color: #fff;
 	font-size: 12px;
 }
@@ -1198,3 +1204,266 @@ ul#main_navigation li.active a, ul#main_navigation li a:hover {
 	text-decoration: none;
 }
 
+/*
+** Artigo Pagina Interna
+*/
+#artigo_titulo
+{
+	font-family: HelveticaNeue, arial;
+	font-style: bold;
+	font-size: 25px;
+	margin-top: 14mm;
+	margin-bottom: 7mm;
+}
+
+#artigo_citacao
+{
+	font-family: MyriadPro, GillSans;
+	font-style: italic;
+	font-size: 13px;
+	font-stretch: semi-expanded;
+	text-align: left;
+	margin-bottom: 4mm;
+	max-height: 15mm;
+}
+
+#artigo_sign
+{
+	font-family: MyriadPro, GillSans;
+	font-style: italic;
+	font-size: 12px;
+	font-stretch: condensed;
+	border-top-style: solid;
+	border-width: 1px;
+	text-align: right;
+	margin-bottom:15mm;
+}
+
+#artigo_texto
+{
+    font-family: GillSans;
+	font-style: normal;
+	font-size: 14px;
+	text-align:left;
+	clear:left;
+	margin-bottom:4mm;
+}
+
+#artigo_foto_autor
+{
+    float:right;
+    height:80mm;
+    width:50mm;
+    border:0px;
+	margin:0mm 0mm 0mm 5mm;
+}
+
+p#artigo_curriculo:first-line
+{
+	font-weight: bold;
+}
+
+#artigo_curriculo
+{
+    float:right;
+    height:80mm;
+    width:40mm;
+    background-color:#ffc82e;
+    text-align:left;
+    font-family: AlteHaasGroteskRegular;
+	font-style: normal;
+	font-size: 10px;
+	border:0px;
+    padding:5mm;
+	margin:0mm 0mm 0mm 5mm;
+    clear:both;
+}
+
+#artigo_aspas
+{
+	float:left;
+    height:40mm;
+    width:22%;
+    margin:7mm 0mm 11mm 0mm;
+	border:0mm;
+	clear:both;
+}
+
+
+#artigo_destaque
+{
+    float:left;
+    height:30mm;
+    width:72%;
+    background-color:#000000;
+	border:0mm;
+	text-align:left;
+    font-family: HelveticaNeueCond, arial;
+	font-size: 19px;
+	font-weight: bold;
+	color:#ffc82e;
+	padding:5mm;
+    margin:7mm 0mm 11mm 0mm;
+	clear:right;
+	letter-spacing: -1px;
+}
+
+
+
+/*
+** Blog Pagina Interna
+*/
+#blog_titulo
+{
+	font-family: HelveticaNeue, arial;
+	font-style: bold;
+	font-size: 25px;
+	margin-top: 14mm;
+	margin-bottom: 7mm;
+}
+
+#blog_citacao
+{
+	font-family: MyriadPro, GillSans;
+	font-style: italic;
+	font-size: 13px;
+	font-stretch: semi-expanded;
+	text-align: left;
+	margin-bottom: 4mm;
+	max-height: 15mm;
+}
+
+#blog_sign
+{
+	font-family: MyriadPro, GillSans;
+	font-style: italic;
+	font-size: 12px;
+	font-stretch: condensed;
+	border-top-style: solid;
+	border-width: 1px;
+	text-align: right;
+	margin-bottom:15mm;
+}
+#blog_texto
+{
+    font-family: GillSans;
+	font-style: normal;
+	font-size: 14px;
+	text-align:left;
+	margin-bottom:4mm;
+}
+#blog_figura
+{
+    float:right;
+    height:70mm;
+    width:70mm;
+    border:0px;
+	margin:1mm 0mm 0mm 5mm;
+}
+
+#blog_figura_texto
+{
+    float:right;
+    height:auto;
+    width:60mm;
+    background-color:#ffc82e;
+    text-align:right;
+	font-family: HelveticaNeueCond, arial;
+	font-size: 19px;
+	font-weight: bold;
+	border:0px;
+    padding:5mm;
+	margin:0mm 0mm 0mm 5mm;
+    clear:right;
+}
+
+#blog_destaque
+{
+    float:left;
+    height:auto;
+    width:50mm;
+    margin:3mm 7mm 7mm 0mm;
+	border:0mm;
+	padding:30mm 0mm 0mm 0mm;
+	text-align:left;
+    font-family: HelveticaNeueCond, arial;
+	font-size: 19px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	background: url("../images/blog_aspas.png") no-repeat;
+}
+
+
+
+
+/*
+** Agenda Pagina Interna
+*/
+#agenda_title
+{
+	font-family: HelveticaNeue, arial;
+	font-style: bold;
+	font-size: 25px;
+	margin-top: 14mm;
+	margin-bottom: 7mm;
+}
+
+
+#agenda_place
+{
+	font-family: MyriadPro, GillSans;
+	font-style: italic;
+	font-size: 12px;
+	font-stretch: condensed;
+	border-top-style: solid;
+	border-width: 1px;
+	text-align: right;
+	margin-bottom:15mm;
+}
+
+#agenda_content
+{
+    font-family: GillSans;
+	font-style: normal;
+	font-size: 14px;
+	text-align:left;
+	clear:left;
+	margin-bottom:4mm;
+}
+
+
+#agenda_start
+{
+    float:left;
+    height:30mm;
+    width:72%;
+    background-color:#000000;
+	border:0mm;
+	text-align:left;
+    font-family: HelveticaNeueCond, arial;
+	font-size: 19px;
+	font-weight: bold;
+	color:#ffc82e;
+	padding:5mm;
+    margin:7mm 0mm 11mm 0mm;
+	clear:right;
+	letter-spacing: -1px;
+}
+
+#agenda_end
+{
+    float:left;
+    height:30mm;
+    width:72%;
+    background-color:#000000;
+	border:0mm;
+	text-align:left;
+    font-family: HelveticaNeueCond, arial;
+	font-size: 19px;
+	font-weight: bold;
+	color:#ffc82e;
+	padding:5mm;
+    margin:7mm 0mm 11mm 0mm;
+	clear:right;
+	letter-spacing: -1px;
+}

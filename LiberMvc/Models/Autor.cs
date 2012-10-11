@@ -24,5 +24,11 @@ namespace LiberMvc.Models
 		public int? PessoaID { get; set; }
 
 		public virtual Pessoa Pessoa { get; set; }
+
+        [StringLength(250)]
+        [DisplayName("Foto do Autor")]
+        public string Foto { get; set; }
+
+
 	}
 }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using LiberMvc.Models;
+using System.IO;
 
 namespace LiberMvc.Controllers
 { 
@@ -49,6 +50,11 @@ namespace LiberMvc.Controllers
         {
             if (ModelState.IsValid)
             {
+                string foto = UploadFiles();
+                if (foto != null)
+                {
+                    autor.Foto = foto;
+                }
                 db.Autores.Add(autor);
                 db.SaveChanges();
                 return RedirectToAction("Index");  
@@ -76,6 +82,11 @@ namespace LiberMvc.Controllers
         {
             if (ModelState.IsValid)
             {
+                string foto = UploadFiles();
+                if (foto != null)
+                {
+                    autor.Foto = foto;
+                }
                 db.Entry(autor).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -104,6 +115,33 @@ namespace LiberMvc.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+
+        private string UploadFiles()
+        {
+            if (Request.Files != null)
+            {
+                foreach (string requestFile in Request.Files)
+                {
+                    HttpPostedFileBase file = Request.Files[requestFile];
+                    if (file.ContentLength > 0)
+                    {
+                        string fileName = Path.GetFileName(file.FileName);
+                        string directory = Server.MapPath("~/App_Data/uploads/");
+                        if (!Directory.Exists(directory))
+                        {
+                            Directory.CreateDirectory(directory);
+                        }
+                        string path = Path.Combine(directory, fileName);
+                        file.SaveAs(path);
+                        return path;
+                    }
+                }
+            }
+            return null;
+        }
+
+
 
         protected override void Dispose(bool disposing)
         {

@@ -26,6 +26,43 @@
 		}
 }
 
+
+@helper NomePrimeiroAutor(Postagem post) {
+    if(post.Autores.Count > 0) {
+        @post.Autores.First().Autor.Nome
+    }
+}
+
+
+@helper FotoPrimeiroAutor(Postagem post) {
+    if(post.Autores.Count > 0) {
+        @post.Autores.First().Autor.Foto
+    }
+}
+
+
+@helper DescricaoPrimeiroAutor(Postagem post) {
+    if(post.Autores.Count > 0) {
+        @post.Autores.First().Autor.Descricao
+    }
+}
+
+@helper FotoAutor(Postagem post) {
+		foreach (var i in post.Autores) {
+
+			if (i.AutorID != post.Autores.Last().AutorID)
+			{ 
+				@i.Autor.Foto<text>, </text> 
+			}
+			else
+			{
+				@i.Autor.Foto
+			}
+		}
+}
+
+
+
 @helper Image(string imageUrl, UrlHelper url, string alt = "")
 	{
 	<img src="@url.Content("~/Content/images/" + imageUrl)" alt="@alt"/>

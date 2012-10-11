@@ -35,7 +35,17 @@ namespace LiberMvc.Models
 		[AllowHtml]
 		public string Conteudo { get; set; }
 
-		[UIHint("SimNao")]
+        [DisplayName("Texto 2:")]
+        [DataType(DataType.Html)]
+        [AllowHtml]
+        public string Conteudo_Parte2 { get; set; }
+
+        [DisplayName("Texto Destaque:")]
+        [DataType(DataType.Html)]
+        [AllowHtml]
+        public string Conteudo_Destaque { get; set; }
+
+        [UIHint("SimNao")]
 		[DisplayName("Publicado:")]
 		public bool Publicado { get; set; }
 
@@ -61,6 +71,17 @@ namespace LiberMvc.Models
 
 		[NotMapped]
 		public IEnumerable<int> SelectedItemIds { get; set; }
+
+        [DisplayName("Citação:")]
+        [DataType(DataType.Html)]
+        [AllowHtml]
+        public string Citacao { get; set; }
+
+        [DisplayName("Texto Imagem:")]
+        [DataType(DataType.Html)]
+        [AllowHtml]
+        public string FiguraTexto { get; set; }
+
 
 	}
 }

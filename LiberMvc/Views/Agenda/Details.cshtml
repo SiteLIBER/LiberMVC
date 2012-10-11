@@ -4,37 +4,28 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
 
-<fieldset>
-    <legend>Agenda</legend>
 
-    <div class="display-label">Titulo</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Titulo)
-    </div>
+<!-- AGENDA BEGIN -->
+<div id="agenda_wrapper">
+        <div id="agenda">
+            <h2>@Html.DisplayFor(model => model.Titulo)</h2>
+            <div class="main_event">
+                <p class="datetime">
+                    <span class="day">@Html.DisplayFor(model => model.DataInicio)</span>
+                    <span class="day">@Html.DisplayFor(model => model.DataFim)</span>
+                </p>
 
-    <div class="display-label">DataInicio</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.DataInicio)
-    </div>
-
-    <div class="display-label">DataFim</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.DataFim)
-    </div>
-
-    <div class="display-label">Local</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Local)
-    </div>
-
-    <div class="display-label">Conteudo</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Conteudo)
-    </div>
-</fieldset>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id=Model.AgendaID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+                <h2>
+                    <a href="#">@Html.DisplayFor(model => model.Titulo)</a>
+                </h2>
+                <p class="info">
+                    @Html.DisplayFor(model => model.Conteudo)
+                </p>
+                <p class="local">
+                    @Html.DisplayFor(model => model.Local)
+                </p>
+            </div>
+        </div>
+</div>
+<!-- AGENDA END -->

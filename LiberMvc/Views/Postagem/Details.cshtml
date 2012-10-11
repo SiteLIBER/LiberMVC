@@ -17,13 +17,48 @@
 			break;
 	}
 }
+
+	  <!-- TESTE ARTIGO BEGIN-->
+        	<div class="article_body">
+			
+			<h1 id="artigo_titulo">
+                @Model.Titulo
+            </h1>
+			
+			<p id="artigo_citacao">@Model.Citacao</p>
+			
+			<p id="artigo_sign">@Helper.NomeAutor(Model)</p>
+			
+			<img id="artigo_foto_autor" src="@Helper.FotoPrimeiroAutor(Model)" alt="foto"/> 
+			
+			<p id="artigo_curriculo">
+             @Helper.NomePrimeiroAutor(Model)
+             <br>
+             @Helper.DescricaoPrimeiroAutor(Model)</p>
+
+			<p id="artigo_texto">
+    			@Html.Raw(Model.Conteudo)
+            </p>
+
+				<img id="artigo_aspas" src="/Content/images/aspas.png" alt="aspas"/> 
+
+				<p id="artigo_destaque">
+        			@Html.Raw(Model.Conteudo_Destaque)
+                 </p>
+
+			<p id="artigo_texto">
+        			@Html.Raw(Model.Conteudo_Parte2)
+            </p>
+ 		</div>
+		
+		<!-- TESTE ARTIGO END-->
+
+
+
+
+
 <div class="panel">
-	<div id="article_box">
 		<p class="content">
-	        <span class="url"><a href="@Url.RouteUrl(new {controller=cntr})">@Model.TipoPostagem.Descricao</a></span>
-			<span class="date">@Model.PublicadoEm.ToShortDateString()</span>
-			@Helper.NomeAutor(Model)
-	        <h2>@Model.Titulo</h2>
 			<span style="display: block; margin-top: 5px;"><span class="addthis_toolbox addthis_default_style" style="float: left;">
 				<g:plusone size="small"></g:plusone>
 				<fb:like layout="button_count" show_faces="false" width="200" href="@Request.Url"></fb:like>
@@ -34,22 +69,25 @@
 				<!-- AddThis Button END -->
 			</span>
 			<br class="clear" />
+    		<fb:comments xid="@Model.PostagemID" canpost="true" width="683px" candelete="true" href="@Request.Url"></fb:comments>
 		</p>
-		<div class="article_body">
-			@Html.Raw(Model.Conteudo)
-		</div>
-	</div>
 	<p class="actions">
 		@*	    @if (Model.isOwnerOrAdmin) { 
 		    @Html.ActionLink("Editar", "Edit", new { id = Model.ArtigoID }, new { @class = "button" })
 	     } *@
-		@Html.ActionLink("Voltar a lista", "Index", Model.TipoPostagem.Descricao, null, new { @class = "button" })
-		<br class="clear" />
+		@* Html.ActionLink("Voltar a lista", "Index", Model.TipoPostagem.Descricao, null, new { @class = "button" })
+		<br class="clear" />  *@
 	</p>
 	<p class="">
-		<fb:comments xid="@Model.PostagemID" canpost="true" width="683px" candelete="true" href="@Request.Url"></fb:comments>
 	</p>
 </div>
+
+
+
+
+
+
+
 
 @section SideBar {
 	@Html.Partial("_SideBar")

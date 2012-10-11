@@ -5,13 +5,13 @@
     { 
 
         <div id="agenda">
-            @{var item1 = Model.First();   }
+            @{var item1 = Model.First(); }
             <h2>
                 Agenda</h2>
             <div class="main_event">
                 <p class="datetime">
-                    <span class="day">@item1.DataInicio.Day</span> <span class="month">@item1.DataInicio.Month</span>
-                    <span class="year">@item1.DataInicio.Year</span> <span class="hour">@item1.DataInicio.Hour</span>
+                    <span class="day">@item1.DataInicio.ToString("dd")</span> <span class="month">@item1.DataInicio.ToString("MMM")</span>
+                    <span class="year">@item1.DataInicio.ToString("yyyy")</span> <span class="hour">@item1.DataInicio.ToString("hh:mm")</span>
                 </p>
                 <h2>
                     <a href="#">@item1.Titulo</a>
@@ -24,7 +24,7 @@
                 </p>
                 <p class="more">
                     <a href="@Url.Action("Details", "Agenda", new { id = item1.AgendaID, title = Url.FormatTitle(item1.Titulo) })">
-                        @item1.Conteudo
+                        Saiba +
                     </a>
                 </p>
             </div>
@@ -34,12 +34,12 @@
         
                     <li>
                         <p class="date">
-                            <span class="day">@item.DataInicio.Day</span> <span class="month">@item.DataInicio.Month</span>
-                            <span class="year">@item.DataInicio.Year</span> <span class="hour">@item.DataInicio.Hour</span>
+                            <span class="day">@item1.DataInicio.ToString("dd")</span> <span class="month">@item1.DataInicio.ToString("MMM")</span>
+                            <span class="year">@item1.DataInicio.ToString("yyyy")</span> 
                         </p>
                         <p class="more">
                             <a href="@Url.Action("Details", "Agenda", new { id = item.AgendaID, title = Url.FormatTitle(item.Titulo) })">
-                                @item.Conteudo
+                                Saiba +
                             </a>
                         </p>
                         <h2>
